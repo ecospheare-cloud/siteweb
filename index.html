@@ -3,42 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecospheare — Solutions Numériques & Durables</title>
-  <meta name="description" content="Ecospheare — Agence tech alliant innovation numérique et responsabilité environnementale." />
+
+  <!-- ── SEO Core ── -->
+  <title>Agence SEO pour Petites Entreprises | Ecospheare</title>
+  <meta name="description" content="Ecospheare, agence SEO spécialisée pour petites entreprises. Référencement naturel, stratégie digitale et développement web sur mesure pour booster votre visibilité en ligne." />
+  <meta name="keywords" content="agence SEO petites entreprises, référencement naturel PME, SEO local, agence digitale, visibilité Google, audit SEO, stratégie digitale" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ecospheare.com/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ecospheare.com/" />
+  <meta property="og:title" content="Agence SEO pour Petites Entreprises | Ecospheare" />
+  <meta property="og:description" content="Ecospheare vous aide à dominer les résultats Google. Référencement naturel, SEO local et stratégie digitale pensés pour les petites entreprises." />
+  <meta property="og:image" content="https://ecospheare.com/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Ecospheare" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Agence SEO pour Petites Entreprises | Ecospheare" />
+  <meta name="twitter:description" content="Référencement naturel et stratégie digitale pour les petites entreprises qui veulent grandir." />
+  <meta name="twitter:image" content="https://ecospheare.com/og-image.jpg" />
+
+  <!-- ── Performance ── -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ── Structured Data : LocalBusiness ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ecospheare",
+    "description": "Agence SEO et digitale spécialisée pour petites entreprises. Référencement naturel, développement web et stratégie digitale.",
+    "url": "https://ecospheare.com",
+    "logo": "https://ecospheare.com/logo.png",
+    "email": "hello@ecospheare.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "areaServed": "FR",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services SEO & Digital",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & Référencement naturel" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Développement Web" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stratégie Digitale" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce & Shopify" } }
+      ]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/ecospheare"
+    ]
+  }
+  </script>
+
+  <!-- ── Structured Data : FAQPage ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Pourquoi une petite entreprise a-t-elle besoin d'une agence SEO ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le SEO permet aux petites entreprises d'apparaître en premier sur Google face à des clients qui cherchent activement leurs services. C'est le canal d'acquisition le plus rentable sur le long terme, sans dépendre de la publicité payante."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien coûte une prestation SEO pour une petite entreprise ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nos offres SEO pour petites entreprises démarrent à partir de 500€/mois, adaptées à votre secteur et vos objectifs. Nous proposons une analyse gratuite avant tout engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "En combien de temps voit-on des résultats SEO ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les premiers résultats sont généralement visibles entre 3 et 6 mois. Le SEO est un investissement durable : contrairement aux annonces payantes, les résultats se maintiennent et se renforcent dans le temps."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
+  <!-- ══ NAV ══ -->
+  <header class="nav" id="nav" role="banner">
     <div class="nav__inner container">
-      <a href="#" class="nav__logo">
+      <a href="/" class="nav__logo" aria-label="Ecospheare — Accueil">
         <span class="logo-eco">eco</span><span class="logo-sphere">spheare</span>
       </a>
-      <nav class="nav__links">
+      <nav class="nav__links" aria-label="Navigation principale">
         <a href="#services">Services</a>
+        <a href="#seo">SEO</a>
         <a href="#apropos">À propos</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn btn--sm">Démarrer un projet</a>
-      <button class="nav__burger" id="burger" aria-label="Menu">
+      <a href="#contact" class="btn btn--primary btn--sm nav__cta">Audit gratuit</a>
+      <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobileMenu">
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
       <a href="#services" class="mobile-link">Services</a>
+      <a href="#seo" class="mobile-link">SEO</a>
       <a href="#apropos" class="mobile-link">À propos</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
       <a href="#contact" class="mobile-link">Contact</a>
-      <a href="#contact" class="btn btn--full">Démarrer un projet</a>
+      <a href="#contact" class="btn btn--primary btn--full">Audit SEO gratuit →</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero__bg">
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
       <div class="grid-overlay"></div>
       <div class="orb orb--1"></div>
       <div class="orb orb--2"></div>
@@ -47,190 +139,241 @@
     <div class="container hero__content">
       <div class="hero__badge">
         <span class="badge-dot"></span>
-        Innovation · Durabilité · Impact
+        Agence SEO · Petites Entreprises · Résultats mesurables
       </div>
-      <h1 class="hero__title">
-        Le futur numérique,<br />
-        <span class="gradient-text">conçu responsable.</span>
+      <h1 class="hero__title" id="hero-title">
+        L'agence SEO qui fait<br class="br-desktop" />
+        <span class="gradient-text">grandir les petites entreprises.</span>
       </h1>
       <p class="hero__sub">
-        Ecospheare conçoit des solutions tech de haut niveau pour les organisations
-        qui veulent croître sans compromis sur leurs valeurs.
+        Ecospheare propulse les petites entreprises en première page de Google grâce à des stratégies SEO sur mesure, accessibles et rentables.
       </p>
       <div class="hero__cta">
-        <a href="#services" class="btn btn--primary btn--lg">Découvrir nos services</a>
-        <a href="#contact" class="btn btn--ghost btn--lg">Nous contacter →</a>
+        <a href="#contact" class="btn btn--primary btn--lg">Audit SEO gratuit</a>
+        <a href="#services" class="btn btn--ghost btn--lg">Voir nos services</a>
       </div>
-      <div class="hero__stats">
+      <div class="hero__stats" aria-label="Chiffres clés">
+        <div class="stat">
+          <span class="stat__num">+200%</span>
+          <span class="stat__label">Trafic organique moyen</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
         <div class="stat">
           <span class="stat__num">50+</span>
-          <span class="stat__label">Projets livrés</span>
+          <span class="stat__label">PME accompagnées</span>
         </div>
-        <div class="stat__divider"></div>
+        <div class="stat__divider" aria-hidden="true"></div>
         <div class="stat">
-          <span class="stat__num">100%</span>
-          <span class="stat__label">Clients satisfaits</span>
-        </div>
-        <div class="stat__divider"></div>
-        <div class="stat">
-          <span class="stat__num">5+</span>
-          <span class="stat__label">Années d'expertise</span>
+          <span class="stat__num">Top 3</span>
+          <span class="stat__label">Position Google moyenne</span>
         </div>
       </div>
     </div>
-    <div class="hero__scroll">
+    <div class="hero__scroll" aria-hidden="true">
       <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
+  <!-- ══ SERVICES ══ -->
+  <section class="services" id="services" aria-labelledby="services-title">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Ce que nous faisons</span>
-        <h2 class="section-title">Nos services</h2>
-        <p class="section-sub">Des solutions sur mesure pour chaque étape de votre transformation numérique.</p>
+        <h2 class="section-title" id="services-title">Nos services digitaux</h2>
+        <p class="section-sub">Du référencement naturel au développement web — tout ce qu'il faut pour dominer votre marché en ligne.</p>
       </div>
       <div class="services__grid">
 
-        <div class="service-card" data-index="01">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <article class="service-card service-card--highlight">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
-          <span class="service-card__num">01</span>
-          <h3 class="service-card__title">Développement Web & App</h3>
-          <p class="service-card__text">Sites web, applications mobiles et plateformes SaaS conçus avec les technologies les plus modernes — rapides, évolutifs et maintenables.</p>
+          <span class="service-card__tag">Le plus demandé</span>
+          <h3 class="service-card__title">SEO & Référencement naturel</h3>
+          <p class="service-card__text">Apparaissez en première page de Google durablement. Notre approche SEO pour petites entreprises combine audit technique, contenu optimisé et netlinking ciblé.</p>
           <ul class="service-card__list">
-            <li>React / Next.js / Vue</li>
-            <li>Applications mobiles</li>
-            <li>API & backends scalables</li>
+            <li>Audit SEO complet</li>
+            <li>Optimisation on-page & technique</li>
+            <li>SEO local & Google My Business</li>
+            <li>Création de contenu SEO</li>
           </ul>
-          <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
+          <a href="#contact" class="service-card__link">Demander un audit gratuit →</a>
+        </article>
 
-        <div class="service-card" data-index="02">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
           <span class="service-card__num">02</span>
-          <h3 class="service-card__title">Intelligence Artificielle</h3>
-          <p class="service-card__text">Intégration d'IA et d'automatisations intelligentes dans vos workflows pour vous faire gagner du temps et améliorer vos résultats.</p>
+          <h3 class="service-card__title">Développement Web</h3>
+          <p class="service-card__text">Sites web rapides, accessibles et optimisés pour le référencement dès la conception. Un bon site web est la base de toute stratégie SEO efficace.</p>
           <ul class="service-card__list">
-            <li>Chatbots & assistants IA</li>
-            <li>Automatisation de processus</li>
-            <li>Analyse de données</li>
+            <li>Sites vitrine & landing pages</li>
+            <li>Core Web Vitals optimisés</li>
+            <li>Intégration CMS (WordPress, etc.)</li>
           </ul>
           <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
+        </article>
 
-        <div class="service-card" data-index="03">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
           <span class="service-card__num">03</span>
-          <h3 class="service-card__title">Design UI/UX</h3>
-          <p class="service-card__text">Interfaces élégantes et intuitives pensées pour vos utilisateurs. Du wireframe au produit final, nous créons des expériences mémorables.</p>
+          <h3 class="service-card__title">Stratégie Digitale</h3>
+          <p class="service-card__text">Une feuille de route digitale claire pour votre petite entreprise : quels canaux prioriser, quel budget allouer, quels résultats attendre.</p>
           <ul class="service-card__list">
-            <li>Design système</li>
-            <li>Prototypage Figma</li>
-            <li>Tests utilisateurs</li>
+            <li>Audit de présence en ligne</li>
+            <li>Analyse concurrentielle</li>
+            <li>Plan d'action sur 6 à 12 mois</li>
           </ul>
           <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
+        </article>
 
-        <div class="service-card" data-index="04">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
           </div>
           <span class="service-card__num">04</span>
-          <h3 class="service-card__title">Stratégie Digitale</h3>
-          <p class="service-card__text">Conseil en transformation numérique, audit de votre présence en ligne et élaboration de feuilles de route technologiques adaptées.</p>
-          <ul class="service-card__list">
-            <li>Audit numérique</li>
-            <li>Roadmap produit</li>
-            <li>Conseil & accompagnement</li>
-          </ul>
-          <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
-
-        <div class="service-card" data-index="05">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <span class="service-card__num">05</span>
-          <h3 class="service-card__title">Cloud & Infrastructure</h3>
-          <p class="service-card__text">Déploiement, hébergement et maintenance de vos applications sur des infrastructures cloud performantes et sécurisées.</p>
-          <ul class="service-card__list">
-            <li>AWS / GCP / Azure</li>
-            <li>DevOps & CI/CD</li>
-            <li>Sécurité & monitoring</li>
-          </ul>
-          <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
-
-        <div class="service-card service-card--highlight" data-index="06">
-          <div class="service-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-          </div>
-          <span class="service-card__num">06</span>
           <h3 class="service-card__title">E-commerce & Shopify</h3>
-          <p class="service-card__text">Création et optimisation de boutiques en ligne performantes. De Shopify aux solutions custom, nous boostons vos ventes.</p>
+          <p class="service-card__text">Boutiques en ligne optimisées pour la conversion et le SEO e-commerce. Plus de visibilité sur Google Shopping et plus de ventes sans augmenter votre budget pub.</p>
           <ul class="service-card__list">
             <li>Shopify / WooCommerce</li>
-            <li>Tunnel de conversion</li>
-            <li>Intégrations paiement</li>
+            <li>SEO produits & catégories</li>
+            <li>Optimisation du tunnel de vente</li>
           </ul>
           <a href="#contact" class="service-card__link">En savoir plus →</a>
-        </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <span class="service-card__num">05</span>
+          <h3 class="service-card__title">Intelligence Artificielle</h3>
+          <p class="service-card__text">Automatisez vos tâches répétitives et gagnez en productivité grâce à des outils IA sur mesure — sans avoir besoin d'une équipe technique.</p>
+          <ul class="service-card__list">
+            <li>Génération de contenu SEO IA</li>
+            <li>Chatbots & assistants</li>
+            <li>Automatisation de processus</li>
+          </ul>
+          <a href="#contact" class="service-card__link">En savoir plus →</a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="service-card__num">06</span>
+          <h3 class="service-card__title">Design UI/UX</h3>
+          <p class="service-card__text">Un design soigné améliore l'expérience utilisateur, réduit le taux de rebond et renforce votre autorité SEO — un signal positif pour Google.</p>
+          <ul class="service-card__list">
+            <li>Refonte d'interface</li>
+            <li>Optimisation UX mobile</li>
+            <li>Design system</li>
+          </ul>
+          <a href="#contact" class="service-card__link">En savoir plus →</a>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- À PROPOS -->
-  <section class="apropos" id="apropos">
+  <!-- ══ SEO FOCUS ══ -->
+  <section class="seo-focus" id="seo" aria-labelledby="seo-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Notre spécialité</span>
+        <h2 class="section-title" id="seo-title">Agence SEO dédiée aux petites entreprises</h2>
+        <p class="section-sub">Le référencement naturel est le levier de croissance le plus puissant pour une petite entreprise avec un budget maîtrisé.</p>
+      </div>
+      <div class="seo-focus__grid">
+        <div class="seo-pillar">
+          <div class="seo-pillar__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+          </div>
+          <h3>SEO Technique</h3>
+          <p>Vitesse de chargement, structure de données, indexation — une base technique irréprochable pour que Google vous aime.</p>
+        </div>
+        <div class="seo-pillar">
+          <div class="seo-pillar__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Contenu SEO</h3>
+          <p>Articles de blog, pages services, fiches produits — du contenu pensé pour ranker sur les requêtes de vos clients.</p>
+        </div>
+        <div class="seo-pillar">
+          <div class="seo-pillar__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>SEO Local</h3>
+          <p>Dominez les recherches "près de moi" et Google Maps. Indispensable pour toute petite entreprise avec une clientèle locale.</p>
+        </div>
+        <div class="seo-pillar">
+          <div class="seo-pillar__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Reporting & Suivi</h3>
+          <p>Tableaux de bord clairs, rapports mensuels et appels de suivi. Vous savez exactement où vous en êtes à chaque instant.</p>
+        </div>
+      </div>
+
+      <div class="seo-cta-banner">
+        <div class="seo-cta-banner__text">
+          <h3>Votre site est-il visible sur Google ?</h3>
+          <p>Obtenez un audit SEO gratuit et découvrez les opportunités de croissance cachées de votre site.</p>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg">Obtenir mon audit gratuit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ À PROPOS ══ -->
+  <section class="apropos" id="apropos" aria-labelledby="apropos-title">
     <div class="container apropos__inner">
-      <div class="apropos__visual">
+      <div class="apropos__visual" aria-hidden="true">
         <div class="apropos__card-wrap">
           <div class="apropos__card apropos__card--back"></div>
           <div class="apropos__card apropos__card--front">
             <div class="apropos__logo-big">
               <span class="gradient-text">eco</span>spheare
             </div>
-            <p class="apropos__card-sub">Where tech meets purpose</p>
+            <p class="apropos__card-sub">Agence SEO & Digitale</p>
             <div class="apropos__card-line"></div>
-            <div class="apropos__card-dots">
-              <span></span><span></span><span></span><span></span><span></span>
+            <div class="apropos__metrics">
+              <div class="metric"><span>+200%</span><small>trafic</small></div>
+              <div class="metric"><span>Top 3</span><small>Google</small></div>
+              <div class="metric"><span>50+</span><small>clients</small></div>
             </div>
           </div>
         </div>
       </div>
       <div class="apropos__text">
         <span class="section-tag">Qui sommes-nous</span>
-        <h2 class="section-title">Tech de pointe,<br />impact réel.</h2>
-        <p>Ecospheare est une agence digitale fondée sur une conviction simple : la technologie doit servir les humains et respecter la planète.</p>
-        <p>Nous accompagnons startups, PME et grandes entreprises dans leur développement numérique — en alliant excellence technique, design soigné et approche responsable.</p>
+        <h2 class="section-title" id="apropos-title">L'agence SEO qui parle le même langage que vous.</h2>
+        <p>Ecospheare est une agence SEO fondée par des passionnés de tech et de croissance. Nous nous sommes spécialisés dans l'accompagnement des petites entreprises parce que c'est là que chaque euro de SEO a le plus d'impact.</p>
+        <p>Pas de jargon inutile, pas de promesses vides. On vous montre des résultats concrets : plus de visiteurs, plus de leads, plus de ventes — grâce au référencement naturel.</p>
         <div class="apropos__values">
           <div class="value-item">
             <div class="value-dot"></div>
             <div>
-              <strong>Excellence technique</strong>
-              <span>Code propre, scalable et performant.</span>
+              <strong>Transparence totale</strong>
+              <span>Vous savez ce qu'on fait et pourquoi ça marche.</span>
             </div>
           </div>
           <div class="value-item">
             <div class="value-dot"></div>
             <div>
-              <strong>Design intentionnel</strong>
-              <span>Chaque pixel a une raison d'être.</span>
+              <strong>SEO éthique & durable</strong>
+              <span>Uniquement des pratiques approuvées par Google.</span>
             </div>
           </div>
           <div class="value-item">
             <div class="value-dot"></div>
             <div>
-              <strong>Impact durable</strong>
-              <span>Construire pour le long terme.</span>
+              <strong>ROI mesurable</strong>
+              <span>Chaque action est liée à un objectif business concret.</span>
             </div>
           </div>
         </div>
@@ -239,126 +382,210 @@
     </div>
   </section>
 
-  <!-- PROCESSUS -->
-  <section class="process">
+  <!-- ══ PROCESSUS ══ -->
+  <section class="process" aria-labelledby="process-title">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Notre méthode</span>
-        <h2 class="section-title">Comment nous travaillons</h2>
+        <span class="section-tag">Notre méthode SEO</span>
+        <h2 class="section-title" id="process-title">Comment on booste votre référencement</h2>
       </div>
       <div class="process__steps">
         <div class="process-step">
-          <div class="process-step__num">01</div>
-          <h3>Découverte</h3>
-          <p>On prend le temps de comprendre votre projet, vos objectifs et vos contraintes.</p>
+          <div class="process-step__num" aria-hidden="true">01</div>
+          <h3>Audit</h3>
+          <p>Analyse complète de votre site, de vos concurrents et de vos opportunités de mots-clés.</p>
         </div>
-        <div class="process-step__arrow">→</div>
+        <div class="process-step__arrow" aria-hidden="true">→</div>
         <div class="process-step">
-          <div class="process-step__num">02</div>
+          <div class="process-step__num" aria-hidden="true">02</div>
           <h3>Stratégie</h3>
-          <p>On définit ensemble la feuille de route, les technologies et le planning.</p>
+          <p>Plan SEO sur mesure avec des priorités claires et des objectifs mesurables.</p>
         </div>
-        <div class="process-step__arrow">→</div>
+        <div class="process-step__arrow" aria-hidden="true">→</div>
         <div class="process-step">
-          <div class="process-step__num">03</div>
-          <h3>Création</h3>
-          <p>Notre équipe conçoit et développe avec rigueur et transparence.</p>
+          <div class="process-step__num" aria-hidden="true">03</div>
+          <h3>Optimisation</h3>
+          <p>Mise en œuvre technique, optimisation de contenu et construction de liens.</p>
         </div>
-        <div class="process-step__arrow">→</div>
+        <div class="process-step__arrow" aria-hidden="true">→</div>
         <div class="process-step">
-          <div class="process-step__num">04</div>
-          <h3>Livraison</h3>
-          <p>On livre, on forme et on reste disponibles pour la suite.</p>
+          <div class="process-step__num" aria-hidden="true">04</div>
+          <h3>Croissance</h3>
+          <p>Suivi des positions, rapports mensuels et itérations pour des résultats continus.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <!-- ══ FAQ ══ -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 class="section-title" id="faq-title">Tout savoir sur le SEO pour petites entreprises</h2>
+      </div>
+      <div class="faq__list" role="list">
+
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__q">
+            Pourquoi une petite entreprise a-t-elle besoin d'une agence SEO ?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-item__a">
+            <p>Le SEO permet aux petites entreprises d'apparaître en premier sur Google face à des clients qui cherchent activement leurs services. C'est le canal d'acquisition le plus rentable sur le long terme : contrairement aux publicités Google Ads, les résultats ne disparaissent pas quand vous arrêtez de payer.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__q">
+            Combien coûte une prestation SEO pour une petite entreprise ?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-item__a">
+            <p>Nos offres SEO pour petites entreprises démarrent à partir de 500€/mois, selon la concurrence de votre secteur et vos objectifs. Nous proposons systématiquement une analyse gratuite avant tout engagement pour vous donner une estimation transparente.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__q">
+            En combien de temps voit-on des résultats SEO ?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-item__a">
+            <p>Les premiers résultats sont visibles entre 3 et 6 mois selon la compétitivité de vos mots-clés. Le SEO est un investissement qui s'accélère dans le temps : plus on travaille dessus, plus les résultats sont exponentiels.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__q">
+            Le SEO local est-il vraiment utile pour une petite entreprise ?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-item__a">
+            <p>Absolument. 46% des recherches Google ont une intention locale. Apparaître dans le "pack local" (les 3 entreprises affichées sur Google Maps) peut multiplier par 3 à 5 vos appels entrants et visites en boutique.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__q">
+            Quelle est la différence entre SEO et publicité Google Ads ?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faq-item__a">
+            <p>Google Ads vous donne une visibilité immédiate mais payante : quand vous arrêtez de payer, vous disparaissez. Le SEO prend plus de temps mais génère un trafic gratuit et durable. Pour une petite entreprise, les deux peuvent se compléter, mais le SEO est souvent plus rentable à long terme.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="container contact__inner">
       <div class="contact__text">
         <span class="section-tag">Travaillons ensemble</span>
-        <h2 class="section-title">Un projet en tête ?</h2>
-        <p>Parlez-nous de votre idée. On vous répond sous 24h avec une première analyse gratuite.</p>
+        <h2 class="section-title" id="contact-title">Obtenez votre audit SEO gratuit</h2>
+        <p>Envoyez-nous votre URL et on vous dit exactement pourquoi votre site n'est pas en première page — et comment y remédier. Réponse sous 24h.</p>
         <div class="contact__infos">
           <div class="contact-info-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>hello@ecospheare.com</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:hello@ecospheare.com">hello@ecospheare.com</a>
           </div>
           <div class="contact-info-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Paris, France · Remote worldwide</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Paris, France · Remote France entière</span>
+          </div>
+        </div>
+        <div class="contact__trust">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Audit offert, sans engagement</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Réponse sous 24h</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Spécialistes SEO certifiés</span>
           </div>
         </div>
       </div>
-      <form class="contact__form" id="contactForm">
+      <form class="contact__form" id="contactForm" novalidate aria-label="Formulaire de contact">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" placeholder="Jean Dupont" required />
+            <label for="name">Nom complet <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jean Dupont" required autocomplete="name" />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="jean@exemple.com" required />
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jean@exemple.com" required autocomplete="email" />
           </div>
+        </div>
+        <div class="form-group">
+          <label for="site">URL de votre site web</label>
+          <input type="url" id="site" name="site" placeholder="https://mon-site.fr" autocomplete="url" />
         </div>
         <div class="form-group">
           <label for="service">Service souhaité</label>
-          <select id="service">
+          <select id="service" name="service">
             <option value="">Choisir un service...</option>
-            <option>Développement Web & App</option>
-            <option>Intelligence Artificielle</option>
-            <option>Design UI/UX</option>
-            <option>Stratégie Digitale</option>
-            <option>Cloud & Infrastructure</option>
-            <option>E-commerce & Shopify</option>
+            <option value="seo">SEO & Référencement naturel</option>
+            <option value="web">Développement Web</option>
+            <option value="strategie">Stratégie Digitale</option>
+            <option value="ecommerce">E-commerce & Shopify</option>
+            <option value="ia">Intelligence Artificielle</option>
+            <option value="design">Design UI/UX</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="message">Votre projet</label>
-          <textarea id="message" rows="4" placeholder="Décrivez votre projet en quelques lignes..." required></textarea>
+          <label for="message">Votre projet <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet, votre secteur et vos objectifs..." required></textarea>
         </div>
         <button type="submit" class="btn btn--primary btn--full btn--lg">
-          Envoyer le message
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer & obtenir mon audit
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
+        <p class="form-note">En soumettant ce formulaire, vous acceptez d'être contacté concernant votre demande.</p>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#" class="nav__logo">
+        <a href="/" class="nav__logo" aria-label="Ecospheare — Retour à l'accueil">
           <span class="logo-eco">eco</span><span class="logo-sphere">spheare</span>
         </a>
-        <p>Where tech meets purpose.</p>
+        <p>Agence SEO spécialisée pour petites entreprises.<br />Paris · France entière.</p>
       </div>
-      <div class="footer__links">
+      <nav class="footer__links" aria-label="Liens footer">
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Services SEO</h4>
+          <a href="#seo">Référencement naturel</a>
+          <a href="#seo">SEO Local</a>
           <a href="#services">Développement Web</a>
-          <a href="#services">Intelligence Artificielle</a>
-          <a href="#services">Design UI/UX</a>
-          <a href="#services">Cloud & Infra</a>
+          <a href="#services">E-commerce SEO</a>
         </div>
         <div class="footer-col">
-          <h4>Entreprise</h4>
+          <h4>Agence</h4>
           <a href="#apropos">À propos</a>
+          <a href="#faq">FAQ SEO</a>
           <a href="#contact">Contact</a>
+          <a href="#contact">Audit gratuit</a>
         </div>
-      </div>
+      </nav>
     </div>
     <div class="footer__bottom container">
-      <span>© 2025 Ecospheare. Tous droits réservés.</span>
+      <span>© 2025 Ecospheare — Agence SEO petites entreprises. Tous droits réservés.</span>
       <div class="footer__socials">
-        <a href="#" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        <a href="https://www.linkedin.com/company/ecospheare" aria-label="Ecospheare sur LinkedIn" rel="noopener" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <a href="#" aria-label="Twitter/X">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <a href="#" aria-label="Ecospheare sur Twitter/X" rel="noopener" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
       </div>
     </div>

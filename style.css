@@ -1340,3 +1340,39 @@ textarea { resize: vertical; min-height: 110px; }
 .apropos__photo { width: 100%; max-width: 320px; height: 380px; object-fit: cover; object-position: top; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); border: 4px solid #fff; }
 .apropos__photo-name { font-family: var(--font-h); font-size: 18px; font-weight: 700; color: var(--text); }
 .apropos__photo-title { font-size: 14px; color: var(--muted); }
+
+/* ══ HERO ══════════════════════════════════════════════ */
+.hero { position:relative; overflow:hidden; background:var(--blue-900); padding:clamp(100px,13vw,150px) 0 clamp(80px,10vw,120px); text-align:center; }
+.hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 90% 60% at 50% -5%,var(--blue-500),transparent 70%); opacity:.7; }
+.hero__particles { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.hero__p { position:absolute; border-radius:50%; background:rgba(255,255,255,.1); animation:floatDot linear infinite; }
+@keyframes floatDot { 0%{transform:translateY(110vh) scale(0);opacity:0} 10%{opacity:1} 90%{opacity:.5} 100%{transform:translateY(-10vh) scale(1.2);opacity:0} }
+.hero__inner { position:relative; z-index:1; }
+.hero__tag { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); border-radius:100px; padding:6px 18px; font-size:13px; font-weight:500; color:rgba(255,255,255,.9); margin-bottom:28px; letter-spacing:.02em; }
+.hero__h1 { font-family:var(--font-h); font-size:clamp(34px,6.5vw,74px); font-weight:800; color:#fff; line-height:1.08; margin-bottom:22px; }
+.hero__h1 em { font-style:normal; color:var(--blue-300); }
+.hero__sub { font-size:clamp(16px,2vw,20px); color:rgba(255,255,255,.72); max-width:580px; margin:0 auto 40px; line-height:1.65; }
+.hero__cta { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.btn--outline-white { background:transparent; border:2px solid rgba(255,255,255,.35); color:#fff; }
+.btn--outline-white:hover { background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.6); }
+.hero__scroll { position:absolute; bottom:20px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.35); font-size:22px; animation:scrollBounce 2s ease-in-out infinite; }
+@keyframes scrollBounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(9px)} }
+
+/* ══ ARTICLE PAGE ══════════════════════════════════════ */
+.art-hero { background:var(--blue-900); padding:clamp(80px,9vw,110px) 0 clamp(40px,5vw,60px); }
+.art-hero--sky { background:linear-gradient(135deg,#0369a1,#38bdf8); }
+.art-hero--geo { background:linear-gradient(135deg,#0284c7,#7dd3fc); }
+.art-back { display:inline-flex; align-items:center; gap:6px; font-size:13px; color:rgba(255,255,255,.6); text-decoration:none; margin-bottom:24px; transition:color .2s; }
+.art-back:hover { color:#fff; }
+.art-meta { font-size:13px; color:var(--blue-300); display:flex; gap:12px; flex-wrap:wrap; margin-bottom:14px; }
+.art-h1 { font-family:var(--font-h); font-size:clamp(26px,4.5vw,48px); font-weight:800; color:#fff; line-height:1.15; max-width:800px; }
+.art-body { max-width:760px; margin:0 auto; padding:clamp(40px,5vw,72px) 24px; }
+.art-body h2 { font-family:var(--font-h); font-size:22px; font-weight:700; color:var(--text); margin:36px 0 12px; }
+.art-body h3 { font-family:var(--font-h); font-size:18px; font-weight:600; color:var(--text); margin:24px 0 8px; }
+.art-body p { font-size:16px; color:var(--text2); line-height:1.8; margin-bottom:16px; }
+.art-body ul { margin:0 0 18px 22px; }
+.art-body ul li { font-size:15px; color:var(--text2); line-height:1.75; margin-bottom:8px; }
+.art-body strong { color:var(--text); font-weight:600; }
+.art-cta { background:var(--blue-50); border:1px solid var(--blue-200); border-radius:var(--radius-xl); padding:32px; text-align:center; margin:44px 0; }
+.art-cta h3 { font-family:var(--font-h); font-size:21px; color:var(--text); margin-bottom:10px; }
+.art-cta p { font-size:15px; color:var(--muted); margin-bottom:22px; }

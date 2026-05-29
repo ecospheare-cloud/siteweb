@@ -1,3 +1,15 @@
+// Hero particles
+const heroParticles = document.getElementById('heroParticles');
+if (heroParticles) {
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'hero__p';
+    const size = Math.random() * 10 + 4;
+    p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;bottom:-10%;animation-duration:${Math.random()*10+8}s;animation-delay:${Math.random()*8}s;opacity:${Math.random()*.15+.05}`;
+    heroParticles.appendChild(p);
+  }
+}
+
 // Promo bar
 const promoBar = document.getElementById('promoBar');
 const promoClose = document.getElementById('promoClose');

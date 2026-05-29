@@ -1206,7 +1206,7 @@ textarea { resize: vertical; min-height: 110px; }
 
 
 /* ══ NAV / FOOTER LOGO IMAGE ══════════════════════════ */
-.nav__logo-img { height: 36px; width: auto; object-fit: contain; display: block; }
+.nav__logo-img { height: 52px; width: auto; object-fit: contain; display: block; }
 .footer__logo-img { height: 36px; width: auto; object-fit: contain; filter: brightness(0) invert(1); margin-bottom: 12px; }
 .footer__logo-link { display: inline-block; }
 

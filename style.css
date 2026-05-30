@@ -1354,8 +1354,8 @@ textarea { resize: vertical; min-height: 110px; }
 .hero__fade { position:absolute; bottom:0; left:0; right:0; height:120px; background:linear-gradient(to bottom,transparent,#fff); pointer-events:none; z-index:2; }
 .hero__inner { position:relative; z-index:3; }
 .hero__h1--small { font-family:var(--font-h); font-size:clamp(13px,1.2vw,15px); font-weight:600; color:rgba(255,255,255,.75); letter-spacing:.1em; text-transform:uppercase; margin-bottom:20px; }
-.hero__h1--big { font-family:var(--font-h); font-size:clamp(38px,6.5vw,78px); font-weight:800; color:#0f172a; line-height:1.06; margin-bottom:36px; }
-.hero__h1--big em { font-style:italic; color:#0f172a; }
+.hero__h1--big { font-family:var(--font-h); font-size:clamp(38px,6.5vw,78px); font-weight:800; color:#fff; line-height:1.06; margin-bottom:36px; }
+.hero__h1--big em { font-style:italic; color:#fff; }
 .hero__proof { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:36px; flex-wrap:wrap; }
 .hero__avatars { display:flex; align-items:center; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:8px 18px; font-size:13px; font-weight:600; color:#fff; backdrop-filter:blur(8px); }
 .hero__stars { display:flex; align-items:center; gap:6px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:6px 14px; font-size:13px; font-weight:600; color:#fff; backdrop-filter:blur(8px); }

@@ -1353,13 +1353,11 @@ textarea { resize: vertical; min-height: 110px; }
 @keyframes rayPulse { 0%,100%{opacity:.3} 50%{opacity:.8} }
 .hero__fade { position:absolute; bottom:0; left:0; right:0; height:120px; background:linear-gradient(to bottom,transparent,#fff); pointer-events:none; z-index:2; }
 .hero__inner { position:relative; z-index:3; }
-.hero__eyebrow { font-size:13px; font-weight:600; color:rgba(255,255,255,.7); letter-spacing:.14em; text-transform:uppercase; margin-bottom:18px; }
-.hero__h1 { font-family:var(--font-h); font-size:clamp(36px,6.5vw,76px); font-weight:800; color:#fff; line-height:1.06; margin-bottom:22px; }
-.hero__h1 em { font-style:italic; color:#bfdbfe; }
-.hero__sub { font-size:clamp(16px,2vw,20px); color:rgba(255,255,255,.8); max-width:540px; margin:0 auto 36px; line-height:1.6; font-weight:500; }
+.hero__h1--small { font-family:var(--font-h); font-size:clamp(13px,1.2vw,15px); font-weight:600; color:rgba(255,255,255,.75); letter-spacing:.1em; text-transform:uppercase; margin-bottom:20px; }
+.hero__h1--big { font-family:var(--font-h); font-size:clamp(38px,6.5vw,78px); font-weight:800; color:#0f172a; line-height:1.06; margin-bottom:36px; }
+.hero__h1--big em { font-style:italic; color:#0f172a; }
 .hero__proof { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:36px; flex-wrap:wrap; }
-.hero__avatars { display:flex; align-items:center; gap:4px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:6px 14px; font-size:13px; font-weight:600; color:#fff; backdrop-filter:blur(8px); }
-.hero__avatars span { font-size:16px; }
+.hero__avatars { display:flex; align-items:center; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:8px 18px; font-size:13px; font-weight:600; color:#fff; backdrop-filter:blur(8px); }
 .hero__stars { display:flex; align-items:center; gap:6px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); border-radius:100px; padding:6px 14px; font-size:13px; font-weight:600; color:#fff; backdrop-filter:blur(8px); }
 .hero__btn { box-shadow:0 4px 24px rgba(0,0,0,.25); }
 .hero__scroll { position:absolute; bottom:28px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.4); font-size:22px; animation:scrollBounce 2s ease-in-out infinite; z-index:3; }

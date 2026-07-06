@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Pages légales — ne pas indexer
+Disallow: /mentions-legales.html
+Disallow: /politique-confidentialite.html
+Disallow: /cgv-cgu.html
+
+Sitemap: https://ecospheare.com/sitemap.xml

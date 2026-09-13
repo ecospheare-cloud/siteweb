@@ -323,8 +323,7 @@
     setInterval(tick, 1000);
 
     // ── Email → Google Sheet ────────────────────────────────────
-    // Remplace APPS_SCRIPT_URL par l'URL de ton Google Apps Script déployé
-    const APPS_SCRIPT_URL = 'APPS_SCRIPT_URL';
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwSFhfdQZ2zs8HszwwOFWhshCQvxWres6TCyCFBToNI-1LBLtxcK48hyBZHyZExDqM/exec';
 
     document.getElementById('signupForm').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -336,14 +335,12 @@
       btn.disabled = true;
 
       try {
-        if (APPS_SCRIPT_URL !== 'APPS_SCRIPT_URL') {
-          await fetch(APPS_SCRIPT_URL, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, date: new Date().toISOString() })
-          });
-        }
+        await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, date: new Date().toISOString() })
+        });
       } catch(err) { /* silent fail */ }
 
       document.getElementById('signupForm').style.display = 'none';

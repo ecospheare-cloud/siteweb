@@ -33,7 +33,6 @@
       position: relative;
     }
 
-    /* Grid overlay */
     .bg-grid {
       position: fixed; inset: 0; pointer-events: none; z-index: 0;
       background-image:
@@ -42,7 +41,6 @@
       background-size: 60px 60px;
     }
 
-    /* Rays */
     .bg-rays { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .bg-rays::before, .bg-rays::after {
       content: ''; position: absolute; top: -20%; left: 50%;
@@ -60,7 +58,6 @@
       animation: rayPulse 5s ease-in-out infinite 1.2s;
     }
 
-    /* Orbs */
     .bg-orbs { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .bg-orbs::before {
       content: ''; position: absolute; top: 8%; left: 10%; width: 380px; height: 380px;
@@ -77,45 +74,43 @@
 
     @keyframes rayPulse { 0%,100%{opacity:.2} 50%{opacity:.8} }
     @keyframes orbFloat { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-20px) scale(1.05)} }
-    @keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
     @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
     @keyframes pulse-ring {
-      0%{transform:scale(1);opacity:.6}
-      100%{transform:scale(1.5);opacity:0}
+      0%{transform:scale(1);opacity:.5}
+      100%{transform:scale(1.6);opacity:0}
     }
 
-    /* Main content */
     .wrapper {
       position: relative; z-index: 1;
       display: flex; flex-direction: column; align-items: center;
-      text-align: center; padding: 40px 24px;
+      text-align: center; padding: 40px 24px 100px;
       gap: 0;
-      max-width: 600px; width: 100%;
+      max-width: 620px; width: 100%;
     }
 
-    /* Logo spinning */
+    /* Logo — grand, statique */
     .logo-wrap {
-      position: relative; margin-bottom: 36px;
+      position: relative; margin-bottom: 40px;
+      width: 130px; height: 130px;
+      display: flex; align-items: center; justify-content: center;
       animation: fadeUp .8s ease both;
     }
     .logo-ring {
-      position: absolute; inset: -16px; border-radius: 50%;
-      border: 2px solid rgba(255,255,255,.25);
-      animation: pulse-ring 3s ease-out infinite;
+      position: absolute; inset: -20px; border-radius: 50%;
+      border: 2px solid rgba(255,255,255,.2);
+      animation: pulse-ring 3.5s ease-out infinite;
     }
     .logo-ring-2 {
       position: absolute; inset: -8px; border-radius: 50%;
-      border: 1px solid rgba(255,255,255,.15);
-      animation: pulse-ring 3s ease-out infinite .8s;
+      border: 1px solid rgba(255,255,255,.12);
+      animation: pulse-ring 3.5s ease-out infinite 1s;
     }
     .logo-img {
-      width: 80px; height: 80px; object-fit: contain;
-      border-radius: 20px;
-      animation: spin 12s linear infinite;
-      filter: drop-shadow(0 4px 24px rgba(0,0,0,.2));
+      width: 130px; height: 130px; object-fit: contain;
+      border-radius: 28px;
+      filter: drop-shadow(0 6px 32px rgba(0,0,0,.25));
     }
 
-    /* Text */
     .label {
       font-size: 12px; font-weight: 700; letter-spacing: .15em;
       text-transform: uppercase; color: rgba(255,255,255,.6);
@@ -136,7 +131,6 @@
       animation: fadeUp .8s ease .3s both;
     }
 
-    /* Countdown */
     .countdown {
       display: flex; gap: 12px; margin-bottom: 44px;
       animation: fadeUp .8s ease .4s both;
@@ -161,7 +155,6 @@
       display: flex; align-items: center; padding-bottom: 24px;
     }
 
-    /* Form */
     .form-wrap {
       width: 100%; max-width: 440px;
       animation: fadeUp .8s ease .5s both;
@@ -193,7 +186,6 @@
     .form-inner button:active { transform: scale(.98); }
     .form-note { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 12px; }
 
-    /* Success */
     .success-msg {
       display: none; align-items: center; gap: 10px;
       background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25);
@@ -204,7 +196,22 @@
     .success-msg.show { display: flex; }
     .success-icon { font-size: 18px; }
 
-    /* Bottom links */
+    /* Bouton agence — plus visible */
+    .agency-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 600; color: #fff;
+      text-decoration: none; margin-top: 32px;
+      padding: 13px 28px;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 100px;
+      backdrop-filter: blur(10px);
+      transition: all .2s;
+      animation: fadeUp .8s ease .6s both;
+    }
+    .agency-link:hover { background: rgba(255,255,255,.25); border-color: rgba(255,255,255,.5); transform: translateY(-1px); }
+
+    /* Footer fixe */
     .bottom-links {
       position: fixed; bottom: 24px; left: 0; right: 0;
       display: flex; justify-content: center; gap: 20px;
@@ -218,20 +225,9 @@
     .bottom-links a:hover { color: rgba(255,255,255,.8); }
     .bottom-links span { color: rgba(255,255,255,.2); }
 
-    /* Agency link */
-    .agency-link {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 13px; color: rgba(255,255,255,.55);
-      text-decoration: none; margin-top: 28px;
-      padding: 8px 18px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 100px;
-      transition: all .2s;
-      animation: fadeUp .8s ease .6s both;
-    }
-    .agency-link:hover { color: #fff; border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.08); }
-
     @media (max-width: 480px) {
+      .logo-wrap { width: 100px; height: 100px; }
+      .logo-img { width: 100px; height: 100px; }
       .countdown { gap: 8px; }
       .cd-unit { min-width: 58px; padding: 12px 10px; }
       .form-inner { padding: 5px 5px 5px 16px; border-radius: 14px; flex-direction: column; gap: 8px; }
@@ -253,7 +249,7 @@
 
     <p class="label">Ecospheare — Nouvelle version</p>
 
-    <h1>Quelque chose<br /><em>d'extraordinaire</em><br />arrive.</h1>
+    <h1>Quelque chose<br /><em>d’extraordinaire</em><br />arrive.</h1>
 
     <p class="subtitle">
       Nos Agents IA & notre SaaS SEO sont en cours de finalisation.<br />
@@ -274,12 +270,12 @@
       <form id="signupForm">
         <div class="form-inner">
           <input type="email" id="emailInput" placeholder="ton@email.fr" required autocomplete="email" />
-          <button type="submit" id="submitBtn">S'inscrire →</button>
+          <button type="submit" id="submitBtn">S’inscrire →</button>
         </div>
       </form>
       <div class="success-msg" id="successMsg">
         <span class="success-icon">✓</span>
-        Parfait ! Tu seras notifié dès le lancement.
+        Parfait ! Tu seras notifié dès le lancement.
       </div>
       <p class="form-note">Aucun spam. Juste une notification au lancement.</p>
     </div>
@@ -298,16 +294,12 @@
   </div>
 
   <script>
-    // ── Countdown ──────────────────────────────────────────────
     const TARGET = new Date('2027-01-01T00:00:00');
     function pad(n) { return String(n).padStart(2,'0'); }
     function tick() {
       const diff = TARGET - Date.now();
       if (diff <= 0) {
-        document.getElementById('cd-d').textContent = '00';
-        document.getElementById('cd-h').textContent = '00';
-        document.getElementById('cd-m').textContent = '00';
-        document.getElementById('cd-s').textContent = '00';
+        ['cd-d','cd-h','cd-m','cd-s'].forEach(id => document.getElementById(id).textContent = '00');
         return;
       }
       const d = Math.floor(diff / 86400000);
@@ -322,18 +314,15 @@
     tick();
     setInterval(tick, 1000);
 
-    // ── Email → Google Sheet ────────────────────────────────────
     const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwSFhfdQZ2zs8HszwwOFWhshCQvxWres6TCyCFBToNI-1LBLtxcK48hyBZHyZExDqM/exec';
 
     document.getElementById('signupForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const email = document.getElementById('emailInput').value.trim();
       if (!email) return;
-
       const btn = document.getElementById('submitBtn');
       btn.textContent = '...';
       btn.disabled = true;
-
       try {
         await fetch(APPS_SCRIPT_URL, {
           method: 'POST',
@@ -341,8 +330,7 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, date: new Date().toISOString() })
         });
-      } catch(err) { /* silent fail */ }
-
+      } catch(err) {}
       document.getElementById('signupForm').style.display = 'none';
       document.getElementById('successMsg').classList.add('show');
     });

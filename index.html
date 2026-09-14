@@ -36,7 +36,6 @@
       position: relative;
     }
 
-    /* Grid */
     .bg-grid {
       position: fixed; inset: 0; pointer-events: none; z-index: 0;
       background-image:
@@ -45,7 +44,6 @@
       background-size: 60px 60px;
     }
 
-    /* Rays */
     .bg-rays { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .bg-rays::before, .bg-rays::after {
       content: ''; position: absolute; top: -20%; left: 50%;
@@ -63,7 +61,6 @@
       animation: rayPulse 5s ease-in-out infinite 1.2s;
     }
 
-    /* Orbs */
     .bg-orbs { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .bg-orbs::before {
       content: ''; position: absolute; top: 8%; left: 10%; width: 380px; height: 380px;
@@ -84,7 +81,6 @@
     @keyframes pulse-ring { 0%{transform:scale(1);opacity:.5} 100%{transform:scale(1.6);opacity:0} }
     @keyframes glowPulse { 0%,100%{opacity:.7} 50%{opacity:1} }
 
-    /* Agency link — top right */
     .agency-link {
       position: fixed; top: 24px; right: 24px; z-index: 10;
       font-size: 12px; font-weight: 600; color: rgba(255,255,255,.6);
@@ -99,7 +95,6 @@
     }
     .agency-link:hover { color: #fff; border-color: rgba(255,255,255,.45); background: rgba(255,255,255,.15); }
 
-    /* Main wrapper */
     .wrapper {
       position: relative; z-index: 1;
       display: flex; flex-direction: column; align-items: center;
@@ -107,7 +102,6 @@
       max-width: 580px; width: 100%;
     }
 
-    /* Logo */
     .logo-wrap {
       position: relative; margin-bottom: 40px;
       width: 110px; height: 110px;
@@ -132,7 +126,6 @@
       filter: drop-shadow(0 4px 24px rgba(0,0,0,.2));
     }
 
-    /* Badge */
     .badge {
       display: inline-flex; align-items: center; gap: 7px;
       font-size: 11px; font-weight: 700; letter-spacing: .13em;
@@ -168,7 +161,6 @@
       animation: fadeUp .7s ease .2s both;
     }
 
-    /* Hourglass tag */
     .launch-tag {
       display: inline-flex; align-items: center; gap: 8px;
       font-size: 13px; font-weight: 600; color: rgba(255,255,255,.65);
@@ -182,7 +174,6 @@
     }
     .launch-tag span { font-size: 15px; }
 
-    /* Form */
     .form-wrap {
       width: 100%; max-width: 460px;
       animation: fadeUp .7s ease .3s both;
@@ -259,7 +250,7 @@
     <h1>Quelque chose<br /><em>d’extraordinaire</em><br />arrive.</h1>
 
     <p class="subtitle">
-      Nos Agents IA sont en cours de finalisation.<br />
+      Notre app est en cours de finalisation.<br />
       Sois le premier à y avoir accès.
     </p>
 

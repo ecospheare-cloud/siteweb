@@ -2,7 +2,7 @@
 
 Date : 11 octobre 2026. Le périmètre distingue mesures locales, contrôles de code et essais manuels. Il ne constitue pas une certification WCAG complète.
 
-## Lighthouse mobile dans Chrome
+## Lighthouse mobile dans Chrome (avant ajout du film)
 
 Audit lancé dans le panneau Lighthouse du Chrome de Mahé sur `http://localhost:4173/`, mode Navigation, Mobile. Version du rapport : Lighthouse 13.4.1. Émulation affichée pendant la mesure :412×823. Profil Chrome existant, serveur sur la machine locale ; ces résultats ne sont pas des données terrain de visiteurs.
 
@@ -79,7 +79,7 @@ Le message fictif utilise `test@example.com`. Aucun envoi d’e-mail n’a été
 - `aria-expanded` sur le menu ; état pressé et annonce live pour les filtres.
 - Validation native des champs requis/e-mail ; pas de formulaire qui simule une transmission serveur.
 - `prefers-reduced-motion:reduce` coupe les animations/transitions, les transformations au survol et le défilement doux. Vérification du CSS, pas d’essai sur un appareil physique configuré ainsi.
-- Aucune boucle décorative, vidéo automatique, capture du scroll ou interaction par glisser obligatoire.
+- Mise à jour : une vidéo décorative en boucle a été ajoutée à la demande du client, avec pause et réduction du mouvement. Voir MOTION.md. Aucun scroll capturé.
 - Contenus et accordéons utilisables sans JavaScript ; menu mobile, filtres et préparation du brief nécessitent JavaScript.
 
 ## Budget de ressources
@@ -90,4 +90,9 @@ Les tailles exactes et empreintes SHA-256 sont dans `asset-manifest.json`. Les t
 
 ## Limites restantes
 
-Logo maître absent : signature typographique et favicon provisoires. Mentions légales et politique de conservation à finaliser avec l’éditeur. Rôle précis et résultats des collaborations à enrichir ; quatre projets cités n’ont pas de dossier visuel retrouvé. Formulaire par messagerie locale, sans backend d’envoi. Pas de test Safari/Firefox, de lecteur d’écran humain, de smartphone physique, d’INP terrain ou de parcours complet sur chaque fiche. Les contenus ont été protégés de l’indexation pour cette prévisualisation.
+Symbole SVG officiel reçu et intégré ; signature textuelle composée en Manrope. Mentions légales et politique de conservation à finaliser avec l’éditeur. Rôle précis et résultats des collaborations à enrichir ; quatre projets cités n’ont pas de dossier visuel retrouvé. Formulaire par messagerie locale, sans backend d’envoi. Pas de test Safari/Firefox, de lecteur d’écran humain, de smartphone physique, d’INP terrain ou de parcours complet sur chaque fiche. Les contenus ont été protégés de l’indexation pour cette prévisualisation.
+
+
+## Mise à jour animation
+
+Les anciens scores Lighthouse ne mesurent pas la version animée. Contrôles actualisés, poids et limites : voir MOTION.md.

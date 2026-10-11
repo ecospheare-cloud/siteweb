@@ -43,6 +43,9 @@ Adresse fournie : **Ecospheare@gmail.com**. Le formulaire prépare un e-mail dan
 
 ## Avant publication
 
-La prévisualisation porte `noindex,nofollow` et `robots.txt: Disallow /`. Pour publier : compléter les informations légales et les politiques applicables, remplacer le mot-symbole provisoire par le logo officiel, confirmer les rôles/crédits des projets, choisir le domaine canonique et l’hébergement, puis retirer volontairement ces directives et ajouter sitemap/URL absolues Open Graph. Les résultats de SEO, GEO ou Ads ne sont pas garantis.
+La prévisualisation porte `noindex,nofollow` et `robots.txt: Disallow /`. Pour publier : compléter les informations légales et les politiques applicables, valider la signature textuelle associée au symbole officiel, confirmer les rôles/crédits des projets, choisir le domaine canonique et l’hébergement, puis retirer volontairement ces directives et ajouter sitemap/URL absolues Open Graph. Les résultats de SEO, GEO ou Ads ne sont pas garantis.
 
 Les textures vidéo LANDOR n’ont pas été redistribuées. La matière du hero ECOSPHEARE est originale. Les droits des marques et images clients restent ceux de leurs propriétaires.
+
+
+Animation du hero : film Gemini, raccord sur le symbole original, boucle de 15,96 secondes et commande de pause. Documentation : [MOTION.md](docs/MOTION.md).

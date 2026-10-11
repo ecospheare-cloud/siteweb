@@ -4,7 +4,7 @@
 
 Une agence d’acquisition qui rend le digital compréhensible. La composition adopte l’ampleur éditoriale de LANDOR, sans reprendre sa marque. L’univers ECOSPHEARE part des bleus et du symbole pointillé présents dans la planche QICS. Il s’agit d’une proposition de direction artistique, pas d’une charte officielle retrouvée.
 
-Lecture du brief : public B2B, conversion de visites en demandes, besoin de rendre cinq expertises cohérentes et d’étayer la capacité de réalisation par des travaux. Intensité retenue : variance7/10, mouvement3/10, densité4/10. Les micro-interactions expliquent les actions et les changements d’état ; aucun scroll imposé ni animation infinie.
+Lecture du brief : public B2B, conversion de visites en demandes, besoin de rendre cinq expertises cohérentes et d’étayer la capacité de réalisation par des travaux. Intensité retenue : variance7/10, mouvement3/10, densité4/10. Les micro-interactions expliquent les actions et les changements d’état ; aucun scroll imposé. Le hero comporte désormais une boucle décorative contrôlable, demandée par le client.
 
 Références : audit LANDOR local ; collection Awesome DESIGN.md, lecture Stripe pour la hiérarchie et la séparation marketing/interaction, sans transférer les couleurs ni les composants de Stripe. Skills appliqués : Taste, Awesome DESIGN.md, Image-to-code, Imagegen, Web Design Guidelines. Pour le navigateur, CUA natif Chrome conformément aux règles de la session.
 
@@ -40,7 +40,7 @@ Les changements de fond entre hero, méthode et footer sont intentionnels : ils 
 
 Manrope variable, licence SIL OFL incluse. Fichier local, sans requête Google Fonts au chargement. Titres poids450, corps400, liens/labels600, mot-symbole650. Interlettrage des titres−.055em, interligne1.1 ; corps16px/1.6, grandes introductions19–25px. Le texte ne se trouve jamais dans une image de maquette.
 
-Le logo maître n’a pas été fourni. La planche QICS montre un signe et un mot-symbole en perspective, insuffisants pour produire un export officiel fidèle. Le header emploie donc une **signature typographique provisoire**, sans symbole ®. Le favicon « e » est également provisoire. Remplacer ces éléments lorsque le SVG officiel est disponible. La texture originale pointillée évoque le territoire fourni sans prétendre être le logo.
+Les SVG officiels blanc et noir ont été fournis le 11 octobre. Le symbole original figure dans le header et le favicon ; la signature textuelle reste composée en Manrope. Le film du hero est généré dans Gemini puis raccordé au SVG original rasterisé : voir `MOTION.md`.
 
 ## Espaces et responsive
 

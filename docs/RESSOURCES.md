@@ -39,4 +39,9 @@ Référence d’audit uniquement. Pas de vidéo, police, logo, bateau, photograp
 
 ## À compléter
 
-Logo vectoriel officiel ECOSPHEARE, informations légales de l’éditeur, détails d’intervention et preuves de résultats des collaborations, visuels autorisés des quatre projets uniquement cités. Le site public `ecospheare.com` a répondu 404 pendant la tentative de récupération du logo ; il n’a pas servi de source de copywriting.
+Informations légales de l’éditeur, détails d’intervention et preuves de résultats des collaborations, visuels autorisés des quatre projets uniquement cités. Le site public `ecospheare.com` a répondu 404 pendant la tentative de récupération du logo ; il n’a pas servi de source de copywriting.
+
+
+## Animation du hero et logo fournis le 11 octobre
+
+Les fichiers Fichier 7.svg (noir) et Fichier 8.svg (blanc), transmis par le client, sont conservés sans modification dans public/assets. Le film source a été généré dans Gemini avec les références ECOSPHEARE, puis monté pour le web. Aucun fichier LANDOR n’est utilisé. Voir MOTION.md pour la provenance et les étapes.

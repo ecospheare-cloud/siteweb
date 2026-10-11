@@ -17,3 +17,26 @@ if(form){let brief='';const select=form.elements.besoin;const requested=new URLS
  document.querySelector('#copy-brief').addEventListener('click',async()=>{const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText(brief);status.textContent='Message copié. Vous pouvez le coller dans votre messagerie.'}catch{status.textContent='La copie est indisponible dans ce navigateur. Utilisez « Télécharger le brief ».'}});
  document.querySelector('#download-brief').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([brief],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='mon-projet-ecospheare.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
 }
+
+// Load decorative video only when motion is permitted; pause outside the hero.
+const film=document.querySelector('#hero-film');
+if(film){
+ const control=document.querySelector('.motion-toggle');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let userPaused=false,visible=true;
+ const label=()=>{control.setAttribute('aria-label',userPaused?'Relancer l’animation':'Mettre l’animation en pause');control.innerHTML=userPaused?'Lecture <span aria-hidden="true">▶</span>':'Pause <span aria-hidden="true">Ⅱ</span>'};
+ const sync=()=>{
+  if(reduced.matches){film.pause();film.removeAttribute('src');film.load();film.parentElement.classList.remove('is-playing');control.hidden=true;return}
+  control.hidden=false;
+  if(!film.getAttribute('src')){film.src=film.dataset.src;film.muted=true}
+  if(userPaused||!visible||document.hidden){film.pause();return}
+  film.play().catch(()=>{userPaused=true;label()});
+ };
+ film.addEventListener('playing',()=>film.parentElement.classList.add('is-playing'));
+ film.addEventListener('error',()=>{film.parentElement.classList.remove('is-playing');control.hidden=true});
+ control.addEventListener('click',()=>{userPaused=!userPaused;label();sync()});
+ reduced.addEventListener('change',sync);
+ document.addEventListener('visibilitychange',sync);
+ new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:0.05}).observe(film.closest('.hero'));
+ sync();
+}

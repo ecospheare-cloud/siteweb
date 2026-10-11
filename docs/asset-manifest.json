@@ -1,0 +1,142 @@
+[
+  {
+    "path": "public/app.js",
+    "bytes": 3476,
+    "sha256": "4808fb630e97aa37160d56cbb9654130b764f54c5e2286779ef9131b4f0ebca6"
+  },
+  {
+    "path": "public/assets/eyed-site.webp",
+    "bytes": 55006,
+    "sha256": "99ac1952015149921602d4dc7317e2821e5f7cdf65be665c10bb8f979f8600e5"
+  },
+  {
+    "path": "public/assets/lucia-site.webp",
+    "bytes": 126698,
+    "sha256": "1b1b549e6c1256e84331a965a11770f17626741b41a5360eaf00d6591b645f34"
+  },
+  {
+    "path": "public/assets/neptula-cartes.webp",
+    "bytes": 33560,
+    "sha256": "c654a222df8896ba0d8b603709a2cb009b4b49aee69be2f14527a903e828a4ab"
+  },
+  {
+    "path": "public/assets/neptula-charte.webp",
+    "bytes": 36030,
+    "sha256": "e70893d3a9ad1e8a6954fb3be8d7dafb6964ed6226339592600e21e518773d5a"
+  },
+  {
+    "path": "public/assets/neptula-cover-site.webp",
+    "bytes": 53686,
+    "sha256": "6902b17ea801f4664b8d2f7e1ccae46358bb7b99afecee41c19041c9845932c1"
+  },
+  {
+    "path": "public/assets/neptula-espace.webp",
+    "bytes": 46896,
+    "sha256": "9b4bf7315ece792078398942f5b26b186982d95dbcf631e6e3e540b8ebdaed92"
+  },
+  {
+    "path": "public/assets/neptula-logo.webp",
+    "bytes": 16184,
+    "sha256": "21f714ebc64b6b1211f430f2fce944a477a9487c39902a133295d190c6119719"
+  },
+  {
+    "path": "public/assets/neptula-site.webp",
+    "bytes": 43130,
+    "sha256": "0d81d52021f3cfe182c89903a6f080afc3b6408ad70eeb9cff0d5b68bff9e63f"
+  },
+  {
+    "path": "public/assets/neptula-textile.webp",
+    "bytes": 42894,
+    "sha256": "5610288c9e6b1d9f64d7f1339585793720f54470ce26ed88c32e1ad0bdbf0d37"
+  },
+  {
+    "path": "public/assets/nexus-community-site.webp",
+    "bytes": 30256,
+    "sha256": "48e8807e044cc27f099d9c3dcaa9e5d1dda5bc417a9b4d997911f92632c8900e"
+  },
+  {
+    "path": "public/assets/nexus-identite.webp",
+    "bytes": 23046,
+    "sha256": "f0c7aaf3ab71d7b36e07db6942814ae962cce69c6fa302f2e510cc3c2fc82cc7"
+  },
+  {
+    "path": "public/assets/nexus-logo-cover.webp",
+    "bytes": 13044,
+    "sha256": "01d2e8cff343f3678b179015cb91b1298bc303927051d06e64d5f636cf405dd5"
+  },
+  {
+    "path": "public/assets/nexus-studio-site.webp",
+    "bytes": 170212,
+    "sha256": "e9f1856c8f263bac4824b4d98beedbd52ea9ee68ceb69d014772974513548e3e"
+  },
+  {
+    "path": "public/assets/orbite-768.webp",
+    "bytes": 30330,
+    "sha256": "1343a7ab282341331777b6ff34c0d82f32b6d0ff11f46ba84df3bd05c18bde1c"
+  },
+  {
+    "path": "public/assets/orbite.webp",
+    "bytes": 81154,
+    "sha256": "7d10a2f46b290e36cf58df4b8e7aa5622faa333ffb04f1bb098b05f2974f2a2b"
+  },
+  {
+    "path": "public/assets/qics-branding-site.webp",
+    "bytes": 70440,
+    "sha256": "75f36a44a646433bb5c8f60b1ee32d7a5ed240fd374bd5a7cade7d0fa440cda6"
+  },
+  {
+    "path": "public/assets/qics-studio-site.webp",
+    "bytes": 123800,
+    "sha256": "683d8fcd5c9139bdc57ed0d84c13d2ac5290074c43ca0a8b947a64fb81a14d0b"
+  },
+  {
+    "path": "public/assets/sap-camion.webp",
+    "bytes": 130398,
+    "sha256": "58d20582b3c9ee053f1227667ffceedb5d97abb7136190b6ee3c811d89bab27e"
+  },
+  {
+    "path": "public/assets/sap-charte.webp",
+    "bytes": 29560,
+    "sha256": "c5118947ba08059ee86affae8992ef424e43528b4f931b642fccaed230475181"
+  },
+  {
+    "path": "public/assets/sap-facade.webp",
+    "bytes": 117462,
+    "sha256": "a934ee1d328e9ea96efeab8f5265bd3e304d38862154e690b58bbb696201175e"
+  },
+  {
+    "path": "public/assets/sap-logo.webp",
+    "bytes": 39114,
+    "sha256": "c06c62242a07d15f0afe4683d65b883f9df33b75dd23714dab3213d942ea7780"
+  },
+  {
+    "path": "public/assets/sap-textile.webp",
+    "bytes": 98618,
+    "sha256": "dfcfad9bd8479a384bd5ba1a54bc0e2033b3004d02674fb4492aa3a40a4de343"
+  },
+  {
+    "path": "public/assets/thomas-fit-site.webp",
+    "bytes": 94158,
+    "sha256": "437f565ce98932d9cdede13e9f6b2cffcb9aa50112e2a3e46cac1a83056eeac6"
+  },
+  {
+    "path": "public/favicon.svg",
+    "bytes": 228,
+    "sha256": "9e308582c13042486841b188aacda2746441e44ec7daba63339b838ca1ba89f9"
+  },
+  {
+    "path": "public/fonts/OFL.txt",
+    "bytes": 4387,
+    "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+  },
+  {
+    "path": "public/fonts/manrope-latin.woff2",
+    "bytes": 24576,
+    "sha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f"
+  },
+  {
+    "path": "public/style.css",
+    "bytes": 21103,
+    "sha256": "45f3118d1376c942e67b1fd4da1d7e2ef78c243d27f807b7ee6a41ebf75305de"
+  }
+]

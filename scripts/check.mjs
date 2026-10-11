@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFile,stat} from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../dist/',import.meta.url));
+const routes=JSON.parse(await readFile(resolve(root,'routes.json')));
+let links=0,images=0,total=0;
+for(const route of routes){const file=resolve(root,'.'+route,'index.html');const html=await readFile(file,'utf8');total+=Buffer.byteLength(html);assert.equal((html.match(/<h1\b/g)||[]).length,1,route+' doit avoir un h1');assert.match(html,/<html lang="fr">/);assert.match(html,/<meta name="description" content="[^"]+">/);assert.match(html,/id="contenu"/);assert.ok(!html.includes('***'),route+' placeholder');assert.ok(!html.includes('—'),route+' tiret long');const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);assert.equal(new Set(ids).size,ids.length,route+' IDs uniques');for(const m of html.matchAll(/<(?:a|link|script|img|source)\b[^>]*\b(?:href|src|srcset)="([^"]+)"/g)){let href=m[1];if(!href.startsWith('/'))continue;href=href.split(/[?#]/)[0];if(!href)continue;let target=resolve(root,'.'+href);if(href.endsWith('/'))target=resolve(target,'index.html');assert.ok((await stat(target)).isFile(),`${route} → ${href}`);links++}for(const m of html.matchAll(/<img\b[^>]+>/g)){assert.match(m[0],/\balt="[^"]*"/);assert.match(m[0],/\bwidth="\d+"/);assert.match(m[0],/\bheight="\d+"/);images++}for(const m of html.matchAll(/<(input|textarea|select)\b[^>]*\bid="([^"]+)"/g))assert.ok(html.includes(`for="${m[2]}"`),'Label '+m[2]);}
+const css=await readFile(resolve(root,'style.css'),'utf8');assert.match(css,/prefers-reduced-motion:reduce/);assert.ok(!/transition:\s*all/.test(css));assert.ok(!css.includes('outline:none'));
+const script=await readFile(resolve(root,'app.js'),'utf8');assert.ok(!script.includes('localStorage'));assert.ok(!script.includes('fetch('));
+function lum(hex){return hex.match(/[0-9a-f]{2}/gi).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4).reduce((a,x,i)=>a+x*[.2126,.7152,.0722][i],0)}
+const pairs=[['#ffffff','#315bff'],['#2048df','#f8f9fc'],['#080e35','#f8f9fc'],['#555c75','#f8f9fc'],['#64708a','#ffffff'],['#c2ccec','#080e35']];
+const contrasts=pairs.map(([a,b])=>{const ratio=(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);assert.ok(ratio>=4.5,a+' sur '+b);return `${a} / ${b} : ${ratio.toFixed(2)}:1`});
+console.log(JSON.stringify({pages:routes.length,liensInternesEtRessourcesVerifies:links,imagesAvecAltEtDimensions:images,htmlMoyenOctets:Math.round(total/routes.length),contrastes:contrasts},null,2));

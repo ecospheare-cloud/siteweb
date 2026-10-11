@@ -1,0 +1,42 @@
+# Ressources, provenance et droits d’utilisation
+
+## Autorisation de travail
+
+Mahé a explicitement demandé d’utiliser le portfolio QICS et a fourni le dépôt `systemeqicsagency-cyber/QICS-AGENCY`. Les fichiers repris viennent de la copie de ce dépôt dans `site-travaux`, révision `d4099fb842225ccbdc54e2efac8bb709714b6180`. L’autorisation de cette mission n’est pas une licence publique générale sur les marques clientes. Le dépôt ECOSPHEARE conserve ces médias pour la présentation de ces collaborations, avec leurs crédits.
+
+Source éditoriale : `content/projets.json`. Source média : `public/travaux/`. Extraits nécessaires conservés dans `content/projects-source.json`. Les formulations à la première personne de QICS sont adaptées en descriptions neutres au rendu.
+
+| Projet | Fichiers utilisés / disponibles dans ce livrable | Nature de la source |
+|---|---|---|
+| Eye-D Studio | `eyed-site.webp` | Capture de portfolio ; œuvres exposées créées par Eye-D |
+| House of Lucia | `lucia-site.webp` | Capture d’accueil e-commerce |
+| Neptula | fichiers `neptula-*.webp` | Captures web, extraits de marque, mises en situation |
+| Nexus | fichiers `nexus-*.webp` | Captures Studio/Community et signatures |
+| Thomas Fit | `thomas-fit-site.webp` | Capture de page produit |
+| SAP | fichiers `sap-*.webp` | Extraits de marque et mises en situation |
+| QICS Branding | `qics-branding-site.webp` | Capture de plateforme |
+| QICS Studio | `qics-studio-site.webp` | Capture de vitrine du logiciel QICS |
+
+Les mises en situation ne sont pas présentées comme des photographies de réalisations matérielles vérifiées. Les nouvelles galeries conceptuelles assistées par IA de QICS ne sont pas utilisées pour remplir artificiellement les dossiers.
+
+Les fichiers de plus de1600 px ont été réduits pour la diffusion ; WebP qualité 85. Les originaux QICS n’ont pas été modifiés.
+
+## Créations originales pour ECOSPHEARE
+
+`public/assets/orbite.webp` et `orbite-768.webp` : texture de sphère/ruban lumineux pointillé sur fond bleu, générée pour ce projet avec Imagegen. Elle ne provient pas d’un fichier LANDOR. La variante768 est une optimisation de taille du même asset.
+
+Les cinq planches dans `docs/design/` sont des études générées de composition. Elles servent à documenter la direction, pas à remplacer du HTML ni à attester de projets réalisés. L’étude Projets comporte des images conceptuelles, remplacées dans le site par les ressources QICS.
+
+Infographie de méthode : HTML/CSS original, quatre étapes métier. Aucun dessin de marque tierce copié.
+
+## Police
+
+Manrope variable : [source Google Fonts](https://github.com/google/fonts/tree/main/ofl/manrope), licence SIL Open Font License 1.1, fichier `public/fonts/OFL.txt`. Hébergement local. Le fichier variable WOFF2 Latin est servi (source officielle fonts.gstatic.com, v20) ; pas de police LANDOR.
+
+## LANDOR
+
+Référence d’audit uniquement. Pas de vidéo, police, logo, bateau, photographie de cas ou JavaScript LANDOR dans les ressources livrées. Les copies de travail destinées à examiner le code public sont exclues de Git via `docs/reference/`.
+
+## À compléter
+
+Logo vectoriel officiel ECOSPHEARE, informations légales de l’éditeur, détails d’intervention et preuves de résultats des collaborations, visuels autorisés des quatre projets uniquement cités. Le site public `ecospheare.com` a répondu 404 pendant la tentative de récupération du logo ; il n’a pas servi de source de copywriting.

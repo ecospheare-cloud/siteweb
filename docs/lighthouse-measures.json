@@ -1,0 +1,12 @@
+{
+  "kind": "manual-transcription-not-raw-lighthouse-export",
+  "date": "2026-10-11",
+  "url": "http://localhost:4173/",
+  "lighthouseVersion": "13.4.1",
+  "mode": "navigation",
+  "device": "mobile",
+  "observedEmulation": {"width": 412, "height": 823},
+  "initial": {"performance": 94, "accessibility": 100, "bestPractices": 100, "seo": 66, "fcpSeconds": 0.9, "lcpSeconds": 3.2, "tbtMs": 0, "cls": 0, "speedIndexSeconds": 0.9},
+  "final": {"performance": 100, "accessibility": 100, "bestPractices": 100, "seo": 66, "fcpSeconds": 0.9, "lcpSeconds": 1.7, "tbtMs": 0, "cls": 0, "speedIndexSeconds": 0.9},
+  "limitations": ["Local server", "Existing Chrome profile", "Homepage only", "No field INP measurement", "SEO intentionally blocked for preview"]
+}

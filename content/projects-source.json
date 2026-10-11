@@ -1,0 +1,407 @@
+[
+  {
+    "slug": "eye-d",
+    "nom": "Eye-D Studio",
+    "secteur": "Studio créatif 3D",
+    "statut": "Projet client",
+    "these": "Un écrin digital à la hauteur des images du studio.",
+    "description": "Web design et présentation du portfolio du studio Eye-D. Le travail présenté ici porte sur le site ; les clips, images 3D et campagnes qu’il expose sont les réalisations d’Eye-D Studio.",
+    "disciplines": [
+      "Web design",
+      "Portfolio digital"
+    ],
+    "categories": [
+      "digital"
+    ],
+    "accent": "#9166d4",
+    "composition": "ecran",
+    "couverture": [
+      "eyed-site"
+    ],
+    "liens": [
+      {
+        "label": "Voir le site du studio",
+        "url": "https://eye-d.studio/realisations"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "eyed-site",
+        "alt": "Page des réalisations du site Eye-D Studio",
+        "legende": "Web design · contenus créatifs par Eye-D Studio",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/eyed-site.webp"
+      }
+    ]
+  },
+  {
+    "slug": "house-of-lucia",
+    "nom": "House of Lucia",
+    "secteur": "Mode & e-commerce",
+    "statut": "Projet client",
+    "these": "Une boutique qui laisse les collections respirer.",
+    "description": "Une présentation éditoriale de la mode : images généreuses, typographie discrète et navigation e-commerce. Le site laisse l’univers de la collection installer le désir.",
+    "disciplines": [
+      "Web design",
+      "E-commerce"
+    ],
+    "categories": [
+      "digital"
+    ],
+    "accent": "#baa58a",
+    "composition": "ecran",
+    "couverture": [
+      "lucia-site"
+    ],
+    "liens": [
+      {
+        "label": "Voir la boutique",
+        "url": "https://wj30xu-xf.myshopify.com/"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "lucia-site",
+        "alt": "Boutique House of Lucia et sa photographie de collection",
+        "legende": "Accueil de la boutique · capture du site en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/lucia-site.webp"
+      }
+    ]
+  },
+  {
+    "slug": "neptula",
+    "nom": "Neptula",
+    "secteur": "Studio digital",
+    "statut": "Studio associé",
+    "these": "Une identité qui existe bien au-delà de l’écran.",
+    "description": "Un signe, un langage visuel et des déclinaisons qui donnent au studio une présence cohérente. Le dossier rapproche le travail d’identité, ses mises en situation et les deux expériences web.",
+    "disciplines": [
+      "Identité de marque",
+      "Direction artistique",
+      "Web design"
+    ],
+    "categories": [
+      "branding",
+      "digital"
+    ],
+    "accent": "#2f6dff",
+    "composition": "site-marque",
+    "couverture": [
+      "neptula-cover-site",
+      "neptula-logo"
+    ],
+    "liens": [
+      {
+        "label": "Neptula",
+        "url": "https://neptula.fr/"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "neptula-espace",
+        "alt": "Identité Neptula en bleu sur le mur d’un espace de travail",
+        "legende": "Identité en situation · espace de travail",
+        "width": 1376,
+        "height": 768,
+        "src": "/assets/neptula-espace.webp"
+      },
+      {
+        "fichier": "neptula-logo",
+        "alt": "Symbole bleu tridimensionnel de Neptula",
+        "legende": "Le signe · extrait du brandbook",
+        "width": 940,
+        "height": 830,
+        "src": "/assets/neptula-logo.webp"
+      },
+      {
+        "fichier": "neptula-cartes",
+        "alt": "Cartes de visite Neptula et leur symbole bleu",
+        "legende": "Papeterie · mise en situation",
+        "width": 1376,
+        "height": 768,
+        "src": "/assets/neptula-cartes.webp"
+      },
+      {
+        "fichier": "neptula-charte",
+        "alt": "Palette chromatique de l’identité Neptula",
+        "legende": "Le système de couleurs · extrait du brandbook",
+        "width": 1600,
+        "height": 900,
+        "src": "/assets/neptula-charte.webp"
+      },
+      {
+        "fichier": "neptula-textile",
+        "alt": "Déclinaison de l’identité Neptula sur des vêtements",
+        "legende": "Textile · mise en situation",
+        "width": 1200,
+        "height": 896,
+        "src": "/assets/neptula-textile.webp"
+      },
+      {
+        "fichier": "neptula-site",
+        "alt": "Page d’accueil du site Neptula",
+        "legende": "Site Neptula · capture du projet en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/neptula-site.webp"
+      },
+      {
+        "fichier": "neptula-cover-site",
+        "alt": "Page d’accueil du studio Neptula",
+        "legende": "Site du studio · capture du projet en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/neptula-cover-site.webp"
+      }
+    ]
+  },
+  {
+    "slug": "nexus",
+    "nom": "Nexus",
+    "secteur": "Agence digitale & communauté",
+    "statut": "Projet livré",
+    "these": "Deux portes. Une seule marque qui sait où elle va.",
+    "description": "Nexus réunit deux expériences complémentaires : Studio Nexus présente l’agence, ses expertises et sa méthode ; Nexus Community ouvre un parcours d’accès à un collectif d’entrepreneurs et de créatifs. J’ai construit l’architecture de marque, la direction artistique et l’expérience web pour que le passage du service à la communauté soit immédiat, sans perdre le caractère du projet.",
+    "disciplines": [
+      "Architecture de marque",
+      "Direction artistique",
+      "UX & web design"
+    ],
+    "categories": [
+      "branding",
+      "digital"
+    ],
+    "accent": "#5167ff",
+    "composition": "nexus",
+    "couverture": [
+      "nexus-studio-site",
+      "nexus-community-site",
+      "nexus-logo-cover"
+    ],
+    "liens": [
+      {
+        "label": "Découvrir Nexus Studio",
+        "url": "https://website-neptula-production.up.railway.app/"
+      },
+      {
+        "label": "Entrer dans Nexus Community",
+        "url": "https://website-neptula-production.up.railway.app/communaute"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "nexus-logo-cover",
+        "alt": "Logo Nexus Studio en noir et bleu",
+        "legende": "Nexus · signature principale",
+        "width": 900,
+        "height": 900,
+        "src": "/assets/nexus-logo-cover.webp"
+      },
+      {
+        "fichier": "nexus-studio-site",
+        "alt": "Page d’accueil de Nexus Studio présentant l’agence, son équipe et son offre digitale",
+        "legende": "Studio Nexus · site d’agence",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/nexus-studio-site.webp"
+      },
+      {
+        "fichier": "nexus-community-site",
+        "alt": "Page Nexus Community avec sa fenêtre d’accès au groupe",
+        "legende": "Nexus Community · parcours d’accès au collectif",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/nexus-community-site.webp"
+      },
+      {
+        "fichier": "nexus-identite",
+        "alt": "Les deux signatures officielles Nexus Studio en bleu et Nexus Community en vert",
+        "legende": "Système de marque · signatures Studio et Community",
+        "width": 1600,
+        "height": 1000,
+        "src": "/assets/nexus-identite.webp"
+      }
+    ]
+  },
+  {
+    "slug": "thomas-fit",
+    "nom": "Thomas Fit",
+    "secteur": "Sport & e-commerce",
+    "statut": "Projet client",
+    "these": "La marque jusque dans le parcours d’achat.",
+    "description": "Une expérience e-commerce qui articule présentation du produit, bénéfices et passage à l’achat. Le dossier montre la page produit réelle et son traitement visuel.",
+    "disciplines": [
+      "Web design",
+      "E-commerce",
+      "Direction artistique"
+    ],
+    "categories": [
+      "digital"
+    ],
+    "accent": "#b51a20",
+    "composition": "ecran",
+    "couverture": [
+      "thomas-fit-site"
+    ],
+    "liens": [
+      {
+        "label": "Voir la boutique",
+        "url": "https://thomas-fit.com/fr/products/the-tank-that-gives-you-permission-to-start-thomas-fit"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "thomas-fit-site",
+        "alt": "Fiche produit Thomas Fit, photos du débardeur et options d’achat",
+        "legende": "Page produit · capture de la boutique en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/thomas-fit-site.webp"
+      }
+    ]
+  },
+  {
+    "slug": "sap",
+    "nom": "SAP",
+    "secteur": "Couverture & bardage",
+    "statut": "Projet client",
+    "these": "Une marque qui tient aussi à l’échelle d’un bâtiment.",
+    "description": "Un système d’identité pour une entreprise de couverture, bardage, pliage et étanchéité. Du tracé du logo aux tenues et véhicules, la même signature accompagne les points de contact de l’entreprise.",
+    "disciplines": [
+      "Identité de marque",
+      "Signalétique",
+      "Supports métier"
+    ],
+    "categories": [
+      "branding"
+    ],
+    "accent": "#164b8e",
+    "composition": "duo",
+    "couverture": [
+      "sap-facade",
+      "sap-logo"
+    ],
+    "liens": [],
+    "visuels": [
+      {
+        "fichier": "sap-facade",
+        "alt": "Identité SAP sur la façade d’un bâtiment industriel",
+        "legende": "Signalétique · mise en situation",
+        "width": 1200,
+        "height": 896,
+        "src": "/assets/sap-facade.webp"
+      },
+      {
+        "fichier": "sap-logo",
+        "alt": "Construction géométrique du logo SAP",
+        "legende": "Construction du signe · extrait du brandbook",
+        "width": 1600,
+        "height": 900,
+        "src": "/assets/sap-logo.webp"
+      },
+      {
+        "fichier": "sap-camion",
+        "alt": "Véhicule de chantier habillé de l’identité SAP",
+        "legende": "Véhicule · mise en situation",
+        "width": 1600,
+        "height": 900,
+        "src": "/assets/sap-camion.webp"
+      },
+      {
+        "fichier": "sap-textile",
+        "alt": "Logo SAP sur un gilet de chantier orange",
+        "legende": "Vêtement de travail · mise en situation",
+        "width": 1600,
+        "height": 900,
+        "src": "/assets/sap-textile.webp"
+      },
+      {
+        "fichier": "sap-charte",
+        "alt": "Palette bleue, rouge et grise de SAP",
+        "legende": "Le système de couleurs · extrait du brandbook",
+        "width": 1600,
+        "height": 900,
+        "src": "/assets/sap-charte.webp"
+      }
+    ]
+  },
+  {
+    "slug": "qics-branding",
+    "nom": "QICS Branding",
+    "secteur": "Plateforme de branding",
+    "statut": "Mon produit",
+    "these": "Le branding devient lui-même une expérience digitale.",
+    "description": "Ma plateforme dédiée à l’identité de marque. Le langage graphique, la mise en scène de l’offre et le parcours web portent une même intention : rendre le branding concret dès le premier écran.",
+    "disciplines": [
+      "Identité",
+      "Produit digital",
+      "Web design"
+    ],
+    "categories": [
+      "produit",
+      "digital"
+    ],
+    "accent": "#a748ce",
+    "composition": "ecran",
+    "couverture": [
+      "qics-branding-site"
+    ],
+    "liens": [
+      {
+        "label": "Découvrir QICS Branding",
+        "url": "https://qics-branding-website-production.up.railway.app/"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "qics-branding-site",
+        "alt": "Site QICS Branding dans son univers violet et rose",
+        "legende": "Vitrine de la plateforme · capture du site en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/qics-branding-site.webp"
+      }
+    ]
+  },
+  {
+    "slug": "qics-studio",
+    "nom": "QICS Studio",
+    "secteur": "Photo produit par IA",
+    "statut": "Mon produit",
+    "these": "Une marque. Un produit. Une expérience complète.",
+    "description": "QICS Studio est mon logiciel de création de visuels produit par IA. Une même direction relie l’identité, la présentation du produit et l’expérience digitale. La capture montre la vitrine publique du logiciel.",
+    "disciplines": [
+      "Direction artistique",
+      "Produit SaaS",
+      "Web design"
+    ],
+    "categories": [
+      "produit",
+      "digital"
+    ],
+    "accent": "#167f95",
+    "composition": "ecran",
+    "couverture": [
+      "qics-studio-site"
+    ],
+    "liens": [
+      {
+        "label": "Découvrir QICS Studio",
+        "url": "https://qics-studio.com/"
+      }
+    ],
+    "visuels": [
+      {
+        "fichier": "qics-studio-site",
+        "alt": "Site QICS Studio, logiciel de photographie produit par IA",
+        "legende": "Vitrine du produit · capture du site en ligne",
+        "width": 1440,
+        "height": 1000,
+        "src": "/assets/qics-studio-site.webp"
+      }
+    ]
+  }
+]

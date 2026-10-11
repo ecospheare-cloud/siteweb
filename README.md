@@ -51,3 +51,11 @@ Les textures vidéo LANDOR n’ont pas été redistribuées. La matière du hero
 Animation du hero : film Gemini, raccord sur le symbole original, boucle de 15,96 secondes et commande de pause. Documentation : [MOTION.md](docs/MOTION.md).
 
 Direction active du 12 octobre : [comparaison et refonte LANDOR](docs/REFONTE-LANDOR.md). Signature monumentale, panneau d’introduction blanc, film de marque, carrousel grand format et manifeste. La navigation et les pages intérieures ont également été recomposées.
+
+## Audit approfondi LANDOR — 12 octobre
+
+- [Spécification des scrolls, états et interactions](docs/AUDIT-LANDOR-INTERACTIONS.md) : mesures, formules, durées déclarées, contrôles et écarts avec ECOSPHEARE.
+- [Inventaire des 46 routes anglaises](docs/AUDIT-LANDOR-PAGES.md) : ordre des modules des 38 projets et dimensions intrinsèques des médias.
+- [Journal de mesures](docs/audit-scroll/releves-pages.json).
+
+Cette passe est documentaire. Elle ne présente pas la version ECOSPHEARE existante comme une reproduction exacte de la référence.

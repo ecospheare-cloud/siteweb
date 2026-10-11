@@ -1,0 +1,4788 @@
+[
+  {
+    "title": "SCANA Energy",
+    "url": "https://landor.com/en/our-work/scana-energy/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 14608,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb",
+        "h": 102,
+        "y": 468
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6 CSDetailsText_animate__z0QrF",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2606
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3324
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4043
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4761
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5480
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6198
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6917
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7635
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8354
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9072
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9791
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 10509
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 11228
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 2003,
+        "y": 11946
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "scroll": 468,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.3671875,
+      "height": 14608,
+      "scroll": 13888.5
+    }
+  },
+  {
+    "title": "Saudia",
+    "url": "https://landor.com/en/our-work/saudia/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12909,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 718,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3374
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 718,
+        "y": 4811
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5530
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 718,
+        "y": 6248
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6966
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7685
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8630
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9348
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 10067
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1465,
+        "y": 10786
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "scroll": 0,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.609375,
+      "height": 12909,
+      "scroll": 12189.5
+    }
+  },
+  {
+    "title": "Reykjavik Global Forum",
+    "url": "https://landor.com/en/our-work/reykjavik-global-forum/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11717,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 600,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1320
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2038
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 2757
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3702
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4420
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5139
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 5857
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6802
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7521
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8239
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8958
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1382,
+        "y": 9676
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "scroll": 0,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.703125,
+      "height": 11717,
+      "scroll": 10997.5
+    }
+  },
+  {
+    "title": "Volkswagen Group",
+    "url": "https://landor.com/en/our-work/volkswagen-group/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11852,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2606
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3324
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4043
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4761
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5480
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6198
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6917
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7635
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8354
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9072
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1402,
+        "y": 9791
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "scroll": 0,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.703125,
+      "height": 11852,
+      "scroll": 11132.5
+    }
+  },
+  {
+    "title": "iz",
+    "url": "https://landor.com/en/our-work/iz/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12210,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 4812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5929
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6648
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7366
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 8085
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9203
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1630,
+        "y": 9921
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "scroll": 0,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.796875,
+      "height": 12210,
+      "scroll": 11490.5
+    }
+  },
+  {
+    "title": "Misura",
+    "url": "https://landor.com/en/our-work/misura/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11577,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2114
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 2832
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3778
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4496
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5441
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6291
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7009
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7728
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8673
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1527,
+        "y": 9392
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "scroll": 0,
+      "videos": [
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        },
+        {
+          "controls": false,
+          "loop": true,
+          "muted": true,
+          "paused": true
+        }
+      ]
+    },
+    "end": {
+      "footerY": 60.6640625,
+      "height": 11577,
+      "scroll": 10857.5
+    }
+  },
+  {
+    "title": "New York Golf Club",
+    "url": "https://landor.com/en/our-work/new-york-golf-club/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10202,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 3274
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5068
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 5918
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6863
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7712
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1113,
+        "y": 8430
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5546875,
+      "height": 10202,
+      "scroll": 9482.5
+    }
+  },
+  {
+    "title": "Imperia",
+    "url": "https://landor.com/en/our-work/imperia/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12329,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4492
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5211
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5929
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6648
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 7366
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8484
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9203
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9921
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1030,
+        "y": 10640
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6328125,
+      "height": 12329,
+      "scroll": 11609
+    }
+  },
+  {
+    "title": "Syensqo",
+    "url": "https://landor.com/en/our-work/syensqo/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3ImagesMirrored",
+      "caseStudyDetailImage",
+      "caseStudyDetail3ImagesMirrored",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10855,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2787
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3506
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4224
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 5073
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6018
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 6868
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 7986
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1361,
+        "y": 8835
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6796875,
+      "height": 10855,
+      "scroll": 10135.5
+    }
+  },
+  {
+    "title": "Opella",
+    "url": "https://landor.com/en/our-work/opella/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10031,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5530
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6249
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6967
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7686
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 968,
+        "y": 8404
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5,
+      "height": 10031,
+      "scroll": 9311.5
+    }
+  },
+  {
+    "title": "Orchestre De Chambre de Paris",
+    "url": "https://landor.com/en/our-work/orchestre-de-chambre-de-paris/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10929,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2606
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3324
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4043
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4988
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5706
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 6425
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7370
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8315
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1237,
+        "y": 9033
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.640625,
+      "height": 10929,
+      "scroll": 10209.5
+    }
+  },
+  {
+    "title": "Kellogg's",
+    "url": "https://landor.com/en/our-work/kelloggs/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 16418,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 650,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1370
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2089
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2807
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3526
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 4244
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5362
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6081
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6799
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7518
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8236
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 8955
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9673
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 10392
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 11110
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 11829
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 12547
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 13266
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1775,
+        "y": 13984
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5859375,
+      "height": 16418,
+      "scroll": 15698.5
+    }
+  },
+  {
+    "title": "Lobos 1707",
+    "url": "https://landor.com/en/our-work/lobos-1707/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11072,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 348,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1068
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1786
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 2505
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3623
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4341
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5060
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5778
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 6497
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7615
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8333
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1361,
+        "y": 9052
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5625,
+      "height": 11072,
+      "scroll": 10352
+    }
+  },
+  {
+    "title": "BANCOMAT",
+    "url": "https://landor.com/en/our-work/bancomat/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12609,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3274
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3992
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 4711
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5829
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6547
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7266
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7984
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8703
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9421
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 10140
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1092,
+        "y": 10858
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6484375,
+      "height": 12609,
+      "scroll": 11889.5
+    }
+  },
+  {
+    "title": "Milan Symphony Orchestra",
+    "url": "https://landor.com/en/our-work/milan-symphony-orchestra/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12681,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 5530
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6648
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7366
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 8085
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9203
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9921
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1382,
+        "y": 10640
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF Header_scrolled__gq__C",
+      "hero": [
+        {
+          "position": "fixed",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "scroll": 0
+    },
+    "end": {
+      "footerY": 60.453125,
+      "height": 12681,
+      "scroll": 11961
+    }
+  },
+  {
+    "title": "Topo Chico",
+    "url": "https://landor.com/en/our-work/topo-chico/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11818,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2737
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3586
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4304
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5154
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 6003
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6948
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 7667
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 936,
+        "y": 8516
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9452
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 989,
+        "y": 10171
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.59375,
+      "height": 11818,
+      "scroll": 11098.5
+    }
+  },
+  {
+    "title": "Nike Kids",
+    "url": "https://landor.com/en/our-work/nike-kids/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11097,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2063
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2913
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 3762
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4611
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5556
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 6275
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7220
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 8165
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 9014
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 575,
+        "y": 9864
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6328125,
+      "height": 11097,
+      "scroll": 10377.5
+    }
+  },
+  {
+    "title": "Renault",
+    "url": "https://landor.com/en/our-work/renault/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 7497,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 3274
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4123
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5068
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1051,
+        "y": 5787
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.515625,
+      "height": 7497,
+      "scroll": 6777
+    }
+  },
+  {
+    "title": "{access}ories",
+    "url": "https://landor.com/en/our-work/access-ories/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 8160,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 550,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1270
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 1988
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3106
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3824
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4543
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5261
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5980
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 802,
+        "y": 6698
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.609375,
+      "height": 8160,
+      "scroll": 7440
+    }
+  },
+  {
+    "title": "LeShuttle",
+    "url": "https://landor.com/en/our-work/leshuttle/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 15948,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1968
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2686
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 3405
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4254
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4973
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5822
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6540
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7390
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 8108
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9053
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 9772
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 10621
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 11566
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 12285
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 13230
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1340,
+        "y": 13948
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.359375,
+      "height": 15948,
+      "scroll": 15228
+    }
+  },
+  {
+    "title": "M&M'S",
+    "url": "https://landor.com/en/our-work/mms/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11152,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb",
+        "h": 102,
+        "y": 0
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 348,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 1068
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2013
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2731
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 3581
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4430
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6224
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7074
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 8019
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8868
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 906,
+        "y": 9587
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.359375,
+      "height": 11152,
+      "scroll": 10432
+    }
+  },
+  {
+    "title": "Saudia Airlines",
+    "url": "https://landor.com/en/our-work/saudia-airlines/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11549,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 2686
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 3631
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4481
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5199
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6048
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6898
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 7747
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 8596
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1444,
+        "y": 9446
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.4921875,
+      "height": 11549,
+      "scroll": 10829
+    }
+  },
+  {
+    "title": "IUCN/SOS",
+    "url": "https://landor.com/en/our-work/iucnsos/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11587,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2018
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 2867
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4531
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5249
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5968
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6817
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7667
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 8385
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 9234
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 844,
+        "y": 10084
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.3984375,
+      "height": 11587,
+      "scroll": 10867
+    }
+  },
+  {
+    "title": "Lynk & Co",
+    "url": "https://landor.com/en/our-work/lynk-co/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10701,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3500
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4937
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5787
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6636
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 7485
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8335
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 989,
+        "y": 9053
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.7109375,
+      "height": 10701,
+      "scroll": 9981
+    }
+  },
+  {
+    "title": "bp",
+    "url": "https://landor.com/en/our-work/bp/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 3677,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1139
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1159
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1180
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1200
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1221
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 21,
+        "y": 1241
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 850,
+        "y": 1262
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 906,
+        "y": 2112
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.4140625,
+      "height": 8745,
+      "scroll": 8025.5
+    }
+  },
+  {
+    "title": "Walmart",
+    "url": "https://landor.com/en/our-work/walmart/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 8929,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 2737
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3586
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 4304
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 5154
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6003
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 849,
+        "y": 6722
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 699,
+        "y": 7571
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.703125,
+      "height": 8929,
+      "scroll": 8209
+    }
+  },
+  {
+    "title": "A&O Shearman",
+    "url": "https://landor.com/en/our-work/ao-shearman/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10723,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 348,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1068
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1786
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2505
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3223
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3942
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4660
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5379
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6097
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6816
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7534
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8253
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1092,
+        "y": 8971
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.4765625,
+      "height": 10723,
+      "scroll": 10003
+    }
+  },
+  {
+    "title": "Elica",
+    "url": "https://landor.com/en/our-work/elica/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 13112,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5530
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6249
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6967
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7686
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8404
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9123
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9841
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 10560
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1175,
+        "y": 11278
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.453125,
+      "height": 13112,
+      "scroll": 12392.5
+    }
+  },
+  {
+    "title": "TATA.ev",
+    "url": "https://landor.com/en/our-work/tataev/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetail3Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 14251,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 18
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 550,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1270
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1988
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2707
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3425
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4144
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4862
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5807
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6526
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7244
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 7963
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 8681
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9626
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 10345
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 11063
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 11782
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1092,
+        "y": 12500
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5703125,
+      "height": 14251,
+      "scroll": 13531.5
+    }
+  },
+  {
+    "title": "Burson",
+    "url": "https://landor.com/en/our-work/burson/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail2Images",
+      "caseStudyDetail3Images",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10855,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2606
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3324
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4043
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4761
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5480
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 6198
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 7316
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8261
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1216,
+        "y": 8980
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.71875,
+      "height": 10855,
+      "scroll": 10135
+    }
+  },
+  {
+    "title": "Huawei",
+    "url": "https://landor.com/en/our-work/huawei/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 8451,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 600,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1320
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2038
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2757
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3475
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4194
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5139
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5857
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1216,
+        "y": 6576
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.640625,
+      "height": 8451,
+      "scroll": 7731.5
+    }
+  },
+  {
+    "title": "Team Global Express",
+    "url": "https://landor.com/en/our-work/team-global-express/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 11613,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 499,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1219
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1938
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2656
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3375
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4093
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4812
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5530
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6249
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6967
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7686
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8404
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 9123
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1113,
+        "y": 9841
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.3671875,
+      "height": 11613,
+      "scroll": 10893.5
+    }
+  },
+  {
+    "title": "MYOM",
+    "url": "https://landor.com/en/our-work/myom/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10173,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 600,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1320
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2038
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2757
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3475
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4194
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4912
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5631
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6349
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7068
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7786
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1009,
+        "y": 8505
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6875,
+      "height": 10173,
+      "scroll": 9453.5
+    }
+  },
+  {
+    "title": "West Loop",
+    "url": "https://landor.com/en/our-work/west-loop/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetail3Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 12814,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 3
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3673
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4392
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5110
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 5829
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6946
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 1118,
+        "y": 7665
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8783
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 9501
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 10220
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1216,
+        "y": 10938
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.3671875,
+      "height": 12814,
+      "scroll": 12094
+    }
+  },
+  {
+    "title": "KitKat",
+    "url": "https://landor.com/en/our-work/kitkat/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail2Images",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10509,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 398,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1118
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1837
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2555
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3274
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3992
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4711
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5429
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 6148
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 6866
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7811
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1320,
+        "y": 8530
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.5234375,
+      "height": 10509,
+      "scroll": 9789
+    }
+  },
+  {
+    "title": "AO",
+    "url": "https://landor.com/en/our-work/ao/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetail3Images",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10837,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 298,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1018
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1736
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 2455
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3173
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3892
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4610
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5555
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6274
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6992
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7711
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 8429
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1030,
+        "y": 9148
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.4921875,
+      "height": 10837,
+      "scroll": 10117
+    }
+  },
+  {
+    "title": "nib",
+    "url": "https://landor.com/en/our-work/nib/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 10353,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 1
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 449,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1169
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1887
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2606
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 3324
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4043
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 4761
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 5480
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6198
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6917
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 7635
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 1340,
+        "y": 8354
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.6171875,
+      "height": 10353,
+      "scroll": 9633.5
+    }
+  },
+  {
+    "title": "QT",
+    "url": "https://landor.com/en/our-work/qt/",
+    "modules": [
+      "breadcrumb",
+      "caseStudyDetailHeader",
+      "caseStudyDetailHero",
+      "caseStudyDetailText",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetailVideo",
+      "caseStudyDetail3Images",
+      "caseStudyDetailVideo",
+      "caseStudyDetailImage",
+      "paseStudyDetailProjectInfo",
+      "caseStudyDetailFooter"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "height": 8706,
+    "blocks": [
+      {
+        "cls": "CSDetailsHero_el__GLrut",
+        "h": 720,
+        "y": 0
+      },
+      {
+        "cls": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 102,
+        "y": 2
+      },
+      {
+        "cls": "CSDetailsText_el__xzbH6",
+        "h": 550,
+        "y": 720
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 1270
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 1988
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 2707
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 3425
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 4144
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 945,
+        "y": 4862
+      },
+      {
+        "cls": "CSDetailsVideo_el__oXYtH",
+        "h": 719,
+        "y": 5807
+      },
+      {
+        "cls": "CSDetailsImage_el__PxNTN",
+        "h": 719,
+        "y": 6526
+      },
+      {
+        "cls": "CSDetailsProjectInfo_el__R77nt",
+        "h": 802,
+        "y": 7244
+      }
+    ],
+    "middle": {
+      "header": "Header_el__IOShF",
+      "hero": [
+        {
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 0, 690.001)"
+        }
+      ],
+      "scroll": 720
+    },
+    "end": {
+      "footerY": 60.3359375,
+      "height": 8706,
+      "scroll": 7986
+    }
+  },
+  {
+    "title": "privacy-policy",
+    "url": "https://landor.com/en/privacy-policy/",
+    "modules": [
+      "staticPage"
+    ],
+    "headings": [
+      {
+        "font": "48px",
+        "line": "57.6px",
+        "text": "Privacy policy"
+      }
+    ],
+    "end": {
+      "footerY": 60.4296875,
+      "height": 7896,
+      "scroll": 7176
+    }
+  },
+  {
+    "title": "cookie-policy",
+    "url": "https://landor.com/en/cookie-policy/",
+    "modules": [
+      "staticPage"
+    ],
+    "headings": [
+      {
+        "font": "48px",
+        "line": "57.6px",
+        "text": "Cookie Policy"
+      }
+    ],
+    "end": {
+      "footerY": 60.4296875,
+      "height": 3236,
+      "scroll": 2516.5
+    }
+  },
+  {
+    "title": "modern-slavery-act",
+    "url": "https://landor.com/en/modern-slavery-act/",
+    "modules": [
+      "staticPage"
+    ],
+    "headings": [
+      {
+        "font": "48px",
+        "line": "57.6px",
+        "text": "Modern Slavery Act"
+      }
+    ],
+    "end": {
+      "footerY": 60.8046875,
+      "height": 1361,
+      "scroll": 641.5
+    }
+  },
+  {
+    "title": "terms-of-use",
+    "url": "https://landor.com/en/terms-of-use/",
+    "modules": [
+      "staticPage"
+    ],
+    "headings": [
+      {
+        "font": "48px",
+        "line": "57.6px",
+        "text": "Terms of Use"
+      }
+    ],
+    "end": {
+      "footerY": 60.3828125,
+      "height": 3249,
+      "scroll": 2529
+    }
+  }
+]

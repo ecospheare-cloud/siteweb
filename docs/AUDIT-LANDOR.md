@@ -1,5 +1,7 @@
 # Audit de référence LANDOR
 
+> **Mise à jour du 12 octobre :** consulter la [spécification détaillée du scroll et des interactions](AUDIT-LANDOR-INTERACTIONS.md) et l’[inventaire des 46 routes](AUDIT-LANDOR-PAGES.md). Ils corrigent notamment les dimensions du carrousel actif, le rendu du bloc « Up Next » et la distinction entre CSS présent et animations exécutées. Les observations ci-dessous sont l’historique de la première passe.
+
 **Date : 11 octobre 2026.** Objet : comprendre les principes de composition et les comportements de LANDOR pour concevoir une expérience originale ECOSPHEARE.
 
 ## 1. Méthode, précision et périmètre

@@ -1,0 +1,55 @@
+{
+  "hero": [
+    {
+      "cls": "Hero_box__xMFMp",
+      "font": "32px",
+      "h": 645.431396484375,
+      "transform": "matrix(0.952974, 0, 0, 0.952974, 0, 0)",
+      "w": 371.6598510742187,
+      "y": 705.5
+    },
+    {
+      "cls": "Hero_title__KJMhH hero-title",
+      "font": "24px",
+      "h": 141.78466796875,
+      "transform": "none",
+      "w": 341.1646728515625,
+      "y": 705.5
+    },
+    {
+      "cls": "Hero_video__JGQSL",
+      "font": "32px",
+      "h": 451.566650390625,
+      "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)",
+      "w": 307.0481872558594,
+      "y": 847.28466796875
+    },
+    {
+      "cls": "Hero_videoPreview__T5fKG Hero_loaded__vCLKG",
+      "font": "32px",
+      "h": 414.5123901367187,
+      "transform": "none",
+      "w": 307.0481872558594,
+      "y": 865.8118286132812
+    }
+  ],
+  "scroll": 138.5,
+  "videos": [
+    {
+      "duration": 10,
+      "muted": true,
+      "paused": false,
+      "src": "https://cms.landor.com/media/o5lcaodu/sea_1.mp4"
+    },
+    {
+      "duration": 80.276,
+      "muted": true,
+      "paused": true,
+      "src": "https://cms.landor.com/media/daohs4cu/landor_sizzle_2023_021.mp4"
+    }
+  ],
+  "viewport": [
+    390,
+    844
+  ]
+}

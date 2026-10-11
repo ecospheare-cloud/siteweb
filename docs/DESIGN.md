@@ -84,3 +84,11 @@ Pas de copie exacte de la texture LANDOR : les vidéos d’eau n’ont pas été
 ## Direction active depuis le 12 octobre 2026
 
 La nouvelle demande du client remplace la première direction ci-dessus. La référence principale est désormais la composition LANDOR : signature monumentale, panneau blanc superposé, médias presque bord à bord, manifeste bleu, navigation centrée et sortie beige. Les règles génériques des skills qui interdiraient ces choix sont écartées au profit du brief explicite. Variance 7/10, mouvement 6/10, densité 3/10. Voir `REFONTE-LANDOR.md` pour les tokens, composants, comparaisons et limites actualisés.
+
+## Extension conversion du 12 octobre 2026
+
+La direction active est complétée par « Lumière utile » : quatre illustrations optiques originales et une infographie de méthode en HTML. Voir `../design/infographies/README.md` pour les invariants, prompts, exports et critères de validation. Variance 7/10 conservée, mouvement 2/10 pour les nouveaux modules, densité 5/10 pour expliquer les prestations. Les boucles de marque existantes restent inchangées. Les modules illustrés restent statiques à tous les réglages de mouvement.
+
+La palette de référence de cette extension est celle d’`editorial.css` : bleu #0e1adf, blanc, jaune #ecfd01 ; corps gris #34384d sur blanc. Manrope, légendes HTML de 13px minimum, rayons 12px, chapitres fluides et chronologie verticale mobile. Les grands aplats alternés et la répétition raisonnée des liens de contact sont maintenus selon le brief. Les règles génériques de Taste sur le thème unique et l’absence de CTA répétés ne remplacent pas ce parcours éditorial long.
+
+La collection Awesome DESIGN.md/Stripe sert de référence pour séparer la matière d’illustration et le contenu fonctionnel, sans reprendre son identité. Les images ne remplacent jamais une explication, un résultat documenté ni un produit réel.

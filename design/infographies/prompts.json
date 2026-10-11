@@ -1,0 +1,26 @@
+[
+  {
+    "id": "acquisition",
+    "prompt": "Use case: stylized-concept. Create a premium ECOSPHEARE editorial infographic illustration, landscape 3:2. Wordless optical sculpture explaining acquisition: three fine white luminous beams arrive from the left, enter a large clear glass convex lens, and converge into a single precise acid-yellow point on the right. Rich solid ultramarine blue #0e1adf studio floor and background, luminous transparent liquid-glass material, crisp white caustics, tiny acid yellow #ecfd01 accent only at the focal point. Camera orthographic three-quarter view, sculpture centered with generous 15% clear margins, impeccable physically plausible refraction, sophisticated product photography, restrained highlights, soft contact shadows. Lens silhouette and beam convergence must be instantly readable. No text, numbers, letters, logos, UI screenshots, gradients to black, decorative unrelated spheres or particles. This is explanatory art, not a chart or performance claim. Original composition, not a copied asset.",
+    "generator": "image_gen built-in",
+    "version": 1
+  },
+  {
+    "id": "conversion",
+    "prompt": "Use case: stylized-concept. ECOSPHEARE optical infographic series, landscape 3:2. Premium photorealistic 3D studio sculpture of a conversion journey. Three successive clear liquid-glass rectangular portals arranged from left foreground to right background, connected by a single thin white light path that cleanly threads their open centers. At the final portal, one small acid-yellow glass sphere marks arrival. Portals represent a clear website journey from offer to reassurance to contact; no interface mockup. Rich ultramarine #0e1adf floor and seamless background, same clear glass and white caustic highlights as an optical lens product photograph, tiny #ecfd01 accent only at endpoint. Clean orthographic three-quarter view, elegant ordered geometry, generous 15% margins, medium shot all objects visible, soft contact shadows, white keylight upper left, restrained bloom. No text, letters, labels, numbers, logos, fake dashboards, unrelated decorative particles. Instantly readable left-to-right progression. Original editorial art.",
+    "generator": "image_gen built-in",
+    "version": 1
+  },
+  {
+    "id": "suivi",
+    "prompt": "Use case: stylized-concept. ECOSPHEARE optical infographic series, landscape 3:2. Premium photorealistic 3D studio sculpture explaining CRM follow-up. A branching transparent glass channel at left leads into three parallel, neatly aligned transparent glass tracks extending toward the right. Exactly three small luminous acid yellow marbles, one on each track, each at a distinct stage; thin white light inside channels makes continuity visible. Clean, readable physical routing system, not a dashboard or toy rollercoaster. Rich seamless ultramarine #0e1adf floor and background, clear liquid-glass material, white caustics, restrained acid-yellow #ecfd01 accents, soft contact shadows. Orthographic three-quarter overhead view, main sculpture completely within frame with 15% empty margins, elegant engineered curves, consistent upper-left studio keylight and controlled bloom. No text, numbers, labels, logos, UI, people, decorative clouds or random particles. Original editorial conceptual art.",
+    "generator": "image_gen built-in",
+    "version": 1
+  },
+  {
+    "id": "mesure",
+    "prompt": "Use case: stylized-concept. ECOSPHEARE optical infographic series, landscape 3:2. Premium photorealistic 3D studio sculpture expressing continuous measurement and improvement. One large clear glass circular open loop lying at a gentle angle above a seamless ultramarine blue floor, a thin white luminous line tracing the circle, with four subtle glass junctions at quarter points; one small acid-yellow glass bead at the near junction, like a signal moving through an iterative process. Loop remains open with a small precise gap near foreground, no arrows or letters. Entire sculpture clearly visible with generous margins. Liquid-glass transparent material, white caustic highlights, soft contact shadows, background #0e1adf, accent #ecfd01 used only for one bead. Orthographic three-quarter camera, upper-left softbox, controlled speculars, elegant industrial optical object. Same aesthetic as optical lens and glass pathways editorial photography. No text, chart, metrics, numbers, UI, logos, random particles, black background. Original art, conceptual not a performance proof.",
+    "generator": "image_gen built-in",
+    "version": 1
+  }
+]

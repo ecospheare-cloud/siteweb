@@ -4,6 +4,14 @@
   "private": true,
   "type": "module",
   "description": "Site éditorial ECOSPHEARE, acquisition digitale et collaborations QICS",
-  "engines": { "node": ">=20" },
-  "scripts": { "build": "node scripts/build.mjs", "dev": "node scripts/server.mjs", "start": "node scripts/server.mjs", "check": "node scripts/check.mjs" }
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "check": "node scripts/check.mjs",
+    "art:brief": "node scripts/infographic-brief.mjs"
+  }
 }

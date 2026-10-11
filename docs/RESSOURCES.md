@@ -49,3 +49,7 @@ Les fichiers Fichier 7.svg (noir) et Fichier 8.svg (blanc), transmis par le clie
 ## Texture originale de la deuxième direction
 
 `public/assets/liquid-glass.webp` : création image_gen du 12 octobre pour ECOSPHEARE, sans ressource LANDOR importée. Prompt et méthode dans `REFONTE-LANDOR.md`. `ecospheare-water.mp4` : matière liquide recadrée du film Gemini ECOSPHEARE déjà généré, montage aller-retour. Aucun envoi externe de données visiteurs.
+
+## Infographies « Lumière utile » (12 octobre 2026)
+
+Quatre illustrations originales générées avec Imagegen intégré pour cette commande. Prompts exacts : `design/infographies/prompts.json`. Direction artistique et processus réutilisable : `design/infographies/README.md` et `system.json`. Masters PNG dans ce dossier ; versions WebP 640/1280 px dans `public/assets/infographies/`. Aucun asset LANDOR réutilisé. Les illustrations sont conceptuelles et ne constituent pas une preuve de résultats ni des captures de logiciels existants.

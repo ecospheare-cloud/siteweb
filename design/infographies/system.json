@@ -1,0 +1,16 @@
+{
+  "name": "ECOSPHEARE • Lumière utile",
+  "version": 1,
+  "useCase": "stylized-concept",
+  "format": "landscape 3:2",
+  "palette": {"background":"#0e1adf","signal":"#ffffff","outcome":"#ecfd01"},
+  "invariants": ["Original premium photorealistic optical sculpture, clear liquid-glass material", "Seamless ultramarine studio floor and background, soft contact shadows", "Orthographic three-quarter camera, upper-left softbox, restrained bloom", "One readable business mechanism, left-to-right reading when sequential", "Entire sculpture visible, generous margins, no irrelevant objects", "White light means prospect intent; acid yellow means useful action, never guaranteed success"],
+  "avoid": ["text", "numbers", "logos", "fake product interfaces", "fake metrics", "random particles", "black background", "copied third-party assets", "visual guarantees of business results"],
+  "delivery": {"master":"PNG, 1536×1024 observed for v1", "webWidths":[640,1280],"format":"webp","quality":84,"largeBudgetBytes":100000,"smallBudgetBytes":40000,"htmlLabels":true,"lazy":true},
+  "subjects": {
+    "acquisition":"Three white beams pass through one convex clear lens and converge at a yellow focal point. Meaning: searches meet an appropriate offer.",
+    "conversion":"Three clear glass portals crossed by one white light path, ending at one yellow bead. Meaning: understand the offer, reassurance, contact.",
+    "suivi":"One glass channel branches into three ordered parallel tracks, yellow beads at distinct stages. Meaning: centralize, qualify, organize follow-up.",
+    "mesure":"A clear glass near-circular loop with four junctions and one yellow signal bead. Meaning: observe, understand, adjust. No chart."
+  }
+}

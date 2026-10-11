@@ -96,3 +96,7 @@ Symbole SVG officiel reçu et intégré ; signature textuelle composée en Manro
 ## Mise à jour animation
 
 Les anciens scores Lighthouse ne mesurent pas la version animée. Contrôles actualisés, poids et limites : voir MOTION.md.
+
+## Refonte du 12 octobre
+
+Les résultats et captures actualisés de la deuxième direction sont documentés dans `REFONTE-LANDOR.md`. Les scores Lighthouse et descriptions de la première interface ci-dessus sont historiques. Aucun score de performance antérieur n’est attribué à la nouvelle composition.

@@ -1,7 +1,7 @@
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
-const source=(await readFile(new URL('../public/app.js',import.meta.url),'utf8')).split('// Load decorative video')[1];
+const source=(await readFile(new URL('../public/app.js',import.meta.url),'utf8')).split('// Load decorative video')[1].split('// The compact masthead')[0];
 const listeners={},mediaListeners={},attrs={};let observer;
 const classes=new Set();
 const control={hidden:true,setAttribute(k,v){attrs[k]=v},addEventListener(k,f){listeners[k]=f}};

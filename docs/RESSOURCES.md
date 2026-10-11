@@ -45,3 +45,7 @@ Informations légales de l’éditeur, détails d’intervention et preuves de r
 ## Animation du hero et logo fournis le 11 octobre
 
 Les fichiers Fichier 7.svg (noir) et Fichier 8.svg (blanc), transmis par le client, sont conservés sans modification dans public/assets. Le film source a été généré dans Gemini avec les références ECOSPHEARE, puis monté pour le web. Aucun fichier LANDOR n’est utilisé. Voir MOTION.md pour la provenance et les étapes.
+
+## Texture originale de la deuxième direction
+
+`public/assets/liquid-glass.webp` : création image_gen du 12 octobre pour ECOSPHEARE, sans ressource LANDOR importée. Prompt et méthode dans `REFONTE-LANDOR.md`. `ecospheare-water.mp4` : matière liquide recadrée du film Gemini ECOSPHEARE déjà généré, montage aller-retour. Aucun envoi externe de données visiteurs.

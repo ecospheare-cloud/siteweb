@@ -4,7 +4,7 @@ const closeMenu=(focus=false)=>{menu.hidden=true;menuButton.setAttribute('aria-e
 menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menu.hidden=open;menuButton.setAttribute('aria-expanded',String(!open));});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)closeMenu(true)});
 document.addEventListener('click',e=>{if(!menu.hidden&&!e.target.closest('.site-header'))closeMenu()});
-matchMedia('(min-width:801px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
+matchMedia('(min-width:1024px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
 for(const a of document.querySelectorAll('.desktop-nav a,.mobile-menu a')){if(location.pathname.startsWith(a.getAttribute('href')))a.setAttribute('aria-current','page')}
 const filters=[...document.querySelectorAll('[data-filter]')];
 const setFilter=(value,update=false)=>{if(!filters.length)return;const valid=filters.some(b=>b.dataset.filter===value)?value:'tous';let count=0;for(const card of document.querySelectorAll('[data-category]')){card.hidden=valid!=='tous'&&!card.dataset.category.split(' ').includes(valid);if(!card.hidden)count++}for(const b of filters)b.setAttribute('aria-pressed',String(b.dataset.filter===valid));document.querySelector('#filter-status').textContent=`${count} projet${count>1?'s':''} affiché${count>1?'s':''}`;if(update){const url=new URL(location.href);if(valid==='tous')url.searchParams.delete('filtre');else url.searchParams.set('filtre',valid);history.pushState(null,'',url)}};
@@ -30,13 +30,45 @@ if(film){
   control.hidden=false;
   if(!film.getAttribute('src')){film.src=film.dataset.src;film.muted=true}
   if(userPaused||!visible||document.hidden){film.pause();return}
-  film.play().catch(()=>{userPaused=true;label()});
+  film.play().catch(error=>{if(error.name==='AbortError'||!visible||document.hidden||reduced.matches)return;userPaused=true;label()});
  };
- film.addEventListener('playing',()=>film.parentElement.classList.add('is-playing'));
+ film.addEventListener('playing',()=>{film.parentElement.classList.add('is-playing');film.parentElement.classList.remove('motion-paused')});
+ film.addEventListener('pause',()=>film.parentElement.classList.add('motion-paused'));
  film.addEventListener('error',()=>{film.parentElement.classList.remove('is-playing');control.hidden=true});
  control.addEventListener('click',()=>{userPaused=!userPaused;label();sync()});
  reduced.addEventListener('change',sync);
  document.addEventListener('visibilitychange',sync);
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:0.05}).observe(film.closest('.hero'));
  sync();
+}
+
+// The compact masthead takes over once the opening signature leaves the screen.
+const signature=document.querySelector('.hero-brand');
+if(signature)new IntersectionObserver(([entry])=>document.querySelector('.site-header').classList.toggle('is-visible',!entry.isIntersecting),{rootMargin:'-68px 0px 0px 0px'}).observe(signature);
+const identityFilm=document.querySelector('.identity-film');
+const filmPlay=document.querySelector('.film-play');
+if(identityFilm&&filmPlay){
+ identityFilm.controls=false;
+ filmPlay.addEventListener('click',async()=>{try{await identityFilm.play();identityFilm.controls=true;identityFilm.tabIndex=0;identityFilm.focus();filmPlay.hidden=true;identityFilm.closest('.brand-film').classList.add('is-playing')}catch{filmPlay.textContent='Réessayer la lecture'}});
+ identityFilm.addEventListener('pause',()=>{filmPlay.hidden=false;filmPlay.innerHTML='Reprendre le film <span aria-hidden="true">▶</span>'});
+ new IntersectionObserver(([entry])=>{if(!entry.isIntersecting)identityFilm.pause()},{threshold:.1}).observe(identityFilm);
+}
+const slideButtons=[...document.querySelectorAll('[data-slide]')];
+if(slideButtons.length){
+ let current=0,timer=null,visible=false,paused=false,hovered=false,focused=false;
+ const slides=[...document.querySelectorAll('.feature-slide')];
+ const section=document.querySelector('.featured');
+ const pauseButton=document.querySelector('.feature-pause');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const changeSlide=(index,announce=true)=>{current=(index+slides.length)%slides.length;slides.forEach((slide,i)=>{slide.hidden=i!==current;slide.classList.toggle('is-current',i===current)});slideButtons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===current)));if(announce)document.querySelector('#feature-status').textContent=slides[current].querySelector('h2').textContent};
+ const sync=()=>{clearInterval(timer);timer=null;if(!paused&&visible&&!document.hidden&&!hovered&&!focused&&!reduced.matches)timer=setInterval(()=>changeSlide(current+1,false),6500);pauseButton.hidden=reduced.matches;pauseButton.textContent=paused?'▶':'Ⅱ';pauseButton.setAttribute('aria-label',paused?'Relancer le diaporama':'Mettre le diaporama en pause')};
+ const select=index=>{paused=true;changeSlide(index);sync()};
+ slideButtons.forEach((button,i)=>button.addEventListener('click',()=>select(i)));
+ document.querySelectorAll('[data-direction]').forEach(button=>button.addEventListener('click',()=>select(current+Number(button.dataset.direction))));
+ pauseButton.addEventListener('click',()=>{paused=!paused;sync()});
+ section.addEventListener('mouseenter',()=>{hovered=true;sync()});section.addEventListener('mouseleave',()=>{hovered=false;sync()});
+ section.addEventListener('focusin',()=>{focused=true;sync()});section.addEventListener('focusout',e=>{if(!section.contains(e.relatedTarget)){focused=false;sync()}});
+ document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);
+ new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync()},{threshold:.25}).observe(section);
+ document.querySelector('.feature-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();select(event.key==='Home'?0:event.key==='End'?slides.length-1:current+(event.key==='ArrowRight'?1:-1));slideButtons[current].focus()});
 }

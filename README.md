@@ -49,3 +49,5 @@ Les textures vidéo LANDOR n’ont pas été redistribuées. La matière du hero
 
 
 Animation du hero : film Gemini, raccord sur le symbole original, boucle de 15,96 secondes et commande de pause. Documentation : [MOTION.md](docs/MOTION.md).
+
+Direction active du 12 octobre : [comparaison et refonte LANDOR](docs/REFONTE-LANDOR.md). Signature monumentale, panneau d’introduction blanc, film de marque, carrousel grand format et manifeste. La navigation et les pages intérieures ont également été recomposées.

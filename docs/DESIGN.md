@@ -80,3 +80,7 @@ Les collaborations sont attribuées à ECOSPHEARE × QICS sur la base de la déc
 Titres réels, texte français relu, aucun faux chiffre, pas de témoignage fabriqué, cibles principales44 px ou plus, focus visible, médias dimensionnés, contenu essentiel sans JS, filtres exposés par URL, pas de trackers. Les boutons de contact se retrouvent dans le header et en bas de page : répétition délibérée pour les pages longues. L’infographie utilise des orbites de sens métier, et la texture des points cohérents avec la planche de marque ; les interdictions décoratives génériques de Taste ne priment pas sur ce brief.
 
 Pas de copie exacte de la texture LANDOR : les vidéos d’eau n’ont pas été réutilisées. Le rendu ECOSPHEARE livré est une création originale. Pas de promesse de conformité WCAG complète ni de score de performance sans mesure.
+
+## Direction active depuis le 12 octobre 2026
+
+La nouvelle demande du client remplace la première direction ci-dessus. La référence principale est désormais la composition LANDOR : signature monumentale, panneau blanc superposé, médias presque bord à bord, manifeste bleu, navigation centrée et sortie beige. Les règles génériques des skills qui interdiraient ces choix sont écartées au profit du brief explicite. Variance 7/10, mouvement 6/10, densité 3/10. Voir `REFONTE-LANDOR.md` pour les tokens, composants, comparaisons et limites actualisés.

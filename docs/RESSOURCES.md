@@ -53,3 +53,11 @@ Les fichiers Fichier 7.svg (noir) et Fichier 8.svg (blanc), transmis par le clie
 ## Infographies « Lumière utile » (12 octobre 2026)
 
 Quatre illustrations originales générées avec Imagegen intégré pour cette commande. Prompts exacts : `design/infographies/prompts.json`. Direction artistique et processus réutilisable : `design/infographies/README.md` et `system.json`. Masters PNG dans ce dossier ; versions WebP 640/1280 px dans `public/assets/infographies/`. Aucun asset LANDOR réutilisé. Les illustrations sont conceptuelles et ne constituent pas une preuve de résultats ni des captures de logiciels existants.
+
+## Équipe reprise de QICS (12 octobre 2026)
+
+Source : copie locale du dépôt QICS-AGENCY, révision d4099fb842225ccbdc54e2efac8bb709714b6180, `lib/content.ts` (`EQUIPE`) et `components/agence/collective.tsx`. Dix portraits WebP copiés sans modification depuis `public/equipe/` vers `public/assets/equipe/`, en 320 et 520 px. Personnes : Sacha Z, Mahé Da Sylva, Julien, Ophely et Océan (orthographe du contenu source conservée).
+
+Les rôles et spécialités sont adaptés en descriptions à la troisième personne sans ajout de qualification. Sacha est présenté en premier : le contenu QICS associe son profil à ecospheare.com. La section situe explicitement ces personnes dans la collaboration ECOSPHEARE/QICS et indique une mobilisation selon le projet. Elle ne les présente pas comme salariés d’ECOSPHEARE. Les numéros WhatsApp ne sont pas repris ; les demandes restent centralisées sur le contact ECOSPHEARE fourni.
+
+Adaptation : portraits réels détourés sur fonds bleu/pâle, titres Manrope, grille 5 colonnes desktop avec Sacha agrandi, grille 3 colonnes tablette puis 2 colonnes et portrait principal pleine rangée mobile. Pas d’animation automatique, médias dimensionnés et lazy loading, alt nominatifs. Section placée avant la méthode.

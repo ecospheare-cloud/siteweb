@@ -33,3 +33,7 @@ Blanc/bleu : 9,41:1. Bleu/jaune : 8,34:1. Corps gris #34384d/blanc : 11,55:1. Le
 ## Limites
 
 Pas de Lighthouse exécuté : les contrôles ont utilisé le navigateur autorisé CUA et les scripts statiques locaux, sans lancer un second navigateur par terminal. Aucun score Core Web Vitals ou gain de conversion revendiqué. Pas d’essai sur appareil physique, lecteur d’écran complet ni trafic réel. La page conserve un film de marque et un manifeste avant les nouveaux modules ; leur effet sur l’acquisition reste à tester. La preuve de performance nécessite encore des données client validées.
+
+## Section équipe (ajout)
+
+Cinq portraits QICS chargés et contrôlés visuellement sur desktop 1280 px ; grille à deux colonnes avec profil Sacha en première rangée sur mobile 390 px, sans débordement horizontal. 19 pages générées, 508 références vérifiées et 59 images avec alt/dimensions. Portraits source conservés sans génération ni retouche ; fichiers responsive locaux. Capture `equipe-desktop.png`. Coordonnées personnelles de la source non recopiées, CTA vers le contact ECOSPHEARE.

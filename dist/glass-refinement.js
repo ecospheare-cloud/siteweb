@@ -1,6 +1,9 @@
 (() => {
  const header=document.querySelector('.site-header');
  const home=document.body.classList.contains('home');
+ const wordmark=header?.querySelector('.wordmark');
+ if(wordmark){wordmark.replaceChildren();const logo=document.createElement('img');logo.src='/assets/ecospheare-logo-white.svg';logo.alt='';logo.width=28;logo.height=34;logo.className='nav-brand-symbol';const name=document.createElement('span');name.textContent='ecospheare agency';wordmark.append(logo,name);wordmark.setAttribute('aria-label','Ecospheare Agency, accueil');}
+
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const updateHeader=()=>header?.classList.toggle('glass-docked',!home||scrollY>80);
  updateHeader();addEventListener('scroll',updateHeader,{passive:true});

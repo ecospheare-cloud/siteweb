@@ -17,7 +17,7 @@
   ScrollTrigger.create({start:0,end:'max',onUpdate:updateHeader,onRefresh:updateHeader});
   if(home){
    gsap.fromTo('.intro-shell',{scale:.965,transformOrigin:'top center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.intro-shell',start:'top bottom',end:'top center',scrub:true,invalidateOnRefresh:true}});
-   gsap.fromTo('.brand-film',{scale:.9,transformOrigin:'center center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.brand-film',start:'top bottom',end:'70% bottom',scrub:true,invalidateOnRefresh:true}});
+   if(document.querySelector('.brand-film'))gsap.fromTo('.brand-film',{scale:.9,transformOrigin:'center center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.brand-film',start:'top bottom',end:'70% bottom',scrub:true,invalidateOnRefresh:true}});
    ScrollTrigger.create({trigger:'.manifesto-stage',start:'top top',end:()=>'+='+innerHeight,pin:'.manifesto',pinSpacing:true,anticipatePin:1,invalidateOnRefresh:true});
   }
   // The narrative advances one block at a time; links remain visible at all times.

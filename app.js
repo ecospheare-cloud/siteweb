@@ -29,7 +29,7 @@ if(film){
   if(reduced.matches){film.pause();film.removeAttribute('src');film.load();film.parentElement.classList.remove('is-playing');control.hidden=true;return}
   control.hidden=false;
   if(!film.getAttribute('src')){film.src=film.dataset.src;film.muted=true}
-  if(userPaused||!visible||document.hidden){film.pause();return}
+  if(userPaused||!visible||document.hidden||document.body.classList.contains('effects-paused')){film.pause();return}
   film.play().catch(error=>{if(error.name==='AbortError'||!visible||document.hidden||reduced.matches)return;userPaused=true;label()});
  };
  film.addEventListener('playing',()=>{film.parentElement.classList.add('is-playing');film.parentElement.classList.remove('motion-paused')});
@@ -38,6 +38,7 @@ if(film){
  control.addEventListener('click',()=>{userPaused=!userPaused;label();sync()});
  reduced.addEventListener('change',sync);
  document.addEventListener('visibilitychange',sync);
+ document.addEventListener('site-effects-change',sync);
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:0.05}).observe(film.closest('.hero'));
  sync();
 }
@@ -85,7 +86,8 @@ if(slideButtons.length){
  pauseButton.addEventListener('click',()=>{paused=!paused;focused=false;sync();});
  section.addEventListener('focusin',event=>{focused=event.target!==pauseButton;sync();});
  section.addEventListener('focusout',e=>{if(!section.contains(e.relatedTarget)){focused=false;sync();}});
- document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);
+ document.addEventListener('visibilitychange',sync);
+ document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);
  document.addEventListener('ecospheare:dialog',event=>{modalOpen=event.detail;sync();});
  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();},{threshold:.25}).observe(section);
  document.querySelector('.feature-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();select(event.key==='Home'?0:event.key==='End'?slides.length-1:current+(event.key==='ArrowRight'?1:-1));slideButtons[current].focus();});

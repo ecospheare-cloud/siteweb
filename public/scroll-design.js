@@ -10,7 +10,7 @@
   document.documentElement.classList.add('motion-ready');
   const updateHeader=trigger=>{
    const atTop=trigger.scroll()<innerHeight*.1;
-   const visible=(!home&&atTop)||(!atTop&&trigger.direction<0)||header.contains(document.activeElement)||document.querySelector('.menu-toggle')?.getAttribute('aria-expanded')==='true';
+   const visible=atTop||(!atTop&&trigger.direction<0)||header.contains(document.activeElement)||document.querySelector('.menu-toggle')?.getAttribute('aria-expanded')==='true';
    header.classList.toggle('is-visible',visible);
    header.classList.toggle('is-retracted',!visible);
   };
@@ -20,6 +20,17 @@
    gsap.fromTo('.brand-film',{scale:.9,transformOrigin:'center center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.brand-film',start:'top bottom',end:'70% bottom',scrub:true,invalidateOnRefresh:true}});
    ScrollTrigger.create({trigger:'.manifesto-stage',start:'top top',end:()=>'+='+innerHeight,pin:'.manifesto',pinSpacing:true,anticipatePin:1,invalidateOnRefresh:true});
   }
+  // The narrative advances one block at a time; links remain visible at all times.
+  for(const block of document.querySelectorAll('.growth-heading,.chapter-copy,.people-heading,.method-heading,.outcome-heading,.metric-list article,.first-conversation>div')){
+   gsap.from(block,{y:32,duration:.8,ease:'power3.out',scrollTrigger:{trigger:block,start:'top 92%',toggleActions:'play none none none',once:true}});
+  }
+  for(const figure of document.querySelectorAll('.growth-chapter .optical-figure picture')){
+   gsap.fromTo(figure.querySelector('img'),{scale:1.08},{scale:1,ease:'none',scrollTrigger:{trigger:figure,start:'top bottom',end:'bottom center',scrub:.6}});
+  }
+  for(const row of document.querySelectorAll('.people-grid,.delivery-timeline')){
+   gsap.from(row.children,{y:36,duration:.7,stagger:.09,ease:'power3.out',scrollTrigger:{trigger:row,start:'top 90%',once:true}});
+  }
+  for(const step of document.querySelectorAll('.delivery-timeline li'))ScrollTrigger.create({trigger:step,start:'top 75%',end:'bottom 35%',toggleClass:'is-step-active'});
   if(document.querySelector('.case-immersive')){
    gsap.to('.case-immersive-image',{yPercent:-30,ease:'power1.in',scrollTrigger:{trigger:'.case-immersive',start:'top top',end:()=>'+='+innerHeight,pin:'.case-immersive-media',pinSpacing:false,scrub:true,anticipatePin:1,invalidateOnRefresh:true}});
   }

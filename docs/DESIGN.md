@@ -97,3 +97,7 @@ La collection Awesome DESIGN.md/Stripe sert de référence pour séparer la mati
 ## Mise à jour du 12 octobre : audit Chrome et mouvement
 
 La [passe Chrome et sa matrice de transposition](AUDIT-LANDOR-CHROME.md) complètent ce document. Le site intègre désormais un header directionnel, un manifeste épinglé sous le panneau blanc, un carrousel en fondu de 600 ms / intervalle de 6 s, des légendes mobiles séparées et des héros immersifs sur les fiches projets. Les anciennes mentions de ces fonctions comme absentes sont historiques. Validation : 19 pages, 592 références, 59 images avec alt et dimensions ; contrôles navigateur desktop/mobile et test des états du film réussis. Le mouvement ScrollTrigger dispose d’un repli reduced-motion, sans validation sur appareil physique.
+
+## Refonte Prisme : cohérence et orientation
+
+La [nouvelle direction graphique](experience/AUDIT-ET-DESIGN.md) remplace les accents de grandes surfaces jaunes et beiges par un camaïeu cobalt/glacier. `experience.css` contient les tokens finaux et les états de composants ; `experience.js` gère les fenêtres déclenchées par l'utilisateur. Le portfolio fonctionne désormais avec une progression temporelle et un déplacement de 700 ms, et non le seul fade de la passe précédente. Les [contrôles](experience/CONTROLES.md) distinguent tests simulés et vérification navigateur.

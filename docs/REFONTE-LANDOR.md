@@ -47,3 +47,8 @@ La composition a été rapprochée de LANDOR ; ce n’est pas une identité pixe
 Outil intégré image_gen, mode génération. Fichier final : `public/assets/liquid-glass.webp` (1920 px de large, environ 178 Kio). Prompt : « Original premium abstract macro photograph / physically rendered CGI of massive smooth transparent liquid-glass bubbles and rounded water lenses, filling the frame edge to edge, saturated electric ultramarine #0e1adf, sculptural clear edges, deep navy shadows, cobalt highlights, glossy water surface, large high-contrast rounded shapes. No particles, no dotted sphere, no text, no logo, no copied brand assets. Landscape 16:9 website hero texture for ECOSPHEARE. »
 
 Le fichier `ecospheare-water.mp4` est un recadrage du côté gauche du film Gemini, sans symbole, suivi de sa lecture inversée : il apporte les reflets mobiles. Le logo animé original reste accessible dans le film de marque.
+
+
+## Mise à jour du 12 octobre : audit Chrome et mouvement
+
+La [passe Chrome et sa matrice de transposition](AUDIT-LANDOR-CHROME.md) complètent ce document. Le site intègre désormais un header directionnel, un manifeste épinglé sous le panneau blanc, un carrousel en fondu de 600 ms / intervalle de 6 s, des légendes mobiles séparées et des héros immersifs sur les fiches projets. Les anciennes mentions de ces fonctions comme absentes sont historiques. Validation : 19 pages, 592 références, 59 images avec alt et dimensions ; contrôles navigateur desktop/mobile et test des états du film réussis. Le mouvement ScrollTrigger dispose d’un repli reduced-motion, sans validation sur appareil physique.

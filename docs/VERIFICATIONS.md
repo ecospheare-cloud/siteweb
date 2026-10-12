@@ -100,3 +100,8 @@ Les anciens scores Lighthouse ne mesurent pas la version animée. Contrôles act
 ## Refonte du 12 octobre
 
 Les résultats et captures actualisés de la deuxième direction sont documentés dans `REFONTE-LANDOR.md`. Les scores Lighthouse et descriptions de la première interface ci-dessus sont historiques. Aucun score de performance antérieur n’est attribué à la nouvelle composition.
+
+
+## Mise à jour du 12 octobre : audit Chrome et mouvement
+
+La [passe Chrome et sa matrice de transposition](AUDIT-LANDOR-CHROME.md) complètent ce document. Le site intègre désormais un header directionnel, un manifeste épinglé sous le panneau blanc, un carrousel en fondu de 600 ms / intervalle de 6 s, des légendes mobiles séparées et des héros immersifs sur les fiches projets. Les anciennes mentions de ces fonctions comme absentes sont historiques. Validation : 19 pages, 592 références, 59 images avec alt et dimensions ; contrôles navigateur desktop/mobile et test des états du film réussis. Le mouvement ScrollTrigger dispose d’un repli reduced-motion, sans validation sur appareil physique.

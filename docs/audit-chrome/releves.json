@@ -1,0 +1,408 @@
+[
+  {
+    "images": [
+      {
+        "h": 491.9453125,
+        "src": "https://landor.com/_next/image/?url=https%3A%2F%2Fcms.landor.com%2Fmedia%2Ftqvf0znk%2F20260803_scana_work-index_landscape_01.jpg&w=1920&q=75",
+        "w": 738
+      },
+      {
+        "h": 491.9453125,
+        "src": "https://landor.com/_next/image/?url=https%3A%2F%2Fcms.landor.com%2Fmedia%2Fanxbcrht%2Ftci_landor_casestudy_1.jpg&w=1920&q=75",
+        "w": 738
+      },
+      {
+        "h": 491.9453125,
+        "src": "https://landor.com/_next/image/?url=https%3A%2F%2Fcms.landor.com%2Fmedia%2Fw0vhbe0u%2Frgf_work_index_1920x1280.jpg&w=1920&q=75",
+        "w": 738
+      },
+      {
+        "h": 491.9453125,
+        "src": "https://landor.com/_next/image/?url=https%3A%2F%2Fcms.landor.com%2Fmedia%2Ffodoa1um%2Flandor_vwg_workthumbnail_1920x1280px.jpg&w=1920&q=75",
+        "w": 738
+      }
+    ],
+    "links": [
+      {
+        "href": "/en/our-work/",
+        "text": "Our work"
+      },
+      {
+        "href": "/en/our-work/",
+        "text": "Our work"
+      },
+      {
+        "href": "/en/our-work/scana-energy/",
+        "text": ""
+      },
+      {
+        "href": "/en/our-work/scana-energy/",
+        "text": "SCANA EnergyBig Bear Energy"
+      },
+      {
+        "href": "/en/our-work/saudia/",
+        "text": ""
+      },
+      {
+        "href": "/en/our-work/saudia/",
+        "text": "SaudiaThe Coolest Ihram Ever"
+      },
+      {
+        "href": "/en/our-work/reykjavik-global-forum/",
+        "text": ""
+      },
+      {
+        "href": "/en/our-work/reykjavik-global-forum/",
+        "text": "Reykjavik Global ForumDare We"
+      }
+    ],
+    "titles": [
+      {
+        "line": "50.4px",
+        "size": "48px",
+        "text": "Our work"
+      },
+      {
+        "line": "24px",
+        "size": "16px",
+        "text": "Centre de préférences de la confidentialité"
+      }
+    ],
+    "url": "https://landor.com/en/our-work/",
+    "viewport": [
+      1512,
+      751
+    ]
+  },
+  {
+    "hero": [
+      {
+        "c": "CSDetailsHero_el__GLrut",
+        "h": 751,
+        "pos": "relative",
+        "transform": "none",
+        "y": 0
+      },
+      {
+        "c": "CSDetailsHero_bg__Bt_yQ",
+        "h": 751,
+        "pos": "fixed",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "y": 0
+      },
+      {
+        "c": "CSDetailsHero_desktopImage__bjWpZ CSDetailsHero_loaded__0nBj4",
+        "h": 751,
+        "pos": "static",
+        "transform": "none",
+        "y": 0
+      },
+      {
+        "c": "CSDetailsHero_mobileImage__QVVSZ CSDetailsHero_loaded__0nBj4",
+        "h": 0,
+        "pos": "static",
+        "transform": "none",
+        "y": 0
+      },
+      {
+        "c": "Breadcrumb_el__iPYIT breadcrumb Breadcrumb_hasMenu__PSIK_",
+        "h": 111,
+        "pos": "fixed",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "y": 68
+      },
+      {
+        "c": "Breadcrumb_container__zbdTg",
+        "h": 111,
+        "pos": "relative",
+        "transform": "none",
+        "y": 68
+      },
+      {
+        "c": "Breadcrumb_top__X2U6k",
+        "h": 111,
+        "pos": "relative",
+        "transform": "none",
+        "y": 68
+      },
+      {
+        "c": "Breadcrumb_topLeft__LOxym",
+        "h": 61,
+        "pos": "relative",
+        "transform": "none",
+        "y": 93
+      },
+      {
+        "c": "Breadcrumb_mainNav__v4aFQ",
+        "h": 54,
+        "pos": "absolute",
+        "transform": "none",
+        "y": 93
+      },
+      {
+        "c": "Breadcrumb_mainNavHolder__Aqi8S",
+        "h": 54,
+        "pos": "static",
+        "transform": "none",
+        "y": 93
+      },
+      {
+        "c": "Breadcrumb_active__Cy2Iv",
+        "h": 54,
+        "pos": "static",
+        "transform": "none",
+        "y": 93
+      },
+      {
+        "c": "Breadcrumb_topRight__s_6n2",
+        "h": 61,
+        "pos": "static",
+        "transform": "none",
+        "y": 93
+      },
+      {
+        "c": "Breadcrumb_closeBtn__yPNKB",
+        "h": 61,
+        "pos": "static",
+        "transform": "none",
+        "y": 93
+      }
+    ],
+    "titles": [
+      {
+        "size": "18px",
+        "text": "THE STORY"
+      },
+      {
+        "size": "16px",
+        "text": "Centre de préférences de la confidentialité"
+      },
+      {
+        "size": "16px",
+        "text": "Gérer les préférences de consentement"
+      },
+      {
+        "size": "16px",
+        "text": "Liste des cookies"
+      }
+    ],
+    "url": "https://landor.com/en/our-work/scana-energy/",
+    "viewport": [
+      1512,
+      751
+    ],
+    "y": 0
+  },
+  {
+    "background": [
+      {
+        "position": "fixed",
+        "transform": "matrix(1, 0, 0, 1, 0, -95.1307)"
+      }
+    ],
+    "intro": [
+      {
+        "padding": "0px",
+        "size": "18px",
+        "text": "SAME GAS. NO SPARK.Georgia opened its gas market to competition in the late nineties, leaving one pipe and many sellers. The gas is identical. The delivery is identical. Only the price changes, training customers to compare numbers rather than connect with brands.        SCANA Energy faced the same challenge as everyone else: how do you build preference when the product leaves almost no room to differentiate? The answer wasn’t to invent a difference. It was to build around the one customers could already feel."
+      },
+      {
+        "padding": "0px",
+        "size": "18px",
+        "text": "THE REAL POWER MOVEOur brand analysis uncovered an opportunity hiding in plain sight. While price drove the first glance, customer service drove the lasting impression. Customers described the category as confusing, opaque and difficult to trust. SCANA Energy, however, consistently outperformed competitors on service perceptions. Not a claim you can invent. A truth that simply wasn’t being rewarded. So we stopped building a better product story and built a better brand role."
+      },
+      {
+        "padding": "0px",
+        "size": "18px",
+        "text": "SOUL SEARCHINGOur strategy ‘Gas that warms your home with service that warms your soul’ was simple, emotional, and operationally real. It moved SCANA Energy from gas provider to something more human: a company that not only keeps homes warm, but improves everything around the experience of heating them.        Energy doesn’t live in the pipeline. It lives in the lights left on for someone coming home late. The dinner warming on the hob. The house finally warming up on a crisp winter morning.If service was the emotional differentiator, the brand needed a symbol that could embody it. Which left one question. What does that feel like?"
+      }
+    ],
+    "url": "https://landor.com/en/our-work/scana-energy/",
+    "y": 488
+  },
+  {
+    "h1Size": "48px",
+    "inputs": [
+      {
+        "height": 51,
+        "id": "",
+        "type": "text",
+        "width": 472
+      },
+      {
+        "height": 74,
+        "id": "firstname",
+        "type": "text",
+        "width": 872
+      },
+      {
+        "height": 74,
+        "id": "lastname",
+        "type": "text",
+        "width": 872
+      },
+      {
+        "height": 74,
+        "id": "email",
+        "type": "email",
+        "width": 872
+      },
+      {
+        "height": 74,
+        "id": "company",
+        "type": "text",
+        "width": 872
+      },
+      {
+        "height": 74,
+        "id": "job",
+        "type": "text",
+        "width": 872
+      },
+      {
+        "height": 0,
+        "id": "react-select-1541-input",
+        "type": "text",
+        "width": 7
+      },
+      {
+        "height": 0,
+        "id": "react-select-1542-input",
+        "type": "text",
+        "width": 7
+      },
+      {
+        "height": 0,
+        "id": "react-select-1543-input",
+        "type": "text",
+        "width": 7
+      },
+      {
+        "height": 220,
+        "id": "message",
+        "type": "textarea",
+        "width": 872
+      },
+      {
+        "height": 13,
+        "id": "i_understand_and_agr-9",
+        "type": "checkbox",
+        "width": 13
+      },
+      {
+        "height": 13,
+        "id": "subscribe_to_our_new-10",
+        "type": "checkbox",
+        "width": 13
+      },
+      {
+        "height": 13,
+        "id": "i'm_not_a_robot.-11",
+        "type": "checkbox",
+        "width": 13
+      }
+    ],
+    "url": "https://landor.com/en/contact-us/",
+    "viewport": [
+      1512,
+      751
+    ]
+  },
+  {
+    "fields": [
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Filter"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "All"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Creative"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Client Services"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Internship"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Landor"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "BDG"
+      },
+      {
+        "name": null,
+        "tag": "BUTTON",
+        "text": "Growth"
+      }
+    ],
+    "headings": [
+      {
+        "size": "48px",
+        "text": "Join us"
+      }
+    ],
+    "url": "https://landor.com/en/join-us/",
+    "viewport": [
+      1512,
+      751
+    ]
+  },
+  {
+    "buttons": [
+      {
+        "expanded": null,
+        "label": null
+      },
+      {
+        "expanded": null,
+        "label": null
+      },
+      {
+        "expanded": null,
+        "label": null
+      },
+      {
+        "expanded": null,
+        "label": null
+      }
+    ],
+    "header": [
+      {
+        "c": "DropdownsMobile_mobileMenu__bobGF DropdownsMobile_open__ONn3q",
+        "h": 298.6953125,
+        "transition": "top 0.5s cubic-bezier(0.23, 0, 0.22, 1)"
+      },
+      {
+        "c": "DropdownsMobile_mobileMenu__bobGF",
+        "h": 364.5,
+        "transition": "top 0.5s cubic-bezier(0.23, 0, 0.22, 1)"
+      },
+      {
+        "c": "LanguageSelectorMobile_languageWrapper__06Ilc",
+        "h": 245.5,
+        "transition": "all"
+      }
+    ],
+    "url": "https://landor.com/",
+    "viewport": [
+      390,
+      844
+    ]
+  }
+]

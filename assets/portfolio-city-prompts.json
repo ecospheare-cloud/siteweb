@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": [
+    {
+      "id": "lille",
+      "prompt": "Use case: photorealistic-natural. Landscape 16:10 editorial city photograph illustration for a French agency portfolio. Lille, France, with the iconic historic Chamber of Commerce belfry near the Grand Place, Flemish architecture. Refined natural late afternoon daylight, realistic architecture and perspective, restrained colors, warm stone and cool blue sky, beautifully composed wide establishing shot. No text, logos, watermark, borders or graphic overlay. This is a city illustration, not a client property photo. Keep major landmarks in the central 70 percent for responsive cropping."
+    },
+    {
+      "id": "lyon",
+      "prompt": "Use case: photorealistic-natural. Landscape 16:10 editorial city photograph illustration for a French agency portfolio. Lyon, France, the Saone river with historic quays and Fourviere basilica visible on the hill. Refined natural late afternoon daylight, realistic architecture and perspective, restrained colors, warm stone and cool blue sky, beautifully composed wide establishing shot. No text, logos, watermark, borders or graphic overlay. This is a city illustration, not a client property photo. Keep major landmarks in the central 70 percent for responsive cropping."
+    },
+    {
+      "id": "brest",
+      "prompt": "Use case: photorealistic-natural. Landscape 16:10 editorial city photograph illustration for a French agency portfolio. Brest, Brittany, France, an elegant view of the harbor and the historic Chateau de Brest, Atlantic maritime atmosphere. Refined natural late afternoon daylight, realistic architecture and perspective, restrained colors, warm stone and cool blue sky, beautifully composed wide establishing shot. No text, logos, watermark, borders or graphic overlay. This is a city illustration, not a client property photo. Keep major landmarks in the central 70 percent for responsive cropping."
+    },
+    {
+      "id": "bordeaux",
+      "prompt": "Use case: photorealistic-natural. Landscape 16:10 editorial city photograph illustration for a French agency portfolio. Bordeaux, France, Place de la Bourse and the Miroir d'eau reflecting the classical facades. Refined natural late afternoon daylight, realistic architecture and perspective, restrained colors, warm stone and cool blue sky, beautifully composed wide establishing shot. No text, logos, watermark, borders or graphic overlay. This is a city illustration, not a client property photo. Keep major landmarks in the central 70 percent for responsive cropping."
+    }
+  ]
+}

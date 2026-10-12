@@ -1,0 +1,117 @@
+[
+  {
+    "path": "/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/seo/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/geo/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/google-ads/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/sites-web/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/expertises/web-apps/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/eye-d/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/house-of-lucia/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/neptula/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/nexus/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/thomas-fit/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/sap/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/qics-branding/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/projets/qics-studio/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/approche/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/contact/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/confidentialite/",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/experience.css",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/app.js",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/experience.js",
+    "https_ok": true,
+    "identical": true
+  },
+  {
+    "path": "/assets/ecospheare-water.mp4",
+    "https_ok": true,
+    "identical": true
+  }
+]

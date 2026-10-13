@@ -104,3 +104,9 @@ body .site-footer{background:linear-gradient(120deg,#0a1423,#16304c)!important;b
 @keyframes cta-brand-float{from{transform:scale(1.07) translate3d(-.6%,-.8%,0) rotate(-.5deg)}to{transform:scale(1.12) translate3d(.6%,.8%,0) rotate(.5deg)}}
 body.effects-paused .cta-brand-backdrop img{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){.home .cta-brand-backdrop img{animation:none;transform:scale(1.07)}}
+
+/* Continuous opaque page canvas below each planetary introduction. */
+body.agency-page main>section:not(.agency-hero),body.expertise-page main>section:not(.expert-hero):not(.expert-index-hero){margin:0!important;width:100%!important;max-width:none!important;border-radius:0!important;border:0!important;box-shadow:none!important}
+body.agency-page main>section:not(.agency-hero)::before,body.agency-page main>section:not(.agency-hero)::after,body.expertise-page main>section:not(.expert-hero):not(.expert-index-hero)::before,body.expertise-page main>section:not(.expert-hero):not(.expert-index-hero)::after{display:none!important;content:none!important}
+body.expertise-page .expert-siblings{margin:0;background:#102743;padding-top:40px}
+.home main .global-collective,.home main .people-section{margin:0!important;width:100%!important;max-width:none!important;border-radius:0!important;background:#102139!important;border:0!important;box-shadow:none!important}

@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#315bff"/><svg x="75" y="40" width="362" height="432" id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.51 405.23">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.51 405.23">
   <defs>
     <style>
       .cls-1 {
@@ -83,4 +84,4 @@
       <ellipse class="cls-1" cx="221.84" cy="397.25" rx="7.36" ry="2.58" transform="translate(-81.81 58.4) rotate(-12.68)"/>
     </g>
   </g>
-</svg></svg>
+</svg>

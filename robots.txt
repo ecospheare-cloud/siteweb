@@ -1,2 +1,10 @@
 User-agent: *
 Disallow: /
+Allow: /expertises/
+Allow: /assets/
+Allow: /fonts/
+Allow: /vendor/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /favicon.svg
+Sitemap: https://ecospheare.com/sitemap.xml

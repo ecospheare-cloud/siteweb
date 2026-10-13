@@ -44,3 +44,7 @@ body main>section.first-conversation#votre-projet .cta-brand-video{width:100%;he
 body .people-section .person-photo{background:transparent!important}
 body .people-section .person-photo img{background:transparent!important}
 body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{object-fit:cover!important;object-position:center top!important;transform:scale(1.06)!important;transform-origin:center 12%!important}
+
+/* Preserve Sacha's resting crop while matching the team's hover motion. */
+body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{transition:transform .8s cubic-bezier(.16,1,.3,1)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){body:not(.effects-paused) .people-section .person:hover .person-photo img[src*="sacha-zacharewicz-cutout"]{transform:scale(1.124) translateY(-4px)!important}}

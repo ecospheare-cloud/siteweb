@@ -43,4 +43,4 @@ body main>section.first-conversation#votre-projet .cta-brand-video{width:100%;he
 /* Transparent, consistently framed team portraits. */
 body .people-section .person-photo{background:transparent!important}
 body .people-section .person-photo img{background:transparent!important}
-body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{object-fit:cover!important;object-position:center top!important;transform:scale(1.22)!important;transform-origin:center 12%!important}
+body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{object-fit:cover!important;object-position:center top!important;transform:scale(1.06)!important;transform-origin:center 12%!important}

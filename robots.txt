@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /
 Allow: /expertises/
+Allow: /agence/
 Allow: /assets/
 Allow: /fonts/
 Allow: /vendor/

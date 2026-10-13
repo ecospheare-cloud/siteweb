@@ -120,3 +120,17 @@ body.expertise-page .expert-siblings{margin:0;background:#102743;padding-top:40p
 /* Play the supplied logo film without cropping its frame. */
 .home .cta-brand-backdrop .cta-brand-video{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transform:none!important;filter:none!important;animation:none!important;background:#06154a}
 .home .first-conversation::after{background:linear-gradient(90deg,#030c21b8,#03102e65 60%,#030c2190)!important}
+
+body.inner main>.first-conversation{position:relative;isolation:isolate;overflow:hidden!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:32px!important;min-height:420px;padding:70px clamp(24px,5vw,80px)!important;margin:24px 0 0!important;width:100%!important;border-radius:28px!important;background:#071440!important;color:#fff!important}
+body.inner .first-conversation>.cta-brand-backdrop{position:absolute!important;inset:0!important;padding:0!important;z-index:0!important;pointer-events:none;overflow:hidden}
+body.inner .cta-brand-video{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#06154a;filter:none!important}
+body.inner main>.first-conversation::before{content:none!important}
+body.inner main>.first-conversation::after{content:''!important;display:block!important;position:absolute;inset:0;background:linear-gradient(90deg,#030c21b8,#03102e65 60%,#030c2190);z-index:1;pointer-events:none}
+body.inner .first-conversation>.cap-orbit{display:none!important}
+body.inner .first-conversation>.conversation-heading,body.inner .first-conversation>.conversation-action{position:relative;z-index:2;width:100%;padding:0!important}
+body.inner .first-conversation .conversation-heading h2{font-size:clamp(30px,4.6vw,72px)!important;line-height:1.12!important;letter-spacing:-.055em;max-width:none!important;margin:20px 0 0!important;white-space:nowrap;color:#fff!important}
+body.inner .first-conversation>.conversation-action{display:flex!important;align-items:center!important;justify-content:space-between;gap:30px}
+body.inner .first-conversation :is(p,.section-kicker){color:#fff!important}
+body.inner .first-conversation .conversation-action p{margin:0!important;font-size:20px;max-width:none}
+body.inner .first-conversation .conversation-button{flex-shrink:0;background:#ffffff18!important;color:#fff!important;backdrop-filter:blur(12px);box-shadow:inset 0 1px 1px #ffffff70;border-radius:99px}
+@media(max-width:767px){body.inner main>.first-conversation{min-height:380px;padding:50px 24px!important}body.inner .first-conversation .conversation-heading h2{white-space:normal;font-size:clamp(32px,8vw,48px)!important}body.inner .first-conversation>.conversation-action{align-items:flex-start!important;flex-direction:column!important;gap:24px}body.inner .first-conversation .conversation-action p{font-size:17px}}

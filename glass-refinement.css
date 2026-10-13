@@ -71,3 +71,6 @@ body .site-footer .footer-identity>span{white-space:nowrap}body .site-footer .fo
 body .site-footer .footer-bottom{padding:26px clamp(24px,5vw,72px) 100px;max-width:1440px;margin:auto;font-size:12px;gap:20px}body .site-footer .footer-legal-links{gap:10px 24px}
 @media(max-width:900px){body .site-footer .footer-new{grid-template-columns:1fr auto}body .site-footer .footer-new p{grid-column:1;grid-row:2}body .site-footer .footer-new .button{grid-column:2;grid-row:1 / 3}}
 @media(max-width:600px){body .site-footer{padding-top:38px}body .site-footer .footer-new{grid-template-columns:1fr;gap:24px;padding-bottom:30px}body .site-footer .footer-identity{font-size:23px;gap:12px}body .site-footer .footer-identity img{width:32px!important;height:40px!important;min-width:32px;max-width:32px!important;flex-basis:32px}body .site-footer .footer-new p,body .site-footer .footer-new .button{grid-column:1;grid-row:auto;justify-self:start}body .site-footer .footer-bottom{align-items:flex-start;text-align:left}body .site-footer .footer-bottom>span{width:auto;text-align:left}}
+
+/* Shared serif signature for Agency in all visible brand mentions. */
+body .brand-agency{font-family:'Source Serif 4',Georgia,serif!important;font-style:italic!important;font-weight:400!important;letter-spacing:-.025em!important;text-transform:none!important;font-size:inherit;line-height:inherit}

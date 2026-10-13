@@ -16,3 +16,22 @@ body #votre-projet.first-conversation#votre-projet h2{font-size:clamp(30px,4.6vw
 body #votre-projet.first-conversation#votre-projet .conversation-action p{font-size:20px!important;line-height:1.6!important;margin:0!important;max-width:none!important}
 body #votre-projet.first-conversation#votre-projet .conversation-button{display:inline-flex!important;align-items:center!important;gap:24px!important;width:auto!important;flex-shrink:0;padding:16px 24px!important;margin:8px 0 0!important;border-radius:100px!important;font-size:17px!important;font-weight:550!important;line-height:1.1!important;letter-spacing:-.025em!important;background:#ffffff18!important;color:#fff!important;backdrop-filter:blur(12px);box-shadow:inset 0 1px 1px #ffffff70;text-shadow:none}
 @media(max-width:767px){body #votre-projet.first-conversation#votre-projet{margin:16px!important;width:calc(100% - 32px)!important}body #votre-projet.first-conversation#votre-projet h2{font-size:clamp(32px,8vw,48px)!important;white-space:normal!important}body #votre-projet.first-conversation#votre-projet .conversation-action p{font-size:17px!important}}
+
+/* Readability and responsive layout shared by every final CTA. */
+body #votre-projet.first-conversation#votre-projet .conversation-button{background:#f4f7ff!important;color:#10284a!important;box-shadow:0 2px 10px #07152b33!important;min-height:52px!important;line-height:1.4!important}
+body #votre-projet.first-conversation#votre-projet .conversation-heading h2{opacity:1!important;transform:none!important}
+body #votre-projet.first-conversation#votre-projet>.conversation-heading,body #votre-projet.first-conversation#votre-projet>.conversation-action{text-shadow:0 2px 8px #00102f,0 1px 24px #00102f}
+@media(min-width:768px) and (max-width:1100px){body #votre-projet.first-conversation#votre-projet>.conversation-action{align-items:flex-start!important;flex-direction:column!important;gap:18px!important}}
+@media(max-width:767px){
+ body #votre-projet.first-conversation#votre-projet{min-height:540px!important;padding:36px 24px!important;justify-content:flex-end!important;gap:24px!important}
+ body #votre-projet.first-conversation#votre-projet .cta-brand-video{object-fit:contain!important;object-position:center top!important}
+ body #votre-projet.first-conversation#votre-projet>.cta-brand-backdrop{background:linear-gradient(#0d48ae,#06154a 50%)!important}
+ body #votre-projet.first-conversation#votre-projet .section-kicker{margin-bottom:16px!important}
+ body #votre-projet.first-conversation#votre-projet h2{font-size:34px!important;margin:0!important}
+ body #votre-projet.first-conversation#votre-projet .conversation-button{font-size:15px!important;padding:14px 18px!important;max-width:100%!important;gap:12px!important}
+}
+@media(max-width:767px){body #votre-projet.first-conversation#votre-projet .cta-brand-video{object-position:center center!important}body #votre-projet.first-conversation#votre-projet{justify-content:center!important}}
+@media(max-width:767px){
+ body #votre-projet.first-conversation#votre-projet>.cta-brand-backdrop{background:linear-gradient(180deg,#095bdf 0%,#093d9e 45%,#091049 100%)!important}
+ body #votre-projet.first-conversation#votre-projet .cta-brand-video{background:transparent!important;mask-image:linear-gradient(transparent 30%,#000 42%,#000 58%,transparent 70%);-webkit-mask-image:linear-gradient(transparent 30%,#000 42%,#000 58%,transparent 70%)}
+}

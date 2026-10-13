@@ -13,16 +13,19 @@
  const film=document.createElement('video');film.muted=true;film.loop=true;film.playsInline=true;film.preload='none';film.tabIndex=-1;
  atmosphere.append(film);document.body.prepend(atmosphere);
  let heroVisible=home;
- const sync=()=>{if(heroVisible||reduced.matches||document.hidden||document.body.classList.contains('effects-paused')){film.pause();return;}if(!film.src)film.src='https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4';film.play().catch(()=>{});};
+ const sync=()=>{if(document.body.classList.contains('portfolio-page')||heroVisible||reduced.matches||document.hidden||document.body.classList.contains('effects-paused')){film.pause();return;}if(!film.src)film.src='https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4';film.play().catch(()=>{});};
  document.addEventListener('visibilitychange',sync);document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);sync();
  if(home)new IntersectionObserver(([entry])=>{heroVisible=entry.isIntersecting;sync()},{threshold:0}).observe(document.querySelector('.bloom-hero'));
- if(!home){const control=document.createElement('button');control.className='atmosphere-toggle';control.type='button';control.textContent='Pause du fond Ⅱ';control.setAttribute('aria-pressed','false');control.addEventListener('click',()=>{const paused=document.body.classList.toggle('effects-paused');control.textContent=paused?'Animer le fond ▷':'Pause du fond Ⅱ';control.setAttribute('aria-pressed',String(paused));sync()});document.body.append(control);}
- const menu=document.querySelector('#mobile-menu');
- if(menu&&!home){const button=document.querySelector('.menu-toggle');new MutationObserver(()=>document.body.classList.toggle('universe-menu-open',!menu.hidden)).observe(menu,{attributes:true,attributeFilter:['hidden']});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.hidden=true;button?.setAttribute('aria-expanded','false')}));}
+ if(!home){const control=document.createElement('button');control.className='atmosphere-toggle';control.type='button';control.textContent='Effets Ⅱ';control.setAttribute('aria-pressed','false');control.addEventListener('click',()=>{const paused=document.body.classList.toggle('effects-paused');control.textContent=paused?'Effets ▷':'Effets Ⅱ';control.setAttribute('aria-pressed',String(paused));document.dispatchEvent(new Event('site-effects-change'));sync()});document.body.append(control);}
+
 })();
 (() => {
  const link=document.createElement('a');link.href='https://wa.me/33607166240';link.target='_blank';link.rel='noopener noreferrer';link.className='contact-float';link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter ↗</strong></span>';document.body.append(link);
- const update=()=>link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!document.body.classList.contains('universe-menu-open'));addEventListener('scroll',update,{passive:true});update();
+ const update=()=>{
+ const end=document.querySelector('#votre-projet');
+ const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
+ link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
+ };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
  for(const kind of ['branding','studio']){document.querySelectorAll(`.pf-image[href="/projets/qics-${kind}/"]`).forEach(card=>{card.innerHTML=`<div class="project-logo-only"><img src="/assets/qics-${kind}-logo.svg" alt=""><span>QICS<small>${kind==='branding'?'Branding':'Studio'}</small></span></div>`;});}
 })();
 

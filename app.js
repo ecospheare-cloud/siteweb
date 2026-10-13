@@ -1,11 +1,32 @@
 const menuButton=document.querySelector('.menu-toggle');
 const menu=document.querySelector('#mobile-menu');
-const closeMenu=(focus=false)=>{menu.hidden=true;menuButton.setAttribute('aria-expanded','false');if(focus)menuButton.focus()};
-menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menu.hidden=open;menuButton.setAttribute('aria-expanded',String(!open));});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden)closeMenu(true)});
-document.addEventListener('click',e=>{if(!menu.hidden&&!e.target.closest('.site-header'))closeMenu()});
-matchMedia('(min-width:1024px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
-for(const a of document.querySelectorAll('.desktop-nav a,.mobile-menu a')){if(location.pathname.startsWith(a.getAttribute('href')))a.setAttribute('aria-current','page')}
+const syncMenu=()=>{
+ if(!menu||!menuButton)return;
+ const open=!menu.hidden;
+ menuButton.setAttribute('aria-expanded',String(open));
+ menuButton.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');
+ document.body.classList.toggle('universe-menu-open',open);
+ for(const el of document.querySelectorAll('main,.site-footer'))el.inert=open;
+};
+const closeMenu=(focus=false)=>{if(!menu)return;menu.hidden=true;syncMenu();if(focus)menuButton?.focus()};
+menuButton?.addEventListener('click',()=>{menu.hidden=!menu.hidden;syncMenu()});
+menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeMenu()));
+document.addEventListener('keydown',e=>{
+ if(!menu||menu.hidden)return;
+ if(e.key==='Escape'){closeMenu(true);return;}
+ if(e.key==='Tab'){
+  const items=[...document.querySelectorAll('.site-header a,.site-header button')].filter(el=>el.getClientRects().length&&getComputedStyle(el).visibility!=='hidden');
+  const first=items[0],last=items.at(-1);
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}
+ }
+});
+matchMedia('(min-width:1024px)').addEventListener('change',()=>closeMenu());
+for(const a of document.querySelectorAll('.desktop-nav a,.mobile-menu a')){
+ const url=new URL(a.href);
+ if(!url.hash&&location.pathname.startsWith(url.pathname))a.setAttribute('aria-current','page');
+}
+syncMenu();
 const filters=[...document.querySelectorAll('[data-filter]')];
 const setFilter=(value,update=false)=>{if(!filters.length)return;const valid=filters.some(b=>b.dataset.filter===value)?value:'tous';let count=0;for(const card of document.querySelectorAll('[data-category]')){card.hidden=valid!=='tous'&&!card.dataset.category.split(' ').includes(valid);if(!card.hidden)count++}for(const b of filters)b.setAttribute('aria-pressed',String(b.dataset.filter===valid));document.querySelector('#filter-status').textContent=`${count} projet${count>1?'s':''} affiché${count>1?'s':''}`;if(update){const url=new URL(location.href);if(valid==='tous')url.searchParams.delete('filtre');else url.searchParams.set('filtre',valid);history.pushState(null,'',url)}};
 for(const b of filters)b.addEventListener('click',()=>setFilter(b.dataset.filter,true));

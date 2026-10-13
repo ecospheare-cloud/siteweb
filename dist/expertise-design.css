@@ -54,3 +54,8 @@ body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{transiti
 .expert-visual img{display:block;width:100%;height:auto;filter:none!important}
 .expert-context .expert-visual{grid-column:1/-1;margin:36px auto 0}
 @media(max-width:767px){.expert-visual{border-radius:16px;margin-top:24px}}
+
+/* Diagram frames follow their intrinsic landscape image, without the legacy portrait overlay. */
+.expertise-page figure.expert-visual{aspect-ratio:auto;height:auto;min-height:0;align-self:start;background:transparent}
+.expertise-page figure.expert-visual::after{content:none;display:none}
+.expertise-page figure.expert-visual img{height:auto;object-fit:contain}

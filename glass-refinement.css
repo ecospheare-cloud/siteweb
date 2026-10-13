@@ -155,3 +155,12 @@ body .site-header .mobile-menu{gap:10px!important;padding:100px clamp(24px,6vw,8
 body .site-header .mobile-menu>a{font-size:clamp(24px,2.5vw,36px)!important;line-height:1.2!important;letter-spacing:-.035em!important;padding:6px 0!important;margin:0!important;min-height:44px;box-sizing:border-box}
 body .site-header .mobile-menu>.menu-mail{font-size:16px!important}
 @media(max-width:600px){body .site-header .mobile-menu{padding-top:88px!important;gap:6px!important}body .site-header .mobile-menu>a{font-size:26px!important}}
+
+/* Contact stays directly available in both header states. */
+body .site-header>.nav-contact-cta{display:inline-flex!important;align-items:center;justify-content:center;position:relative;z-index:3;color:#fff;background:#ffffff12;border-radius:99px;box-shadow:inset 0 1px 1px #ffffff40;padding:12px 22px;font-size:13px;white-space:nowrap;order:3;min-height:44px}
+body .site-header:not(.glass-docked){display:flex!important;align-items:center;gap:16px!important}
+body .site-header:not(.glass-docked)>.wordmark{margin-right:auto}
+body .site-header:not(.glass-docked)>.menu-toggle{margin-left:0!important}
+body .site-header.glass-docked>.menu-toggle{display:none!important}
+body .site-header.glass-docked>.desktop-nav>a[href="/contact/"]{display:none!important}
+@media(max-width:767px){body .site-header>.nav-contact-cta{padding:10px 14px;font-size:12px}body .site-header:not(.glass-docked){gap:8px!important}body .site-header.glass-docked>.menu-toggle{display:flex!important;width:36px;padding:8px;font-size:0!important}body .site-header.glass-docked>.menu-toggle>span{display:none}body .site-header.glass-docked>.menu-toggle::after{content:'☰';font-size:20px}body .site-header.glass-docked{gap:8px!important}}

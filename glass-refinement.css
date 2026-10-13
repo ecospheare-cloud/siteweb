@@ -149,3 +149,9 @@ body main>section.first-conversation#votre-projet .cta-brand-video{width:100%;he
 body .people-section .person-photo{background:transparent!important}
 body .people-section .person-photo img{background:transparent!important}
 body .people-section .person-photo img[src*="sacha-zacharewicz-cutout"]{object-fit:cover!important;object-position:center top!important;transform:scale(1.22)!important;transform-origin:center 12%!important}
+
+/* Compact navigation preview. */
+body .site-header .mobile-menu{gap:10px!important;padding:100px clamp(24px,6vw,80px) 32px!important;justify-content:flex-start!important;overflow-y:auto!important}
+body .site-header .mobile-menu>a{font-size:clamp(24px,2.5vw,36px)!important;line-height:1.2!important;letter-spacing:-.035em!important;padding:6px 0!important;margin:0!important;min-height:44px;box-sizing:border-box}
+body .site-header .mobile-menu>.menu-mail{font-size:16px!important}
+@media(max-width:600px){body .site-header .mobile-menu{padding-top:88px!important;gap:6px!important}body .site-header .mobile-menu>a{font-size:26px!important}}

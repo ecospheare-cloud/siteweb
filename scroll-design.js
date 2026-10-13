@@ -26,8 +26,12 @@
      .to({}, {duration:.45});
    }
   }
+  if(home){
+   gsap.fromTo('.cap-orbit',{rotation:-50,scale:.65,opacity:.2},{rotation:20,scale:1,opacity:1,ease:'none',scrollTrigger:{trigger:'.first-conversation',start:'top bottom',end:'center center',scrub:1}});
+   gsap.fromTo('.conversation-heading h2',{y:60,opacity:.3},{y:0,opacity:1,scrollTrigger:{trigger:'.first-conversation',start:'top 85%',end:'top 30%',scrub:1}});
+  }
   // The narrative advances one block at a time; links remain visible at all times.
-  for(const block of document.querySelectorAll('.growth-heading,.chapter-copy,.people-heading,.method-heading,.outcome-heading,.metric-list article,.first-conversation>div')){
+  for(const block of document.querySelectorAll('.growth-heading,.chapter-copy,.people-heading,.method-heading,.outcome-heading')){
    gsap.from(block,{y:32,duration:.8,ease:'power3.out',scrollTrigger:{trigger:block,start:'top 92%',toggleActions:'play none none none',once:true}});
   }
   for(const figure of document.querySelectorAll('.growth-chapter .optical-figure picture')){

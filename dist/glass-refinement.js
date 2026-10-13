@@ -19,3 +19,8 @@
  const menu=document.querySelector('#mobile-menu');
  if(menu&&!home){const button=document.querySelector('.menu-toggle');new MutationObserver(()=>document.body.classList.toggle('universe-menu-open',!menu.hidden)).observe(menu,{attributes:true,attributeFilter:['hidden']});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.hidden=true;button?.setAttribute('aria-expanded','false')}));}
 })();
+(() => {
+ const link=document.createElement('a');link.href='/contact/';link.className='contact-float';link.setAttribute('aria-label','Contacter Sacha Zacharewicz');link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-gray.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter ↗</strong></span>';document.body.append(link);
+ const update=()=>link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!document.body.classList.contains('universe-menu-open'));addEventListener('scroll',update,{passive:true});update();
+ for(const kind of ['branding','studio']){document.querySelectorAll(`.pf-image[href="/projets/qics-${kind}/"]`).forEach(card=>{card.innerHTML=`<div class="project-logo-only"><img src="/assets/qics-${kind}-logo.svg" alt=""><span>QICS<small>${kind==='branding'?'Branding':'Studio'}</small></span></div>`;});}
+})();

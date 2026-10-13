@@ -134,3 +134,13 @@ body.inner .first-conversation :is(p,.section-kicker){color:#fff!important}
 body.inner .first-conversation .conversation-action p{margin:0!important;font-size:20px;max-width:none}
 body.inner .first-conversation .conversation-button{flex-shrink:0;background:#ffffff18!important;color:#fff!important;backdrop-filter:blur(12px);box-shadow:inset 0 1px 1px #ffffff70;border-radius:99px}
 @media(max-width:767px){body.inner main>.first-conversation{min-height:380px;padding:50px 24px!important}body.inner .first-conversation .conversation-heading h2{white-space:normal;font-size:clamp(32px,8vw,48px)!important}body.inner .first-conversation>.conversation-action{align-items:flex-start!important;flex-direction:column!important;gap:24px}body.inner .first-conversation .conversation-action p{font-size:17px}}
+
+/* Match the CTA to the complete 1280 × 720 film, without side bars. */
+body main>section.first-conversation#votre-projet{aspect-ratio:16/9;min-height:0!important;height:auto!important;box-sizing:border-box}
+body main>section.first-conversation#votre-projet .cta-brand-video{width:100%;height:100%;object-fit:contain}
+@media(max-width:767px){
+ body main>section.first-conversation#votre-projet{aspect-ratio:auto;padding:0 0 32px!important;gap:24px!important}
+ body main>section.first-conversation#votre-projet>.cta-brand-backdrop{position:relative!important;inset:auto!important;aspect-ratio:16/9;width:100%;flex-shrink:0}
+ body main>section.first-conversation#votre-projet>.conversation-heading,body main>section.first-conversation#votre-projet>.conversation-action{padding:0 24px!important;box-sizing:border-box}
+ body main>section.first-conversation#votre-projet::after{display:none!important}
+}

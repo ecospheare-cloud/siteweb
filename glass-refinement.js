@@ -24,3 +24,11 @@
  const update=()=>link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!document.body.classList.contains('universe-menu-open'));addEventListener('scroll',update,{passive:true});update();
  for(const kind of ['branding','studio']){document.querySelectorAll(`.pf-image[href="/projets/qics-${kind}/"]`).forEach(card=>{card.innerHTML=`<div class="project-logo-only"><img src="/assets/qics-${kind}-logo.svg" alt=""><span>QICS<small>${kind==='branding'?'Branding':'Studio'}</small></span></div>`;});}
 })();
+
+(() => {
+ const video=document.querySelector('.cta-brand-video');if(!video)return;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');let visible=false;
+ const sync=()=>{if(!visible||document.hidden||reduced.matches||document.body.classList.contains('effects-paused'))video.pause();else video.play().catch(()=>{});};
+ new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();}).observe(video);
+ document.addEventListener('visibilitychange',sync);document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);sync();
+})();

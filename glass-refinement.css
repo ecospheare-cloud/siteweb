@@ -74,3 +74,7 @@ body .site-footer .footer-bottom{padding:26px clamp(24px,5vw,72px) 100px;max-wid
 
 /* Shared serif signature for Agency in all visible brand mentions. */
 body .brand-agency{font-family:'Source Serif 4',Georgia,serif!important;font-style:italic!important;font-weight:400!important;letter-spacing:-.025em!important;text-transform:none!important;font-size:inherit;line-height:inherit}
+
+/* One identical typographic signature for the hero and every Agency label. */
+:root{--signature-font:'Source Serif 4',Georgia,serif}
+body .bloom-center h1 em,body .brand-agency{font-family:var(--signature-font)!important;font-style:italic!important;font-weight:400!important;letter-spacing:-.05em!important;font-optical-sizing:none;font-synthesis:none;font-feature-settings:normal}

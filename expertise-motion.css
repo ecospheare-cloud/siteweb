@@ -1,0 +1,15 @@
+/* Gentle orbital motion and clear hover feedback, activated only with motion enabled. */
+.expert-motion-active .expert-index-row{position:relative}
+.expert-motion-active .expert-index-label>span{display:inline-flex;align-items:center;gap:12px}
+.expert-motion-active .expert-index-label>span::before{content:'';width:7px;height:7px;flex-shrink:0;border-radius:50%;background:#83b7ff;box-shadow:0 0 0 6px #83b7ff12;animation:expert-signal 3s ease-in-out infinite}
+.expert-motion-active .expert-tags>span{transition:transform .3s,box-shadow .3s}
+.expert-motion-active .expert-tags>span:hover{transform:translateY(-4px);box-shadow:0 8px 24px #06172b25}
+.expert-motion-active :is(.expert-cards article,.expert-process article){transition:box-shadow .35s,background-color .35s}
+.expert-motion-active :is(.expert-cards article,.expert-process article):hover{box-shadow:inset 0 0 0 1px #91bfff80,0 18px 40px #08162925}
+.expert-motion-active .expert-visual{transition:box-shadow .4s}
+.expert-motion-active .expert-visual:hover{box-shadow:0 20px 55px #307adf35}
+.expert-motion-active .expert-siblings a{transition:transform .3s,background .3s}
+.expert-motion-active .expert-siblings a:hover{transform:translateY(-5px);background:#739ee133}
+.expert-motion-active .text-link{display:inline-block;transition:transform .3s}
+.expert-motion-active .text-link:hover{transform:translateX(6px)}
+@keyframes expert-signal{50%{box-shadow:0 0 0 10px #83b7ff00,0 0 16px #83b7ff80}}

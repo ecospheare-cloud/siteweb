@@ -42,3 +42,6 @@ def render(p):
 
 for page in PAGES:
     render(page)
+
+# Reapply the shared interactive diagnostic after regenerating these pages.
+exec((ROOT / "scripts/add-service-diagnostic.py").read_text(), {"__file__": str(ROOT / "scripts/add-service-diagnostic.py")})

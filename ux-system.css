@@ -201,3 +201,22 @@ body main>section.blog-teaser{position:relative;z-index:1;padding:clamp(64px,8vw
 @media(max-width:900px){.blog-teaser__grid{grid-template-columns:1fr 1fr}.blog-teaser__card:last-child{display:none}}
 @media(max-width:600px){.blog-teaser{padding:56px 24px}.blog-teaser__head{align-items:flex-start;flex-direction:column;margin-bottom:28px;gap:16px}.blog-teaser__grid{grid-template-columns:1fr}.blog-teaser__card:last-child{display:flex}.blog-teaser__body{min-height:0}.blog-teaser__all{min-height:34px}}
 @media(prefers-reduced-motion:reduce){.blog-teaser__card,.blog-teaser__card img{transition:none}}
+
+/* Mobile home hero: let the moving planet become the composition itself. */
+@media(max-width:600px){
+ body.home .bloom-hero{position:relative!important;display:block!important;height:100svh!important;min-height:700px!important;padding:0!important;overflow:hidden!important;background:#081426!important;isolation:isolate}
+ body.home .bloom-hero .hero-motion{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;opacity:1!important;z-index:-2!important;background:#081426!important}
+ body.home .bloom-hero .hero-motion video{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% center!important;mix-blend-mode:normal!important;filter:grayscale(1) sepia(.38) hue-rotate(168deg) saturate(1.15) brightness(.8)!important}
+ body.home .bloom-hero .hero-motion.is-playing video{opacity:.9!important}
+ body.home .bloom-hero .hero-motion::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,12,24,.38) 0%,rgba(4,12,24,.06) 28%,rgba(4,12,24,.13) 58%,rgba(4,12,24,.82) 100%)!important;pointer-events:none}
+ body.home .bloom-left{position:relative!important;width:100%!important;height:100%!important;min-height:0!important;padding:92px 24px 48px!important;display:flex!important;align-items:stretch!important;justify-content:center!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+ body.home .bloom-sheet{display:none!important}
+ body.home .bloom-center{position:relative!important;z-index:1!important;width:100%!important;max-width:420px!important;min-height:0!important;margin:0 auto!important;padding:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;transform:translateY(5svh)}
+ body.home .bloom-center .bloom-eyebrow{margin:0 0 18px!important;color:#fff!important;text-shadow:0 2px 18px #000!important}
+ body.home .bloom-center h1{margin:0 0 20px!important;color:#fff!important;font-size:clamp(30px,8.2vw,39px)!important;line-height:1.08!important;text-shadow:0 3px 24px rgba(0,0,0,.75)!important}
+ body.home .bloom-center h1 em{color:#f1f6ff!important}
+ body.home .bloom-center .bloom-description{margin:0 0 24px!important;color:#f2f6fc!important;font-size:13px!important;line-height:1.65!important;text-shadow:0 2px 16px rgba(0,0,0,.9)!important}
+ body.home .bloom-center .bloom-cta{background:rgba(9,24,43,.76)!important;border:1px solid rgba(220,234,252,.65)!important;box-shadow:0 12px 30px rgba(0,0,0,.24)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important}
+ body.home .bloom-quote,body.home .bloom-right{display:none!important}
+ body.home .bloom-hero .motion-toggle{top:auto!important;right:auto!important;left:18px!important;bottom:18px!important;z-index:3!important;background:rgba(9,24,43,.72)!important;border:1px solid rgba(220,234,252,.45)!important}
+}

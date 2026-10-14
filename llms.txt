@@ -1,0 +1,39 @@
+# Ecospheare Agency
+
+> Agence de développement web et d’acquisition client. Ecospheare accompagne les entreprises dans la création de sites, d’applications et d’outils commerciaux, ainsi que dans leur visibilité SEO et GEO.
+
+Ce fichier présente les principales ressources publiques du site. Les pages liées constituent la référence pour les prestations et les projets. Les simulations sont indicatives et ne constituent pas une garantie de classement ou de résultat commercial. Les pages locales décrivent les marchés accompagnés à distance, et non des bureaux dans chaque ville.
+
+## L’agence
+
+- [Accueil](https://ecospheare.com/): développement web et acquisition client.
+- [L’agence](https://ecospheare.com/agence/): équipe et organisation France–Dubaï.
+- [Notre approche](https://ecospheare.com/approche/): création, acquisition et suivi commercial.
+- [Contact](https://ecospheare.com/contact/): présenter un projet et contacter l’équipe.
+
+## Expertises
+
+- [Toutes les expertises](https://ecospheare.com/expertises/): services proposés par l’agence.
+- [Création de sites web](https://ecospheare.com/expertises/sites-web/): design, contenus et développement.
+- [Applications web](https://ecospheare.com/expertises/web-apps/): outils adaptés aux usages des équipes.
+- [Développement SaaS](https://ecospheare.com/expertises/saas/): conception et développement de produits logiciels.
+- [CRM sur mesure](https://ecospheare.com/expertises/crm/): contacts, suivi commercial et tableaux de bord.
+- [Référencement SEO](https://ecospheare.com/expertises/seo/): audit, contenus et structure du site.
+- [Référencement GEO](https://ecospheare.com/expertises/geo/): clarté des informations pour les moteurs de réponse IA.
+- [Google Ads et SEA](https://ecospheare.com/expertises/google-ads/): préparation et suivi des campagnes.
+- [Consultant SEO par ville](https://ecospheare.com/consultant-seo/): répertoire des accompagnements locaux et simulateur de potentiel.
+
+## Projets
+
+- [Portfolio](https://ecospheare.com/projets/): projets de référencement, sites web, CRM et applications.
+- [Lille Immo](https://ecospheare.com/projets/lille-immo/): accompagnement en référencement.
+- [Eye-D Studio](https://ecospheare.com/projets/eye-d/): création du site, référencement et gestion des contenus.
+- [Ecospheare Ecom](https://ecospheare.com/projets/ecospheare-ecom/): application Shopify consacrée au SEO et aux contenus.
+- [QICS Agency](https://ecospheare.com/projets/qics-agency/): accompagnement SEO.
+
+## Informations complémentaires
+
+- [Sitemap XML](https://ecospheare.com/sitemap.xml): liste des URL publiques destinées à l’indexation.
+- [Robots.txt](https://ecospheare.com/robots.txt): directives d’exploration du site.
+- [Mentions légales](https://ecospheare.com/mentions-legales.html): informations sur l’éditeur.
+- [Confidentialité](https://ecospheare.com/confidentialite/): informations sur les données personnelles.

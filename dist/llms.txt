@@ -31,6 +31,11 @@ Ce fichier présente les principales ressources publiques du site. Les pages li�
 - [Ecospheare Ecom](https://ecospheare.com/projets/ecospheare-ecom/): application Shopify consacrée au SEO et aux contenus.
 - [QICS Agency](https://ecospheare.com/projets/qics-agency/): accompagnement SEO.
 
+## Navigation GEO et plan du site
+
+- [Plan du site](https://ecospheare.com/plan-du-site/): toutes les pages publiques classées par thème.
+- [Agence GEO par ville](https://ecospheare.com/agence-geo/): référencement dans les moteurs de réponse IA selon votre marché.
+
 ## Informations complémentaires
 
 - [Sitemap XML](https://ecospheare.com/sitemap.xml): liste des URL publiques destinées à l’indexation.

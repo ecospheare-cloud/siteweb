@@ -46,3 +46,6 @@ def render(d):
  dist=ROOT/'dist'/slug/'index.html'; dist.parent.mkdir(parents=True,exist_ok=True); dist.write_text(html)
 
 for page in PAGES: render(page)
+
+# Every generated public page must be indexed in the HTML plan, XML sitemap and routes.
+exec((ROOT/'scripts/update-seo-intent-indexes.py').read_text(), {'__file__':str(ROOT/'scripts/update-seo-intent-indexes.py')})

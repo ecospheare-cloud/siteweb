@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog SEO & GEO — Conseils pour petites entreprises | Ecospheare</title>
+  <meta name="description" content="Conseils SEO, GEO et stratégie digitale pour petites entreprises. Rédigé par l'équipe Ecospheare." />
+  <link rel="canonical" href="https://ecospheare.com/blog.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-hero { background: var(--blue-900); padding: clamp(56px,8vw,96px) 0 clamp(48px,6vw,80px); text-align: center; }
+    .blog-hero .section-tag { background: rgba(147,197,253,.12); border-color: rgba(147,197,253,.25); color: #93c5fd; }
+    .blog-hero .section-title { color: #fff; }
+    .blog-hero .section-sub { color: var(--blue-300); max-width: 500px; margin: 0 auto; }
+
+    .blog-main { padding: clamp(48px,6vw,80px) 0 clamp(64px,8vw,100px); background: var(--bg2); }
+
+    /* Featured */
+    .blog-featured-card {
+      background: #fff; border: 1px solid var(--border); border-radius: var(--radius-xl);
+      display: grid; grid-template-columns: 1fr 1fr; overflow: hidden;
+      box-shadow: var(--shadow-lg); margin-bottom: 48px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .blog-featured-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37,99,235,.14); }
+    @media (max-width:760px) { .blog-featured-card { grid-template-columns: 1fr; } }
+    .blog-featured-card__img {
+      background: linear-gradient(135deg, var(--blue-800), var(--blue-500));
+      min-height: 280px; display: flex; flex-direction: column; align-items: flex-start;
+      justify-content: flex-end; padding: 32px; position: relative; overflow: hidden;
+    }
+    .blog-featured-card__img::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(255,255,255,.08), transparent 60%); }
+    .blog-featured-card__img-tag { position: relative; display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: #fff; background: rgba(255,255,255,.2); border: 1px solid rgba(255,255,255,.3); padding: 4px 12px; border-radius: 100px; margin-bottom: 12px; }
+    .blog-featured-card__img h2 { position: relative; font-family: var(--font-h); font-size: clamp(18px,2.5vw,26px); font-weight: 700; color: #fff; line-height: 1.3; }
+    .blog-featured-card__body { padding: 32px; display: flex; flex-direction: column; gap: 14px; justify-content: center; }
+    .blog-featured-card__body .blog-card__tag { background: var(--blue-50); }
+    .blog-featured-card__body h3 { font-family: var(--font-h); font-size: clamp(16px,2vw,22px); font-weight: 700; color: var(--text); line-height: 1.35; }
+    .blog-featured-card__body p { font-size: 14px; color: var(--muted); line-height: 1.8; }
+    .blog-featured-card__meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--light); }
+
+    /* Filters */
+    .blog-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+    .filter-btn { padding: 7px 16px; border-radius: 100px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1.5px solid var(--border); background: #fff; color: var(--text2); transition: all .2s; }
+    .filter-btn:hover, .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* Grid */
+    .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    @media (max-width:900px) { .blog-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width:560px) { .blog-grid { grid-template-columns: 1fr; gap: 14px; } }
+
+    .blog-article { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; transition: border-color .2s, box-shadow .2s, transform .2s; }
+    .blog-article:hover { border-color: var(--blue-300); box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .blog-article__img { height: 140px; display: flex; align-items: center; justify-content: center; font-size: 36px; position: relative; overflow: hidden; }
+    .img-blue  { background: linear-gradient(135deg, var(--blue-800), var(--blue-500)); }
+    .img-sky   { background: linear-gradient(135deg, #0284c7, #38bdf8); }
+    .img-navy  { background: linear-gradient(135deg, var(--blue-900), var(--blue-700)); }
+    .img-purple{ background: linear-gradient(135deg, #6d28d9, #8b5cf6); }
+    .img-teal  { background: linear-gradient(135deg, #0f766e, #14b8a6); }
+    .img-indigo{ background: linear-gradient(135deg, #3730a3, #6366f1); }
+    .blog-article__body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .blog-article__title { font-family: var(--font-h); font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.4; flex: 1; }
+    .blog-article__excerpt { font-size: 13px; color: var(--muted); line-height: 1.7; }
+    .blog-article__footer { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border); margin-top: auto; flex-wrap: wrap; gap: 8px; }
+    .blog-article__date { font-size: 12px; color: var(--light); }
+    .blog-article__read { font-size: 13px; font-weight: 600; color: var(--accent); display: inline-flex; align-items: center; gap: 3px; transition: gap .2s; }
+    .blog-article__read:hover { gap: 6px; }
+
+    /* Article page */
+    .article-page { max-width: 760px; margin: 0 auto; padding: clamp(48px,6vw,80px) 24px; }
+    .article-hero { background: var(--blue-900); padding: clamp(48px,6vw,80px) 0; }
+    .article-hero .container { max-width: 760px; }
+    .article-meta { font-size: 13px; color: var(--blue-300); display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+    .article-title { font-family: var(--font-h); font-size: clamp(24px,4vw,40px); font-weight: 800; color: #fff; line-height: 1.2; }
+    .article-body h2 { font-family: var(--font-h); font-size: 22px; font-weight: 700; color: var(--text); margin: 32px 0 12px; }
+    .article-body h3 { font-family: var(--font-h); font-size: 18px; font-weight: 700; color: var(--text); margin: 24px 0 10px; }
+    .article-body p  { font-size: 16px; color: var(--text2); line-height: 1.8; margin-bottom: 16px; }
+    .article-body ul { margin: 0 0 16px 20px; }
+    .article-body ul li { font-size: 15px; color: var(--text2); line-height: 1.7; margin-bottom: 6px; }
+    .article-body strong { color: var(--text); font-weight: 600; }
+    .article-cta { background: var(--blue-50); border: 1px solid var(--blue-200); border-radius: var(--radius-lg); padding: 28px; text-align: center; margin: 40px 0; }
+    .article-cta h3 { font-family: var(--font-h); font-size: 20px; color: var(--text); margin-bottom: 10px; }
+    .article-cta p { font-size: 15px; color: var(--muted); margin-bottom: 20px; }
+
+    /* Newsletter */
+    .blog-newsletter { background: var(--blue-50); border: 1px solid var(--blue-200); border-radius: var(--radius-xl); padding: clamp(28px,4vw,48px); text-align: center; margin-top: 56px; }
+    .blog-newsletter h3 { font-family: var(--font-h); font-size: clamp(18px,2.5vw,26px); font-weight: 700; color: var(--text); margin-bottom: 10px; }
+    .blog-newsletter p { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
+    .newsletter-form { display: flex; gap: 10px; max-width: 460px; margin: 0 auto; }
+    .newsletter-form input { flex: 1; background: #fff; border: 1.5px solid var(--border); border-radius: 8px; padding: 11px 16px; font-size: 14px; color: var(--text); outline: none; transition: border-color .2s; min-height: 44px; }
+    .newsletter-form input:focus { border-color: var(--accent); }
+    @media (max-width:480px) { .newsletter-form { flex-direction: column; } .newsletter-form input, .newsletter-form .btn { width: 100%; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Ecospheare — SEO & GEO",
+    "url": "https://ecospheare.com/blog.html",
+    "description": "Conseils SEO, GEO et stratégie digitale pour petites entreprises",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Ecospheare",
+      "logo": { "@type": "ImageObject", "url": "https://i.ibb.co/rKPD0Kt1/logo.png" }
+    }
+  }
+  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Serif+4:ital,wght@1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/glass-design.css"><link rel="stylesheet" href="/glass-refinement.css?v=audit-1"><script defer src="/glass-refinement.js?v=audit-1"></script><link rel="stylesheet" href="/editorial.css"><link rel="stylesheet" href="/ux-system.css?v=audit-20261013"><script type="module" src="/app.js?v=ux-1"></script><meta name="robots" content="index,follow"></head>
+<body class="inner legacy-page"><a class="skip" href="#contenu">Aller au contenu</a><header class="site-header "><nav class="desktop-nav" aria-label="Navigation principale"><a href="/agence/">L’agence</a><a href="/projets/">Nos projets</a><a href="/expertises/">Expertises</a><a href="/contact/">Contact</a></nav><a href="/" class="wordmark" aria-label="ECOSPHEARE, accueil">ecospheare</a><a class="header-contact" href="/approche/">Notre approche <span class="arrow" aria-hidden="true">↗</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button><nav id="mobile-menu" class="mobile-menu" aria-label="Navigation mobile" hidden><a href="/agence/">L’agence</a><a href="/projets/">Nos projets</a><a href="/expertises/">Expertises</a><a href="/approche/">Notre approche</a><a href="/contact/">Contact</a></nav></header><main id="contenu">
+
+  <section class="blog-hero">
+    <div class="container">
+      <span class="section-tag">Le blog Ecospheare</span>
+      <h1 class="section-title" style="color:#fff">Conseils SEO & GEO pour petites entreprises</h1>
+      <p class="section-sub">Des articles pratiques pour t'aider à gagner en visibilité sur Google et dans les réponses des IA.</p>
+    </div>
+  </section>
+
+  <section class="blog-main">
+    <div class="container">
+
+      <!-- Featured -->
+      <a href="article-agents-ia.html" class="blog-featured-card" style="text-decoration:none">
+        <div class="blog-featured-card__img">
+          <span class="blog-featured-card__img-tag">Agents IA</span>
+          <h2>Nos Agents IA arrivent : comment l'IA va transformer ta croissance</h2>
+        </div>
+        <div class="blog-featured-card__body">
+          <span class="blog-card__tag">Intelligence artificielle</span>
+          <h3>Un employé IA disponible 24h/24 — sans recruter, sans former</h3>
+          <p>Pendant que tes concurrents recrutent et forment des équipes, tu peux déployer des assistants IA capables de faire le même travail en quelques secondes.</p>
+          <div class="blog-featured-card__meta"><span>15 mai 2025</span><span>·</span><span>5 min</span></div>
+          <span class="btn btn--primary btn--sm" style="width:fit-content">Lire l'article →</span>
+        </div>
+      </a>
+
+      <!-- Filters -->
+      <div class="blog-filters">
+        <button class="filter-btn active">Tous</button>
+        <button class="filter-btn">SEO</button>
+        <button class="filter-btn">GEO</button>
+        <button class="filter-btn">SEO Local</button>
+        <button class="filter-btn">Stratégie</button>
+        <button class="filter-btn">IA</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="blog-grid">
+        <article class="blog-article">
+          <div class="blog-article__img img-navy">🔍</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">SEO</span>
+            <h2 class="blog-article__title">5 erreurs SEO qui coûtent des clients à ta petite entreprise</h2>
+            <p class="blog-article__excerpt">Balises title dupliquées, site trop lent, zéro contenu optimisé... La majorité des PME font les mêmes erreurs. Voici comment les corriger.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">8 mai 2025 · 6 min</span><a href="article-seo-erreurs.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="blog-article__img img-sky">🧠</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">GEO</span>
+            <h2 class="blog-article__title">GEO : comment apparaître dans les réponses de ChatGPT et Perplexity</h2>
+            <p class="blog-article__excerpt">Le SEO classique ne suffit plus. Voici comment structurer ton contenu pour être cité par les IA génératives en 2025.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">2 mai 2025 · 7 min</span><a href="article-geo.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="blog-article__img img-blue">📍</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">SEO Local</span>
+            <h2 class="blog-article__title">Google My Business : le guide complet pour les commerçants en 2025</h2>
+            <p class="blog-article__excerpt">Ta fiche GMB est ta vitrine numéro 1. Voici comment l'optimiser pour attirer plus de clients locaux sans budget publicitaire.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">25 avril 2025 · 8 min</span><a href="article-gmb.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="blog-article__img img-teal">⚡</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">SEO Technique</span>
+            <h2 class="blog-article__title">Vitesse de site : pourquoi chaque seconde te coûte des clients</h2>
+            <p class="blog-article__excerpt">53% des visiteurs quittent un site qui met plus de 3 secondes à charger. Voici comment mesurer et améliorer ta performance.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">18 avril 2025 · 5 min</span><a href="article-vitesse.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="blog-article__img img-purple">🗺️</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">Stratégie</span>
+            <h2 class="blog-article__title">Comment créer ta stratégie digitale en 2025 quand tu es une petite entreprise</h2>
+            <p class="blog-article__excerpt">Pas besoin d'un budget de grande marque. Voici comment prioriser tes actions pour un impact maximum avec des ressources limitées.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">10 avril 2025 · 9 min</span><a href="article-strategie.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+        <article class="blog-article">
+          <div class="blog-article__img img-indigo">✍️</div>
+          <div class="blog-article__body">
+            <span class="blog-card__tag">Contenu SEO</span>
+            <h2 class="blog-article__title">Comment rédiger du contenu qui plaît à Google ET à tes lecteurs</h2>
+            <p class="blog-article__excerpt">Écrire pour les humains d'abord, optimiser pour Google ensuite. Notre méthode simple en 7 étapes pour du contenu qui convertit.</p>
+            <div class="blog-article__footer"><span class="blog-article__date">3 avril 2025 · 6 min</span><a href="article-contenu.html" class="blog-article__read">Lire →</a></div>
+          </div>
+        </article>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="first-conversation" id="votre-projet"><div class="cta-brand-backdrop" aria-hidden="true"><video class="cta-brand-video" autoplay muted loop playsinline preload="metadata" poster="/assets/cta-logo-blue.png"><source src="/assets/cta-logo-animated.mp4" type="video/mp4"></video></div><div class="cap-orbit" aria-hidden="true"><i></i><i></i><i></i><span>↗</span></div><div class="conversation-heading"><p class="section-kicker">Faisons avancer votre projet</p><h2>Votre prochain cap commence ici.</h2></div><div class="conversation-action"><p>Une idée en tête ? Donnons-lui son envol.</p><a class="button conversation-button" href="/contact/">Parlons de votre projet<span class="arrow" aria-hidden="true">↗</span></a></div></section></main><footer class="site-footer"><section class="footer-seo wrap" aria-label="Agence SEO par ville"><div class="footer-seo-heading"><h2>Agence SEO</h2><a href="/consultant-seo/">Toutes nos villes ↗</a></div><nav aria-label="Accompagnement SEO local"><a href="/consultant-seo-angers/">SEO à Angers</a><a href="/consultant-seo-bordeaux/">SEO à Bordeaux</a><a href="/consultant-seo-grenoble/">SEO à Grenoble</a><a href="/consultant-seo-lyon/">SEO à Lyon</a><a href="/consultant-seo-marseille/">SEO à Marseille</a><a href="/consultant-seo-montpellier/">SEO à Montpellier</a><a href="/consultant-seo-nantes/">SEO à Nantes</a><a href="/consultant-seo-nice/">SEO à Nice</a><a href="/consultant-seo-paris/">SEO à Paris</a><a href="/consultant-seo-rennes/">SEO à Rennes</a><a href="/consultant-seo-reims/">SEO à Reims</a><a href="/consultant-seo-strasbourg/">SEO à Strasbourg</a><a href="/consultant-seo-tours/">SEO à Tours</a><a href="/consultant-seo-lens/">SEO à Lens</a><a href="/consultant-seo-saint-etienne/">SEO à Saint-Étienne</a><a href="/consultant-seo-lille/">SEO à Lille</a><a href="/consultant-seo-rouen/">SEO à Rouen</a><a href="/consultant-seo-toulouse/">SEO à Toulouse</a><a href="/consultant-seo-brest/">SEO à Brest</a><a href="/consultant-seo-arras/">SEO à Arras</a></nav></section><div class="footer-new wrap"><a class="footer-identity" href="/"><img src="/assets/ecospheare-logo-white.svg" alt="" width="42" height="52"><span>ecospheare <span class="brand-agency">agency</span></span></a><nav class="footer-explore" aria-label="Explorer l’agence"><a href="https://www.linkedin.com/in/sacha-zacharewicz-57462a373/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sacha Zacharewicz, nouvel onglet">LinkedIn ↗</a><a href="https://www.instagram.com/sacha_zacharewicz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sacha Zacharewicz, nouvel onglet">Instagram ↗</a><a href="/agence/">L’agence ↗</a><a href="/expertises/">Expertises ↗</a><a href="/approche/">Notre approche ↗</a><a href="/projets/">Nos projets ↗</a></nav><a class="button" href="/contact/">Parlons de votre projet ↗</a></div><div class="footer-bottom wrap"><span>© 2026 Ecospheare Agency · France — Dubaï</span><nav class="footer-legal-links" aria-label="Informations légales"><a href="/mentions-legales.html">Mentions légales</a><a href="/confidentialite/">Confidentialité</a><a href="/cgv-cgu.html#conditions-vente">CGV</a><a href="/cgv-cgu.html#conditions-utilisation">CGU</a></nav></div></footer>
+
+  <script src="script.js"></script>
+  <script>
+    const blogFilters=[...document.querySelectorAll('.filter-btn')];
+    const blogCards=[...document.querySelectorAll('.blog-article,.blog-featured-card')];
+    blogFilters.forEach(btn=>{btn.setAttribute('aria-pressed',String(btn.classList.contains('active')));btn.addEventListener('click',()=>{
+      const category=btn.textContent.trim();
+      blogFilters.forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn))});
+      blogCards.forEach(card=>{const tag=card.querySelector('.blog-card__tag')?.textContent.trim()||'';card.hidden=category!=='Tous'&&!(category==='IA'?tag.includes('Intelligence'):tag===category)});
+    })});
+  </script>
+</body>
+</html>

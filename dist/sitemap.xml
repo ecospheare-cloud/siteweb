@@ -1,105 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://ecospheare.com/agence/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/blog.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/agents-ia.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-agents-ia.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-seo-erreurs.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-geo.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-gmb.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-vitesse.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-strategie.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://ecospheare.com/article-contenu.html</loc>
-    <lastmod>2026-07-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-<url><loc>https://ecospheare.com/expertises/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/web-apps/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/saas/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/crm/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/seo/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/geo/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/sites-web/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/expertises/google-ads/</loc><lastmod>2026-10-13</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-angers/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-bordeaux/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-grenoble/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-lyon/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-marseille/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-montpellier/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-nantes/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-nice/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-paris/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-rennes/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-reims/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-strasbourg/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-tours/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-lens/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-saint-etienne/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-lille/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-rouen/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-toulouse/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-brest/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/consultant-seo-arras/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/projets/ecospheare-ecom/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://ecospheare.com/projets/qics-agency/</loc><lastmod>2026-10-14</lastmod></url>
+<url><loc>https://ecospheare.com/</loc></url>
+<url><loc>https://ecospheare.com/agence/</loc></url>
+<url><loc>https://ecospheare.com/agents-ia.html</loc></url>
+<url><loc>https://ecospheare.com/approche/</loc></url>
+<url><loc>https://ecospheare.com/article-agents-ia.html</loc></url>
+<url><loc>https://ecospheare.com/article-contenu.html</loc></url>
+<url><loc>https://ecospheare.com/article-geo.html</loc></url>
+<url><loc>https://ecospheare.com/article-gmb.html</loc></url>
+<url><loc>https://ecospheare.com/article-seo-erreurs.html</loc></url>
+<url><loc>https://ecospheare.com/article-strategie.html</loc></url>
+<url><loc>https://ecospheare.com/article-vitesse.html</loc></url>
+<url><loc>https://ecospheare.com/blog.html</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-angers/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-arras/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-bordeaux/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-brest/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-grenoble/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-lens/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-lille/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-lyon/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-marseille/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-montpellier/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-nantes/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-nice/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-paris/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-reims/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-rennes/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-rouen/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-saint-etienne/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-strasbourg/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-toulouse/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo-tours/</loc></url>
+<url><loc>https://ecospheare.com/consultant-seo/</loc></url>
+<url><loc>https://ecospheare.com/contact/</loc></url>
+<url><loc>https://ecospheare.com/expertises/</loc></url>
+<url><loc>https://ecospheare.com/expertises/crm/</loc></url>
+<url><loc>https://ecospheare.com/expertises/geo/</loc></url>
+<url><loc>https://ecospheare.com/expertises/google-ads/</loc></url>
+<url><loc>https://ecospheare.com/expertises/saas/</loc></url>
+<url><loc>https://ecospheare.com/expertises/seo/</loc></url>
+<url><loc>https://ecospheare.com/expertises/sites-web/</loc></url>
+<url><loc>https://ecospheare.com/expertises/web-apps/</loc></url>
+<url><loc>https://ecospheare.com/projets/</loc></url>
+<url><loc>https://ecospheare.com/projets/baron-is-free/</loc></url>
+<url><loc>https://ecospheare.com/projets/centrale-renovation/</loc></url>
+<url><loc>https://ecospheare.com/projets/ecospheare-ecom/</loc></url>
+<url><loc>https://ecospheare.com/projets/eye-d/</loc></url>
+<url><loc>https://ecospheare.com/projets/jardins-arcadie/</loc></url>
+<url><loc>https://ecospheare.com/projets/just-a-ride/</loc></url>
+<url><loc>https://ecospheare.com/projets/lille-immo/</loc></url>
+<url><loc>https://ecospheare.com/projets/lyon-diagnostic/</loc></url>
+<url><loc>https://ecospheare.com/projets/mycleaners/</loc></url>
+<url><loc>https://ecospheare.com/projets/nexus/</loc></url>
+<url><loc>https://ecospheare.com/projets/nicolas-immobilier/</loc></url>
+<url><loc>https://ecospheare.com/projets/qics-agency/</loc></url>
+<url><loc>https://ecospheare.com/projets/qics-branding/</loc></url>
+<url><loc>https://ecospheare.com/projets/qics-studio/</loc></url>
+<url><loc>https://ecospheare.com/projets/sap/</loc></url>
 </urlset>

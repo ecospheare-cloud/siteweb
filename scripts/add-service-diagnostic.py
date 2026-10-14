@@ -8,12 +8,26 @@ SECTION='''<section class="service-diagnostic" aria-labelledby="diagnostic-title
 for rel in PAGES:
     src=ROOT/rel
     text=src.read_text()
+    text=text.replace('body class="inner expertise-page"','body class="inner expertise-page service-landing-page"',1)
     if '/service-diagnostic.css' not in text:
         text=text.replace('</head>',ASSETS+'</head>',1)
     if 'class="service-diagnostic"' not in text:
         text=text.replace('<section class="service-faq"',SECTION+'<section class="service-faq"',1)
     src.write_text(text)
     dest=ROOT/'dist'/rel
+    dest.parent.mkdir(parents=True,exist_ok=True)
+    dest.write_text(text)
+# Intent-specific service pages receive the diagnostic from their own generator.
+# Keep the shared page class on every page that loads this component.
+for src in ROOT.rglob('*.html'):
+    if 'dist' in src.parts:
+        continue
+    text=src.read_text()
+    if '/service-diagnostic.css' not in text:
+        continue
+    text=text.replace('body class="inner expertise-page"','body class="inner expertise-page service-landing-page"',1)
+    src.write_text(text)
+    dest=ROOT/'dist'/src.relative_to(ROOT)
     dest.parent.mkdir(parents=True,exist_ok=True)
     dest.write_text(text)
 for name in ['service-diagnostic.css','service-diagnostic.js']:

@@ -63,8 +63,8 @@ body .site-footer .footer-bottom{color:#cbd7e6!important;line-height:1.7}
 body .site-footer .footer-legal-links a{display:inline-flex;align-items:center;min-height:44px;color:#e7effb!important}
 body .site-footer .footer-explore a{display:inline-flex;align-items:center;min-height:44px}
 /* The contact portrait must not obscure the final CTA or contact form. */
-body .contact-float{background:#142b48!important;border:1px solid #8194ac!important}
-body .contact-float small{color:#d7e3f3!important}
+body .contact-float{background:#142237eb!important;border:0!important}
+body .contact-float small{color:#c1ccdc!important}
 body .atmosphere-toggle,body .motion-master{min-height:44px;background:#0c1728!important;color:#fff!important;border:1px solid #8194ac!important}
 /* Tablet navigation must remain reachable between 768 and 1023px. */
 @media(max-width:1023px){

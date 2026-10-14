@@ -28,6 +28,24 @@ Ce fichier présente les principales ressources publiques du site. Les pages li�
 - [Google Ads et SEA](https://ecospheare.com/expertises/google-ads/): préparation et suivi des campagnes.
 - [Consultant SEO par ville](https://ecospheare.com/consultant-seo/): répertoire des accompagnements locaux et simulateur de potentiel.
 
+- [Agence ChatGPT](https://ecospheare.com/agence-chatgpt/): page spécialisée sur cette intention de service.
+- [Agence Claude Code](https://ecospheare.com/agence-claude-code/): page spécialisée sur cette intention de service.
+- [Agence chatbot IA](https://ecospheare.com/agence-chatbot-ia/): page spécialisée sur cette intention de service.
+- [Automatisation CRM](https://ecospheare.com/automatisation-crm/): page spécialisée sur cette intention de service.
+- [Automatisation n8n](https://ecospheare.com/automatisation-n8n/): page spécialisée sur cette intention de service.
+- [Agence intégration API](https://ecospheare.com/agence-integration-api/): page spécialisée sur cette intention de service.
+- [Automatisation facturation](https://ecospheare.com/automatisation-facturation/): page spécialisée sur cette intention de service.
+- [Logiciel métier sur mesure](https://ecospheare.com/logiciel-metier-sur-mesure/): page spécialisée sur cette intention de service.
+- [Refonte et maintenance logiciel](https://ecospheare.com/refonte-maintenance-logiciel/): page spécialisée sur cette intention de service.
+- [Agence développement application](https://ecospheare.com/agence-developpement-application/): page spécialisée sur cette intention de service.
+- [Application métier sur mesure](https://ecospheare.com/application-metier-sur-mesure/): page spécialisée sur cette intention de service.
+- [Développement portail client](https://ecospheare.com/developpement-portail-client/): page spécialisée sur cette intention de service.
+- [Agence création MVP](https://ecospheare.com/agence-creation-mvp/): page spécialisée sur cette intention de service.
+- [ERP sur mesure](https://ecospheare.com/erp-sur-mesure/): page spécialisée sur cette intention de service.
+- [Tableau de bord sur mesure](https://ecospheare.com/tableau-de-bord-sur-mesure/): page spécialisée sur cette intention de service.
+- [Création site vitrine professionnel](https://ecospheare.com/creation-site-vitrine-professionnel/): page spécialisée sur cette intention de service.
+- [Création site web avec IA](https://ecospheare.com/creation-site-web-avec-ia/): page spécialisée sur cette intention de service.
+
 ## Projets
 
 - [Portfolio](https://ecospheare.com/projets/): projets de référencement, sites web, CRM et applications.

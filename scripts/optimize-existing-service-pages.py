@@ -17,9 +17,9 @@ PAGES = {
 },
 "expertises/saas/index.html": {
  "replacements": {
-  "Développement SaaS | Ecospheare Agency":"Agence développement SaaS et MVP | Ecospheare",
-  "Ecospheare conçoit et développe votre application SaaS : cadrage du produit, parcours utilisateurs, abonnement, données et évolution progressive.":"Agence SaaS, Ecospheare accompagne le développement de logiciels SaaS et de MVP, du cadrage produit à une mise en service progressive.",
-  "Développement SaaS</h1>":"Agence développement SaaS et MVP</h1>",
+  "Développement SaaS | Ecospheare Agency":"Agence développement SaaS | Ecospheare",
+  "Ecospheare conçoit et développe votre application SaaS : cadrage du produit, parcours utilisateurs, abonnement, données et évolution progressive.":"Agence SaaS, Ecospheare accompagne le développement de logiciels SaaS, du cadrage produit et des abonnements à une mise en service progressive.",
+  "Développement SaaS</h1>":"Agence développement SaaS</h1>",
   "Une application SaaS centrée sur sa promesse":"Un développement SaaS centré sur la promesse du produit",
   "Un prototype peut d’abord valider un parcours":"Une agence de création MVP peut d’abord valider un parcours"
  },
@@ -27,9 +27,9 @@ PAGES = {
 },
 "expertises/crm/index.html": {
  "replacements": {
-  "CRM sur mesure | Ecospheare Agency":"CRM et ERP sur mesure | Ecospheare",
-  "Centralisez votre suivi commercial avec un CRM sur mesure : contacts, historique, pipeline et tableaux de bord adaptés à votre équipe par Ecospheare.":"Ecospheare développe votre CRM, ERP ou logiciel de gestion sur mesure : contacts, opérations, automatisations et tableaux de bord adaptés à votre équipe.",
-  "CRM sur mesure</h1>":"CRM et ERP sur mesure</h1>",
+  "CRM sur mesure | Ecospheare Agency":"CRM sur mesure | Ecospheare",
+  "Centralisez votre suivi commercial avec un CRM sur mesure : contacts, historique, pipeline et tableaux de bord adaptés à votre équipe par Ecospheare.":"Ecospheare développe votre CRM sur mesure : contacts, pipeline, automatisations et tableaux de bord adaptés à votre équipe commerciale.",
+  "CRM sur mesure</h1>":"CRM sur mesure</h1>",
   "Un CRM sur mesure pour rendre le suivi commercial lisible":"Un logiciel de gestion sur mesure pour relier vos opérations",
   "Peut-on relier le site internet à un CRM sur mesure ?":"Peut-on relier un site internet à un CRM ou ERP sur mesure ?"
  },

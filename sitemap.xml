@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://ecospheare.com/</loc></url>
-<url><loc>https://ecospheare.com/agence-ia/</loc></url>
-<url><loc>https://ecospheare.com/agence-automatisation/</loc></url>
-<url><loc>https://ecospheare.com/agence-developpement-logiciel/</loc></url>
 <url><loc>https://ecospheare.com/agence-application-mobile/</loc></url>
+<url><loc>https://ecospheare.com/agence-automatisation/</loc></url>
+<url><loc>https://ecospheare.com/agence-chatbot-ia/</loc></url>
+<url><loc>https://ecospheare.com/agence-chatgpt/</loc></url>
+<url><loc>https://ecospheare.com/agence-claude-code/</loc></url>
+<url><loc>https://ecospheare.com/agence-creation-mvp/</loc></url>
+<url><loc>https://ecospheare.com/agence-developpement-application/</loc></url>
+<url><loc>https://ecospheare.com/agence-developpement-logiciel/</loc></url>
 <url><loc>https://ecospheare.com/agence-geo-angers/</loc></url>
 <url><loc>https://ecospheare.com/agence-geo-arras/</loc></url>
 <url><loc>https://ecospheare.com/agence-geo-bordeaux/</loc></url>
@@ -26,8 +30,11 @@
 <url><loc>https://ecospheare.com/agence-geo-toulouse/</loc></url>
 <url><loc>https://ecospheare.com/agence-geo-tours/</loc></url>
 <url><loc>https://ecospheare.com/agence-geo/</loc></url>
+<url><loc>https://ecospheare.com/agence-ia/</loc></url>
+<url><loc>https://ecospheare.com/agence-integration-api/</loc></url>
 <url><loc>https://ecospheare.com/agence/</loc></url>
 <url><loc>https://ecospheare.com/agents-ia.html</loc></url>
+<url><loc>https://ecospheare.com/application-metier-sur-mesure/</loc></url>
 <url><loc>https://ecospheare.com/approche/</loc></url>
 <url><loc>https://ecospheare.com/article-contenu.html</loc></url>
 <url><loc>https://ecospheare.com/article-geo.html</loc></url>
@@ -35,6 +42,9 @@
 <url><loc>https://ecospheare.com/article-seo-erreurs.html</loc></url>
 <url><loc>https://ecospheare.com/article-strategie.html</loc></url>
 <url><loc>https://ecospheare.com/article-vitesse.html</loc></url>
+<url><loc>https://ecospheare.com/automatisation-crm/</loc></url>
+<url><loc>https://ecospheare.com/automatisation-facturation/</loc></url>
+<url><loc>https://ecospheare.com/automatisation-n8n/</loc></url>
 <url><loc>https://ecospheare.com/blog.html</loc></url>
 <url><loc>https://ecospheare.com/consultant-seo-angers/</loc></url>
 <url><loc>https://ecospheare.com/consultant-seo-arras/</loc></url>
@@ -58,6 +68,10 @@
 <url><loc>https://ecospheare.com/consultant-seo-tours/</loc></url>
 <url><loc>https://ecospheare.com/consultant-seo/</loc></url>
 <url><loc>https://ecospheare.com/contact/</loc></url>
+<url><loc>https://ecospheare.com/creation-site-vitrine-professionnel/</loc></url>
+<url><loc>https://ecospheare.com/creation-site-web-avec-ia/</loc></url>
+<url><loc>https://ecospheare.com/developpement-portail-client/</loc></url>
+<url><loc>https://ecospheare.com/erp-sur-mesure/</loc></url>
 <url><loc>https://ecospheare.com/expertises/</loc></url>
 <url><loc>https://ecospheare.com/expertises/crm/</loc></url>
 <url><loc>https://ecospheare.com/expertises/geo/</loc></url>
@@ -66,6 +80,7 @@
 <url><loc>https://ecospheare.com/expertises/seo/</loc></url>
 <url><loc>https://ecospheare.com/expertises/sites-web/</loc></url>
 <url><loc>https://ecospheare.com/expertises/web-apps/</loc></url>
+<url><loc>https://ecospheare.com/logiciel-metier-sur-mesure/</loc></url>
 <url><loc>https://ecospheare.com/plan-du-site/</loc></url>
 <url><loc>https://ecospheare.com/projets/</loc></url>
 <url><loc>https://ecospheare.com/projets/baron-is-free/</loc></url>
@@ -83,4 +98,6 @@
 <url><loc>https://ecospheare.com/projets/qics-branding/</loc></url>
 <url><loc>https://ecospheare.com/projets/qics-studio/</loc></url>
 <url><loc>https://ecospheare.com/projets/sap/</loc></url>
+<url><loc>https://ecospheare.com/refonte-maintenance-logiciel/</loc></url>
+<url><loc>https://ecospheare.com/tableau-de-bord-sur-mesure/</loc></url>
 </urlset>

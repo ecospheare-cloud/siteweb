@@ -19,6 +19,10 @@ for route in routes:
     absolute='https://ecospheare.com'+route
     if absolute not in sitemap:
         missing.append(f'{route}: sitemap.xml')
+    relative='index.html' if route=='/' else route.strip('/')+'/index.html' if route.endswith('/') else route.strip('/')
+    page=ROOT/relative
+    if page.exists() and route!='/plan-du-site/' and 'href="/plan-du-site/"' not in page.read_text():
+        missing.append(f'{route}: lien vers le plan du site')
 if missing:
     raise SystemExit('Pages publiques non indexées:\n- '+'\n- '.join(missing))
 print(f'{len(routes)} routes publiques présentes dans le plan du site et le sitemap.')

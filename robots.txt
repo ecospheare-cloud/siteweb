@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /
+Allow: /consultant-seo
 Allow: /expertises/
 Allow: /agence/
 Allow: /assets/

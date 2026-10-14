@@ -4,6 +4,7 @@ import re,json,html,shutil
 root=Path(__file__).resolve().parents[1]
 source=(root/'expertises/seo/index.html').read_text()
 head=source.split('<main id="contenu">')[0]
+teaser=source[source.index('<section class="blog-teaser"'):source.index('<section class="first-conversation"')]
 cta=source[source.index('<section class="first-conversation"'):source.index('</main>')]
 footer=source[source.index('</main>'):]
 # City-specific examples are planning scenarios, never claimed client outcomes or offices.
@@ -35,7 +36,7 @@ def shell(title,desc,path,body):
  h=re.sub(r'(<meta property="og:title" content=")[^"]*',lambda m:m[1]+html.escape(title,quote=True),h)
  h=re.sub(r'<link rel="canonical"[^>]*>',f'<link rel="canonical" href="https://ecospheare.com{path}">',h)
  h=h.replace('inner expertise-page','inner expertise-page local-seo-page').replace('</head>','<link rel="stylesheet" href="/local-seo.css?v=5"><script defer src="/local-seo.js?v=4"></script></head>')
- return h+'<main id="contenu">'+body+cta+footer
+ return h+'<main id="contenu">'+body+teaser+cta+footer
 for slug,city,tag,context,example,action in data:
  path=f'/consultant-seo-{slug}/'
  position=next(i for i,x in enumerate(data) if x[0]==slug)

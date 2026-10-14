@@ -5,6 +5,7 @@ root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'local-seo-data.json').read_text())
 source=(root/'consultant-seo-bordeaux/index.html').read_text()
 head=source.split('<main id="contenu">')[0]
+teaser=source[source.index('<section class="blog-teaser"'):source.index('<section class="first-conversation"')]
 cta=source[source.index('<section class="first-conversation"'):source.index('</main>')]
 footer=source[source.index('</main>'):]
 footer=re.sub(r'<section class="footer-seo\b.*?</section>','',footer,flags=re.S)
@@ -16,7 +17,7 @@ def write(path,title,desc,body):
  h=re.sub(r'<link rel="canonical"[^>]*>',f'<link rel="canonical" href="https://ecospheare.com{path}">',h)
  h=re.sub(r'<script defer src="/local-seo.js[^>]*></script>','',h)
  h=h.replace('</head>','<link rel="stylesheet" href="/site-directory.css"></head>')
- text=h+'<main id="contenu">'+body+cta+footer
+ text=h+'<main id="contenu">'+body+teaser+cta+footer
  for base in [root,root/'dist']:
   p=base/path.strip('/')/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
 for i,(slug,city,tag,context,example,action) in enumerate(data):

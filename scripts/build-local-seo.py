@@ -34,7 +34,7 @@ def shell(title,desc,path,body):
  h=re.sub(r'(<meta (?:name="description"|property="og:description") content=")[^"]*',lambda m:m[1]+html.escape(desc,quote=True),h)
  h=re.sub(r'(<meta property="og:title" content=")[^"]*',lambda m:m[1]+html.escape(title,quote=True),h)
  h=re.sub(r'<link rel="canonical"[^>]*>',f'<link rel="canonical" href="https://ecospheare.com{path}">',h)
- h=h.replace('inner expertise-page','inner expertise-page local-seo-page').replace('</head>','<link rel="stylesheet" href="/local-seo.css?v=4"><script defer src="/local-seo.js?v=4"></script></head>')
+ h=h.replace('inner expertise-page','inner expertise-page local-seo-page').replace('</head>','<link rel="stylesheet" href="/local-seo.css?v=5"><script defer src="/local-seo.js?v=4"></script></head>')
  return h+'<main id="contenu">'+body+cta+footer
 for slug,city,tag,context,example,action in data:
  path=f'/consultant-seo-{slug}/'

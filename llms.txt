@@ -14,10 +14,15 @@ Ce fichier présente les principales ressources publiques du site. Les pages li�
 ## Expertises
 
 - [Toutes les expertises](https://ecospheare.com/expertises/): services proposés par l’agence.
-- [Création de sites web](https://ecospheare.com/expertises/sites-web/): design, contenus et développement.
-- [Applications web](https://ecospheare.com/expertises/web-apps/): outils adaptés aux usages des équipes.
-- [Développement SaaS](https://ecospheare.com/expertises/saas/): conception et développement de produits logiciels.
-- [CRM sur mesure](https://ecospheare.com/expertises/crm/): contacts, suivi commercial et tableaux de bord.
+- [Agence IA](https://ecospheare.com/agence-ia/): solutions d’intelligence artificielle et intégrations sur mesure.
+- [Agents IA](https://ecospheare.com/agents-ia.html): assistants et agents IA reliés aux outils de l’entreprise.
+- [Agence automatisation](https://ecospheare.com/agence-automatisation/): processus métier, workflows n8n et intégrations API.
+- [Développement logiciel](https://ecospheare.com/agence-developpement-logiciel/): logiciels métier sur mesure, refonte et maintenance.
+- [Applications mobiles](https://ecospheare.com/agence-application-mobile/): création d’applications mobiles et métier.
+- [Création de sites web](https://ecospheare.com/expertises/sites-web/): sites internet sur mesure, contenus et développement.
+- [Applications web](https://ecospheare.com/expertises/web-apps/): applications web, plateformes et portails clients.
+- [Développement SaaS et MVP](https://ecospheare.com/expertises/saas/): conception de produits logiciels et premières versions.
+- [CRM et ERP sur mesure](https://ecospheare.com/expertises/crm/): suivi commercial, opérations et tableaux de bord.
 - [Référencement SEO](https://ecospheare.com/expertises/seo/): audit, contenus et structure du site.
 - [Référencement GEO](https://ecospheare.com/expertises/geo/): clarté des informations pour les moteurs de réponse IA.
 - [Google Ads et SEA](https://ecospheare.com/expertises/google-ads/): préparation et suivi des campagnes.

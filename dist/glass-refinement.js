@@ -12,7 +12,7 @@
  // One shared, low-contrast moving atmosphere behind the existing page sections.
  const atmosphere=document.createElement('div');atmosphere.className='site-atmosphere';atmosphere.setAttribute('aria-hidden','true');
  const film=document.createElement('video');film.muted=true;film.loop=true;film.playsInline=true;film.preload='none';film.tabIndex=-1;
- if(!expertise)atmosphere.append(film);document.body.prepend(atmosphere);
+ if(!expertise&&!document.body.classList.contains('portfolio-page'))atmosphere.append(film);document.body.prepend(atmosphere);
  let heroVisible=home;
  const sync=()=>{if(expertise||document.body.classList.contains('portfolio-page')||heroVisible||reduced.matches||document.hidden||document.body.classList.contains('effects-paused')){film.pause();return;}if(!film.src)film.src='https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4';film.play().catch(()=>{});};
  document.addEventListener('visibilitychange',sync);document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);sync();

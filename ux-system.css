@@ -203,7 +203,7 @@ body main>section.blog-teaser{position:relative;z-index:1;padding:clamp(64px,8vw
 @media(prefers-reduced-motion:reduce){.blog-teaser__card,.blog-teaser__card img{transition:none}}
 
 /* Mobile home hero: let the moving planet become the composition itself. */
-@media(max-width:600px){
+@media(max-width:1023px){
  body.home .bloom-hero{position:relative!important;display:block!important;height:100svh!important;min-height:700px!important;padding:0!important;overflow:hidden!important;background:#081426!important;isolation:isolate}
  body.home .bloom-hero .hero-motion{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;opacity:1!important;z-index:-2!important;background:#081426!important}
  body.home .bloom-hero .hero-motion video{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% center!important;mix-blend-mode:normal!important;filter:grayscale(1) sepia(.38) hue-rotate(168deg) saturate(1.15) brightness(.8)!important}

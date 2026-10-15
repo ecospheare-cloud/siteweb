@@ -1,8 +1,15 @@
 """Generate local GEO pages and the public HTML sitemap."""
 from pathlib import Path
-import json,re,html,subprocess,xml.etree.ElementTree as ET
+import json,re,html,subprocess,shutil,xml.etree.ElementTree as ET
 root=Path(__file__).resolve().parents[1]
-data=json.loads((root/'local-seo-data.json').read_text())
+all_data=json.loads((root/'local-seo-data.json').read_text())
+# Keep only locations with a measured search volume in the validated keyword export.
+geo_slugs={'bordeaux','lyon','nantes','paris','toulouse'}
+data=[row for row in all_data if row[0] in geo_slugs]
+for base in (root,root/'dist'):
+ for directory in base.glob('agence-geo-*'):
+  if directory.is_dir() and directory.name.removeprefix('agence-geo-') not in geo_slugs:
+   shutil.rmtree(directory)
 source=(root/'consultant-seo-bordeaux/index.html').read_text()
 head=source.split('<main id="contenu">')[0]
 teaser=source[source.index('<section class="blog-teaser"'):source.index('<section class="first-conversation"')]
@@ -21,7 +28,9 @@ def write(path,title,desc,body):
  text=h+'<main id="contenu">'+body+teaser+cta+footer
  for base in [root,root/'dist']:
   p=base/path.strip('/')/'index.html';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
-for i,(slug,city,tag,context,example,action) in enumerate(data):
+for row in data:
+ i=all_data.index(row)
+ slug,city,tag,context,example,action=row
  context=context.replace('SEO','GEO').replace('depuis Google','dans les recherches')
  leads=[f'Votre entreprise cible {city} et souhaite mieux expliquer son expertise aux moteurs de réponse ? Ecospheare construit une stratégie GEO à partir de vos services, de vos preuves et des questions de vos clients.',f'À {city}, une réponse générée par une IA peut intervenir dans le choix d’un prestataire. Ecospheare vous aide à rendre votre offre plus claire et vos informations plus faciles à vérifier.',f'Faire comprendre votre activité, ses limites et sa valeur : voilà le point de départ de notre accompagnement GEO pour les entreprises qui ciblent {city}. Nous relions contenus, structure du site et objectifs commerciaux.',f'Vous souhaitez travailler votre visibilité dans les réponses IA à {city} ? Notre démarche GEO commence par les informations que votre entreprise publie et les besoins auxquels elle répond.']
  questions=[f'Quels critères regarder pour choisir {example} à {city} ?',f'Comment comparer les offres pour ce type de prestation à {city} ?',f'Quelles informations demander avant un devis à {city} ?']
@@ -43,7 +52,9 @@ write('/agence-geo/','Agence GEO : nos villes | Ecospheare','Découvrez notre ac
 tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=root,text=True).splitlines()
 for name in tracked:
  if name.startswith('dist/'):continue
- p=root/name;s=p.read_text()
+ p=root/name
+ if not p.exists():continue
+ s=p.read_text()
  s=re.sub(r'<section class="footer-seo\b.*?</section>','',s,flags=re.S)
  if '/plan-du-site/' not in s:
   s=s.replace('<nav class="footer-legal-links" aria-label="Informations légales">','<nav class="footer-legal-links" aria-label="Informations légales"><a href="/plan-du-site/">Plan du site</a>')
@@ -52,6 +63,8 @@ for name in tracked:
 # Include new URLs in the XML sitemap.
 sitemap=root/'sitemap.xml';tree=ET.parse(sitemap);urls=[n.text for n in tree.findall('.//{*}loc')]
 urls+=['https://ecospheare.com/agence-geo/','https://ecospheare.com/plan-du-site/']+[f'https://ecospheare.com/agence-geo-{x[0]}/' for x in data]
+allowed_geo_urls={f'https://ecospheare.com/agence-geo-{x[0]}/' for x in data}
+urls=[url for url in urls if not re.fullmatch(r'https://ecospheare\.com/agence-geo-[^/]+/',url) or url in allowed_geo_urls]
 urls=sorted(set(urls));groups={k:[] for k in ['L’agence et nos services','Projets','Conseils et ressources','Consultants SEO par ville','Agences GEO par ville','Informations légales']}
 for url in urls:
  path=url.removeprefix('https://ecospheare.com');name=path.strip('/')+'/index.html' if path.endswith('/') and path!='/' else 'index.html' if path=='/' else path.strip('/')
@@ -68,5 +81,8 @@ css='.geo-visual{display:flex;flex-direction:column;align-items:center;gap:18px;
 for base in [root,root/'dist']:
  (base/'sitemap.xml').write_text(xml);(base/'site-directory.css').write_text(css)
  p=base/'llms.txt';t=p.read_text();t=t.replace('## Informations complémentaires','## Navigation GEO et plan du site\n\n- [Plan du site](https://ecospheare.com/plan-du-site/): toutes les pages publiques classées par thème.\n- [Agence GEO par ville](https://ecospheare.com/agence-geo/): référencement dans les moteurs de réponse IA selon votre marché.\n\n## Informations complémentaires') if '## Navigation GEO' not in t else t;p.write_text(t)
-p=root/'routes.json';routes=json.loads(p.read_text());p.write_text(json.dumps(list(dict.fromkeys(routes+['/plan-du-site/','/agence-geo/']+[f'/agence-geo-{x[0]}/' for x in data])),ensure_ascii=False,indent=2))
-print('Created 20 GEO city pages, GEO directory and HTML sitemap; compacted footer.')
+p=root/'routes.json';routes=json.loads(p.read_text())
+allowed_geo_routes={f'/agence-geo-{x[0]}/' for x in data}
+routes=[route for route in routes if not re.fullmatch(r'/agence-geo-[^/]+/',route) or route in allowed_geo_routes]
+p.write_text(json.dumps(list(dict.fromkeys(routes+['/plan-du-site/','/agence-geo/']+sorted(allowed_geo_routes))),ensure_ascii=False,indent=2)+'\n')
+print(f'Created {len(data)} GEO city pages, GEO directory and HTML sitemap; compacted footer.')

@@ -50,11 +50,6 @@
   "/projets/qics-agency/",
   "/plan-du-site/",
   "/agence-geo/",
-  "/agence-geo-bordeaux/",
-  "/agence-geo-lyon/",
-  "/agence-geo-nantes/",
-  "/agence-geo-paris/",
-  "/agence-geo-toulouse/",
   "/agence-chatgpt/",
   "/agence-claude-code/",
   "/agence-chatbot-ia/",
@@ -71,5 +66,7 @@
   "/erp-sur-mesure/",
   "/tableau-de-bord-sur-mesure/",
   "/creation-site-vitrine-professionnel/",
-  "/creation-site-web-avec-ia/"
+  "/creation-site-web-avec-ia/",
+  "/agence-geo-lens-arras/",
+  "/agence-geo-lille/"
 ]

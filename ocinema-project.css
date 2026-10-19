@@ -4,7 +4,7 @@
 body.ocinema-page{background:radial-gradient(circle at 72% 10%,#1a3557 0,#0b1728 32%,#070f1b 72%) fixed!important;color:#edf3fc}
 body.ocinema-page .site-header.glass-docked{position:fixed!important;inset:14px 24px auto!important;width:calc(100% - 48px)!important;border-radius:24px!important;background:#0b1421e8!important;box-shadow:inset 0 1px 1px #ffffff35,0 14px 36px #0004!important}
 body.ocinema-page main>section{margin-left:24px!important;margin-right:24px!important;width:calc(100% - 48px)!important;margin-bottom:24px!important;padding-left:clamp(24px,5vw,80px)!important;padding-right:clamp(24px,5vw,80px)!important;border-radius:28px;overflow:hidden}
-body.ocinema-page main>.ocinema-hero{margin-top:104px!important;padding-top:clamp(110px,14vw,190px)!important;padding-bottom:64px!important;min-height:680px}
+body.ocinema-page main>.ocinema-hero{margin-top:88px!important;padding-top:clamp(110px,14vw,190px)!important;padding-bottom:64px!important;min-height:680px}
 body.ocinema-page main>.ocinema-strip{padding:0!important;border-radius:24px}
 body.ocinema-page main>.ocinema-gallery{padding-top:54px!important;padding-bottom:54px!important;background:#ffffff08;box-shadow:inset 0 1px 1px #ffffff25}
 body.ocinema-page main>.ocinema-story{padding-top:80px!important;padding-bottom:80px!important}

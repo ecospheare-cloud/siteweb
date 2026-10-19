@@ -15,6 +15,7 @@
   "/agence-application-mobile/",
   "/projets/",
   "/projets/eye-d/",
+  "/projets/ocinema/",
   "/projets/house-of-lucia/",
   "/projets/neptula/",
   "/projets/nexus/",
@@ -69,7 +70,5 @@
   "/creation-site-web-avec-ia/",
   "/agence-geo-lens-arras/",
   "/agence-geo-lille/",
-  "/article-eye-d-studio.html",
-  "/article-max-ngassa.html",
-  "/article-max-ngassa-collaborations.html"
+  "/article-eye-d-studio.html"
 ]

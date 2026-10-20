@@ -113,3 +113,31 @@ if(slideButtons.length){
  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();},{threshold:.25}).observe(section);
  document.querySelector('.feature-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();select(event.key==='Home'?0:event.key==='End'?slides.length-1:current+(event.key==='ArrowRight'?1:-1));slideButtons[current].focus();});
 }
+
+// Consentement : aucun traceur non essentiel n'est chargé sans accord explicite.
+(()=>{
+ const key='ecospheare-cookie-consent-v1';
+ const show=()=>{
+  if(document.querySelector('.cookie-consent'))return;
+  const panel=document.createElement('aside');
+  panel.className='cookie-consent';
+  panel.setAttribute('role','dialog');
+  panel.setAttribute('aria-modal','false');
+  panel.setAttribute('aria-labelledby','cookie-consent-title');
+  panel.innerHTML='<div><p class="cookie-consent__eyebrow">Vos préférences</p><h2 id="cookie-consent-title">Cookies et confidentialité</h2><p>Nous utilisons uniquement les éléments nécessaires au fonctionnement du site. Vous pouvez accepter ou refuser les éventuels cookies non essentiels.</p><a href="/politique-cookies/">Consulter la politique de cookies</a></div><div class="cookie-consent__actions"><button type="button" data-cookie-choice="refused">Refuser</button><button type="button" class="cookie-consent__accept" data-cookie-choice="accepted">Accepter</button></div>';
+  document.body.append(panel);
+  panel.querySelectorAll('[data-cookie-choice]').forEach(button=>button.addEventListener('click',()=>{
+   localStorage.setItem(key,button.dataset.cookieChoice);
+   document.documentElement.dataset.cookieConsent=button.dataset.cookieChoice;
+   panel.remove();
+  }));
+ };
+ let choice='';
+ try{choice=localStorage.getItem(key)||''}catch{}
+ if(choice)document.documentElement.dataset.cookieConsent=choice;else show();
+ document.querySelector('#reopen-cookie-consent')?.addEventListener('click',()=>{
+  try{localStorage.removeItem(key)}catch{}
+  delete document.documentElement.dataset.cookieConsent;
+  show();
+ });
+})();

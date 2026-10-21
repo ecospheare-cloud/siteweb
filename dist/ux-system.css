@@ -185,6 +185,7 @@ body:is(.expertise-page,.portfolio-page) .site-atmosphere::after{background:line
 @keyframes expertise-stars-drift{from{transform:translate3d(-8px,10px,0);opacity:.65}to{transform:translate3d(10px,-12px,0);opacity:1}}
 @media(prefers-reduced-motion:reduce){body:is(.expertise-page,.portfolio-page) .site-atmosphere::before{animation:none!important}}
 
+
 /* Share the animated expertise sky with the portfolio introduction. */
 body.portfolio-page .site-atmosphere{display:block!important}
 body.portfolio-page main,body.portfolio-page main>.pf-page-intro{background:transparent!important}
@@ -233,3 +234,11 @@ body.contact-page .contact-intro .contact-email{order:3}
 body.contact-page .contact-intro .contact-portrait{order:4;width:min(100%,320px)!important;aspect-ratio:4/5!important;margin:40px 0 0!important;border-radius:22px!important;align-self:flex-start}
 body.contact-page .contact-intro .contact-portrait img{object-position:center 28%!important}
 @media(max-width:800px){body.contact-page .contact-intro .contact-portrait{width:min(78vw,290px)!important;margin-top:30px!important;align-self:center}}
+
+/* Keep cookie typography independent from page-template typography. */
+body .cookie-consent.cookie-consent.cookie-consent h2{font-size:15px!important;line-height:1.25!important;margin:0 0 3px!important}
+body .cookie-consent.cookie-consent.cookie-consent p{font-size:10.5px!important;line-height:1.42!important;margin:0!important}
+body .cookie-consent.cookie-consent.cookie-consent a{font-size:10px!important;line-height:1.3!important;margin-top:4px!important}
+body .cookie-consent.cookie-consent.cookie-consent button{font-size:11px!important;line-height:1!important}
+@media(max-width:700px){body .cookie-consent.cookie-consent.cookie-consent{max-height:calc(100svh - 20px);overflow:auto;padding:11px 12px!important;gap:8px!important}body .cookie-consent.cookie-consent.cookie-consent .cookie-consent__actions{gap:6px!important}body .cookie-consent.cookie-consent.cookie-consent button{min-height:32px!important;padding:7px 11px!important}}
+@media(max-width:360px){body .cookie-consent.cookie-consent.cookie-consent{left:8px!important;right:8px!important;bottom:8px!important;padding:10px 11px!important}body .cookie-consent.cookie-consent.cookie-consent h2{font-size:14px!important}body .cookie-consent.cookie-consent.cookie-consent p{font-size:9.5px!important;line-height:1.4!important}body .cookie-consent.cookie-consent.cookie-consent a{font-size:9px!important}}

@@ -145,7 +145,9 @@ if(slideButtons.length){
 
 const expertiseNav=document.querySelector('.nav-expertise');
 const expertiseToggle=expertiseNav?.querySelector('.nav-expertise__toggle');
+const expertiseLink=expertiseNav?.querySelector('.nav-expertise__link');
 const closeExpertiseMenu=()=>{expertiseNav?.classList.remove('is-open');expertiseToggle?.setAttribute('aria-expanded','false')};
+expertiseLink?.addEventListener('click',event=>{if(!matchMedia('(min-width:801px)').matches)return;event.preventDefault();event.stopPropagation();const open=!expertiseNav.classList.contains('is-open');closeExpertiseMenu();if(open){expertiseNav.classList.add('is-open');expertiseToggle?.setAttribute('aria-expanded','true');expertiseNav.querySelector('.nav-expertise__menu a')?.focus({preventScroll:true})}});
 expertiseToggle?.addEventListener('click',event=>{event.stopPropagation();const open=!expertiseNav.classList.contains('is-open');closeExpertiseMenu();if(open){expertiseNav.classList.add('is-open');expertiseToggle.setAttribute('aria-expanded','true')}});
 document.addEventListener('click',event=>{if(expertiseNav&&!expertiseNav.contains(event.target))closeExpertiseMenu()});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeExpertiseMenu()});

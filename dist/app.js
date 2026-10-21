@@ -24,7 +24,8 @@ document.addEventListener('keydown',e=>{
 matchMedia('(min-width:1024px)').addEventListener('change',()=>closeMenu());
 for(const a of document.querySelectorAll('.desktop-nav a,.mobile-menu a')){
  const url=new URL(a.href);
- if(!url.hash&&location.pathname.startsWith(url.pathname))a.setAttribute('aria-current','page');
+ const current=url.pathname==='/'?location.pathname==='/':location.pathname.startsWith(url.pathname);
+ if(!url.hash&&current)a.setAttribute('aria-current','page');
 }
 syncMenu();
 const filters=[...document.querySelectorAll('[data-filter]')];
@@ -141,3 +142,10 @@ if(slideButtons.length){
   show();
  });
 })();
+
+const expertiseNav=document.querySelector('.nav-expertise');
+const expertiseToggle=expertiseNav?.querySelector('.nav-expertise__toggle');
+const closeExpertiseMenu=()=>{expertiseNav?.classList.remove('is-open');expertiseToggle?.setAttribute('aria-expanded','false')};
+expertiseToggle?.addEventListener('click',event=>{event.stopPropagation();const open=!expertiseNav.classList.contains('is-open');closeExpertiseMenu();if(open){expertiseNav.classList.add('is-open');expertiseToggle.setAttribute('aria-expanded','true')}});
+document.addEventListener('click',event=>{if(expertiseNav&&!expertiseNav.contains(event.target))closeExpertiseMenu()});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeExpertiseMenu()});

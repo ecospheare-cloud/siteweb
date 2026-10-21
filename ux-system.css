@@ -224,3 +224,12 @@ body main>section.blog-teaser{position:relative;z-index:1;padding:clamp(64px,8vw
 /* Responsive safety net — shared across all public pages. */
 html,body{max-width:100%;overflow-x:clip}main,main>*,section,article,aside,div{min-width:0}img,video,iframe,svg{max-width:100%}iframe{width:100%}table{max-width:100%}pre,code{overflow-wrap:anywhere}.button{max-width:100%}input,textarea,select{min-width:0}
 @media(max-width:767px){body h1,body h2,body h3{overflow-wrap:anywhere}body .button{white-space:normal;text-align:center}body main>section{max-width:100%}body table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}body .breadcrumb{flex-wrap:wrap}body .pf-case-cover>.pf-project-photo{max-height:none;aspect-ratio:4/3;object-fit:cover}body .story-reading,body .story-reading>section{max-width:100%}body .story-gallery figure{margin-inline:0}}
+
+/* Contact page: keep the founder portrait supportive instead of making it the hero. */
+body.contact-page .contact-intro{display:flex!important;flex-direction:column!important;align-items:flex-start!important;min-width:0}
+body.contact-page .contact-intro h2{order:1;margin-top:0!important}
+body.contact-page .contact-intro>p{order:2}
+body.contact-page .contact-intro .contact-email{order:3}
+body.contact-page .contact-intro .contact-portrait{order:4;width:min(100%,320px)!important;aspect-ratio:4/5!important;margin:40px 0 0!important;border-radius:22px!important;align-self:flex-start}
+body.contact-page .contact-intro .contact-portrait img{object-position:center 28%!important}
+@media(max-width:800px){body.contact-page .contact-intro .contact-portrait{width:min(78vw,290px)!important;margin-top:30px!important;align-self:center}}

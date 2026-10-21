@@ -220,3 +220,7 @@ body main>section.blog-teaser{position:relative;z-index:1;padding:clamp(64px,8vw
  body.home .bloom-quote,body.home .bloom-right{display:none!important}
  body.home .bloom-hero .motion-toggle{top:auto!important;right:auto!important;left:18px!important;bottom:18px!important;z-index:3!important;background:rgba(9,24,43,.72)!important;border:1px solid rgba(220,234,252,.45)!important}
 }
+
+/* Responsive safety net — shared across all public pages. */
+html,body{max-width:100%;overflow-x:clip}main,main>*,section,article,aside,div{min-width:0}img,video,iframe,svg{max-width:100%}iframe{width:100%}table{max-width:100%}pre,code{overflow-wrap:anywhere}.button{max-width:100%}input,textarea,select{min-width:0}
+@media(max-width:767px){body h1,body h2,body h3{overflow-wrap:anywhere}body .button{white-space:normal;text-align:center}body main>section{max-width:100%}body table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}body .breadcrumb{flex-wrap:wrap}body .pf-case-cover>.pf-project-photo{max-height:none;aspect-ratio:4/3;object-fit:cover}body .story-reading,body .story-reading>section{max-width:100%}body .story-gallery figure{margin-inline:0}}

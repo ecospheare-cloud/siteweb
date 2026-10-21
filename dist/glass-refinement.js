@@ -5,7 +5,36 @@
  const wordmark=header?.querySelector('.wordmark');
  if(wordmark){wordmark.replaceChildren();const logo=document.createElement('img');logo.src='/assets/ecospheare-logo-white.svg';logo.alt='';logo.width=28;logo.height=34;logo.className='nav-brand-symbol';const name=document.createElement('span');name.append('ecospheare ');const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(agency);wordmark.append(logo,name);wordmark.setAttribute('aria-label','Ecospheare Agency, accueil');}
 
- if(header){const contact=document.createElement('a');contact.className='nav-contact-cta';contact.href='/contact/';contact.textContent='Contact';header.append(contact);}
+ if(header){
+  const createLocaleTools=mobile=>{
+   const tools=document.createElement('div');tools.className=`nav-locale${mobile?' nav-locale--mobile':''}`;
+   const clock=document.createElement('time');clock.className='nav-local-time';
+   const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'Europe/Paris';
+   const city=(zone.includes('/')?zone.split('/').at(-1):zone).replaceAll('_',' ');
+   const updateClock=()=>{const now=new Date();clock.dateTime=now.toISOString();clock.textContent=`${city} · ${new Intl.DateTimeFormat(document.documentElement.lang==='en'?'en-GB':'fr-FR',{hour:'2-digit',minute:'2-digit',hour12:false}).format(now)}`;clock.setAttribute('aria-label',`${city}, heure locale ${clock.textContent.split(' · ')[1]}`)};
+   updateClock();setInterval(updateClock,30000);
+   const label=document.createElement('label');label.className='nav-language';label.innerHTML='<span class="sr-only">Langue du site</span><select aria-label="Langue du site"><option value="fr">FR</option><option value="en">EN</option></select>';
+   const select=label.querySelector('select');
+   let saved='fr';try{saved=localStorage.getItem('ecospheare-language')||'fr'}catch{}
+   select.value=saved;
+   const applyLanguage=language=>{
+    document.documentElement.lang=language;
+    document.querySelectorAll('.nav-language select').forEach(item=>item.value=language);
+    try{localStorage.setItem('ecospheare-language',language)}catch{}
+    const combo=document.querySelector('.goog-te-combo');
+    if(combo){combo.value=language;combo.dispatchEvent(new Event('change'));return}
+    window.ecospheareTranslateLanguage=language;
+    if(!document.querySelector('#ecospheare-google-translate')){const mount=document.createElement('div');mount.id='ecospheare-google-translate';mount.hidden=true;document.body.append(mount)}
+    if(!document.querySelector('script[data-ecospheare-translate]')){window.ecospheareTranslateInit=()=>{new google.translate.TranslateElement({pageLanguage:'fr',includedLanguages:'fr,en',autoDisplay:false},'ecospheare-google-translate');const wait=setInterval(()=>{const input=document.querySelector('.goog-te-combo');if(!input)return;clearInterval(wait);input.value=window.ecospheareTranslateLanguage||'fr';input.dispatchEvent(new Event('change'))},80)};const script=document.createElement('script');script.src='https://translate.google.com/translate_a/element.js?cb=ecospheareTranslateInit';script.async=true;script.dataset.ecospheareTranslate='true';document.head.append(script)}
+   };
+   select.addEventListener('change',()=>applyLanguage(select.value));
+   if(saved==='en')setTimeout(()=>applyLanguage(saved));
+   tools.append(clock,label);return tools;
+  };
+  header.append(createLocaleTools(false));
+  const mobileMenu=header.querySelector('.mobile-menu');if(mobileMenu)mobileMenu.append(createLocaleTools(true));
+  const contact=document.createElement('a');contact.className='nav-contact-cta';contact.href='/contact/';contact.textContent='Contact';header.append(contact);
+ }
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const updateHeader=()=>header?.classList.toggle('glass-docked',!home||scrollY>80);
  updateHeader();addEventListener('scroll',updateHeader,{passive:true});

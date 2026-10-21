@@ -48,6 +48,9 @@
  if(home)new IntersectionObserver(([entry])=>{heroVisible=entry.isIntersecting;sync()},{threshold:0}).observe(document.querySelector('.bloom-hero'));
  if(!home){const control=document.createElement('button');control.className='atmosphere-toggle';control.type='button';control.textContent='Effets Ⅱ';control.setAttribute('aria-pressed','false');control.addEventListener('click',()=>{const paused=document.body.classList.toggle('effects-paused');control.textContent=paused?'Effets ▷':'Effets Ⅱ';control.setAttribute('aria-pressed',String(paused));document.dispatchEvent(new Event('site-effects-change'));sync()});document.body.append(control);}
 
+ const footerIdentity=document.querySelector('.footer-new .footer-identity');
+ if(footerIdentity&&!document.querySelector('.footer-audience')){const audience=document.createElement('p');audience.className='footer-audience';audience.textContent='Partenaire digital des agences de communication et des petites entreprises.';footerIdentity.after(audience)}
+
 })();
 (() => {
  const link=document.createElement('a');link.href='https://wa.me/33607166240';link.target='_blank';link.rel='noopener noreferrer';link.className='contact-float';link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter ↗</strong></span>';document.body.append(link);

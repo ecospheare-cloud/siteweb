@@ -23,6 +23,42 @@
 @media(max-width:900px){.pf-spotlight{grid-template-columns:1fr;padding:0 24px 64px}.pf-spotlight__copy h2{font-size:clamp(32px,8vw,48px)}.pf-spotlight__media{border-radius:14px}}
 @media(max-width:520px){.pf-spotlight{padding-inline:18px;gap:24px}.pf-spotlight__media{aspect-ratio:4/3}.pf-spotlight__copy>p:not(.section-kicker){font-size:15px}.pf-caption{align-items:flex-start}.pf-caption h3{overflow-wrap:anywhere}}
 
+/* Portfolio feed + applications */
+.portfolio-page .pf-list{padding-bottom:clamp(70px,8vw,120px);display:grid;grid-template-columns:minmax(230px,285px) minmax(0,1fr);column-gap:clamp(34px,5vw,76px);align-items:start}
+.portfolio-page .pf-list .pf-toolbar{position:sticky;top:112px;display:block;border-top:1px solid #ffffff30;padding:26px 0 32px;z-index:2}
+.portfolio-page .pf-list .pf-toolbar>p:first-child{font-size:clamp(25px,2.3vw,34px);line-height:1.18;color:#fff;margin:0 0 30px;max-width:240px}
+.portfolio-page .pf-list .pf-toolbar>p:first-child:after{content:"\A Sites, SEO et produits digitaux.";white-space:pre-wrap;display:block;color:#aebed1;font-size:17px;line-height:1.45;margin-top:10px;font-weight:400}
+.portfolio-page .pf-list .pf-toolbar .filters{display:grid;gap:8px;margin:0 0 30px}
+.portfolio-page .pf-list .pf-toolbar .filters button{width:100%;display:flex;justify-content:flex-start;text-align:left;border:0;border-radius:12px;padding:14px 16px;background:transparent;color:#aebed1}
+.portfolio-page .pf-list .pf-toolbar .filters button:before{content:"·";margin-right:12px;color:#81bcec}
+.portfolio-page .pf-list .pf-toolbar .filters button[aria-pressed=true]{background:#17334f;color:#fff}
+.portfolio-page .pf-list .pf-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 22px}
+.portfolio-page .pf-list .pf-card:first-child{grid-column:auto}
+.portfolio-page .pf-list .pf-card .pf-image,.portfolio-page .pf-list .pf-card:first-child .pf-image{aspect-ratio:1/1;border-radius:22px;background:#10243a}
+.portfolio-page .pf-list .pf-card .pf-image img{width:100%;height:100%;object-fit:cover}
+.portfolio-page .pf-list .pf-card .site-mockup{height:100%;padding:8%;box-sizing:border-box}
+.portfolio-page .pf-list .pf-card .site-mockup img{object-fit:contain}
+.portfolio-page .pf-list .pf-caption{padding:18px 2px 16px;align-items:flex-start}
+.portfolio-page .pf-list .pf-caption p{line-height:1.55;color:#aebed1}
+.portfolio-page .pf-list .pf-caption h3{font-size:clamp(22px,2vw,31px)}
+.portfolio-apps{margin:0 clamp(22px,6vw,95px) clamp(72px,9vw,140px);padding:clamp(34px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:clamp(40px,7vw,110px);align-items:center;background:linear-gradient(135deg,#10243a 0%,#183957 100%);border:1px solid #91bce044;border-radius:32px;color:#fff;overflow:hidden;position:relative}
+.portfolio-apps:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-180px;top:-240px;background:#69aee52a;filter:blur(2px);pointer-events:none}
+.portfolio-apps__copy,.portfolio-apps__stores{position:relative;z-index:1}
+.portfolio-apps .section-kicker{color:#9ec9ee}
+.portfolio-apps h2{font-size:clamp(38px,5vw,72px);font-weight:450;line-height:1.02;letter-spacing:-.055em;margin:16px 0 24px}
+.portfolio-apps h2 em{font-family:Georgia,serif;font-weight:400;color:#9ec9ee}
+.portfolio-apps__copy>p:not(.section-kicker){max-width:630px;color:#cfdae6;font-size:17px;line-height:1.7}
+.portfolio-apps .text-link{display:inline-block;margin-top:24px;color:#fff;border-bottom:1px solid #9ec9ee;padding-bottom:5px}
+.portfolio-apps__stores>p{font-size:18px;color:#dce8f3;margin:0 0 18px}
+.store-badges{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.store-badge{min-height:96px;border:1px solid #a9c8e366;border-radius:18px;display:flex;align-items:center;gap:16px;padding:18px 22px;background:#08192a66;color:#fff}
+.store-badge svg{width:38px;height:38px;flex:0 0 auto;fill:currentColor}
+.store-badge span{display:block;color:#aebed1;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.store-badge strong{font-size:20px;font-weight:600}
+.portfolio-apps__note{margin-top:18px!important;font-size:13px!important;color:#9eb3c7!important}
+@media(max-width:1050px){.portfolio-page .pf-list{grid-template-columns:210px minmax(0,1fr);column-gap:28px}.portfolio-page .pf-list .pf-grid{grid-template-columns:1fr}.portfolio-apps{grid-template-columns:1fr}}
+@media(max-width:760px){.portfolio-page .pf-list{display:block}.portfolio-page .pf-list .pf-toolbar{position:relative;top:auto;padding-top:22px}.portfolio-page .pf-list .pf-toolbar>p:first-child{max-width:none;font-size:27px;margin-bottom:22px}.portfolio-page .pf-list .pf-toolbar .filters{display:flex;overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}.portfolio-page .pf-list .pf-toolbar .filters button{width:auto;white-space:nowrap;border:1px solid #ffffff33;border-radius:999px}.portfolio-page .pf-list .pf-toolbar .filters button:before{display:none}.portfolio-page .pf-list .pf-grid{grid-template-columns:1fr;gap:34px}.portfolio-page .pf-list .pf-card .pf-image,.portfolio-page .pf-list .pf-card:first-child .pf-image{border-radius:18px}.portfolio-apps{margin-inline:14px;padding:30px 22px;border-radius:24px}.portfolio-apps h2{font-size:40px}.store-badges{grid-template-columns:1fr}.store-badge{min-height:78px}.portfolio-apps__copy>p:not(.section-kicker){font-size:15px}}
+
 /* Portfolio site captures displayed inside a restrained laptop frame. */
 .pf-card .site-mockup{position:relative;display:grid;place-items:center;width:100%;height:100%;padding:7% 8% 13%;background:radial-gradient(circle at 50% 20%,#24486d 0,#14283f 43%,#091525 100%);overflow:hidden}.pf-card .site-mockup::before{content:"";position:absolute;inset:6% 7% 17%;border:clamp(5px,.7vw,10px) solid #172130;border-bottom-width:clamp(12px,1.5vw,22px);border-radius:16px 16px 7px 7px;box-shadow:0 24px 45px #0008,0 0 0 1px #a9c6e633}.pf-card .site-mockup::after{content:"";position:absolute;left:13%;right:13%;bottom:8%;height:6%;background:linear-gradient(180deg,#d3dbe4,#697787 70%,#263242);clip-path:polygon(6% 0,94% 0,100% 100%,0 100%);border-radius:2px 2px 10px 10px;box-shadow:0 8px 20px #0008}.pf-card .site-mockup img{position:relative;z-index:1;width:86%;height:77%;object-fit:cover;object-position:top;border-radius:7px;margin-top:-3%;box-shadow:0 0 0 1px #dceaff26}
 @media(max-width:640px){.pf-card .site-mockup{padding:6% 7% 12%}.pf-card .site-mockup::before{inset:5% 6% 16%}.pf-card .site-mockup::after{bottom:7%}}

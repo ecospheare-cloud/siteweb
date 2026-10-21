@@ -27,7 +27,6 @@
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
  link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
  };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
- for(const kind of ['branding','studio']){document.querySelectorAll(`.pf-image[href="/projets/qics-${kind}/"]`).forEach(card=>{card.innerHTML=`<div class="project-logo-only"><img src="/assets/qics-${kind}-logo.svg" alt=""><span>QICS<small>${kind==='branding'?'Branding':'Studio'}</small></span></div>`;});}
 })();
 
 (() => {

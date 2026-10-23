@@ -1,3 +1,20 @@
+const spaceIntro=document.querySelector('.space-intro');
+if(spaceIntro){
+ document.body.classList.add('space-intro-lock');
+ let closed=false;
+ const closeSpaceIntro=()=>{
+  if(closed)return;
+  closed=true;
+  spaceIntro.classList.add('is-leaving');
+  document.body.classList.remove('space-intro-lock');
+  setTimeout(()=>spaceIntro.remove(),760);
+ };
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const timer=setTimeout(closeSpaceIntro,reduced?350:2450);
+ spaceIntro.querySelector('.space-intro__skip')?.addEventListener('click',()=>{clearTimeout(timer);closeSpaceIntro()});
+ spaceIntro.addEventListener('keydown',event=>{if(event.key==='Escape'){clearTimeout(timer);closeSpaceIntro()}});
+}
+
 const menuButton=document.querySelector('.menu-toggle');
 const menu=document.querySelector('#mobile-menu');
 const syncMenu=()=>{

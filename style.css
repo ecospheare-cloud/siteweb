@@ -24,6 +24,34 @@
 @media(prefers-reduced-motion:reduce){.hero-motion video{display:none}.hero-motion .motion-poster{opacity:1}.motion-toggle{display:none}}
 .wordmark{display:flex;align-items:center;gap:10px}.wordmark img{width:30px;height:36px;object-fit:contain}
 
+/* Opening sequence — Ecospheare spatial universe */
+.space-intro{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 50% 55%,#17395f 0,#0c1a31 25%,#050b17 60%,#02050b 100%);color:#f5f9ff;opacity:1;visibility:visible;isolation:isolate}
+.space-intro::before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 50% 54%,#66b7ff28 0 1px,transparent 2px),radial-gradient(circle at 35% 32%,#397fd62c,transparent 28%),radial-gradient(circle at 70% 68%,#8dd7ff18,transparent 22%);animation:space-intro-breathe 2.2s ease-out both}
+.space-intro__stars{position:absolute;inset:0;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.6px),radial-gradient(circle,#76b9ff 0 1px,transparent 1.7px),radial-gradient(circle,#fff 0 .7px,transparent 1.3px);background-position:8% 18%,42% 72%,72% 26%;background-size:127px 151px,193px 181px,89px 113px;opacity:.62;animation:space-intro-stars 2.4s linear both}
+.space-intro__orbit{position:absolute;width:min(64vw,610px);aspect-ratio:1;border-radius:50%;filter:drop-shadow(0 0 30px #69b7ff38);animation:space-intro-orbit 1.05s cubic-bezier(.16,1,.3,1) both}
+.space-intro__orbit::before{content:"";position:absolute;inset:13%;border-radius:50%;background:radial-gradient(circle,#76b9ff24,transparent 64%);box-shadow:0 0 100px #4c98ff24 inset}
+.space-intro__orbit span{position:absolute;inset:0;border:1px solid #86c7ff9c;border-radius:50%;transform:rotate(-18deg) scaleY(.42)}
+.space-intro__orbit span:nth-child(2){inset:8%;border-color:#d9efff52;transform:rotate(38deg) scaleY(.7)}
+.space-intro__orbit span:nth-child(3){inset:20%;border-color:#5ba6ff70;transform:rotate(82deg) scaleY(.5)}
+.space-intro__rocket{position:absolute;z-index:2;width:clamp(58px,7vw,88px);filter:drop-shadow(0 0 22px #62b6ff);transform:translate(-42vw,34vh) rotate(42deg);animation:space-intro-flight 1.55s .2s cubic-bezier(.45,.05,.18,1) both}
+.space-intro__identity{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;text-align:center;opacity:0;transform:scale(.94);animation:space-intro-name .7s 1.05s cubic-bezier(.16,1,.3,1) forwards}
+.space-intro__identity img{width:clamp(42px,5vw,58px);height:auto;margin-bottom:14px;filter:drop-shadow(0 0 18px #73baff73)}
+.space-intro__identity p{font-size:clamp(22px,3.1vw,42px);font-weight:650;letter-spacing:.12em;line-height:1.1}
+.space-intro__identity em{font-family:"Source Serif 4",serif;font-weight:400;letter-spacing:.03em;color:#9ed2ff}
+.space-intro__identity span{margin-top:10px;color:#bbd1e8;font-size:clamp(9px,1vw,12px);letter-spacing:.18em;text-transform:uppercase}
+.space-intro__skip{position:absolute;right:clamp(18px,3vw,42px);bottom:clamp(18px,3vw,36px);z-index:4;border:1px solid #c9e5ff52;border-radius:999px;background:#0b1a2c99;color:#dceeff;padding:9px 16px;font-size:11px;letter-spacing:.08em;backdrop-filter:blur(12px)}
+.space-intro__skip:hover{background:#173656}.space-intro.is-leaving{animation:space-intro-exit .72s cubic-bezier(.7,0,.84,0) forwards}.space-intro.is-leaving .space-intro__identity{animation:space-intro-name-out .45s ease forwards}
+body.space-intro-lock{overflow:hidden}
+@keyframes space-intro-breathe{from{opacity:.35;transform:scale(.72)}to{opacity:1;transform:scale(1)}}
+@keyframes space-intro-stars{from{transform:scale(1.12);opacity:.15}to{transform:scale(1);opacity:.62}}
+@keyframes space-intro-orbit{from{opacity:0;transform:scale(.15) rotate(-80deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes space-intro-flight{0%{opacity:0;transform:translate(-42vw,34vh) rotate(42deg) scale(.7)}12%{opacity:1}72%{opacity:1;transform:translate(4vw,-4vh) rotate(42deg) scale(1)}100%{opacity:0;transform:translate(46vw,-40vh) rotate(42deg) scale(.7)}}
+@keyframes space-intro-name{to{opacity:1;transform:scale(1)}}
+@keyframes space-intro-name-out{to{opacity:0;transform:scale(1.08);filter:blur(7px)}}
+@keyframes space-intro-exit{0%{opacity:1;clip-path:circle(75% at 50% 50%)}100%{opacity:0;clip-path:circle(0 at 50% 50%);visibility:hidden}}
+@media(max-width:600px){.space-intro__orbit{width:92vw}.space-intro__rocket{width:58px}.space-intro__identity p{letter-spacing:.075em}.space-intro__identity span{max-width:260px;line-height:1.7}}
+@media(prefers-reduced-motion:reduce){.space-intro{animation:none!important;transition:opacity .2s ease}.space-intro__orbit,.space-intro__rocket,.space-intro__stars,.space-intro::before{animation:none!important}.space-intro__rocket{display:none}.space-intro__identity{opacity:1;transform:none;animation:none}.space-intro.is-leaving{opacity:0;visibility:hidden}}
+
 /* Cookie consent — Ecospheare visual system */
 .cookie-consent{position:fixed;z-index:500;left:18px;right:auto;bottom:16px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px;width:min(620px,calc(100vw - 36px));padding:14px 16px;background:#0b1728f2;color:#edf3fc;border:1px solid #9bb2cd45;border-radius:18px;box-shadow:inset 0 1px 1px #ffffff24,0 12px 32px #0006;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.cookie-consent>div:first-child{min-width:0}.cookie-consent__eyebrow{display:none}.cookie-consent h2{margin:0 0 3px;color:#fff!important;font-size:17px;line-height:1.25}.cookie-consent p{margin:0;color:#c7d3e2!important;font-size:11px!important;line-height:1.45}.cookie-consent a{display:inline-block;margin-top:4px;color:#c8e0fb;text-decoration:underline;text-underline-offset:3px;font-size:10px}.cookie-consent__actions{display:flex;gap:7px;flex-shrink:0}.cookie-consent button{min-height:36px;padding:8px 12px;border:1px solid #ffffff38;border-radius:999px;background:#ffffff0c;color:#fff;font:inherit;font-size:11px;font-weight:600;cursor:pointer}.cookie-consent button:hover,.cookie-consent button:focus-visible{background:#ffffff1c}.cookie-consent .cookie-consent__accept{background:#f1f6fc;color:#102139;border-color:#f1f6fc}.cookie-consent .cookie-consent__accept:hover{background:#dbe9f8}@media(max-width:700px){.cookie-consent{left:10px;right:10px;bottom:10px;width:auto;grid-template-columns:1fr;padding:12px 13px;gap:10px;border-radius:16px}.cookie-consent h2{font-size:15px}.cookie-consent p{font-size:10.5px!important}.cookie-consent__actions{justify-content:flex-end}.cookie-consent button{min-height:34px;padding:7px 12px}}
 

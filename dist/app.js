@@ -7,10 +7,10 @@ if(spaceIntro){
   closed=true;
   spaceIntro.classList.add('is-leaving');
   document.body.classList.remove('space-intro-lock');
-  setTimeout(()=>spaceIntro.remove(),220);
+  setTimeout(()=>spaceIntro.remove(),260);
  };
  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
- const timer=setTimeout(closeSpaceIntro,reduced?140:1220);
+ const timer=setTimeout(closeSpaceIntro,reduced?140:1460);
  spaceIntro.querySelector('.space-intro__skip')?.addEventListener('click',()=>{clearTimeout(timer);closeSpaceIntro()});
  spaceIntro.addEventListener('keydown',event=>{if(event.key==='Escape'){clearTimeout(timer);closeSpaceIntro()}});
 }

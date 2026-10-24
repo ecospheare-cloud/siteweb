@@ -38,10 +38,10 @@
 .space-intro__identity em{font-family:"Source Serif 4",serif;font-weight:400;letter-spacing:.035em;color:#acd9ff}
 .space-intro.is-leaving{animation:intro-exit .18s ease-out forwards}
 body.space-intro-lock{overflow:hidden}
-@keyframes intro-planet-jump{0%{transform:scale(.96);filter:saturate(.78) contrast(1.08) brightness(.62)}24%{transform:scale(1);filter:saturate(.86) contrast(1.08) brightness(.8)}42%{transform:scale(1.04);filter:saturate(.9) contrast(1.06) brightness(.84)}100%{transform:scale(8);filter:saturate(.7) contrast(1.18) brightness(1.18) blur(1.5px)}}
+@keyframes intro-planet-jump{0%{transform:scale(.96);filter:saturate(.78) contrast(1.08) brightness(.62) blur(0)}22%{transform:scale(1);filter:saturate(.86) contrast(1.08) brightness(.8) blur(0)}38%{transform:scale(1.05);filter:saturate(.9) contrast(1.06) brightness(.84) blur(0)}68%{transform:scale(2.8);filter:saturate(.86) contrast(1.1) brightness(.94) blur(.2px)}86%{transform:scale(7);filter:saturate(.78) contrast(1.14) brightness(1.06) blur(.7px)}100%{transform:scale(14);filter:saturate(.66) contrast(1.2) brightness(1.24) blur(2.2px)}}
 @keyframes intro-vignette{0%,44%{opacity:1}100%{opacity:.2;transform:scale(1.18)}}
 @keyframes intro-tunnel{0%,28%{opacity:0;transform:translate(-50%,-50%) scale(.2)}43%{opacity:.7}100%{opacity:0;transform:translate(-50%,-50%) scale(11)}}
-@keyframes intro-impact{0%,80%{opacity:0}94%{opacity:.2}100%{opacity:0}}
+@keyframes intro-impact{0%,82%{opacity:0}94%{opacity:.12}100%{opacity:.32}}
 @keyframes intro-brand{0%{opacity:0;filter:blur(4px);transform:translate(-50%,-47%)}7%,72%{opacity:1;filter:blur(0);transform:translate(-50%,-50%)}94%,100%{opacity:0;filter:blur(4px);transform:translate(-50%,-55%)}}
 @keyframes intro-exit{to{opacity:0;visibility:hidden}}
 @media(max-width:600px){.space-intro__planet{object-position:68% center;transform-origin:68% 58%}.space-intro::before,.space-intro__tunnel{--intro-focus-x:68%}.space-intro__identity{gap:11px}.space-intro__identity p{font-size:16px;letter-spacing:.085em}.space-intro__identity img{width:32px}}

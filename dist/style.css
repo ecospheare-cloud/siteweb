@@ -26,7 +26,7 @@
 
 /* Opening sequence — cinematic jump toward the hero planet */
 .space-intro{position:fixed;inset:0;z-index:2000;overflow:hidden;background:#020711;color:#f5f9ff;opacity:1;visibility:visible;isolation:isolate}
-.space-intro__planet{position:absolute;inset:-3%;width:106%;height:106%;object-fit:cover;object-position:70% center;filter:saturate(.82) contrast(1.08) brightness(.78);transform-origin:72% 59%;will-change:transform;backface-visibility:hidden;transform:translateZ(0);animation:intro-planet-jump 1.38s cubic-bezier(.52,.02,.18,1) both}
+.space-intro__planet{position:absolute;inset:-3%;width:106%;height:106%;object-fit:cover;object-position:70% center;filter:hue-rotate(92deg) saturate(.68) contrast(1.1) brightness(.74);transform-origin:72% 59%;will-change:transform;backface-visibility:hidden;transform:translateZ(0);animation:intro-planet-jump 1.38s cubic-bezier(.52,.02,.18,1) both}
 .space-intro::before{content:"";position:absolute;inset:0;z-index:2;background:radial-gradient(circle at 72% 59%,transparent 0 22%,#02071124 48%,#020711b8 100%),linear-gradient(180deg,#02071152,transparent 48%,#02071185);pointer-events:none;animation:intro-vignette 1.38s ease-in both}
 .space-intro::after{display:none;content:"";position:absolute;inset:0;z-index:4;background:#d5ecff;opacity:0;pointer-events:none;animation:intro-impact 1.24s ease-in both}
 .space-intro__tunnel{display:none;position:absolute;z-index:3;left:72%;top:59%;width:16vmin;aspect-ratio:1;border:1px solid #cce9ff4f;border-radius:50%;transform:translate(-50%,-50%) scale(.2);opacity:0;box-shadow:0 0 30px #65baff40,inset 0 0 24px #65baff30;animation:intro-tunnel 1.24s cubic-bezier(.7,0,.16,1) both}

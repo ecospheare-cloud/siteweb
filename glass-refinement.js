@@ -70,7 +70,7 @@
  const update=()=>{
  const end=document.querySelector('#votre-projet');
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
- link.classList.toggle('is-visible',scrollY>(home?180:innerHeight*.8)&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
+ link.classList.toggle('is-visible',(home||scrollY>innerHeight*.8)&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
  };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
 })();
 

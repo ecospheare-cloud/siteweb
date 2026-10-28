@@ -73,8 +73,15 @@
   const closeChoice=()=>{choice.classList.remove('is-open');link.classList.add('is-ready');dispatchEvent(new Event('scroll'))};
   choice.querySelector('.contact-choice__close').addEventListener('click',closeChoice);
   choice.addEventListener('click',event=>{if(event.target===choice)closeChoice()});
-  setTimeout(()=>choice.classList.add('is-open'),1400);
-  setTimeout(closeChoice,4200);
+  let choiceShown=false;
+  const showChoice=()=>{
+   if(choiceShown||scrollY<20)return;
+   choiceShown=true;
+   choice.classList.add('is-open');
+   removeEventListener('scroll',showChoice);
+   setTimeout(closeChoice,1000);
+  };
+  addEventListener('scroll',showChoice,{passive:true});
  }else{
   link.href=projectHref;link.target='_blank';link.rel='noopener noreferrer';
   link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');

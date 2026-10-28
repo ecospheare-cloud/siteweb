@@ -135,6 +135,19 @@ if(slideButtons.length){
 // Consentement : aucun traceur non essentiel n'est chargé sans accord explicite.
 (()=>{
  const key='ecospheare-cookie-consent-v1';
+ const measurementId='G-SMWZ3Z0LMW';
+ const loadAnalytics=()=>{
+  if(document.querySelector(`script[data-google-analytics="${measurementId}"]`))return;
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};
+  window.gtag('js',new Date());
+  window.gtag('config',measurementId,{anonymize_ip:true});
+  const script=document.createElement('script');
+  script.async=true;
+  script.src=`https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+  script.dataset.googleAnalytics=measurementId;
+  document.head.append(script);
+ };
  const show=()=>{
   if(document.querySelector('.cookie-consent'))return;
   const panel=document.createElement('aside');
@@ -147,12 +160,13 @@ if(slideButtons.length){
   panel.querySelectorAll('[data-cookie-choice]').forEach(button=>button.addEventListener('click',()=>{
    localStorage.setItem(key,button.dataset.cookieChoice);
    document.documentElement.dataset.cookieConsent=button.dataset.cookieChoice;
+   if(button.dataset.cookieChoice==='accepted')loadAnalytics();
    panel.remove();
   }));
  };
  let choice='';
  try{choice=localStorage.getItem(key)||''}catch{}
- if(choice)document.documentElement.dataset.cookieConsent=choice;else show();
+ if(choice){document.documentElement.dataset.cookieConsent=choice;if(choice==='accepted')loadAnalytics()}else show();
  document.querySelector('#reopen-cookie-consent')?.addEventListener('click',()=>{
   try{localStorage.removeItem(key)}catch{}
   delete document.documentElement.dataset.cookieConsent;

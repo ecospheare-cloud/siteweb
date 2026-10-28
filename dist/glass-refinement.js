@@ -53,11 +53,24 @@
 
 })();
 (() => {
- const link=document.createElement('a');link.href='https://wa.me/33607166240';link.target='_blank';link.rel='noopener noreferrer';link.className='contact-float';link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter ↗</strong></span>';document.body.append(link);
+ const home=document.body.classList.contains('home');
+ const link=document.createElement('a');link.target='_blank';link.rel='noopener noreferrer';link.className='contact-float';
+ if(home){
+  const message=encodeURIComponent('Bonjour Sacha, je suis intéressé(e) par l’opportunité commerciale chez Ecospheare Agency.');
+  link.href=`https://wa.me/33607166240?text=${message}`;
+  link.classList.add('contact-float--recruitment');
+  link.setAttribute('aria-label','Ecospheare recrute des commerciaux : écrire à Sacha Zacharewicz sur WhatsApp');
+  link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="Portrait de Sacha Zacharewicz" width="46" height="46"><span><small>Nous recrutons des commerciaux</small><strong>Écrivez-moi sur WhatsApp ↗</strong></span>';
+ }else{
+  link.href='https://wa.me/33607166240';
+  link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');
+  link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter ↗</strong></span>';
+ }
+ document.body.append(link);
  const update=()=>{
  const end=document.querySelector('#votre-projet');
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
- link.classList.toggle('is-visible',scrollY>innerHeight*.8&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
+ link.classList.toggle('is-visible',scrollY>(home?180:innerHeight*.8)&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
  };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
 })();
 

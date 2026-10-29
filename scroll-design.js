@@ -21,10 +21,34 @@
    if(document.querySelector('.brand-film'))gsap.fromTo('.brand-film',{scale:.9,transformOrigin:'center center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.brand-film',start:'top bottom',end:'70% bottom',scrub:true,invalidateOnRefresh:true}});
    const manifesto=document.querySelector('.manifesto');
    if(manifesto){
-    const story=gsap.timeline({scrollTrigger:{trigger:'.manifesto-stage',start:'top 82%',end:'bottom 35%',scrub:.65,invalidateOnRefresh:true}});
-    story.fromTo(manifesto.querySelectorAll('h2 span'),{y:65,opacity:.15,scale:.9},{y:0,opacity:1,scale:1,stagger:.16,duration:.6,ease:'power2.out'})
-     .fromTo(manifesto.querySelector('p'),{y:25,opacity:0},{y:0,opacity:1,duration:.35},.55)
-     .to({}, {duration:.45});
+    const stage=manifesto.closest('.manifesto-stage');
+    const lines=[...manifesto.querySelectorAll('h2 span')];
+    const copy=manifesto.querySelector('p');
+    const clamp=value=>Math.max(0,Math.min(1,value));
+    let manifestoFrame=0;
+    const updateManifesto=()=>{
+     manifestoFrame=0;
+     if(matchMedia('(prefers-reduced-motion: reduce)').matches||document.body.classList.contains('effects-paused')){
+      lines.forEach(line=>{line.style.opacity='1';line.style.transform='none'});
+      copy.style.opacity='1';copy.style.transform='none';return;
+     }
+     const rect=stage.getBoundingClientRect();
+     const progress=clamp(-rect.top/Math.max(1,rect.height-innerHeight));
+     lines.forEach((line,index)=>{
+      const local=clamp((progress-index*.12)/.38);
+      const eased=1-Math.pow(1-local,3);
+      line.style.opacity=String(.15+.85*eased);
+      line.style.transform=`translateY(${(1-eased)*65}px) scale(${.9+.1*eased})`;
+     });
+     const copyProgress=clamp((progress-.5)/.28);
+     const copyEase=1-Math.pow(1-copyProgress,3);
+     copy.style.opacity=String(copyEase);
+     copy.style.transform=`translateY(${(1-copyEase)*25}px)`;
+    };
+    const queueManifesto=()=>{if(!manifestoFrame)manifestoFrame=requestAnimationFrame(updateManifesto)};
+    addEventListener('scroll',queueManifesto,{passive:true});
+    addEventListener('resize',queueManifesto);
+    updateManifesto();
    }
   }
   if(home){

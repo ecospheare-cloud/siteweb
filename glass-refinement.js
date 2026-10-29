@@ -3,7 +3,9 @@
  const home=document.body.classList.contains('home');
  const expertise=document.body.classList.contains('expertise-page');
  const wordmark=header?.querySelector('.wordmark');
- if(wordmark){wordmark.replaceChildren();const logo=document.createElement('img');logo.src='/assets/ecospheare-logo-white.svg';logo.alt='';logo.width=28;logo.height=34;logo.className='nav-brand-symbol';const name=document.createElement('span');name.append('ecospheare ');const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(agency);wordmark.append(logo,name);wordmark.setAttribute('aria-label','Ecospheare Agency, accueil');}
+ const createBrandName=()=>{const name=document.createElement('span');name.className='brand-name-lockup';const image=document.createElement('img');image.src='/assets/ecospheare-wordmark-reference.png';image.alt='';image.width=850;image.height=130;image.className='brand-name-image';const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(image,agency);return name};
+ if(wordmark){wordmark.replaceChildren();const logo=document.createElement('img');logo.src='/assets/ecospheare-logo-white.svg';logo.alt='';logo.width=28;logo.height=34;logo.className='nav-brand-symbol';wordmark.append(logo,createBrandName());wordmark.setAttribute('aria-label','Ecospheare Agency, accueil');}
+ document.querySelectorAll('.footer-identity').forEach(identity=>{const name=identity.querySelector(':scope>span');if(name)name.replaceWith(createBrandName());identity.setAttribute('aria-label','Ecospheare Agency, accueil')});
 
  if(header){
   const createLocaleTools=mobile=>{

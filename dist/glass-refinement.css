@@ -231,6 +231,40 @@ body .site-footer .footer-identity .brand-agency{
 }
 @media(max-width:600px){body .site-header>.wordmark{font-size:14px!important;letter-spacing:-.045em!important}body .site-footer .footer-identity>span{letter-spacing:-.045em!important}}
 
+/* Exact approved Ecospheare lettering, rasterized from the brand artwork. */
+body .brand-name-lockup{
+ display:inline-flex;
+ align-items:baseline;
+ gap:.2em;
+ min-width:0;
+ white-space:nowrap;
+ line-height:1;
+ letter-spacing:0!important;
+ text-transform:none!important;
+}
+body .brand-name-image{
+ display:block;
+ width:clamp(132px,12.1vw,184px)!important;
+ height:auto!important;
+ flex:0 0 auto;
+ object-fit:contain;
+}
+body.home .brand-name-image,
+body .site-header.glass-docked .brand-name-image,
+body .site-footer .brand-name-image{
+ filter:invert(1) grayscale(1) brightness(2.4);
+ mix-blend-mode:screen;
+}
+body .brand-name-lockup .brand-agency{font-size:.98em;line-height:1}
+body .site-footer .brand-name-lockup{align-items:center}
+body .site-footer .brand-name-image{width:clamp(150px,14vw,210px)!important}
+@media(max-width:600px){
+ body .brand-name-image{width:112px!important}
+ body .brand-name-lockup{gap:.16em}
+ body .brand-name-lockup .brand-agency{font-size:1.08em}
+ body .site-footer .brand-name-image{width:132px!important}
+}
+
 /* Responsive WhatsApp choice modal and floating contact prompt. */
 .contact-choice{box-sizing:border-box;min-height:100dvh;overflow-y:auto;overscroll-behavior:contain}
 .contact-choice__card{box-sizing:border-box;max-height:calc(100dvh - 32px);overflow:auto}

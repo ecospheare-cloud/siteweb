@@ -21,7 +21,7 @@
    if(document.querySelector('.brand-film'))gsap.fromTo('.brand-film',{scale:.9,transformOrigin:'center center'},{scale:1,ease:'none',scrollTrigger:{trigger:'.brand-film',start:'top bottom',end:'70% bottom',scrub:true,invalidateOnRefresh:true}});
    const manifesto=document.querySelector('.manifesto');
    if(manifesto){
-    const story=gsap.timeline({scrollTrigger:{trigger:'.manifesto-stage',start:'top top',end:()=>'+='+innerHeight*1.25,pin:manifesto,pinSpacing:true,anticipatePin:1,scrub:.7,invalidateOnRefresh:true}});
+    const story=gsap.timeline({scrollTrigger:{trigger:'.manifesto-stage',start:'top 82%',end:'bottom 35%',scrub:.65,invalidateOnRefresh:true}});
     story.fromTo(manifesto.querySelectorAll('h2 span'),{y:65,opacity:.15,scale:.9},{y:0,opacity:1,scale:1,stagger:.16,duration:.6,ease:'power2.out'})
      .fromTo(manifesto.querySelector('p'),{y:25,opacity:0},{y:0,opacity:1,duration:.35},.55)
      .to({}, {duration:.45});

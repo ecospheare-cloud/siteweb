@@ -62,7 +62,7 @@
  css.rel='stylesheet';css.href='/scroll-chapters.css?v=20261029';
  document.head.append(css);
  const script=document.createElement('script');
- script.src='/scroll-chapters.js?v=20261029';script.defer=true;
+ script.src='/scroll-chapters.js?v=portfolio-fix-20261029';script.defer=true;
  document.head.append(script);
 })();
 (() => {

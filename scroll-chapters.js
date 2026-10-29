@@ -52,5 +52,8 @@
   document.head.append(style);
  }
 
- addEventListener('load',()=>ScrollTrigger.refresh(),{once:true});
+ const refreshLayout=()=>requestAnimationFrame(()=>ScrollTrigger.refresh());
+ if(document.readyState==='complete')refreshLayout();
+ else addEventListener('load',refreshLayout,{once:true});
+ document.fonts?.ready.then(refreshLayout);
 })();

@@ -1,9 +1,10 @@
 /* Scroll-driven chapters: progressive on desktop, ordinary flow everywhere else. */
 @media (min-width: 960px) and (prefers-reduced-motion: no-preference){
   html.has-scroll-chapters .home .ecosfer-expertises{
-    min-height:calc(100svh - var(--chapter-top-offset,104px) - 16px);
-    max-height:calc(100svh - var(--chapter-top-offset,104px) - 16px);
-    padding-block:clamp(28px,4vh,52px)!important;
+    min-height:100svh;
+    max-height:100svh;
+    padding-top:110px!important;
+    padding-bottom:28px!important;
     display:grid;
     grid-template-columns:minmax(270px,.72fr) minmax(520px,1.28fr);
     align-items:center;
@@ -28,7 +29,7 @@
   html.has-scroll-chapters .home .ecosfer-offers{
     display:block;
     position:relative;
-    min-height:min(610px,calc(100svh - var(--chapter-top-offset,104px) - 72px));
+    min-height:min(610px,calc(100svh - 154px));
   }
   html.has-scroll-chapters .home .ecosfer-offers article{
     position:absolute;

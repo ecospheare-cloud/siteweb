@@ -59,10 +59,10 @@
 (()=>{
  if(!document.body.matches('.home,.agency-page'))return;
  const css=document.createElement('link');
- css.rel='stylesheet';css.href='/scroll-chapters.css?v=nav-offset-20261029';
+ css.rel='stylesheet';css.href='/scroll-chapters.css?v=restored-animation-20261029';
  document.head.append(css);
  const script=document.createElement('script');
- script.src='/scroll-chapters.js?v=nav-offset-20261029';script.defer=true;
+ script.src='/scroll-chapters.js?v=restored-animation-20261029';script.defer=true;
  document.head.append(script);
 })();
 (() => {
@@ -89,32 +89,6 @@
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
  link.classList.toggle('is-visible',(!home||link.classList.contains('is-ready'))&&(home||scrollY>innerHeight*.8)&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
  };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
-})();
-
-(() => {
- const connection=document.querySelector('.world-map-connection');
- const surface=connection?.querySelector('.world-map-surface');
- if(!connection||!surface)return;
- connection.classList.add('world-globe-connection');
- connection.setAttribute('aria-label','Globe animé montrant la connexion entre Lille, en France, et Dubaï');
- surface.classList.add('world-globe-surface');
- surface.innerHTML=`<div class="earth-globe-shell"><div class="earth-globe" aria-hidden="true"><div class="earth-globe__texture"><img src="/assets/collective-world-map.svg" alt=""></div><div class="earth-globe__shade"></div><div class="globe-weather globe-weather--lille" data-weather="neutral"><i></i><i></i><b></b></div><div class="globe-weather globe-weather--dubai" data-weather="neutral"><i></i><i></i><b></b></div><svg class="earth-globe__route" viewBox="0 0 500 500" fill="none"><defs><linearGradient id="globe-route-gradient" x1="220" y1="160" x2="345" y2="265" gradientUnits="userSpaceOnUse"><stop stop-color="#b7dcff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs><path class="globe-route-base" d="M218 178 Q292 92 342 258"/><path class="globe-route-pulse" d="M218 178 Q292 92 342 258"/><circle class="globe-beacon" cx="218" cy="178" r="14"/><circle class="globe-beacon globe-beacon--dubai" cx="342" cy="258" r="14"/><circle class="globe-dot" cx="218" cy="178" r="5"/><circle class="globe-dot" cx="342" cy="258" r="5"/></svg><div class="earth-globe__shine"></div></div><div class="globe-location globe-location--france"><img src="/assets/flag-france.svg" alt="" width="27" height="18"><span>LILLE · FRANCE</span></div><div class="globe-location globe-location--dubai"><img src="/assets/flag-uae.svg" alt="" width="27" height="18"><span>DUBAÏ</span></div></div>`;
- const weatherPoints=[
-  {name:'Lille',lat:50.6292,lon:3.0573,element:surface.querySelector('.globe-weather--lille')},
-  {name:'Dubaï',lat:25.2048,lon:55.2708,element:surface.querySelector('.globe-weather--dubai')}
- ];
- const weatherKind=code=>code>=95?'storm':code>=51?'rain':code>=1?'cloud':'clear';
- weatherPoints.forEach(({name,lat,lon,element})=>{
-  fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=weather_code,temperature_2m,is_day&timezone=auto`)
-   .then(response=>response.ok?response.json():Promise.reject())
-   .then(data=>{
-    const current=data.current||{};
-    element.dataset.weather=weatherKind(Number(current.weather_code)||0);
-    element.dataset.day=String(current.is_day??1);
-    element.title=`Météo actuelle à ${name} : ${Math.round(current.temperature_2m)} °C`;
-   })
-   .catch(()=>{ element.dataset.weather='neutral'; });
- });
 })();
 
 (() => {

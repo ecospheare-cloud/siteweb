@@ -6,24 +6,17 @@
 
  const buildSequence=(section,items,options={})=>{
   if(!section||items.length<2)return;
-  const pinOffset=()=>{
-   const header=document.querySelector('.site-header');
-   return Math.ceil((header?.getBoundingClientRect().bottom||84)+14);
-  };
-  const syncPinOffset=()=>section.style.setProperty('--chapter-top-offset',`${pinOffset()}px`);
-  syncPinOffset();
   gsap.set(items.slice(1),{autoAlpha:0,y:54,scale:options.scale===false?1:.97});
   const timeline=gsap.timeline({
    defaults:{ease:'power2.inOut'},
    scrollTrigger:{
     trigger:section,
-    start:()=>`top ${pinOffset()}px`,
+    start:'top top',
     end:`+=${Math.round(innerHeight*(items.length*.72))}`,
     scrub:.45,
     pin:true,
     anticipatePin:1,
     invalidateOnRefresh:true,
-    onRefresh:syncPinOffset,
     onUpdate:self=>{
      section.style.setProperty('--chapter-progress',`${(self.progress*100).toFixed(1)}%`);
      options.update?.(self.progress);

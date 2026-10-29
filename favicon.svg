@@ -1,43 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ecospheare Agency">
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ecospheare Agency">
   <defs>
-    <linearGradient id="background" x1="72" y1="34" x2="440" y2="478" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#173d63"/>
-      <stop offset=".55" stop-color="#0e2c4b"/>
-      <stop offset="1" stop-color="#091d33"/>
+    <linearGradient id="favicon-background" x1="54" y1="24" x2="458" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173f69"/>
+      <stop offset=".58" stop-color="#0d2b4a"/>
+      <stop offset="1" stop-color="#071a2e"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(212 164) rotate(47) scale(330)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8bb6d9" stop-opacity=".18"/>
-      <stop offset="1" stop-color="#8bb6d9" stop-opacity="0"/>
-    </radialGradient>
+    <filter id="favicon-white-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
   </defs>
-  <rect x="12" y="12" width="488" height="488" rx="118" fill="url(#background)"/>
-  <rect x="23" y="23" width="466" height="466" rx="107" fill="none" stroke="#9bb9d2" stroke-opacity=".38" stroke-width="7"/>
-  <rect x="23" y="23" width="466" height="466" rx="107" fill="url(#glow)"/>
-  <g fill="#fff" transform="translate(-25.6 -25.6) scale(1.1)">
-    <circle cx="338" cy="126" r="15"/>
-    <circle cx="303" cy="109" r="19"/>
-    <circle cx="262" cy="105" r="23"/>
-    <circle cx="219" cy="115" r="27"/>
-    <circle cx="181" cy="138" r="29"/>
-    <circle cx="158" cy="171" r="27"/>
-    <circle cx="164" cy="205" r="24"/>
-    <circle cx="198" cy="229" r="22"/>
-    <circle cx="239" cy="244" r="20"/>
-    <circle cx="281" cy="260" r="22"/>
-    <circle cx="319" cy="283" r="25"/>
-    <circle cx="340" cy="316" r="27"/>
-    <circle cx="333" cy="350" r="26"/>
-    <circle cx="302" cy="377" r="24"/>
-    <circle cx="262" cy="394" r="21"/>
-    <circle cx="222" cy="400" r="18"/>
-    <circle cx="186" cy="395" r="14"/>
-  </g>
-  <g fill="#fff" transform="translate(-25.6 -25.6) scale(1.1)">
-    <circle cx="372" cy="142" r="8"/>
-    <circle cx="139" cy="142" r="9"/>
-    <circle cx="142" cy="235" r="9"/>
-    <circle cx="368" cy="375" r="9"/>
-    <circle cx="155" cy="378" r="8"/>
+  <rect x="10" y="10" width="492" height="492" rx="116" fill="url(#favicon-background)"/>
+  <rect x="20" y="20" width="472" height="472" rx="106" fill="none" stroke="#8fb8dc" stroke-opacity=".42" stroke-width="7"/>
+  <g id="Calque_2-2" data-name="Calque 2" transform="translate(65 27) scale(1.13)" filter="url(#favicon-white-glow)">
+    <g>
+      <circle class="cls-1" cx="179.79" cy="200.61" r="13.6"/>
+      <ellipse class="cls-1" cx="137.83" cy="183.57" rx="15.97" ry="15.46"/>
+      <ellipse class="cls-1" cx="123.71" cy="223.85" rx="11.94" ry="11.61"/>
+      <circle class="cls-1" cx="114.87" cy="260.08" r="7.57"/>
+      <circle class="cls-1" cx="209.79" cy="251.62" r="12.99"/>
+      <circle class="cls-1" cx="166.8" cy="238.63" r="12.99"/>
+      <circle class="cls-1" cx="224.49" cy="211.5" r="16.18"/>
+      <ellipse class="cls-1" cx="156.11" cy="274.16" rx="5.64" ry="6" transform="translate(-156.58 316.12) rotate(-67.99)"/>
+      <ellipse class="cls-1" cx="195.5" cy="287.19" rx="5.19" ry="5.53" transform="translate(-144.03 360.78) rotate(-67.99)"/>
+      <ellipse class="cls-1" cx="229.54" cy="300.44" rx="6.16" ry="6.55" transform="translate(-135.04 400.63) rotate(-67.99)"/>
+      <ellipse class="cls-1" cx="253.45" cy="317.92" rx="8.18" ry="7.24" transform="translate(-148.61 378.46) rotate(-60)"/>
+      <ellipse class="cls-1" cx="278.65" cy="286.29" rx="12.76" ry="10.59" transform="translate(-76.02 470.18) rotate(-73.18)"/>
+      <ellipse class="cls-1" cx="301.62" cy="249.6" rx="15.11" ry="12.54" transform="translate(7.98 508.55) rotate(-81.02)"/>
+      <path class="cls-1" d="M319.27,48.44c-.54-1.19-1.65-2.79-3.71-2.6-.53.05-.87.61-.7,1.11.31.93,1.17,2.26,3.52,2.62.64.1,1.16-.54.89-1.13Z"/>
+      <path class="cls-1" d="M299.56,33.78c-.88-1.49-2.57-3.43-5.24-2.88-.69.14-1.05.92-.75,1.56.54,1.17,1.86,2.79,4.99,2.94.85.04,1.44-.88,1-1.61Z"/>
+      <path class="cls-1" d="M276.4,20.33c-1.28-1.95-3.78-4.49-7.79-3.72-1.03.2-1.59,1.24-1.16,2.08.79,1.54,2.73,3.66,7.41,3.8,1.28.04,2.17-1.19,1.53-2.16Z"/>
+      <path class="cls-1" d="M244.75,8.52c-1.34-1.68-3.8-3.78-7.12-2.65-.86.29-1.2,1.31-.72,2.04.87,1.34,2.8,3.11,6.81,2.76,1.1-.1,1.7-1.32,1.03-2.15Z"/>
+      <path class="cls-1" d="M230.19,19.91c-2.39-1.59-6.36-3.26-10.13-.49-.97.72-.99,2.15-.09,2.89,1.65,1.36,4.82,2.83,9.78.75,1.35-.57,1.63-2.37.44-3.15Z"/>
+      <path class="cls-1" d="M211.13,1.45c-2.53-1.35-6.64-2.64-10.13.48-.9.8-.78,2.24.18,2.89,1.78,1.19,5.07,2.35,9.81-.19,1.29-.69,1.39-2.51.14-3.18Z"/>
+      <path class="cls-1" d="M176.57,2.35c-2.53-1.35-6.64-2.64-10.13.48-.9.8-.78,2.24.18,2.89,1.78,1.19,5.07,2.35,9.81-.19,1.29-.69,1.39-2.51.14-3.18Z"/>
+      <path class="cls-1" d="M140.32,8.66c-3.11-.43-7.84-.18-10.41,4.45-.66,1.19-.05,2.65,1.19,2.95,2.26.55,6.1.49,10.17-4.01,1.11-1.23.59-3.17-.95-3.38Z"/>
+      <path class="cls-1" d="M126,25.8c-3.79-.46-9.6-.02-12.87,5.81-.84,1.5-.13,3.3,1.38,3.64,2.76.63,7.46.45,12.57-5.26,1.39-1.56.81-3.96-1.08-4.19Z"/>
+      <path class="cls-1" d="M93.88,37.04c-5.13.68-12.86,3.4-16.56,13.24-.95,2.53.21,4.95,2.26,4.92,3.77-.04,10.04-2,16.22-12.32,1.69-2.82.62-6.18-1.92-5.85Z"/>
+      <path class="cls-1" d="M107.33,22.44c-2.88.17-7.89,1.5-13.65,7.54-1.48,1.55-1.84,3.14-.78,3.23,1.94.16,5.9-.75,13.11-6.97,1.97-1.7,2.75-3.88,1.32-3.8Z"/>
+      <path class="cls-1" d="M69.97,45.13c-3.05,1.05-8.23,4-13.71,12.33-1.41,2.14-1.62,3.99-.49,3.77,2.08-.4,6.2-2.59,13.2-11.55,1.91-2.45,2.51-5.07,1-4.55Z"/>
+      <path class="cls-1" d="M41.53,76.06c-3.26,2.25-8.78,7.51-14.51,19.5-1.48,3.09-1.67,5.43-.45,4.8,2.23-1.15,6.62-5.14,13.98-18.38,2.01-3.62,2.6-7.04.99-5.92Z"/>
+      <path class="cls-1" d="M15.96,119.81c-2.5,2.7-6.33,8.57-8.51,20.43-.56,3.05-.1,5.17.89,4.35,1.82-1.5,4.92-5.99,8.31-19.32.93-3.64.55-6.8-.69-5.46Z"/>
+      <path class="cls-1" d="M2.95,163.94c-1.67,2.59-3.76,7.84-2.63,17.09.29,2.38,1.31,3.82,2.04,2.98,1.34-1.55,3.1-5.6,2.74-16.23-.1-2.9-1.32-5.13-2.15-3.84Z"/>
+      <path class="cls-1" d="M4.75,189.18c-1.5,3.23-3.04,9.53-.17,19.78.74,2.64,2.16,4.08,2.87,3,1.29-1.99,2.65-6.88.44-18.82-.6-3.26-2.4-5.56-3.14-3.96Z"/>
+      <path class="cls-1" d="M197.76,26.01c-3.25-1.73-8.53-3.37-13,.65-1.15,1.04-1,2.87.25,3.7,2.28,1.52,6.51,3.01,12.59-.27,1.66-.89,1.78-3.23.17-4.08Z"/>
+      <path class="cls-1" d="M152.62,35.39s-5.97,1.77-5.97,5.57,2.36,5.33,7.51,5.17c0,0,6.54.06,8.25-5.36s-6.54-6.48-9.8-5.38Z"/>
+      <path class="cls-1" d="M158.4,14.4s-4.09.39-6.65,4.35c-.8,1.24-.47,2.94.8,3.7.72.43,1.77.79,3.29.91,2.27.18,4.58-.24,6.57-1.34,1.64-.91,3.3-2.36,3.41-4.56.21-4.39-7.42-3.05-7.42-3.05Z"/>
+      <path class="cls-1" d="M116.68,46.46s-5.33,1.08-8.14,7.47c-.88,2-.2,4.56,1.57,5.57,1.01.58,2.44,1,4.46.99,3.01,0,5.99-.92,8.46-2.85,2.03-1.59,4.02-4.02,3.85-7.39-.34-6.75-10.2-3.79-10.2-3.79Z"/>
+      <ellipse class="cls-1" cx="126.74" cy="79.63" rx="10.35" ry="8.53"/>
+      <path class="cls-1" d="M20.26,218.09c-1.29-.14-2.97.35-4.12,3.2-.64,1.58-.81,3.31-.65,5.01.34,3.43,1.53,9.87,5.75,12.42.66.4,1.48.44,2.18.12,1.67-.75,4.22-3.05,2.82-10.21-.94-4.83-2.29-7.46-3.17-8.76-.65-.96-1.66-1.65-2.81-1.78Z"/>
+      <path class="cls-1" d="M39,249.11c-.47,1.99-.49,4.65,1.49,6.97,1.28,1.5,3.15,2.44,5.12,2.35.5-.02.98-.12,1.31-.35,1.17-.81,3.58-4.03-.54-8.87-.7-.82-1.34-1.45-1.92-1.94-1.91-1.6-4.89-.58-5.46,1.84Z"/>
+      <ellipse class="cls-1" cx="54.79" cy="77.05" rx="15.81" ry="5.76" transform="translate(-39.76 76.43) rotate(-54.21)"/>
+      <ellipse class="cls-1" cx="84.16" cy="75.02" rx="12.4" ry="8.31" transform="translate(-28.4 81.48) rotate(-45)"/>
+      <ellipse class="cls-1" cx="57.92" cy="106.44" rx="14.73" ry="8.8" transform="translate(-63.25 108.04) rotate(-62.21)"/>
+      <ellipse class="cls-1" cx="38.65" cy="145.41" rx="15.3" ry="9.92" transform="translate(-111.78 142.63) rotate(-74.06)"/>
+      <ellipse class="cls-1" cx="30.14" cy="115.85" rx="17.16" ry="6.86" transform="translate(-88.42 99.37) rotate(-67.51)"/>
+      <circle class="cls-1" cx="95.06" cy="105.6" r="12.45"/>
+      <ellipse class="cls-1" cx="117.52" cy="132.5" rx="13.28" ry="12.27"/>
+      <ellipse class="cls-1" cx="265.9" cy="227.68" rx="15.78" ry="17.45"/>
+      <ellipse class="cls-1" cx="14.7" cy="158.45" rx="7.37" ry="14.59"/>
+      <ellipse class="cls-1" cx="73.6" cy="137.34" rx="12.65" ry="13.67"/>
+      <circle class="cls-1" cx="97.36" cy="164.21" r="13.2"/>
+      <ellipse class="cls-1" cx="55.38" cy="176.34" rx="10.96" ry="14.09"/>
+      <ellipse class="cls-1" cx="84.99" cy="203.98" rx="12.37" ry="14.09"/>
+      <ellipse class="cls-1" cx="24.96" cy="187" rx="9.15" ry="14.09"/>
+      <ellipse class="cls-1" cx="46.23" cy="216.27" rx="9.15" ry="12.29"/>
+      <circle class="cls-1" cx="77.88" cy="241.32" r="9.25"/>
+      <ellipse class="cls-1" cx="249.4" cy="266.97" rx="11.58" ry="12.93"/>
+      <ellipse class="cls-1" cx="323.19" cy="278.46" rx="14.39" ry="10.99" transform="translate(-36.88 507.25) rotate(-73.18)"/>
+      <ellipse class="cls-1" cx="329.7" cy="313.59" rx="14.85" ry="5.46" transform="translate(-106.73 442.33) rotate(-60)"/>
+      <ellipse class="cls-1" cx="314.28" cy="347.57" rx="12.86" ry="4.73" transform="translate(-154.31 348.32) rotate(-47.97)"/>
+      <ellipse class="cls-1" cx="297.23" cy="338.35" rx="10.45" ry="4.59" transform="translate(-153.1 332.61) rotate(-47.97)"/>
+      <ellipse class="cls-1" cx="297.23" cy="311.21" rx="12.33" ry="7.79" transform="translate(-126.02 389.06) rotate(-56.74)"/>
+      <ellipse class="cls-1" cx="265.78" cy="341.92" rx="7.51" ry="5.94" transform="translate(-163.93 288.08) rotate(-45)"/>
+      <ellipse class="cls-1" cx="279.2" cy="364.65" rx="6.93" ry="3.92" transform="translate(-165.62 250.37) rotate(-38.15)"/>
+      <ellipse class="cls-1" cx="285.16" cy="376.41" rx="6.56" ry="2.28" transform="translate(-166.19 237.54) rotate(-35.75)"/>
+      <ellipse class="cls-1" cx="254.69" cy="383.65" rx="6.56" ry="2.28" transform="translate(-136.58 140.83) rotate(-24.6)"/>
+      <ellipse class="cls-1" cx="252.08" cy="393.48" rx="4.24" ry="1.47" transform="translate(-93.92 79.39) rotate(-15.12)"/>
+      <ellipse class="cls-1" cx="250.4" cy="367.17" rx="7.11" ry="3.37" transform="translate(-167.34 215.49) rotate(-35.75)"/>
+      <ellipse class="cls-1" cx="226.59" cy="380.22" rx="5.43" ry="2.58" transform="translate(-109.49 92.19) rotate(-18.61)"/>
+      <ellipse class="cls-1" cx="193.19" cy="391.4" rx="4.08" ry="1.78" transform="translate(-64.43 39.05) rotate(-9.9)"/>
+      <ellipse class="cls-1" cx="160.13" cy="392.5" rx="2.87" ry="1.31" transform="translate(-27.88 12.56) rotate(-4.13)"/>
+      <path class="cls-1" d="M156.91,404.19c-2.28,0-4.13-.59-4.13-1.31,0-.73,1.85-1.31,4.13-1.31s4.13.59,4.13,1.31-1.85,1.31-4.13,1.31Z"/>
+      <ellipse class="cls-1" cx="129.97" cy="396.91" rx="1.31" ry="4.13" transform="translate(-286.97 421.23) rotate(-75.21)"/>
+      <ellipse class="cls-1" cx="106.67" cy="388.31" rx="1.31" ry="3.38" transform="translate(-289.84 317.98) rotate(-64.58)"/>
+      <ellipse class="cls-1" cx="87.26" cy="378.51" rx=".97" ry="2.49" transform="translate(-283.31 262.04) rotate(-59.57)"/>
+      <ellipse class="cls-1" cx="188.02" cy="403.39" rx="5.13" ry="1.78" transform="translate(-38.86 20.51) rotate(-5.66)"/>
+      <ellipse class="cls-1" cx="221.84" cy="397.25" rx="7.36" ry="2.58" transform="translate(-81.81 58.4) rotate(-12.68)"/>
+    </g>
   </g>
 </svg>

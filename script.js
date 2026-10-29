@@ -123,7 +123,7 @@ function startRankingAnim() {
         badge.textContent = 'Après';
         badge.className = 'ranking-anim__badge after';
         badge.style = '';
-        footer.textContent = 'Ton site en première position 🎉';
+        footer.textContent = 'Ton site en première position · Objectif atteint';
       }, 400);
 
     }, 800);

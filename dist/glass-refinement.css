@@ -309,6 +309,9 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
 .contact-float--dual{box-sizing:border-box;max-width:calc(100vw - 32px)}
 .contact-float__choices{min-width:0}
 .contact-float__choices a{min-width:0}
+.contact-float__choices small{display:flex!important;align-items:center;gap:7px}
+.contact-float__choices small::before{content:'';display:inline-block;width:7px;height:7px;border:1px solid currentColor;transform:rotate(45deg);flex:0 0 auto}
+.contact-float__choices a:last-child small::before{width:9px;height:9px;border:0;transform:none;background:linear-gradient(currentColor,currentColor) center/1px 9px no-repeat,linear-gradient(currentColor,currentColor) center/9px 1px no-repeat}
 
 @media(max-width:767px){
  .contact-choice{padding:12px;align-items:center}

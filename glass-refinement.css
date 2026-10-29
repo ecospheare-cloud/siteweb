@@ -151,6 +151,30 @@ body main>section.first-conversation#votre-projet .cta-brand-video{width:100%;he
 }
 .earth-globe__texture{inset:7% -38%;display:block;width:auto;opacity:.72;animation:globe-continent-drift 12s ease-in-out infinite}.earth-globe__texture img{display:block;width:100%;height:100%;object-fit:contain}@keyframes globe-continent-drift{0%,100%{transform:translateX(-1.2%)}50%{transform:translateX(1.2%)}}
 
+/* Fixed Lille–Dubai globe with subtle live-weather atmosphere. */
+.earth-globe{animation:globe-breathe 7s ease-in-out infinite!important}
+.earth-globe__texture{inset:7% -38%!important;transform:none!important;animation:none!important}
+.globe-weather{position:absolute;z-index:3;width:74px;height:48px;pointer-events:none;opacity:.8;transform:translate(-50%,-50%)}
+.globe-weather--lille{left:43.6%;top:35.6%}.globe-weather--dubai{left:68.4%;top:51.6%}
+.globe-weather i,.globe-weather b{position:absolute;display:block;opacity:0;transition:opacity .8s ease}
+.globe-weather i{width:44px;height:13px;border-radius:99px;background:#dcecff80;filter:blur(5px);box-shadow:17px -5px 0 #eff7ff62;animation:weather-cloud 5.5s ease-in-out infinite}
+.globe-weather i:nth-child(2){left:13px;top:17px;scale:.7;animation-delay:-2.5s}
+.globe-weather b{inset:18px 12px 0;background:repeating-linear-gradient(112deg,transparent 0 7px,#a9d7ff99 8px 9px,transparent 10px 15px);filter:drop-shadow(0 0 3px #8dc9ff);animation:weather-rain .75s linear infinite}
+.globe-weather[data-weather="cloud"] i,.globe-weather[data-weather="rain"] i,.globe-weather[data-weather="storm"] i{opacity:1}
+.globe-weather[data-weather="rain"] b,.globe-weather[data-weather="storm"] b{opacity:.8}
+.globe-weather[data-weather="clear"]:after{content:'';position:absolute;left:25px;top:8px;width:17px;height:17px;border-radius:50%;background:#d8efff;box-shadow:0 0 17px 6px #7fc3ff80;animation:weather-sun 3.8s ease-in-out infinite}
+.globe-weather[data-weather="storm"]{animation:weather-flash 4.5s steps(1,end) infinite}
+.globe-weather[data-day="0"]{filter:saturate(.7) brightness(.65)}
+.globe-location--france{left:-8%;top:27%}.globe-location--dubai{right:-5%;bottom:27%}
+@keyframes globe-breathe{0%,100%{transform:translateY(0);filter:brightness(1)}50%{transform:translateY(-5px);filter:brightness(1.04)}}
+@keyframes weather-cloud{0%,100%{transform:translateX(-3px);opacity:.48}50%{transform:translateX(5px);opacity:.92}}
+@keyframes weather-rain{to{background-position:0 15px}}
+@keyframes weather-sun{50%{transform:scale(1.12);box-shadow:0 0 22px 8px #7fc3ff92}}
+@keyframes weather-flash{0%,91%,95%,100%{filter:none}92%,94%{filter:brightness(1.7)}}
+body.effects-paused :is(.earth-globe,.globe-route-pulse,.globe-beacon,.globe-weather,.globe-weather i,.globe-weather b,.globe-weather[data-weather="clear"]:after){animation-play-state:paused!important}
+@media(max-width:700px){.globe-weather{scale:.75}.globe-location--france{left:-2%;top:20%}.globe-location--dubai{right:-2%;bottom:18%}}
+@media(prefers-reduced-motion:reduce){.earth-globe,.globe-weather,.globe-weather i,.globe-weather b,.globe-weather[data-weather="clear"]:after{animation:none!important}}
+
 /* Transparent, consistently framed team portraits. */
 body .people-section .person-photo{background:transparent!important}
 body .people-section .person-photo img{background:transparent!important}

@@ -92,6 +92,16 @@
 })();
 
 (() => {
+ const connection=document.querySelector('.world-map-connection');
+ const surface=connection?.querySelector('.world-map-surface');
+ if(!connection||!surface)return;
+ connection.classList.add('world-globe-connection');
+ connection.setAttribute('aria-label','Globe animé montrant la connexion entre la France et Dubaï');
+ surface.classList.add('world-globe-surface');
+  surface.innerHTML=`<div class="earth-globe-shell"><div class="earth-globe" aria-hidden="true"><div class="earth-globe__texture"><img src="/assets/collective-world-map.svg" alt=""></div><div class="earth-globe__shade"></div><svg class="earth-globe__route" viewBox="0 0 500 500" fill="none"><defs><linearGradient id="globe-route-gradient" x1="220" y1="160" x2="345" y2="265" gradientUnits="userSpaceOnUse"><stop stop-color="#b7dcff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs><path class="globe-route-base" d="M218 178 Q292 92 342 258"/><path class="globe-route-pulse" d="M218 178 Q292 92 342 258"/><circle class="globe-beacon" cx="218" cy="178" r="14"/><circle class="globe-beacon globe-beacon--dubai" cx="342" cy="258" r="14"/><circle class="globe-dot" cx="218" cy="178" r="5"/><circle class="globe-dot" cx="342" cy="258" r="5"/></svg><div class="earth-globe__shine"></div></div><div class="globe-location globe-location--france"><img src="/assets/flag-france.svg" alt="" width="27" height="18"><span>FRANCE</span></div><div class="globe-location globe-location--dubai"><img src="/assets/flag-uae.svg" alt="" width="27" height="18"><span>DUBAÏ</span></div></div>`;
+})();
+
+(() => {
  const video=document.querySelector('.cta-brand-video');if(!video)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let visible=false;
  const sync=()=>{if(!visible||document.hidden||reduced.matches||document.body.classList.contains('effects-paused'))video.pause();else video.play().catch(()=>{});};

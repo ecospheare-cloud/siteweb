@@ -230,3 +230,41 @@ body .site-footer .footer-identity .brand-agency{
  text-transform:none!important;
 }
 @media(max-width:600px){body .site-header>.wordmark{font-size:14px!important;letter-spacing:.035em!important}body .site-footer .footer-identity>span{letter-spacing:.04em!important}}
+
+/* Responsive WhatsApp choice modal and floating contact prompt. */
+.contact-choice{box-sizing:border-box;min-height:100dvh;overflow-y:auto;overscroll-behavior:contain}
+.contact-choice__card{box-sizing:border-box;max-height:calc(100dvh - 32px);overflow:auto}
+.contact-choice__card>div{min-width:0}
+.contact-choice__card h2,.contact-choice__card p{overflow-wrap:anywhere}
+.contact-choice__actions a{min-width:0}
+.contact-float--dual{box-sizing:border-box;max-width:calc(100vw - 32px)}
+.contact-float__choices{min-width:0}
+.contact-float__choices a{min-width:0}
+
+@media(max-width:767px){
+ .contact-choice{padding:12px;align-items:center}
+ .contact-choice__card{width:min(100%,540px);max-height:calc(100dvh - 24px);grid-template-columns:52px minmax(0,1fr);gap:12px 14px;padding:20px 16px 16px;border-radius:22px}
+ .contact-choice__card>img{width:52px;height:52px}
+ .contact-choice__card h2{padding-right:30px;font-size:clamp(22px,7vw,30px)}
+ .contact-choice__card p{font-size:13px;line-height:1.45}
+ .contact-choice__close{right:10px;top:10px;width:32px;height:32px}
+ .contact-choice__actions{grid-template-columns:1fr;gap:8px;margin-top:2px}
+ .contact-choice__actions a{gap:4px;padding:12px 14px;border-radius:15px}
+ .contact-choice__actions span{font-size:11px}
+ .contact-choice__actions strong{font-size:14px;line-height:1.3}
+ body .contact-float--dual{right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;width:min(430px,calc(100vw - 24px));max-width:none!important;padding:7px!important;border-radius:20px!important}
+ body .contact-float--dual>img{width:42px!important;height:42px!important;margin:0 2px!important;flex:0 0 42px}
+ .contact-float__choices{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+ .contact-float__choices a{padding:8px 7px!important;border-radius:13px!important;text-align:center}
+ .contact-float__choices strong{white-space:normal!important;font-size:11px!important;line-height:1.25}
+}
+
+@media(max-width:420px){
+ .contact-choice__card{grid-template-columns:44px minmax(0,1fr);padding:16px 12px 12px;gap:10px 12px;border-radius:18px}
+ .contact-choice__card>img{width:44px;height:44px}
+ .contact-choice__card small{font-size:8px;letter-spacing:.11em}
+ .contact-choice__card h2{margin-top:3px;font-size:20px}
+ .contact-choice__actions a{padding:10px 12px}
+ body .contact-float--dual>img{width:36px!important;height:36px!important;flex-basis:36px}
+ .contact-float__choices strong{font-size:10px!important}
+}

@@ -1,0 +1,127 @@
+/* Scroll-driven chapters: progressive on desktop, ordinary flow everywhere else. */
+@media (min-width: 960px) and (prefers-reduced-motion: no-preference){
+  html.has-scroll-chapters .home .ecosfer-expertises{
+    min-height:calc(100svh - 32px);
+    display:grid;
+    grid-template-columns:minmax(270px,.72fr) minmax(520px,1.28fr);
+    align-items:center;
+    gap:clamp(48px,7vw,120px);
+    overflow:hidden;
+  }
+  html.has-scroll-chapters .home .expertise-heading{
+    align-self:center;
+    position:relative;
+    z-index:3;
+  }
+  html.has-scroll-chapters .home .expertise-heading h2{margin-bottom:0}
+  html.has-scroll-chapters .home .expertise-heading::after{
+    content:"";
+    display:block;
+    width:min(250px,100%);
+    height:2px;
+    margin-top:34px;
+    background:linear-gradient(90deg,#9ac9ff var(--chapter-progress,0%),#ffffff1c 0);
+    border-radius:99px;
+  }
+  html.has-scroll-chapters .home .ecosfer-offers{
+    display:block;
+    position:relative;
+    min-height:min(680px,76svh);
+  }
+  html.has-scroll-chapters .home .ecosfer-offers article{
+    position:absolute;
+    inset:0;
+    display:grid;
+    grid-template-columns:minmax(250px,.92fr) minmax(250px,1.08fr);
+    grid-template-rows:auto auto 1fr auto;
+    column-gap:clamp(24px,3vw,52px);
+    align-content:center;
+    opacity:0;
+    transform:translate3d(0,54px,0) scale(.97);
+    pointer-events:none;
+    will-change:transform,opacity;
+  }
+  html.has-scroll-chapters .home .ecosfer-offers article:first-child{
+    opacity:1;
+    transform:none;
+    pointer-events:auto;
+  }
+  html.has-scroll-chapters .home .ecosfer-offers article>img{
+    grid-column:1;
+    grid-row:1 / span 4;
+    align-self:stretch;
+    height:100%;
+    min-height:480px;
+    margin:0;
+  }
+  html.has-scroll-chapters .home .ecosfer-offers article>:not(img){grid-column:2}
+  html.has-scroll-chapters .home .ecosfer-offers article>.section-kicker{align-self:end}
+
+  html.has-scroll-chapters .agency-page .agency-intro{
+    min-height:100svh;
+    display:grid;
+    grid-template-columns:minmax(320px,.85fr) minmax(430px,1.15fr);
+    align-items:center;
+    gap:clamp(60px,10vw,180px);
+    overflow:hidden;
+  }
+  html.has-scroll-chapters body.agency-page .pin-spacer>.agency-intro{
+    background:#f7f8fa!important;
+    color:#1d3049!important;
+    margin:0!important;
+    width:100%!important;
+    max-width:none!important;
+    border:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+  }
+  html.has-scroll-chapters body.agency-page .pin-spacer>.agency-intro :is(h2,p,em){color:#1d3049!important}
+  html.has-scroll-chapters .agency-page .agency-intro>.eyebrow{
+    position:absolute;
+    top:clamp(90px,11vh,140px);
+    left:clamp(24px,6vw,90px);
+  }
+  html.has-scroll-chapters .agency-page .agency-intro>h2{max-width:620px}
+  html.has-scroll-chapters .agency-page .agency-intro>div{
+    position:relative;
+    width:100%;
+    min-height:320px;
+    margin:0;
+  }
+  html.has-scroll-chapters .agency-page .agency-intro>div::before{
+    content:"01 / 03";
+    position:absolute;
+    top:-54px;
+    left:0;
+    color:#55708f;
+    font-size:12px;
+    letter-spacing:.18em;
+  }
+  html.has-scroll-chapters .agency-page .agency-intro>div::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-22px;
+    height:2px;
+    border-radius:99px;
+    background:linear-gradient(90deg,#3187e8 var(--chapter-progress,0%),#18314d24 0);
+  }
+  html.has-scroll-chapters .agency-page .agency-intro>div>p{
+    position:absolute;
+    inset:0;
+    margin:0;
+    display:flex;
+    align-items:center;
+    font-size:clamp(22px,2.1vw,34px);
+    line-height:1.55;
+    opacity:0;
+    transform:translate3d(0,45px,0);
+    will-change:transform,opacity;
+  }
+  html.has-scroll-chapters .agency-page .agency-intro>div>p:first-child{opacity:1;transform:none}
+}
+
+@media (max-width: 959px), (prefers-reduced-motion: reduce){
+  .ecosfer-expertises,.agency-intro{transform:none!important}
+}

@@ -54,6 +54,17 @@
  if(footerIdentity&&!document.querySelector('.footer-audience')){const audience=document.createElement('p');audience.className='footer-audience';audience.textContent='Partenaire digital des agences de communication et des petites entreprises.';footerIdentity.after(audience)}
 
 })();
+
+// Load the immersive, scroll-driven chapters only on the two editorial pages that use them.
+(()=>{
+ if(!document.body.matches('.home,.agency-page'))return;
+ const css=document.createElement('link');
+ css.rel='stylesheet';css.href='/scroll-chapters.css?v=20261029';
+ document.head.append(css);
+ const script=document.createElement('script');
+ script.src='/scroll-chapters.js?v=20261029';script.defer=true;
+ document.head.append(script);
+})();
 (() => {
  const home=document.body.classList.contains('home');
  const projectMessage=encodeURIComponent('Bonjour Sacha, j’ai un projet et j’aimerais en discuter avec vous.');

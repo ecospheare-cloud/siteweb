@@ -2,22 +2,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ecospheare Agency">
   <defs>
     <linearGradient id="background" x1="72" y1="34" x2="440" y2="478" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#244f78"/>
-      <stop offset=".55" stop-color="#173b61"/>
-      <stop offset="1" stop-color="#102b49"/>
+      <stop stop-color="#173d63"/>
+      <stop offset=".55" stop-color="#0e2c4b"/>
+      <stop offset="1" stop-color="#091d33"/>
     </linearGradient>
     <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(212 164) rotate(47) scale(330)" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8bb6d9" stop-opacity=".18"/>
       <stop offset="1" stop-color="#8bb6d9" stop-opacity="0"/>
     </radialGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#00347e" flood-opacity=".35"/>
-    </filter>
   </defs>
   <rect x="12" y="12" width="488" height="488" rx="118" fill="url(#background)"/>
-  <rect x="23" y="23" width="466" height="466" rx="107" fill="none" stroke="#9bb9d2" stroke-opacity=".52" stroke-width="8"/>
+  <rect x="23" y="23" width="466" height="466" rx="107" fill="none" stroke="#9bb9d2" stroke-opacity=".38" stroke-width="7"/>
   <rect x="23" y="23" width="466" height="466" rx="107" fill="url(#glow)"/>
-  <g fill="#fff" filter="url(#shadow)">
+  <g fill="#fff" transform="translate(-25.6 -25.6) scale(1.1)">
     <circle cx="338" cy="126" r="15"/>
     <circle cx="303" cy="109" r="19"/>
     <circle cx="262" cy="105" r="23"/>
@@ -36,7 +33,7 @@
     <circle cx="222" cy="400" r="18"/>
     <circle cx="186" cy="395" r="14"/>
   </g>
-  <g fill="#d8f1ff" opacity=".95">
+  <g fill="#fff" transform="translate(-25.6 -25.6) scale(1.1)">
     <circle cx="372" cy="142" r="8"/>
     <circle cx="139" cy="142" r="9"/>
     <circle cx="142" cy="235" r="9"/>

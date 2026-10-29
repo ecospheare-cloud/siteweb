@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338.51 405.23">
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #1457c8;
+        fill: #fff;
       }
     </style>
   </defs>
-  <g id="Calque_2-2" data-name="Calque 2">
+  <rect width="512" height="512" rx="96" fill="#07182e"/>
+  <g id="Calque_2-2" data-name="Calque 2" transform="translate(69.82 33.12) scale(1.1)">
     <g>
       <circle class="cls-1" cx="179.79" cy="200.61" r="13.6"/>
       <ellipse class="cls-1" cx="137.83" cy="183.57" rx="15.97" ry="15.46"/>

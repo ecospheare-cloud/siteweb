@@ -251,7 +251,14 @@ body .brand-name-image{
 }
 body .brand-name-lockup .brand-agency{font-size:.98em;line-height:1}
 body .site-footer .brand-name-lockup{align-items:center}
-body .site-footer .brand-name-image{width:clamp(150px,14vw,210px)!important}
+body .site-footer .footer-identity img.brand-name-image{
+ width:clamp(150px,14vw,210px)!important;
+ min-width:clamp(150px,14vw,210px)!important;
+ max-width:none!important;
+ height:auto!important;
+ max-height:none!important;
+ flex:0 0 auto;
+}
 body .space-intro__identity .space-intro__brand{align-items:center;gap:.28em}
 body .space-intro__identity .brand-name-image{width:clamp(230px,31vw,500px)!important}
 body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color:#acd9ff}
@@ -259,7 +266,7 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
  body .brand-name-image{width:112px!important}
  body .brand-name-lockup{gap:.16em}
  body .brand-name-lockup .brand-agency{font-size:1.08em}
- body .site-footer .brand-name-image{width:132px!important}
+ body .site-footer .footer-identity img.brand-name-image{width:132px!important;min-width:132px!important;max-width:none!important;height:auto!important;max-height:none!important}
  body .space-intro__identity{gap:10px}
  body .space-intro__identity .brand-name-image{width:min(56vw,230px)!important}
  body .space-intro__identity .brand-agency{font-size:clamp(20px,7vw,32px)}

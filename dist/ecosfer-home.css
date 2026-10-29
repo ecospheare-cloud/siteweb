@@ -30,3 +30,10 @@
 .ecosfer-offers:has(>article:nth-child(3)) h3{font-size:clamp(28px,2.8vw,44px)}
 @media(max-width:1050px){.ecosfer-offers:has(>article:nth-child(3)){grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:767px){.ecosfer-offers:has(>article:nth-child(3)){grid-template-columns:1fr}}
+
+/* Preserve the full subject of each expertise visual in every card ratio. */
+.ecosfer-offers article>img{background:#0d1c31;object-position:center}
+.ecosfer-offers #conversion>img{object-position:50% 54%}
+.ecosfer-offers #design>img{object-position:50% 50%}
+.ecosfer-offers #visibilite>img{object-position:50% 48%}
+@media(max-width:767px){.ecosfer-offers article>img{aspect-ratio:16/10;object-fit:cover}}

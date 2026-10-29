@@ -53,6 +53,7 @@
     height:100%;
     min-height:480px;
     margin:0;
+    object-fit:contain;
   }
   html.has-scroll-chapters .home .ecosfer-offers article>:not(img){grid-column:2}
   html.has-scroll-chapters .home .ecosfer-offers article>.section-kicker{align-self:end}

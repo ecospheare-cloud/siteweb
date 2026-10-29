@@ -59,7 +59,7 @@
 (()=>{
  if(!document.body.matches('.home,.agency-page'))return;
  const css=document.createElement('link');
- css.rel='stylesheet';css.href='/scroll-chapters.css?v=20261029';
+ css.rel='stylesheet';css.href='/scroll-chapters.css?v=expertises-20261029';
  document.head.append(css);
  const script=document.createElement('script');
  script.src='/scroll-chapters.js?v=portfolio-fix-20261029';script.defer=true;

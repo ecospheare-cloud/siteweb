@@ -217,10 +217,10 @@ body .site-header>.wordmark,
 body .site-footer .footer-identity>span{
  font-family:Manrope,Poppins,Arial,sans-serif!important;
  font-weight:800!important;
- letter-spacing:.055em!important;
+ letter-spacing:-.045em!important;
  text-transform:uppercase!important;
 }
-body .site-header>.wordmark{font-size:clamp(16px,1.45vw,22px)!important}
+body .site-header>.wordmark{font-size:clamp(17px,1.55vw,24px)!important}
 body .site-header>.wordmark .brand-agency,
 body .site-footer .footer-identity .brand-agency{
  font-family:var(--signature-font)!important;
@@ -229,7 +229,7 @@ body .site-footer .footer-identity .brand-agency{
  letter-spacing:-.05em!important;
  text-transform:none!important;
 }
-@media(max-width:600px){body .site-header>.wordmark{font-size:14px!important;letter-spacing:.035em!important}body .site-footer .footer-identity>span{letter-spacing:.04em!important}}
+@media(max-width:600px){body .site-header>.wordmark{font-size:14px!important;letter-spacing:-.045em!important}body .site-footer .footer-identity>span{letter-spacing:-.045em!important}}
 
 /* Responsive WhatsApp choice modal and floating contact prompt. */
 .contact-choice{box-sizing:border-box;min-height:100dvh;overflow-y:auto;overscroll-behavior:contain}

@@ -249,16 +249,9 @@ body .brand-name-image{
  flex:0 0 auto;
  object-fit:contain;
 }
-body.home .brand-name-image,
-body .site-header.glass-docked .brand-name-image,
-body .site-footer .brand-name-image{
- filter:invert(1) grayscale(1) brightness(2.4);
- mix-blend-mode:screen;
-}
 body .brand-name-lockup .brand-agency{font-size:.98em;line-height:1}
 body .site-footer .brand-name-lockup{align-items:center}
 body .site-footer .brand-name-image{width:clamp(150px,14vw,210px)!important}
-body .space-intro__identity{mix-blend-mode:screen}
 body .space-intro__identity .space-intro__brand{align-items:center;gap:.28em}
 body .space-intro__identity .brand-name-image{width:clamp(230px,31vw,500px)!important}
 body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color:#acd9ff}

@@ -315,6 +315,67 @@ body .site-header .nav-language select{opacity:.68}
   .home .site-header:not(.glass-docked){background:#08182a!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 }
 
+/* Before the first scroll, the masthead stays compact and attached to the hero. */
+@media(min-width:1024px){
+  .home .site-header:not(.glass-docked){
+    inset:28px auto auto 28px!important;
+    width:min(980px,calc(100% - 56px))!important;
+    height:66px!important;
+  }
+  .home .site-header:not(.glass-docked)>.nav-locale{display:none!important}
+  .home .site-header:not(.glass-docked)>.wordmark{margin-right:auto!important}
+}
+
+/* Editorial material shared by the site's main cards and content blocks. */
+body :is(
+  .hero-portfolio,
+  .ecosfer-offers article,
+  .person,
+  .orbit-step,
+  .metric-list article,
+  .home-questions details,
+  .pf-card,
+  .service-index article,
+  .method-steps article,
+  .principles article,
+  .contact-intro,
+  #brief-form
+){
+  border:1px solid rgba(180,207,238,.13)!important;
+  background-image:
+    radial-gradient(circle,rgba(201,221,245,.026) 0 1px,transparent 1.35px),
+    linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018))!important;
+  background-size:9px 9px,100% 100%!important;
+  background-position:0 0,0 0!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 18px 48px rgba(2,9,20,.09)!important;
+}
+body :is(.pf-card,.ecosfer-offers article,.person,.orbit-step,.metric-list article){overflow:hidden}
+
+/* Light editorial chapters use the same grain with dark ink instead of glass. */
+.home main :is(.orbital-method,.outcome-section),
+.home .manifesto-stage,
+.home .agency-film-frame{
+  background-image:
+    radial-gradient(circle,rgba(15,32,55,.028) 0 1px,transparent 1.35px),
+    linear-gradient(145deg,rgba(255,255,255,.96),rgba(240,245,251,.94))!important;
+  background-size:10px 10px,100% 100%!important;
+  border:1px solid rgba(31,59,91,.09)!important;
+  box-shadow:0 20px 55px rgba(17,39,67,.08)!important;
+}
+
+/* Section framing follows the same quiet, editorial rhythm. */
+.home main :is(.intro-shell,.ecosfer-expertises,.portfolio-showcase,.global-collective,.people-section,.first-conversation){
+  border:1px solid rgba(180,207,238,.11)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 22px 60px rgba(2,9,20,.08)!important;
+}
+
+@media(max-width:1023px){
+  .home .site-header:not(.glass-docked){
+    inset:9px 10px auto!important;
+    width:calc(100% - 20px)!important;
+  }
+}
+
 /* Consent stays readable without covering most of a phone screen, including SEO templates. */
 body .cookie-consent h2{font-size:15px!important;line-height:1.25!important;margin:0 0 3px!important}
 body .cookie-consent p{font-size:10.5px!important;line-height:1.42!important;margin:0!important}

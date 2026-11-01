@@ -6,6 +6,15 @@
   const button = frame.querySelector(".agency-film-play");
   const label = button?.querySelector(".agency-film-play__label");
   if (!video || !button) return;
+  const mobileMedia = window.matchMedia("(max-width: 800px)");
+
+  const updatePoster = () => {
+    const poster = mobileMedia.matches ? video.dataset.mobilePoster : video.dataset.desktopPoster;
+    if (poster && video.getAttribute("poster") !== poster) video.setAttribute("poster", poster);
+  };
+
+  updatePoster();
+  mobileMedia.addEventListener?.("change", updatePoster);
 
   button.addEventListener("click", async () => {
     try {

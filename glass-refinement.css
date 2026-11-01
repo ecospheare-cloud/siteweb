@@ -214,6 +214,107 @@ body :is(.button,button,input,select,textarea){max-width:100%;box-sizing:border-
 body :is(.pf-card,.expert-card,.service-card,.person,.case-project-card){min-width:0}
 body :is(.pf-caption,.expert-card,.service-card,.story-reading,.contact-layout)>*{max-width:100%}
 
+/* Premium navigation: restrained texture, soft blur and consistent states. */
+body .site-header,
+body .site-header.glass-docked,
+.home .site-header,
+.home .site-header:not(.glass-docked),
+.home .site-header.glass-docked{
+  position:fixed!important;
+  inset:14px 18px auto!important;
+  width:calc(100% - 36px)!important;
+  height:64px!important;
+  padding:0 clamp(18px,2vw,30px)!important;
+  border:1px solid rgba(184,211,242,.14)!important;
+  border-radius:13px!important;
+  color:#f7faff!important;
+  background:
+    radial-gradient(circle at 18% 22%,rgba(174,207,244,.026) 0 1px,transparent 1.4px) 0 0/9px 9px,
+    linear-gradient(105deg,rgba(5,15,29,.92),rgba(11,29,49,.86) 58%,rgba(9,24,42,.91))!important;
+  -webkit-backdrop-filter:blur(18px) saturate(118%)!important;
+  backdrop-filter:blur(18px) saturate(118%)!important;
+  box-shadow:0 14px 38px rgba(1,8,19,.24),inset 0 1px 0 rgba(255,255,255,.085)!important;
+  transform:none!important;
+  transition:background .28s ease,box-shadow .28s ease,border-color .28s ease!important;
+}
+.home .site-header:not(.glass-docked){
+  background:
+    radial-gradient(circle at 18% 22%,rgba(174,207,244,.02) 0 1px,transparent 1.4px) 0 0/9px 9px,
+    linear-gradient(105deg,rgba(5,15,29,.78),rgba(11,29,49,.69) 58%,rgba(9,24,42,.76))!important;
+  box-shadow:0 10px 30px rgba(1,8,19,.16),inset 0 1px 0 rgba(255,255,255,.07)!important;
+}
+body .site-header.glass-docked,.home .site-header.glass-docked{
+  border-color:rgba(184,211,242,.18)!important;
+  background:
+    radial-gradient(circle at 18% 22%,rgba(174,207,244,.03) 0 1px,transparent 1.4px) 0 0/9px 9px,
+    linear-gradient(105deg,rgba(4,13,26,.96),rgba(10,28,48,.93) 58%,rgba(8,22,39,.96))!important;
+  box-shadow:0 16px 42px rgba(1,8,19,.3),inset 0 1px 0 rgba(255,255,255,.1)!important;
+}
+body .site-header .desktop-nav{gap:clamp(18px,2vw,30px)!important}
+body .site-header .desktop-nav>a,
+body .site-header .nav-expertise__link{
+  color:rgba(242,247,253,.76)!important;
+  font-size:11px!important;
+  font-weight:600!important;
+  letter-spacing:.055em!important;
+  text-transform:uppercase;
+  transition:color .2s ease!important;
+}
+body .site-header .desktop-nav>a:hover,
+body .site-header .desktop-nav>a[aria-current],
+body .site-header .nav-expertise__link:hover{
+  color:#fff!important;
+}
+body .site-header .desktop-nav a::after{
+  bottom:1px!important;
+  height:1px!important;
+  background:#8fc4ff!important;
+}
+body .site-header>.nav-contact-cta{
+  min-height:40px!important;
+  padding:10px 19px!important;
+  border:1px solid rgba(159,202,249,.27)!important;
+  border-radius:8px!important;
+  background:linear-gradient(135deg,rgba(66,126,196,.48),rgba(39,83,139,.42))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 7px 20px rgba(0,8,20,.15)!important;
+  font-size:11px!important;
+  font-weight:600!important;
+  letter-spacing:.04em!important;
+  text-transform:uppercase;
+}
+body .site-header>.menu-toggle{
+  min-height:40px!important;
+  border:1px solid rgba(184,211,242,.16)!important;
+  border-radius:8px!important;
+  background:rgba(255,255,255,.035)!important;
+  box-shadow:none!important;
+}
+body .site-header .nav-local-time{opacity:.48;font-size:8px}
+body .site-header .nav-language select{opacity:.68}
+
+@media(max-width:767px){
+  body .site-header,
+  body .site-header.glass-docked,
+  .home .site-header,
+  .home .site-header:not(.glass-docked),
+  .home .site-header.glass-docked{
+    inset:9px 10px auto!important;
+    width:calc(100% - 20px)!important;
+    height:60px!important;
+    padding:0 12px!important;
+    border-radius:11px!important;
+  }
+  body .site-header>.nav-contact-cta{min-height:36px!important;padding:8px 12px!important;font-size:10px!important}
+  body .site-header>.menu-toggle{min-height:36px!important;border-radius:7px!important}
+}
+
+@media(prefers-reduced-transparency:reduce){
+  body .site-header,
+  body .site-header.glass-docked,
+  .home .site-header,
+  .home .site-header:not(.glass-docked){background:#08182a!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+}
+
 /* Consent stays readable without covering most of a phone screen, including SEO templates. */
 body .cookie-consent h2{font-size:15px!important;line-height:1.25!important;margin:0 0 3px!important}
 body .cookie-consent p{font-size:10.5px!important;line-height:1.42!important;margin:0!important}

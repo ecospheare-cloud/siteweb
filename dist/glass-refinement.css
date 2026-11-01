@@ -312,6 +312,16 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
 .contact-float__choices small{display:flex!important;align-items:center;gap:7px}
 .contact-float__choices small::before{content:'';display:inline-block;width:7px;height:7px;border:1px solid currentColor;transform:rotate(45deg);flex:0 0 auto}
 .contact-float__choices a:last-child small::before{width:9px;height:9px;border:0;transform:none;background:linear-gradient(currentColor,currentColor) center/1px 9px no-repeat,linear-gradient(currentColor,currentColor) center/9px 1px no-repeat}
+.contact-float__toggle,.contact-float__close{appearance:none;border:0;color:#dce9f8;background:transparent;cursor:pointer}
+.contact-float__toggle{display:grid;place-items:center;padding:0;border-radius:50%;flex:0 0 auto}
+.contact-float__toggle img{display:block;margin:0!important}
+.contact-float__close{position:absolute;right:8px;top:7px;display:grid;place-items:center;width:25px;height:25px;border-radius:50%;font-size:19px;line-height:1;transition:background .2s,color .2s}
+.contact-float__close:hover,.contact-float__close:focus-visible{color:#fff;background:#ffffff14}
+.contact-float--dual{padding-right:34px!important;transition:width .28s ease,padding .28s ease,border-radius .28s ease,opacity .3s,transform .3s}
+.contact-float--dual.is-collapsed{width:72px!important;max-width:72px!important;padding:8px!important;border-radius:50%!important;gap:0!important}
+.contact-float--dual.is-collapsed .contact-float__choices,.contact-float--dual.is-collapsed .contact-float__close{display:none}
+.contact-float--dual.is-collapsed .contact-float__toggle{width:54px;height:54px}
+.contact-float--dual.is-collapsed .contact-float__toggle img{width:54px!important;height:54px!important}
 
 @media(max-width:767px){
  .contact-choice{padding:12px;align-items:center}
@@ -324,7 +334,10 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
  .contact-choice__actions a{gap:4px;padding:12px 14px;border-radius:15px}
  .contact-choice__actions span{font-size:11px}
  .contact-choice__actions strong{font-size:14px;line-height:1.3}
- body .contact-float--dual{left:12px!important;right:auto!important;bottom:max(12px,env(safe-area-inset-bottom))!important;width:min(430px,calc(100vw - 24px));max-width:none!important;padding:7px!important;border-radius:20px!important}
+ body .contact-float--dual{left:12px!important;right:auto!important;bottom:max(12px,env(safe-area-inset-bottom))!important;width:min(430px,calc(100vw - 24px));max-width:none!important;padding:7px 32px 7px 7px!important;border-radius:20px!important}
+ body .contact-float--dual.is-collapsed{width:58px!important;max-width:58px!important;padding:7px!important;border-radius:50%!important}
+ body .contact-float--dual.is-collapsed .contact-float__toggle{width:42px;height:42px}
+ body .contact-float--dual.is-collapsed .contact-float__toggle img{width:42px!important;height:42px!important}
  body .contact-float--dual>img{width:42px!important;height:42px!important;margin:0 2px!important;flex:0 0 42px}
  .contact-float__choices{width:100%;grid-template-columns:1fr;gap:4px}
  .contact-float__choices a{padding:8px 7px!important;border-radius:13px!important;text-align:center}

@@ -537,3 +537,35 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
   linear-gradient(90deg,rgba(4,15,31,.72) 0%,rgba(8,31,61,.24) 56%,rgba(5,18,36,.1) 100%),
   linear-gradient(180deg,rgba(6,20,38,.06) 42%,rgba(5,17,34,.42) 100%)!important;
 }
+
+/* Scroll-led process: numbered editorial stages, without decorative imagery. */
+.home .orbital-method .orbit-step-image{display:none!important}
+.home .orbital-method .orbit-step{position:relative;min-height:420px;padding:clamp(30px,4vw,64px);display:grid;grid-template-columns:minmax(110px,.32fr) minmax(0,1fr);align-items:end;gap:clamp(28px,5vw,90px);background:#f1f3f6!important;border:1px solid #d9dee6!important;border-radius:30px!important;box-shadow:0 24px 70px rgba(20,32,58,.09)!important;overflow:hidden}
+.home .orbital-method .orbit-step::after{content:'';position:absolute;right:-10%;bottom:-55%;width:55%;aspect-ratio:1;border:1px solid rgba(43,91,154,.18);border-radius:50%;box-shadow:0 0 0 42px rgba(43,91,154,.035),0 0 0 84px rgba(43,91,154,.025);pointer-events:none}
+.home .orbital-method .orbit-step-no{position:static!important;align-self:start;padding:0!important;border:0!important;background:transparent!important;backdrop-filter:none!important;color:#173b69!important;border-radius:0!important;font-size:clamp(76px,10vw,168px)!important;font-weight:500;line-height:.78;letter-spacing:-.09em;font-variant-numeric:tabular-nums}
+.home .orbital-method .orbit-step-copy{position:relative;z-index:1;padding:0!important;max-width:720px}
+.home .orbital-method .orbit-step-label{margin:0 0 18px!important;color:#56708f!important;font-size:11px!important;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.home .orbital-method .orbit-step-copy h3{margin:0 0 20px!important;color:#152238!important;font-size:clamp(48px,6vw,92px)!important;font-weight:500;line-height:.94!important;letter-spacing:-.065em}
+.home .orbital-method .orbit-step-copy>p:last-child{max-width:620px;margin:0!important;color:#536176!important;font-size:clamp(16px,1.5vw,21px)!important;line-height:1.65!important}
+
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ .home .orbital-method.method-scroll-scene{min-height:420vh!important;padding:0 5vw!important;display:grid;grid-template-columns:minmax(280px,.72fr) minmax(520px,1.28fr);column-gap:6vw;align-items:start;overflow:visible!important}
+ .home .orbital-method.method-scroll-scene>.method-heading{position:sticky!important;top:clamp(110px,15vh,165px)!important;padding-top:0!important;margin:0!important;align-self:start}
+ .home .orbital-method.method-scroll-scene>.orbit-steps{position:sticky!important;top:clamp(105px,13vh,145px)!important;width:100%;height:min(72vh,700px);margin:0!important;padding:0!important;display:block!important;align-self:start;z-index:3}
+ .home .orbital-method.method-scroll-scene .orbit-step{position:absolute!important;inset:0!important;width:100%;height:100%;min-height:0;opacity:0!important;visibility:hidden;transform:translate3d(0,48px,0) scale(.975)!important;transition:opacity .2s ease,transform .35s cubic-bezier(.2,.8,.2,1)!important;pointer-events:none}
+ .home .orbital-method.method-scroll-scene .orbit-step.is-current{opacity:1!important;visibility:visible;transform:translate3d(0,0,0) scale(1)!important;pointer-events:auto}
+ .home .orbital-method.method-scroll-scene>.acquisition-launch{position:absolute!important;left:5vw;right:5vw;bottom:10vh;top:auto!important;z-index:4;opacity:1!important;transform:none!important}
+}
+
+@media(max-width:900px){
+ .home .orbital-method .orbit-steps{display:grid!important;grid-template-columns:1fr!important;gap:16px!important}
+ .home .orbital-method .orbit-step{min-height:0;padding:28px 22px;grid-template-columns:72px minmax(0,1fr);gap:18px;border-radius:22px!important}
+ .home .orbital-method .orbit-step-no{font-size:58px!important}
+ .home .orbital-method .orbit-step-copy h3{font-size:40px!important}
+ .home .orbital-method .orbit-step-copy>p:last-child{font-size:15px!important}
+}
+
+@media(max-width:520px){
+ .home .orbital-method .orbit-step{grid-template-columns:1fr;gap:22px;padding:26px 20px}
+ .home .orbital-method .orbit-step-no{font-size:64px!important}
+}

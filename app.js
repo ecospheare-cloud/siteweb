@@ -207,15 +207,18 @@ const expertiseNav=document.querySelector('.nav-expertise');
  const method=agency.querySelector('.orbital-method');
  if(!method||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
  method.classList.add('method-scroll-scene');
- const cardsToAnimate=[...method.querySelectorAll('.orbit-step'),method.querySelector('.acquisition-launch')].filter(Boolean);
+ const cardsToAnimate=[...method.querySelectorAll('.orbit-step')];
  const render=()=>{
   if(innerWidth<901){cardsToAnimate.forEach(card=>{card.style.removeProperty('--method-progress')});return}
   const rect=method.getBoundingClientRect();
   const distance=Math.max(1,method.offsetHeight-innerHeight);
   const progress=Math.min(1,Math.max(0,-rect.top/distance));
+  const phase=progress*Math.max(1,cardsToAnimate.length-1);
+  const activeIndex=Math.min(cardsToAnimate.length-1,Math.max(0,Math.round(phase)));
   cardsToAnimate.forEach((card,index)=>{
-   const local=Math.min(1,Math.max(0,(progress-index/(cardsToAnimate.length+1))*2.25));
+   const local=Math.max(0,1-Math.abs(phase-index));
    card.style.setProperty('--method-progress',local.toFixed(3));
+   card.classList.toggle('is-current',index===activeIndex);
   });
  };
  addEventListener('scroll',render,{passive:true});

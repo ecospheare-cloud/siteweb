@@ -570,3 +570,34 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
  .home .orbital-method .orbit-step{grid-template-columns:1fr;gap:22px;padding:26px 20px}
  .home .orbital-method .orbit-step-no{font-size:64px!important}
 }
+
+/* Process v2 — centered pinned sequence inspired by the supplied reference. */
+.home .orbital-method .method-step-dots{display:flex;align-items:center;justify-content:center;gap:10px}
+.home .orbital-method .method-step-dots button{appearance:none;width:38px;height:38px;padding:0;border:0;border-radius:50%;background:#e4e8ee;color:#657287;font:650 13px Manrope,Arial,sans-serif;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.home .orbital-method .method-step-dots button:is(.is-active,.is-done){background:#173f72;color:#fff}
+.home .orbital-method .method-step-dots button.is-active{transform:scale(1.08);box-shadow:0 8px 24px rgba(23,63,114,.22)}
+
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ .home .orbital-method.method-scroll-scene{min-height:400vh!important;padding:0!important;display:block!important;background:#fafaf8!important;overflow:visible!important}
+ .home .orbital-method.method-scroll-scene>.method-heading{position:sticky!important;top:clamp(105px,14vh,145px)!important;width:100%;max-width:none!important;margin:0!important;padding:0 5vw!important;text-align:center!important;z-index:5;pointer-events:none}
+ .home .orbital-method.method-scroll-scene>.method-heading .section-kicker{display:inline-flex;align-items:center;justify-content:center;margin:0!important;color:#33435a!important;font-size:10px!important;letter-spacing:.15em!important}
+ .home .orbital-method.method-scroll-scene>.method-heading h2,
+ .home .orbital-method.method-scroll-scene>.method-heading>p:last-child{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+ .home .orbital-method.method-scroll-scene>.orbit-steps{position:sticky!important;top:0!important;width:100%!important;height:100vh!important;margin:0!important;padding:0!important;display:block!important;z-index:3}
+ .home .orbital-method.method-scroll-scene .orbit-step{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;padding:clamp(165px,24vh,230px) 7vw 118px!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:0!important;text-align:center;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;opacity:0!important;visibility:hidden;transform:translate3d(0,34px,0)!important;transition:opacity .28s ease,transform .45s cubic-bezier(.2,.8,.2,1)!important;pointer-events:none}
+ .home .orbital-method.method-scroll-scene .orbit-step::after{display:none!important}
+ .home .orbital-method.method-scroll-scene .orbit-step.is-current{opacity:1!important;visibility:visible;transform:translate3d(0,0,0)!important;pointer-events:auto}
+ .home .orbital-method.method-scroll-scene .orbit-step-no{position:relative!important;z-index:2!important;width:114px;height:114px;display:grid;place-items:center;align-self:center!important;margin:0 0 22px!important;color:#173f72!important;font-size:34px!important;font-weight:600;line-height:1!important;letter-spacing:-.04em!important}
+ .home .orbital-method.method-scroll-scene .orbit-step-no::before{content:'';position:absolute;inset:0;border:1px solid #aeb9c8;border-radius:50%;background:conic-gradient(from 15deg,transparent 0 20%,#6ea5d8 20% 38%,transparent 38% 75%,#173f72 75% 77%,transparent 77%);opacity:.8;transform:rotate(-30deg);mask:radial-gradient(circle,transparent 55px,#000 56px);-webkit-mask:radial-gradient(circle,transparent 55px,#000 56px);pointer-events:none}
+ .home .orbital-method.method-scroll-scene .orbit-step-no::after{content:attr(data-label);display:none}
+ .home .orbital-method.method-scroll-scene .orbit-step-copy{display:flex;flex-direction:column;align-items:center;max-width:760px!important;padding:0!important}
+ .home .orbital-method.method-scroll-scene .orbit-step-label{order:-1;margin:0 0 48px!important;color:#6b7890!important;font-size:9px!important;letter-spacing:.16em!important}
+ .home .orbital-method.method-scroll-scene .orbit-step-copy h3{margin:0 0 16px!important;color:#1b2638!important;font-size:clamp(32px,3.25vw,52px)!important;line-height:1!important;letter-spacing:-.055em}
+ .home .orbital-method.method-scroll-scene .orbit-step-copy>p:last-child{max-width:760px!important;margin:0!important;color:#6a7484!important;font-size:clamp(15px,1.35vw,19px)!important;line-height:1.65!important}
+ .home .orbital-method.method-scroll-scene>.method-step-dots{position:sticky!important;top:calc(100vh - 92px)!important;height:0;z-index:6;transform:translateY(-52px)}
+ .home .orbital-method.method-scroll-scene>.acquisition-launch{position:absolute!important;left:5vw;right:5vw;bottom:8vh;top:auto!important;z-index:7;opacity:1!important;transform:none!important}
+}
+
+@media(max-width:900px){
+ .home .orbital-method>.method-step-dots{display:none}
+}

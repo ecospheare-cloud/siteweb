@@ -208,6 +208,22 @@ const expertiseNav=document.querySelector('.nav-expertise');
  if(!method||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
  method.classList.add('method-scroll-scene');
  const cardsToAnimate=[...method.querySelectorAll('.orbit-step')];
+ const stepsNav=document.createElement('div');
+ stepsNav.className='method-step-dots';
+ stepsNav.setAttribute('aria-label','Choisir une étape de la méthode');
+ cardsToAnimate.forEach((card,index)=>{
+  const button=document.createElement('button');
+  button.type='button';
+  button.textContent=String(index+1);
+  button.setAttribute('aria-label',`Étape ${index+1} : ${card.querySelector('h3')?.textContent.trim()||''}`);
+  button.addEventListener('click',()=>{
+   const distance=Math.max(1,method.offsetHeight-innerHeight);
+   const target=method.offsetTop+(index/Math.max(1,cardsToAnimate.length-1))*distance;
+   scrollTo({top:target,behavior:'smooth'});
+  });
+  stepsNav.append(button);
+ });
+ method.querySelector('.orbit-steps')?.after(stepsNav);
  const render=()=>{
   if(innerWidth<901){cardsToAnimate.forEach(card=>{card.style.removeProperty('--method-progress')});return}
   const rect=method.getBoundingClientRect();
@@ -219,6 +235,11 @@ const expertiseNav=document.querySelector('.nav-expertise');
    const local=Math.max(0,1-Math.abs(phase-index));
    card.style.setProperty('--method-progress',local.toFixed(3));
    card.classList.toggle('is-current',index===activeIndex);
+  });
+  [...stepsNav.children].forEach((button,index)=>{
+   button.classList.toggle('is-active',index===activeIndex);
+   button.classList.toggle('is-done',index<activeIndex);
+   button.setAttribute('aria-current',index===activeIndex?'step':'false');
   });
  };
  addEventListener('scroll',render,{passive:true});

@@ -242,3 +242,41 @@ body .cookie-consent.cookie-consent.cookie-consent a{font-size:10px!important;li
 body .cookie-consent.cookie-consent.cookie-consent button{font-size:11px!important;line-height:1!important}
 @media(max-width:700px){body .cookie-consent.cookie-consent.cookie-consent{max-height:calc(100svh - 20px);overflow:auto;padding:11px 12px!important;gap:8px!important}body .cookie-consent.cookie-consent.cookie-consent .cookie-consent__actions{gap:6px!important}body .cookie-consent.cookie-consent.cookie-consent button{min-height:32px!important;padding:7px 11px!important}}
 @media(max-width:360px){body .cookie-consent.cookie-consent.cookie-consent{left:8px!important;right:8px!important;bottom:8px!important;padding:10px 11px!important}body .cookie-consent.cookie-consent.cookie-consent h2{font-size:14px!important}body .cookie-consent.cookie-consent.cookie-consent p{font-size:9.5px!important;line-height:1.4!important}body .cookie-consent.cookie-consent.cookie-consent a{font-size:9px!important}}
+
+/* Agency scroll story: the section stays in place while the five stages reveal. */
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ :is(body.agency-page,body.home) .method-scroll-scene{min-height:280vh!important;position:relative!important;padding-top:0!important;padding-bottom:0!important;overflow:visible!important}
+ :is(body.agency-page,body.home) .method-scroll-scene>.method-heading{position:sticky!important;top:clamp(92px,11vh,132px);z-index:2;padding-top:8vh}
+ :is(body.agency-page,body.home) .method-scroll-scene>.orbit-steps{position:sticky!important;top:52vh;z-index:3}
+ :is(body.agency-page,body.home) .method-scroll-scene>.acquisition-launch{position:sticky!important;top:82vh;z-index:4}
+ :is(body.agency-page,body.home) .method-scroll-scene .orbit-step,
+ :is(body.agency-page,body.home) .method-scroll-scene .acquisition-launch{opacity:calc(.18 + var(--method-progress,0) * .82);transform:translate3d(0,calc((1 - var(--method-progress,0)) * 44px),0) scale(calc(.96 + var(--method-progress,0) * .04))!important;transition:opacity .18s linear,transform .18s linear!important}
+}
+
+/* Mobile composition: centered, readable and never clipped by the viewport. */
+@media(max-width:700px){
+ html,body{max-width:100%;overflow-x:clip}
+ body.agency-page main>section{width:100%!important;max-width:100%!important;box-sizing:border-box!important}
+ body.agency-page :is(.agency-hero,.agency-intro,.global-collective,.people-section,.orbital-method,.agency-values,.agency-contact){text-align:center}
+ body.agency-page :is(.agency-hero-copy,.agency-intro>div,.global-heading,.people-heading,.method-heading,.agency-values>div){width:100%!important;max-width:100%!important;margin-left:auto!important;margin-right:auto!important}
+ body.agency-page :is(.agency-hero-copy,.global-heading,.people-heading,.method-heading){display:flex!important;flex-direction:column!important;align-items:center!important}
+ body.agency-page :is(h1,h2,h3,p){max-width:100%;overflow-wrap:anywhere}
+ body.agency-page .world-map-connection{width:100%!important;max-width:100%!important;overflow:hidden!important}
+ body.agency-page .world-map-surface{width:100%!important;max-width:100%!important;transform:none!important}
+ body.agency-page .collective-map,body.agency-page .map-route{width:100%!important;height:auto!important;object-fit:contain!important}
+ body.agency-page .map-endpoints{display:flex!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important;gap:10px!important}
+ body.agency-page .map-endpoints span{width:auto!important;max-width:46%!important;text-align:center!important}
+ body.agency-page .people-grid{width:100%!important;grid-template-columns:1fr!important;justify-items:center!important}
+ body.agency-page .people-grid .person{width:min(100%,390px)!important;max-width:100%!important;margin:0 auto!important;text-align:center!important}
+ body.agency-page .person-featured{grid-column:auto!important;max-width:390px!important}
+ body.agency-page .person-photo{width:100%!important;height:auto!important;aspect-ratio:4/5!important}
+ body.agency-page .person-photo img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center bottom!important}
+ body.agency-page .orbit-steps{grid-template-columns:1fr!important;width:100%!important;max-width:430px!important;margin-left:auto!important;margin-right:auto!important}
+ body.agency-page .orbit-step,body.agency-page .acquisition-launch{width:100%!important;max-width:100%!important;box-sizing:border-box!important;text-align:center!important}
+ body.agency-page .orbit-step-image img{width:100%!important;height:100%!important;object-fit:cover!important}
+ body.agency-page .acquisition-orbit{margin-left:auto!important;margin-right:auto!important}
+ body.agency-page .orbit-tags{justify-content:center!important;flex-wrap:wrap!important}
+ body .cookie-consent.cookie-consent.cookie-consent{left:10px!important;right:10px!important;bottom:10px!important;width:auto!important;max-width:none!important;text-align:left!important;box-sizing:border-box!important}
+ body .cookie-consent__actions{width:100%!important;justify-content:center!important}
+ body .cookie-consent__actions button{flex:1 1 0!important;max-width:180px!important}
+}

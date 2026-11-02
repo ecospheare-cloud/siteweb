@@ -134,7 +134,7 @@ if(slideButtons.length){
 
 // Consentement : aucun traceur non essentiel n'est chargé sans accord explicite.
 (()=>{
- const key='ecospheare-cookie-consent-v1';
+ const key='ecospheare-cookie-consent-v2';
  const measurementId='G-SMWZ3Z0LMW';
  const loadAnalytics=()=>{
   if(document.querySelector(`script[data-google-analytics="${measurementId}"]`))return;
@@ -175,6 +175,54 @@ if(slideButtons.length){
 })();
 
 const expertiseNav=document.querySelector('.nav-expertise');
+
+// Agency page: keep the collective's order, labels and map copy consistent.
+(()=>{
+ const agency=document.body.matches('.agency-page,.home')?document.body:null;
+ if(!agency)return;
+ const roles=new Map([
+  ['Sacha Zacharewicz','CEO & fondateur · Ecospheare'],
+  ['Ophély Pipeau','Développement web · Neptula'],
+  ['Julien Maillet','Développement back-end · Neptula'],
+  ['Océan Sapalalo','Développement & automatisation · Neptula'],
+  ['Mahé Da Sylva','Direction artistique · QICS']
+ ]);
+ const grid=agency.querySelector('.people-grid');
+ const cards=[...(grid?.querySelectorAll('.person')||[])];
+ const byName=new Map(cards.map(card=>[card.querySelector('h3')?.textContent.trim(),card]));
+ ['Sacha Zacharewicz','Ophély Pipeau','Julien Maillet','Océan Sapalalo','Mahé Da Sylva'].forEach(name=>{
+  const card=byName.get(name);
+  if(!card)return;
+  const role=card.querySelector('.person-role');
+  if(role)role.textContent=roles.get(name);
+  grid.append(card);
+ });
+ const map=agency.querySelector('.world-map-connection');
+ if(map){
+  map.setAttribute('aria-label','Planisphère : une liaison relie la France à Dubaï');
+  map.querySelectorAll('text').forEach(node=>{if(node.textContent.includes('LILLE'))node.textContent='FRANCE'});
+  map.querySelectorAll('.map-endpoints span').forEach(node=>{node.childNodes.forEach(child=>{if(child.nodeType===Node.TEXT_NODE)child.textContent=child.textContent.replace('LILLE · FRANCE','FRANCE')})});
+ }
+
+ const method=agency.querySelector('.orbital-method');
+ if(!method||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ method.classList.add('method-scroll-scene');
+ const cardsToAnimate=[...method.querySelectorAll('.orbit-step'),method.querySelector('.acquisition-launch')].filter(Boolean);
+ const render=()=>{
+  if(innerWidth<901){cardsToAnimate.forEach(card=>{card.style.removeProperty('--method-progress')});return}
+  const rect=method.getBoundingClientRect();
+  const distance=Math.max(1,method.offsetHeight-innerHeight);
+  const progress=Math.min(1,Math.max(0,-rect.top/distance));
+  cardsToAnimate.forEach((card,index)=>{
+   const local=Math.min(1,Math.max(0,(progress-index/(cardsToAnimate.length+1))*2.25));
+   card.style.setProperty('--method-progress',local.toFixed(3));
+  });
+ };
+ addEventListener('scroll',render,{passive:true});
+ addEventListener('resize',render,{passive:true});
+ render();
+})();
+
 const expertiseToggle=expertiseNav?.querySelector('.nav-expertise__toggle');
 const expertiseLink=expertiseNav?.querySelector('.nav-expertise__link');
 const closeExpertiseMenu=()=>{expertiseNav?.classList.remove('is-open');expertiseToggle?.setAttribute('aria-expanded','false')};

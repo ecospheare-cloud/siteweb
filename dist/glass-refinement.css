@@ -625,3 +625,6 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
  .home .orbital-method .acquisition-launch .orbit-tags{flex-wrap:wrap;margin-top:22px!important}
  .home .orbital-method .acquisition-launch>a.button{margin-top:26px!important;width:100%;justify-content:center}
 }
+
+/* Keep the mandatory consent choice unobstructed by the floating contact panel. */
+body:has(.cookie-consent) .contact-float--dual{opacity:0!important;visibility:hidden!important;pointer-events:none!important}

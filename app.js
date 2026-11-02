@@ -134,7 +134,7 @@ if(slideButtons.length){
 
 // Consentement : aucun traceur non essentiel n'est chargé sans accord explicite.
 (()=>{
- const key='ecospheare-cookie-consent-v2';
+ const key='ecospheare-cookie-consent-v3';
  const measurementId='G-SMWZ3Z0LMW';
  const loadAnalytics=()=>{
   if(document.querySelector(`script[data-google-analytics="${measurementId}"]`))return;

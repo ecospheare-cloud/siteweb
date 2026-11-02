@@ -515,3 +515,25 @@ body .space-intro__identity .brand-agency{font-size:clamp(28px,4.2vw,62px);color
  body .contact-float--dual>img{width:36px!important;height:36px!important;flex-basis:36px}
  .contact-float__choices strong{font-size:10px!important}
 }
+
+/* Keep the opening planet in the Ecospheare navy/blue palette.
+   This targets the hero only: the presentation film below remains in full colour. */
+.home .bloom-hero .hero-motion video,
+.home .bloom-hero .hero-motion .motion-poster{
+ filter:grayscale(.78) sepia(.9) hue-rotate(188deg) saturate(1.55) brightness(.76) contrast(1.12)!important;
+}
+.home .bloom-hero .hero-motion::before{
+ content:'';
+ position:absolute;
+ inset:0;
+ z-index:1;
+ pointer-events:none;
+ background:rgba(18,65,156,.42);
+ mix-blend-mode:color;
+}
+.home .bloom-hero .hero-motion::after{
+ z-index:2;
+ background:
+  linear-gradient(90deg,rgba(4,15,31,.72) 0%,rgba(8,31,61,.24) 56%,rgba(5,18,36,.1) 100%),
+  linear-gradient(180deg,rgba(6,20,38,.06) 42%,rgba(5,17,34,.42) 100%)!important;
+}

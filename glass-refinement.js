@@ -9,12 +9,6 @@
 
  if(header){
   header.classList.add('glass-docked');
-  if (home) {
-   const syncHeroNav = () => header.classList.toggle('hero-nav-compact', window.scrollY < 48);
-   syncHeroNav();
-   window.addEventListener('scroll', syncHeroNav, {passive: true});
-   window.addEventListener('pageshow', syncHeroNav);
-  }
   const createLocaleTools=mobile=>{
    const tools=document.createElement('div');tools.className=`nav-locale${mobile?' nav-locale--mobile':''}`;
    const clock=document.createElement('time');clock.className='nav-local-time';
@@ -43,6 +37,38 @@
   header.append(createLocaleTools(false));
   const mobileMenu=header.querySelector('.mobile-menu');if(mobileMenu)mobileMenu.append(createLocaleTools(true));
   const contact=document.createElement('a');contact.className='nav-contact-cta';contact.href='/contact/';contact.textContent='Contact';header.append(contact);
+  if (home) {
+   const desktop = matchMedia('(min-width: 1100px)');
+   const nav = header.querySelector('.desktop-nav');
+   const locale = header.querySelector(':scope > .nav-locale');
+   const menuButton = header.querySelector('.menu-toggle');
+   let compact = scrollY < 48;
+   const syncHeroNav = () => {
+    const menuOpen = document.body.classList.contains('universe-menu-open');
+    compact = compact ? scrollY < 48 : scrollY < 16;
+    header.classList.toggle('hero-nav-compact', compact && !menuOpen);
+    if (nav) nav.inert = compact || !desktop.matches || menuOpen;
+    if (locale) locale.inert = compact || !desktop.matches || menuOpen;
+    if (menuButton) menuButton.inert = !compact && desktop.matches && !menuOpen;
+   };
+   const measureHeroNav = () => {
+    const style = getComputedStyle(header);
+    const gap = parseFloat(getComputedStyle(contact).marginLeft) || 0;
+    const width = wordmark.getBoundingClientRect().width + contact.getBoundingClientRect().width + 44
+     + parseFloat(style.paddingLeft) + parseFloat(style.paddingRight)
+     + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth) + gap * 2;
+    header.style.setProperty('--hero-nav-compact-width', Math.min(innerWidth - 24, Math.ceil(width)) + 'px');
+    syncHeroNav();
+   };
+   measureHeroNav();
+   header.classList.add('hero-nav-ready');
+   addEventListener('scroll', syncHeroNav, {passive: true});
+   addEventListener('resize', measureHeroNav);
+   addEventListener('pageshow', measureHeroNav);
+   desktop.addEventListener('change', syncHeroNav);
+   document.fonts?.ready.then(measureHeroNav);
+   new MutationObserver(syncHeroNav).observe(document.body, {attributes: true, attributeFilter: ['class']});
+  }
  }
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  if(!home){
@@ -105,10 +131,11 @@
   toggle.addEventListener('click',()=>setCollapsed(!link.classList.contains('is-collapsed')));
   close.addEventListener('click',()=>setCollapsed(true));
  }
+ const opening = home ? document.querySelector('.editorial-hero') : null;
  const update=()=>{
  const end=document.querySelector('#votre-projet');
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
- const pastOpening = scrollY > (home ? 8 : innerHeight * .8);
+ const pastOpening = opening ? opening.getBoundingClientRect().bottom <= 0 : scrollY > innerHeight * .8;
  const visible = pastOpening && !nearEnd && !document.body.classList.contains('universe-menu-open') && !document.body.classList.contains('contact-page');
  link.classList.toggle('is-visible', visible);
  link.inert = !visible;

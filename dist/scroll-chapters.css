@@ -93,7 +93,7 @@
     margin:0;
   }
   html.has-scroll-chapters .agency-page .agency-intro>div::before{
-    content:"01 / 03";
+    content:var(--chapter-index,"01 / 03");
     position:absolute;
     top:-54px;
     left:0;

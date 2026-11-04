@@ -67,11 +67,14 @@
 (()=>{
  if(!document.body.matches('.home,.agency-page'))return;
  const css=document.createElement('link');
- css.rel='stylesheet';css.href='/scroll-chapters.css?v=restored-animation-20261029';
+ css.rel='stylesheet';css.href='/scroll-chapters.css?v=responsive-animation-20261104';
+ css.addEventListener('load',()=>{
+  const script=document.createElement('script');
+  script.src='/scroll-chapters.js?v=responsive-animation-20261104';
+  script.async=false;
+  document.head.append(script);
+ },{once:true});
  document.head.append(css);
- const script=document.createElement('script');
- script.src='/scroll-chapters.js?v=restored-animation-20261029';script.defer=true;
- document.head.append(script);
 })();
 (() => {
  const home=document.body.classList.contains('home');

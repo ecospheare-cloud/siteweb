@@ -1,8 +1,13 @@
 (()=>{
- const canAnimate=matchMedia('(min-width: 960px) and (prefers-reduced-motion: no-preference)').matches;
- if(!canAnimate||!window.gsap||!window.ScrollTrigger)return;
- document.documentElement.classList.add('has-scroll-chapters');
+ const init=()=>{
+ if(!window.gsap||!window.ScrollTrigger)return;
  gsap.registerPlugin(ScrollTrigger);
+ const media=gsap.matchMedia();
+ const syncMotion=()=>{
+  media.revert();
+  if(document.body.classList.contains('effects-paused'))return;
+  media.add('(min-width: 960px) and (prefers-reduced-motion: no-preference)',()=>{
+ document.documentElement.classList.add('has-scroll-chapters');
 
  const buildSequence=(section,items,options={})=>{
   if(!section||items.length<2)return;
@@ -12,7 +17,7 @@
    scrollTrigger:{
     trigger:section,
     start:'top top',
-    end:`+=${Math.round(innerHeight*(items.length*.72))}`,
+    end:()=>`+=${Math.round(innerHeight*(items.length*.72))}`,
     scrub:.45,
     pin:true,
     anticipatePin:1,
@@ -46,14 +51,20 @@
    if(counter)counter.style.setProperty('--chapter-index',`"0${current} / 0${agencyCopy.length}"`);
   }
  });
- if(agencyIntro){
-  const style=document.createElement('style');
-  style.textContent='html.has-scroll-chapters .agency-page .agency-intro>div::before{content:var(--chapter-index,"01 / 03")}';
-  document.head.append(style);
- }
-
- const refreshLayout=()=>requestAnimationFrame(()=>ScrollTrigger.refresh());
- if(document.readyState==='complete')refreshLayout();
- else addEventListener('load',refreshLayout,{once:true});
- document.fonts?.ready.then(refreshLayout);
+ requestAnimationFrame(()=>ScrollTrigger.refresh());
+ return ()=>{
+  document.documentElement.classList.remove('has-scroll-chapters');
+  expertise?.style.removeProperty('--chapter-progress');
+  agencyIntro?.style.removeProperty('--chapter-progress');
+  agencyIntro?.querySelector(':scope > div')?.style.removeProperty('--chapter-index');
+ };
+  });
+ };
+ syncMotion();
+ document.addEventListener('site-effects-change',syncMotion);
+ document.fonts?.ready.then(()=>ScrollTrigger.refresh());
+ };
+ // Dynamic script loading must finish after GSAP and the chapter stylesheet.
+ if(document.readyState==='complete')init();
+ else addEventListener('load',init,{once:true});
 })();

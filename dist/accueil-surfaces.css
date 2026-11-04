@@ -49,8 +49,13 @@ body.home main .editorial-hero {
 .editorial-copy h1 em {color:#2458a4;font-family:Georgia,serif;font-weight:400}
 .editorial-copy > p:not(.editorial-label) {max-width:62ch;line-height:1.55;color:#35455b}
 .editorial-contact {display:inline-block;margin-top:1rem;padding:.85em 1.25em;background:#1853be;color:white;border-radius:9px;text-decoration:none}
-.editorial-work {width:min(100%,420px);justify-self:end}
+.editorial-work {width:min(100%,300px);justify-self:end}
 .home .editorial-work details {position:relative;inset:auto;width:100%;background:#142641;color:white}
+.home .editorial-work .hero-portfolio {border-radius:22px}
+.home .editorial-work .hero-portfolio summary {gap:14px;padding:16px 20px}
+.home .editorial-work .hero-portfolio summary small {margin-bottom:6px}
+.home .editorial-work .hero-portfolio summary strong {font-size:21px}
+.home .editorial-work .portfolio-plus {flex-shrink:0;width:34px;height:34px;font-size:24px}
 
 /* Rythme éditorial de l'accueil. Les propriétés de mouvement restent
    gérées par les composants de défilement existants. */
@@ -444,6 +449,9 @@ html body.home main #mesure .metric-list article {
 .home .editorial-work .hero-project-list {
   z-index: 1;
   box-sizing: border-box;
+  width: min(360px, calc(100vw - 40px));
+  left: auto;
+  right: 0;
 }
 
 /* Le texte et le portfolio partagent la ligne basse du premier écran. */

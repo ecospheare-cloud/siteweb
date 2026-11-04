@@ -8,7 +8,7 @@ BASE=(ROOT/'agence-ia/index.html').read_text()
 HEAD=BASE.split('<head>',1)[1].split('</head>',1)[0]
 HEADER=BASE.split('<body class="inner expertise-page">',1)[1].split('<main id="contenu">',1)[0]
 DIAG='<section class="service-diagnostic"'+BASE.split('<section class="service-diagnostic"',1)[1].split('<section class="service-faq"',1)[0]
-TAIL='<section class="blog-teaser"'+BASE.split('<section class="blog-teaser"',1)[1]
+TAIL='<section class="first-conversation"'+BASE.split('<section class="first-conversation"',1)[1]
 
 PAGES=[
 ('agence-chatgpt','Agence ChatGPT pour les entreprises','Agence ChatGPT pour intégrer une IA utile à votre entreprise','Ecospheare conçoit des assistants et outils métier fondés sur ChatGPT, reliés à vos données, vos règles et vos processus avec un cadre de validation.','intégrer ChatGPT dans un usage professionnel','rechercher dans une base documentaire, préparer une réponse ou assister la production de contenus','sources, droits d’accès et validation humaine','une interface maîtrisée plutôt qu’un compte partagé'),

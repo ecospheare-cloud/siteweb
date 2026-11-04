@@ -37,7 +37,7 @@
      lines.forEach((line,index)=>{
       const local=clamp((progress-index*.12)/.38);
       const eased=1-Math.pow(1-local,3);
-      line.style.opacity=String(.15+.85*eased);
+      line.style.opacity=String(.62+.38*eased);
       line.style.transform=`translateY(${(1-eased)*65}px) scale(${.9+.1*eased})`;
      });
      const copyProgress=clamp((progress-.5)/.28);

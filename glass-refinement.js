@@ -8,6 +8,13 @@
  document.querySelectorAll('.footer-identity').forEach(identity=>{const name=identity.querySelector(':scope>span');if(name)name.replaceWith(createBrandName());identity.setAttribute('aria-label','Ecospheare Agency, accueil')});
 
  if(header){
+  header.classList.add('glass-docked');
+  if (home) {
+   const syncHeroNav = () => header.classList.toggle('hero-nav-compact', window.scrollY < 48);
+   syncHeroNav();
+   window.addEventListener('scroll', syncHeroNav, {passive: true});
+   window.addEventListener('pageshow', syncHeroNav);
+  }
   const createLocaleTools=mobile=>{
    const tools=document.createElement('div');tools.className=`nav-locale${mobile?' nav-locale--mobile':''}`;
    const clock=document.createElement('time');clock.className='nav-local-time';
@@ -38,17 +45,18 @@
   const contact=document.createElement('a');contact.className='nav-contact-cta';contact.href='/contact/';contact.textContent='Contact';header.append(contact);
  }
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- const updateHeader=()=>header?.classList.toggle('glass-docked',!home||scrollY>80);
- updateHeader();addEventListener('scroll',updateHeader,{passive:true});
- // One shared, low-contrast moving atmosphere behind the existing page sections.
- const atmosphere=document.createElement('div');atmosphere.className='site-atmosphere';atmosphere.setAttribute('aria-hidden','true');
- const film=document.createElement('video');film.muted=true;film.loop=true;film.playsInline=true;film.preload='none';film.tabIndex=-1;
- if(!expertise&&!document.body.classList.contains('portfolio-page'))atmosphere.append(film);document.body.prepend(atmosphere);
- let heroVisible=home;
- const sync=()=>{if(expertise||document.body.classList.contains('portfolio-page')||heroVisible||reduced.matches||document.hidden||document.body.classList.contains('effects-paused')){film.pause();return;}if(!film.src)film.src='https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4';film.play().catch(()=>{});};
- document.addEventListener('visibilitychange',sync);document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);sync();
- if(home)new IntersectionObserver(([entry])=>{heroVisible=entry.isIntersecting;sync()},{threshold:0}).observe(document.querySelector('.bloom-hero'));
- if(!home){const control=document.createElement('button');control.className='atmosphere-toggle';control.type='button';control.textContent='Effets Ⅱ';control.setAttribute('aria-pressed','false');control.addEventListener('click',()=>{const paused=document.body.classList.toggle('effects-paused');control.textContent=paused?'Effets ▷':'Effets Ⅱ';control.setAttribute('aria-pressed',String(paused));document.dispatchEvent(new Event('site-effects-change'));sync()});document.body.append(control);}
+ if(!home){
+  const control=document.createElement('button');
+  control.className='atmosphere-toggle';control.type='button';control.textContent='Effets Ⅱ';
+  control.setAttribute('aria-pressed','false');
+  control.addEventListener('click',()=>{
+   const paused=document.body.classList.toggle('effects-paused');
+   control.textContent=paused?'Effets ▷':'Effets Ⅱ';
+   control.setAttribute('aria-pressed',String(paused));
+   document.dispatchEvent(new Event('site-effects-change'));
+  });
+  document.body.append(control);
+ }
 
  const footerIdentity=document.querySelector('.footer-new .footer-identity');
  if(footerIdentity&&!document.querySelector('.footer-audience')){const audience=document.createElement('p');audience.className='footer-audience';audience.textContent='Partenaire digital des agences de communication et des petites entreprises.';footerIdentity.after(audience)}
@@ -75,7 +83,6 @@
  link.className='contact-float';
  if(home){
   link.classList.add('contact-float--dual');
-  link.classList.add('is-ready');
   link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp');
   link.innerHTML=`<button class="contact-float__toggle" type="button" aria-expanded="true" aria-label="Replier les options de contact"><img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="Portrait de Sacha Zacharewicz" width="46" height="46"></button><span class="contact-float__choices"><a href="${projectHref}" target="_blank" rel="noopener noreferrer"><small>Un projet en tête ?</small><strong>Parlons-en →</strong></a><a href="${recruitmentHref}" target="_blank" rel="noopener noreferrer"><small>Nous recrutons</small><strong>Devenir commercial →</strong></a></span><button class="contact-float__close" type="button" aria-label="Replier les options de contact">×</button>`;
  }else{
@@ -98,14 +105,18 @@
  const update=()=>{
  const end=document.querySelector('#votre-projet');
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;
- link.classList.toggle('is-visible',(!home||link.classList.contains('is-ready'))&&(home||scrollY>innerHeight*.8)&&!nearEnd&&!document.body.classList.contains('universe-menu-open')&&!document.body.classList.contains('contact-page'));
+ const pastOpening = scrollY > (home ? 8 : innerHeight * .8);
+ const visible = pastOpening && !nearEnd && !document.body.classList.contains('universe-menu-open') && !document.body.classList.contains('contact-page');
+ link.classList.toggle('is-visible', visible);
+ link.inert = !visible;
  };addEventListener('scroll',update,{passive:true});addEventListener('resize',update);new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();
 })();
 
 (() => {
- const video=document.querySelector('.cta-brand-video');if(!video)return;
+ document.querySelectorAll('.cta-brand-video, .editorial-media video').forEach(video => {
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let visible=false;
  const sync=()=>{if(!visible||document.hidden||reduced.matches||document.body.classList.contains('effects-paused'))video.pause();else video.play().catch(()=>{});};
  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();}).observe(video);
  document.addEventListener('visibilitychange',sync);document.addEventListener('site-effects-change',sync);reduced.addEventListener('change',sync);sync();
+ });
 })();

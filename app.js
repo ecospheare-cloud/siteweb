@@ -204,7 +204,8 @@ const expertiseNav=document.querySelector('.nav-expertise');
   map.querySelectorAll('.map-endpoints span').forEach(node=>{node.childNodes.forEach(child=>{if(child.nodeType===Node.TEXT_NODE)child.textContent=child.textContent.replace('LILLE · FRANCE','FRANCE')})});
  }
 
- const method=agency.querySelector('.orbital-method');
+ // Only the homepage uses the pinned step sequence. Agency cards flow below their heading.
+ const method=agency.querySelector('body.home .orbital-method');
  if(!method||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
  method.classList.add('method-scroll-scene');
  const cardsToAnimate=[...method.querySelectorAll('.orbit-step')];

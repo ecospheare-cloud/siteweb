@@ -37,7 +37,7 @@ directory='<section class="service-directory service-directory--all" aria-labell
 for rel in ['expertises/index.html','dist/expertises/index.html']:
     p=ROOT/rel; text=p.read_text()
     if 'all-services-title' not in text:
-        text=text.replace('<section class="blog-teaser"',directory+'<section class="blog-teaser"',1)
+        text=text.replace('<section class="first-conversation"',directory+'<section class="first-conversation"',1)
     p.write_text(text)
 
 llms='\n'.join(f'- [{label}](https://ecospheare.com/{slug}/): page spécialisée sur cette intention de service.' for slug,label in PAGES)

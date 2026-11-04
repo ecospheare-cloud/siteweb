@@ -1,0 +1,298 @@
+/* Trame éditoriale des surfaces claires, estompée du côté du texte. */
+:root {
+  --brand-paper: #f2f0e8;
+  --brand-ink: #14171d;
+  --brand-blue: #194fcc;
+  --brand-ice: #accaff;
+  --brand-serif: "Source Serif 4", Georgia, serif;
+  --brand-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --grid-cell: clamp(48px, 7vw, 80px);
+}
+.agency-intro {
+  --paper-grid:
+    linear-gradient(90deg, var(--grid-paper, #f2f0e8) 4%, transparent 85%),
+    repeating-linear-gradient(90deg, #2358ac10 0 1px, transparent 1px var(--grid-cell)),
+    repeating-linear-gradient(0deg, #2358ac10 0 1px, transparent 1px var(--grid-cell));
+}
+
+/* Palette et signature typographique communes aux pages éditoriales. */
+html body.inner {
+  --paper: var(--brand-paper);
+  --ink: var(--brand-ink);
+  --blue: var(--brand-blue);
+  background: var(--paper) !important;
+}
+html body.inner main {background:var(--paper)!important;color:var(--ink)}
+html body.inner main :is(section, .page-intro) {
+  --surface:var(--paper); --panel:#faf9f5; --heading:#111216; --copy:#353c47;
+  --accent:#194fcc; --line:#ced1d7;
+}
+html body.inner main :is(.expert-cards,.expert-working,.local-navy,.people-section,
+ .agency-values,.pf-list,.portfolio-apps,.case-showcase,.global-collective,
+ .blog-teaser,.first-conversation,.agency-contact,.pf-page-contact,.blog-hero,
+ .expert-index-row:nth-of-type(even),.principles,.ocinema-profile,.ocinema-cta) {
+  --surface:linear-gradient(120deg,#17181b,#21252d); --panel:#282b30; --heading:#f6f4ed; --copy:#d6d7da;
+  --accent:#accaff; --line:#434952;
+}
+html body.inner main section:not(.pf-case-cover):not(.case-immersive),
+html body.inner main .page-intro {
+  background:var(--surface)!important;
+  color:var(--copy)!important;
+  border-color:var(--line)!important;border-radius:clamp(10px,1vw,16px)!important;
+  box-shadow:none!important;backdrop-filter:none!important;
+}
+html body.inner main section :is(article,.person,.pf-card,.blog-teaser__card,details,.expert-card,.local-card,.principle,.contact-intro) {
+  background:var(--panel)!important;border-color:var(--line)!important;color:var(--copy)!important;
+  border-radius:12px!important;box-shadow:none!important;
+}
+html body.inner main section:not(.pf-case-cover):not(.case-immersive) :is(h1,h2,h3,h4,summary) {
+  color:var(--heading)!important;letter-spacing:-.045em;
+}
+html body.inner main section:not(.pf-case-cover):not(.case-immersive) :is(p,li,dd) {color:var(--copy)!important}
+html body.inner main section :is(h1,h2,h3) em {
+  font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-weight:400;color:var(--accent)!important;
+}
+html body.inner main section :is(.section-kicker,.eyebrow,.text-link) {color:var(--accent)!important}
+html body.inner .site-header {background:#141519!important;border-color:#40434a!important}
+html body.inner .site-footer {background:#111216!important;color:white}
+html body.inner :is(.button.blue,.nav-contact-cta) {background:#194fcc!important;color:white!important}
+html body.inner :is(.site-atmosphere,.cosmic-backdrop,.space-intro),
+html body.service-landing-page main>.expert-hero::before {display:none!important}
+html body.home .editorial-copy #home-title {color:#111216}
+html body.home .editorial-copy #home-title em {color:#194fcc}
+
+html body.inner main .case-immersive {--panel:#202226; --heading:#fff; --copy:#dde0e7; --accent:#a5c3ff; --line:#444951}
+
+
+html body.inner.agency-page main section.agency-intro,
+html.has-scroll-chapters body.inner.agency-page main .pin-spacer > section.agency-intro {
+  background-image: var(--paper-grid) !important;
+}
+
+/* Reflets éditoriaux discrets, réservés aux ouvertures de rubrique. */
+html body.inner main section:is(.agency-intro,.pf-page-intro,.page-intro,.expert-hero){
+  background-image:radial-gradient(ellipse at 96% 12%,rgb(70 116 207 / .09),transparent 52%),radial-gradient(ellipse at 4% 95%,rgb(173 98 111 / .045),transparent 43%)!important;
+}
+
+/* Les légendes suivent la surface de leur carte. */
+html body.inner main section :is(.blog-teaser__body,.blog-article__body,.pf-spotlight-copy,.local-vs,.local-business){
+  background:var(--panel)!important;
+  color:var(--copy)!important;
+}
+html body.inner main section :is(.blog-teaser__tag,.blog-teaser__read,.blog-teaser__all,.local-link){
+  color:var(--accent)!important;
+}
+html body.inner main :is(.art-body,.legal){
+  background:var(--paper)!important;
+  color:var(--ink)!important;
+}
+html body.inner main .art-hero{
+  background:#191a1d!important;
+  color:#f2f0e8!important;
+}
+html body.inner main .art-hero :is(h1,p,span){color:inherit!important}
+html body.inner main .first-conversation .conversation-button{background:#194fcc!important;color:white!important}
+
+:root {
+  --site-chrome-background: linear-gradient(120deg, #0a1423, #16304c);
+}
+html body:is(.home, .inner) header.site-header,
+html body:is(.home, .inner) header.site-header.glass-docked,
+html body:is(.home, .inner) .site-footer {
+  background: var(--site-chrome-background) !important;
+}
+
+@media (min-width: 1024px) {
+  body.agency-page #equipe .people-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    max-width: 68rem;
+    margin-inline: auto;
+  }
+
+  body.agency-page #equipe .people-grid > .person {
+    grid-column: span 2;
+  }
+
+  body.agency-page #equipe .people-grid > .person:first-child {
+    grid-column: 2 / span 2;
+  }
+
+  body.agency-page #equipe .people-grid > .person:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* Les trois engagements partagent une même ligne de lecture. */
+body.agency-page .agency-values > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+}
+body.agency-page .agency-values article {
+  padding: clamp(22px, 2.5vw, 38px);
+  border: 1px solid var(--line);
+  --panel: #242931;
+}
+.agency-values .principle-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 24px;
+  color: #a9c7ff;
+}
+@media (max-width: 760px) {
+  body.agency-page .agency-values > div { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Le journal termine chaque page dans la même surface que le pied de page. */
+html body.inner main section.blog-teaser:last-child {
+  --surface: var(--site-chrome-background);
+  --panel: #23252a;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 14px 14px 0 0 !important;
+}
+html body.inner main:has(> .blog-teaser:last-child) + .site-footer {
+  margin-top: 0 !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+}
+html body.inner main .blog-teaser .blog-teaser__all {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: var(--blue);
+  color: white !important;
+  text-decoration: none;
+}
+html body.inner main section:is(.project-story, .method-steps, .next-case) {
+  --surface: linear-gradient(120deg, #17181b, #21252d);
+  --panel: #282b30;
+  --heading: #f6f4ed;
+  --copy: #d6d7da;
+  --accent: #accaff;
+  --line: #434952;
+}
+
+body.agency-page #equipe .person-photo {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 4 / 5 !important;
+  border-radius: 0 !important;
+}
+body.agency-page #equipe .person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  transform: none !important;
+}
+
+/* Un même cadre pour la couverture et le récit du projet à la une. */
+html body.inner main section.pf-spotlight {
+  --surface: #f6f1e5;
+  background: var(--surface) !important;
+  width: auto !important;
+  margin: clamp(16px, 3vw, 44px) clamp(14px, 4vw, 64px) !important;
+  padding: clamp(18px, 3.4vw, 54px);
+  border: 1px solid #c7bfaf !important;
+  border-radius: 16px !important;
+  box-sizing: border-box;
+}
+
+html body.inner.portfolio-page main > section.pf-list {
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: none !important;
+  margin-inline: 0 !important;
+  border-inline: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Contraste de l’article à la une sur son panneau bleu nuit. */
+.blog-main .blog-featured-card__body {
+  --heading: #f6f4ed;
+  --copy: #dde3ec;
+}
+
+html body.blog-index-page header.site-header,
+html body.blog-index-page header.site-header.glass-docked {
+  position: fixed !important;
+  inset: 0 0 auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  border-radius: 0 0 10px 10px !important;
+}
+
+/* Repère de rubrique dérivé du mouvement des points du monogramme. */
+html body:is(.inner,.home) main :is(.section-kicker,.blog-teaser__eyebrow,.editorial-label) {
+  font: 600 .72rem/1.5 var(--brand-mono);
+  letter-spacing: .105em;
+  text-transform: uppercase;
+}
+html body:is(.inner,.home) main :is(.section-kicker,.blog-teaser__eyebrow,.editorial-label)::before {
+  content: "";
+  position: static;
+  display: inline-block;
+  width: 22px;
+  height: 8px;
+  margin-inline-end: .75em;
+  vertical-align: .04em;
+  border: 0;
+  border-radius: 0;
+  background: radial-gradient(circle at 4px 4px,currentColor 0 3px,transparent 3.5px),
+              radial-gradient(circle at 12px 4px,currentColor 0 2px,transparent 2.5px),
+              radial-gradient(circle at 19px 4px,currentColor 0 1px,transparent 1.5px);
+}
+html body:is(.inner,.home) main :is(.pf-page-intro,.agency-intro,.blog-hero,.expert-hero,.art-hero,.outcome-heading,.founder-heading) :is(h1,h2) {
+  text-wrap: balance;
+}
+html body:is(.inner,.home) main :is(.editorial-contact,.button.blue,.blog-teaser__all,.conversation-button) {
+  border-radius: 9px;
+  font-weight: 600;
+  text-decoration: none;
+}
+html body:is(.inner,.home) :is(main,.site-footer) a:focus-visible {
+  outline: 3px solid #72a8ff;
+  outline-offset: 4px;
+}
+@media (hover:hover) {
+  html body:is(.home,.inner) .blog-teaser__card:hover {
+    border-color: #91b8fb !important;
+  }
+}
+html body:is(.inner,.home) .site-footer {
+  border-bottom: 4px solid var(--brand-blue);
+}
+
+/* Journal : le fond anthracite se prolonge jusque dans les gouttières. */
+html body.inner.blog-index-page {
+  --paper: #16191e;
+  --ink: #f6f4ed;
+}
+html body.inner.blog-index-page main section {
+  --surface: #16191e;
+  --panel: #232831;
+  --heading: #f6f4ed;
+  --copy: #d6dce5;
+  --accent: #accaff;
+  --line: #48515e;
+}
+html body.blog-index-page .blog-main :is(.blog-article__date,.blog-featured-card__meta) { color: #c1ccdb; }
+html body.blog-index-page .blog-main :is(.blog-article__read,.blog-card__tag) { color: #b9d2ff; }
+html body.blog-index-page .blog-filters .filter-btn {
+  background: #242a34 !important;
+  border-color: #536175 !important;
+  color: #eef2fa !important;
+}
+html body.blog-index-page .blog-filters .filter-btn:is(.active,:hover) {
+  background: #194fcc !important;
+  border-color: #749bff !important;
+  color: white !important;
+}

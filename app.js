@@ -27,12 +27,12 @@ const syncMenu=()=>{
 };
 const closeMenu=(focus=false)=>{if(!menu)return;menu.hidden=true;syncMenu();if(focus)menuButton?.focus()};
 menuButton?.addEventListener('click',()=>{menu.hidden=!menu.hidden;syncMenu()});
-menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>closeMenu()));
+menu?.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu()});
 document.addEventListener('keydown',e=>{
  if(!menu||menu.hidden)return;
  if(e.key==='Escape'){closeMenu(true);return;}
  if(e.key==='Tab'){
-  const items=[...document.querySelectorAll('.site-header a,.site-header button')].filter(el=>el.getClientRects().length&&getComputedStyle(el).visibility!=='hidden');
+  const items=[...document.querySelectorAll('.site-header a,.site-header button,.site-header summary,.site-header select')].filter(el=>!el.closest('[hidden],[inert]')&&el.getClientRects().length&&getComputedStyle(el).visibility!=='hidden');
   const first=items[0],last=items.at(-1);
   if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}
   else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}

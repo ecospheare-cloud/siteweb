@@ -7,7 +7,7 @@
   rail.className = 'project-rail';
   carousel.before(rail);
   rail.append(carousel);
-  const motion = matchMedia('(min-height: 580px) and (prefers-reduced-motion: no-preference)');
+  const motion = matchMedia('(min-width: 960px) and (min-height: 580px) and (prefers-reduced-motion: no-preference)');
   const cards = Array.from(method.querySelectorAll('article'));
   function update() {
     const enabled = motion.matches && !document.body.classList.contains('effects-paused');

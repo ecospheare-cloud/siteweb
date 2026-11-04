@@ -6,7 +6,7 @@
  const syncMotion=()=>{
   media.revert();
   if(document.body.classList.contains('effects-paused'))return;
-  media.add('(min-width: 960px) and (prefers-reduced-motion: no-preference)',()=>{
+  media.add('(min-width: 960px) and (min-height: 580px) and (prefers-reduced-motion: no-preference)',()=>{
  document.documentElement.classList.add('has-scroll-chapters');
 
  const buildSequence=(section,items,options={})=>{

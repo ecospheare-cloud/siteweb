@@ -86,10 +86,10 @@ html body.inner main :is(.art-body,.legal){
   background:var(--paper)!important;
   color:var(--ink)!important;
 }
-html body.inner main .legal :is(h1,h2,h3,p,li,strong){
+html body.inner main :is(.legal,.art-body) :is(h1,h2,h3,p,li,strong){
   color:var(--ink)!important;
 }
-html body.inner main .legal a{
+html body.inner main :is(.legal,.art-body) a{
   color:var(--brand-blue)!important;
 }
 html body.inner main .art-hero{

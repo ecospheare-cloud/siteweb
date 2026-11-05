@@ -79,8 +79,6 @@
    new MutationObserver(syncHeroNav).observe(document.body, {attributes: true, attributeFilter: ['class']});
   }
  }
- const footerIdentity=document.querySelector('.footer-new .footer-identity');
- if(footerIdentity&&!document.querySelector('.footer-audience')){const audience=document.createElement('p');audience.className='footer-audience';audience.textContent='Partenaire digital des agences de communication et des petites entreprises.';footerIdentity.after(audience)}
 
 })();
 

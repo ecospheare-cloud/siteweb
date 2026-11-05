@@ -145,7 +145,7 @@ html body.home.home-editorial .intro-film .agency-film-frame {
   width: 100%;
   min-height: 0;
   border-radius: 6px;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   box-shadow: none;
   border: 1px solid #ffffff2b;
 }

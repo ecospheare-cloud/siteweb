@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "Instrument Serif";
+  src: url('/fonts/instrument-serif/InstrumentSerif-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
 /* Trame éditoriale des surfaces claires, estompée du côté du texte. */
 :root {
   --brand-paper: #f2f0e8;
   --brand-ink: #14171d;
   --brand-blue: #194fcc;
   --brand-ice: #accaff;
-  --brand-serif: "Source Serif 4", Georgia, serif;
+  --brand-serif: "Instrument Serif", Georgia, serif;
   --brand-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
   --grid-cell: clamp(48px, 7vw, 80px);
 }
@@ -404,3 +411,10 @@ html body.home .process-chapter:not(.chapter-active) article p { font-size: 16px
   html body.home #projets .pf-controls button { min-width: 44px; min-height: 44px; background: #142641 !important; color: white !important; border-color: #536175; }
   html body.home #projets .pf-position { color: #35455b !important; }
 }
+
+/* Typographie commune : sans empattement sobre et signature éditoriale. */
+:root { --site-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Arial, sans-serif; }
+html body:is(.home,.inner) { font-family: var(--site-sans) !important; }
+html body:is(.home,.inner) :is(h1,h2,h3,h4,button,input,select,textarea,summary) { font-family: var(--site-sans); }
+html body:is(.home,.inner) :is(h1,h2,h3) em,
+html body:is(.home,.inner) .brand-agency { font-family: "Instrument Serif",Georgia,serif !important; font-style: italic; font-weight: 400; }

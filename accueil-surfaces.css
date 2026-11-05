@@ -454,19 +454,57 @@ html body.home main #mesure .metric-list article {
   right: 0;
 }
 
-/* Le texte et le portfolio partagent la ligne basse du premier écran. */
+/* Le texte et les deux actions occupent le bas du premier écran. */
 html body.home main .editorial-hero {
   min-height: 100svh;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 30%);
+  grid-template-columns: minmax(0, 1fr);
   align-content: end;
   align-items: end;
   gap: clamp(20px, 3vw, 56px);
-  padding: max(100px, 16svh) 4vw clamp(36px, 8svh, 88px);
+  padding: max(100px, 16svh) 4vw clamp(76px, 8svh, 88px);
 }
 .editorial-hero .editorial-copy { max-width: 54rem; text-align: left; }
 .home .editorial-copy #home-title { font-size: clamp(40px, 4.8vw, 86px); line-height: 1.04; margin: .28em 0 .36em; }
 .editorial-hero .editorial-copy > p:not(.editorial-label) { max-width: 58ch; margin: 0; }
-.editorial-hero .editorial-contact { margin-top: clamp(18px, 2.3vw, 32px); }
+.editorial-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: clamp(18px, 2.3vw, 28px);
+  width: fit-content;
+  max-width: 100%;
+}
+.editorial-hero .editorial-actions > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.editorial-hero .editorial-actions > a > span[aria-hidden] { flex: none; }
+.editorial-hero .editorial-actions .editorial-projects {
+  color: #fff;
+  background: rgb(15 31 52 / .78);
+  border-color: rgb(211 228 255 / .55);
+}
+@media (hover: hover) {
+  .editorial-hero .editorial-actions .editorial-contact:hover { background: #10449e; }
+  .editorial-hero .editorial-actions .editorial-projects:hover { background: #203d60; }
+}
+@media (max-width: 600px) {
+  .editorial-actions { width: 100%; gap: 8px; }
+  .editorial-hero .editorial-actions > a { flex: 1; padding: 10px; font-size: 13px; gap: 6px; }
+}
 @media (max-width: 800px) {
   html body.home main .editorial-hero {
     grid-template-columns: minmax(0, 1fr);

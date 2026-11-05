@@ -36,10 +36,33 @@
     .to(next,{autoAlpha:1,y:0,scale:1,duration:.48,pointerEvents:'auto'},'<.12')
     .to({}, {duration:.18});
   });
+  return timeline;
  };
 
  const expertise=document.querySelector('.home .ecosfer-expertises');
  buildSequence(expertise,[...document.querySelectorAll('.home .ecosfer-offers>article')]);
+
+ const method=document.querySelector('.home .method-stage');
+ const methodItems=[...document.querySelectorAll('.home .method-editorial-steps>li')];
+ let methodLinks=[],methodHandlers=[];
+ if(method){
+  let progress=method.querySelector('.method-progress');
+  if(!progress){
+   progress=document.createElement('nav');progress.className='method-progress';progress.setAttribute('aria-label','Choisir une étape');
+   methodItems.forEach((item,i)=>{const a=document.createElement('a');a.href='#'+item.id;a.textContent='0'+(i+1);a.setAttribute('aria-label','Étape '+(i+1)+' : '+item.querySelector('h3').textContent);progress.append(a)});
+   method.querySelector('.method-editorial-heading').append(progress);
+  }
+  methodLinks=[...progress.querySelectorAll('a')];
+  const sequence=buildSequence(method,methodItems,{scale:false,update:progress=>{
+   const active=Math.min(methodItems.length-1,Math.round(progress*(methodItems.length-1)));
+   methodLinks.forEach((a,i)=>{if(i===active)a.setAttribute('aria-current','step');else a.removeAttribute('aria-current')});
+  }});
+  methodLinks[0]?.setAttribute('aria-current','step');
+  methodHandlers=methodLinks.map((a,i)=>{
+   const handler=event=>{event.preventDefault();const st=sequence.scrollTrigger;scrollTo({top:st.start+(st.end-st.start)*i/(methodItems.length-1),behavior:'smooth'})};
+   a.addEventListener('click',handler);return handler;
+  });
+ }
 
  const agencyIntro=document.querySelector('.agency-page .agency-intro');
  const agencyCopy=[...document.querySelectorAll('.agency-page .agency-intro>div>p')];
@@ -55,6 +78,8 @@
  return ()=>{
   document.documentElement.classList.remove('has-scroll-chapters');
   expertise?.style.removeProperty('--chapter-progress');
+  methodLinks.forEach((a,i)=>a.removeEventListener('click',methodHandlers[i]));
+  method?.style.removeProperty('--chapter-progress');
   agencyIntro?.style.removeProperty('--chapter-progress');
   agencyIntro?.querySelector(':scope > div')?.style.removeProperty('--chapter-index');
  };

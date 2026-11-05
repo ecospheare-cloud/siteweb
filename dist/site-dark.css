@@ -1,0 +1,61 @@
+/* Ecospheare — anthracite, reflets bleus et texte clair sur toutes les pages. */
+html body.inner.site-dark {
+  color-scheme: dark;
+  --paper: #151a21; --ink: #edf1f7; --brand-paper: #151a21; --brand-ink: #edf1f7;
+  --surface: #151a21; --panel: #202c3c; --heading: #f2f0e8; --copy: #c4cbd5;
+  --accent: #accaff; --line: #9bbce333; --muted: #b4bfce; --navy: #e8effa;
+  background: radial-gradient(ellipse at 10% 15%,#d2d8e319,transparent 42%),radial-gradient(ellipse at 80% 55%,#bfd3ed14,transparent 48%),linear-gradient(118deg,#0e1012 8%,#26282b 48%,#111316 82%) !important;
+  background-attachment: fixed !important; color: #edf1f7;
+}
+html body.inner.site-dark main { background: transparent !important; color: #c4cbd5 !important; }
+html body.inner.site-dark main :is(section,.page-intro,.legal,.art-body) {
+  --surface: radial-gradient(ellipse at 85% 8%,#7094c615,transparent 55%),linear-gradient(125deg,#151a21,#1c232c);
+  --panel: #202b3b; --heading: #f2f0e8; --copy: #c4cbd5; --accent: #accaff; --line: #9bbce333;
+}
+html body.inner.site-dark main :is(.expert-cards,.expert-working,.local-navy,.people-section,.agency-values,.pf-list,.portfolio-apps,.case-showcase,.global-collective,.blog-teaser,.agency-contact,.pf-page-contact,.blog-hero,.principles) {
+  --surface: radial-gradient(ellipse at 90% 0%,#709fe52a,transparent 60%),linear-gradient(120deg,#101923,#1b2a3d);
+  --panel: #243347;
+}
+html body.inner.site-dark main section:not(.pf-case-cover):not(.case-immersive),
+html body.inner.site-dark main :is(.page-intro,.legal,.art-body) { background: var(--surface) !important; color: var(--copy) !important; border-color: var(--line) !important; }
+html body.inner.site-dark main section :is(article,.person,.pf-card,.blog-teaser__card,details,.expert-card,.local-card,.principle,.contact-intro) { background: var(--panel) !important; color: var(--copy) !important; border-color: var(--line) !important; }
+html body.inner.site-dark main :is(section,.page-intro,.legal,.art-body) :is(h1,h2,h3,h4,summary) { color: var(--heading) !important; }
+html body.inner.site-dark main :is(section,.page-intro,.legal,.art-body) :is(p,li,dd,figcaption,label) { color: var(--copy) !important; }
+html body.inner.site-dark main :is(h1,h2,h3) em { color: #accaff !important; }
+html body.inner.site-dark main :is(.section-kicker,.eyebrow,.text-link,.breadcrumb,.breadcrumb a,.breadcrumb span,.expert-accent,.art-body a,.legal a,.site-directory a) { color: #accaff !important; }
+html body.inner.site-dark main :is(strong,b) { color: inherit; }
+html body.inner.site-dark main :is(.art-body,.legal) :is(h1,h2,h3,p,li,strong) { color: #dce4f0 !important; }
+html body.inner.site-dark main :is(.button,.button.blue,.button.light) { background: #accaff !important; color: #112844 !important; border-color: #accaff !important; }
+html body.inner.site-dark main .button.outline { background: transparent !important; color: #c7ddff !important; border-color: #7b9bc766 !important; }
+html body.inner.site-dark main :is(input,select,textarea) { color: #edf3fc !important; background: #111e30 !important; border: 1px solid #7893b566 !important; }
+html body.inner.site-dark main :is(input,textarea)::placeholder { color: #a3b2c8 !important; opacity: 1; }
+html body.inner.site-dark main :is(.contact-email,.project-story aside a,.culture-aside a,.culture-source a) { color: #b6d3ff !important; }
+html body.inner.site-dark main :is(.blog-teaser__body,.blog-article__body,.pf-spotlight-copy,.local-vs,.local-business,.culture-quote,.culture-links a,.art-body blockquote,.art-body pre,.art-toc) { background: #1d2b3e !important; color: #dce6f4 !important; border-color: #8eaed238 !important; }
+html body.inner.site-dark main :is(.culture-aside,.culture-source,.culture-media figcaption,.project-story .section-kicker) { color: #b4c5dd !important; }
+html body.inner.site-dark main :is(.project-story,.story-reading) :is(h2,p) { color: #dce4f0 !important; }
+html body.inner.site-dark main .story-reading > section { background: transparent !important; }
+html body.inner.site-dark main :is(.agency-intro,.pf-page-intro,.page-intro,.expert-hero) {
+  --paper-grid: radial-gradient(ellipse at 15% 30%,#cad9ef12,transparent 50%),radial-gradient(ellipse at 80% 80%,#78a8e520,transparent 50%),linear-gradient(115deg,#171b20,#252c35);
+  background-image: var(--paper-grid) !important;
+}
+html.has-scroll-chapters body.inner.site-dark.agency-page .pin-spacer > section.agency-intro :is(h2,p) { color: #edf1f7 !important; }
+html.has-scroll-chapters body.inner.site-dark.agency-page .pin-spacer > section.agency-intro em { color: #accaff !important; }
+html body.inner.site-dark main .expert-hero::after { background: linear-gradient(110deg,#111b2b33,transparent 65%) !important; }
+html body.inner.site-dark :is(.guide-dialog,.figure-dialog) { background: #172438; color: #e5eefb; }
+html body.inner.site-dark :is(.goal-options button,.dialog-close) { background: #253c58; color: #e5eefb; border-color: #8eaed255; }
+/* Compatibility with older layout templates and editorial blocks. */
+html body.inner.site-dark { --ux-paper: #151a21; --ux-ink: #dce6f4; --ux-navy: #172438; --local-paper: #151a21; --local-ink: #dce6f4; }
+html body.inner.site-dark main :is(.culture-layout,.case-gallery,.seo-calculator,.calc-results>div,.ocinema-profile blockquote) { background: #182537 !important; color: #dce6f4 !important; border-color: #8eaed238 !important; }
+html body.inner.site-dark main .culture-layout :is(h2,h3,p,li,figcaption) { color: #dce6f4 !important; }
+html body.inner.site-dark main :is(.culture-links a,.local-city-links a,.local-actions a:not(.button)) { color: #accaff !important; }
+html body.inner.site-dark main #simulateur { background: #151d29 !important; --sim-blue: #accaff; --sim-muted: #b7c5d8; --sim-accent: #c2dcff; --sim-soft: #1c2e44; }
+html body.inner.site-dark main #simulateur > .local-label { background: #22374f !important; border-color: #8eaed244; color: #c5dcfb !important; }
+html body.inner.site-dark main #simulateur :is(legend,.calc-hint,.calc-option span,.local-note) { color: #c5dcfb !important; }
+html body.inner.site-dark main #simulateur .calc-option { background: #1d3049 !important; border-color: #89a5ca55 !important; }
+html body.inner.site-dark main #simulateur .calc-option:has(input:checked) { background: #accaff !important; border-color: #accaff !important; }
+html body.inner.site-dark main #simulateur .calc-option:has(input:checked) :is(span,svg) { color: #142843 !important; }
+html body.inner.site-dark main #simulateur :is(#calc-next,.calc-stages li[aria-current] .stage-icon) { background: #accaff; color: #142843 !important; }
+html body.inner.site-dark main #simulateur :is(.scenario-card,.scenario-summary>span) { background: #1d3049 !important; color: #dce6f4; border-color: #89a5ca55; }
+html body.inner.site-dark main #simulateur .scenario-featured { background: #294465 !important; }
+html body.inner.site-dark main .ocinema-reading blockquote { background: #20324a !important; color: #dce6f4 !important; }
+html body.inner.site-dark main .local-hero nav a { color: #accaff !important; }

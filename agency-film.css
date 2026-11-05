@@ -180,3 +180,26 @@
     transition: none;
   }
 }
+
+/* A simple play button, followed by a large native video player. */
+html body.home.home-editorial .intro-film .agency-film-play {
+  display: grid; place-items: center; width: 68px; height: 68px; min-height: 0;
+  padding: 0; gap: 0; border: 1px solid #d8e8ff99; border-radius: 50%;
+  background: #accaff; color: #122a4a; transform: translate(-50%,-50%) !important;
+  box-shadow: 0 8px 35px #07163250;
+}
+html body.home.home-editorial .intro-film .agency-film-play__icon { background: transparent; color: #122a4a; width: 32px; height: 32px; font-size: 23px; }
+html body.home.home-editorial .intro-film .agency-film-play:hover { transform: translate(-50%,-50%) scale(1.06) !important; background: #d4e5ff; }
+html.film-dialog-open { overflow: hidden; }
+html body .agency-film-dialog { position: fixed; inset: 0; width: min(1180px,calc(100% - 40px)); max-width: none; max-height: calc(100dvh - 32px); margin: auto; padding: 12px; background: #101a29; color: #eaf1fc; border: 1px solid #6a86ac80; border-radius: 18px; overflow: auto; box-shadow: 0 30px 100px #0009; }
+.agency-film-dialog::backdrop { background: #030810dd; backdrop-filter: blur(12px); }
+.film-dialog-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 0 0 12px 8px; font-size: 13px; }
+.film-dialog-toolbar > div { display: flex; gap: 10px; align-items: center; }
+.film-dialog-toolbar .dialog-close,.film-fullscreen { min-height: 44px; border: 1px solid #8ca8cf66; border-radius: 8px; color: #dbe9ff; background: #1d2d45; }
+.film-dialog-toolbar .dialog-close { width: 44px; height: 44px; font-size: 26px; }
+.film-fullscreen { padding: 8px 14px; font-size: 13px; }
+.film-dialog-player video { display: block; width: 100%; height: auto; max-height: calc(100dvh - 125px); aspect-ratio: 16/9; object-fit: contain; background: #030710; border-radius: 9px; }
+.film-dialog-player video:fullscreen { max-height: none; height: 100%; border-radius: 0; }
+@media(max-width:600px) { html body .agency-film-dialog { width: calc(100% - 16px); padding: 8px; border-radius: 12px; } .film-dialog-toolbar { gap: 8px; padding-left: 2px; font-size: 11px; } .film-fullscreen { padding: 8px; font-size: 11px; } }
+.film-dialog-player video { aspect-ratio: var(--film-ratio,16/9); }
+html body .agency-film-dialog.is-portrait { width: min(520px,calc(56.25dvh - 44px),calc(100% - 16px)); }

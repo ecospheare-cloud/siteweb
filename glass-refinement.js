@@ -107,7 +107,7 @@
  css.rel='stylesheet';css.href='/scroll-chapters.css?v=responsive-20261104';
  css.addEventListener('load',()=>{
   const script=document.createElement('script');
-  script.src='/scroll-chapters.js?v=responsive-20261104';
+  script.src='/scroll-chapters.js?v=method-20261105';
   script.async=false;
   document.head.append(script);
  },{once:true});

@@ -415,6 +415,39 @@ html body.home .process-chapter:not(.chapter-active) article p { font-size: 16px
 /* Typographie commune : sans empattement sobre et signature éditoriale. */
 :root { --site-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Arial, sans-serif; }
 html body:is(.home,.inner) { font-family: var(--site-sans) !important; }
-html body:is(.home,.inner) :is(h1,h2,h3,h4,button,input,select,textarea,summary) { font-family: var(--site-sans); }
+html body:is(.home,.inner) :is(h1,h2,h3,h4,button,input,select,textarea,summary) { font-family: var(--site-sans) !important; }
 html body:is(.home,.inner) :is(h1,h2,h3) em,
 html body:is(.home,.inner) .brand-agency { font-family: "Instrument Serif",Georgia,serif !important; font-style: italic; font-weight: 400; }
+
+/* Direction Ecospheare commune à toutes les pages intérieures. */
+html body.inner {
+  background: radial-gradient(ellipse at 12% 18%,#d3dfef14,transparent 45%),linear-gradient(118deg,#101318,#25292f 48%,#121820 82%) !important;
+  background-attachment: fixed !important;
+}
+html body.inner main { background: transparent !important; }
+html body.inner main :is(section,.page-intro) {
+  --surface: linear-gradient(125deg,#f5f3ec,#eeede7);
+  --panel: #f9f8f2; --heading: #171a20; --copy: #3b414b; --accent: #244d83; --line: #1d365626;
+}
+html body.inner main :is(.case-immersive,.expert-cards,.expert-working,.local-navy,.people-section,.agency-values,.pf-list,.portfolio-apps,.case-showcase,.global-collective,.blog-teaser,.first-conversation,.agency-contact,.pf-page-contact,.blog-hero,.expert-index-row:nth-of-type(even),.principles,.ocinema-profile,.ocinema-cta) {
+  --surface: radial-gradient(ellipse at 85% 0%,#739fdb1e,transparent 55%),linear-gradient(120deg,#11161c,#1f2937);
+  --panel: #ffffff05; --heading: #f2f0e8; --copy: #c3c8d0; --accent: #accaff; --line: #b8d3ff30;
+}
+html body.inner main section:not(.pf-case-cover):not(.case-immersive),
+html body.inner main .page-intro { border-radius: 14px !important; }
+html body.inner main section :is(h1,h2,h3,h4),
+html body.inner main :is(.art-hero,.legal,.art-body) :is(h1,h2,h3) { font-weight: 500 !important; letter-spacing: -.045em; }
+html body.inner main h1 { line-height: 1.04; }
+html body.inner main h2 { line-height: 1.1; }
+html body.inner main section :is(.section-kicker,.eyebrow,.blog-teaser__eyebrow) { font-family: var(--site-sans); font-size: 11px; font-weight: 600; letter-spacing: .12em; }
+html body.inner main section :is(article,.person,.pf-card,.blog-teaser__card,.expert-card,.local-card,.principle) { border-radius: 10px !important; }
+html body.inner main :is(.button,.button.blue,.button.outline,.button.light),
+html body.inner .site-footer .button { border-radius: 7px !important; font-family: var(--site-sans); font-weight: 500; }
+html body.inner main :is(.button.blue,.button.primary) { background: #194fcc !important; color: #fff !important; }
+html body.inner main :is(input,select,textarea) { border-radius: 7px; font-family: var(--site-sans); }
+html body.inner .site-footer { background: #0c1118 !important; }
+html body.inner main .expert-hero::after { background: linear-gradient(115deg,#c5d8f936,transparent 62%) !important; }
+html body.inner main :is(.expert-hero,.page-intro,.pf-page-intro) .breadcrumb,
+html body.inner main :is(.expert-hero,.page-intro,.pf-page-intro) .breadcrumb :is(a,span) { color: #244d83 !important; }
+html body.inner main .expert-accent { font-family: "Instrument Serif",Georgia,serif !important; font-style: italic; font-weight: 400; }
+html body.inner main .brand-agency { color: inherit !important; }

@@ -99,10 +99,7 @@ html body.home.home-editorial .editorial-copy #home-title {
   margin: 24px 0;
   color: #f6f5ef !important;
 }
-html body.home.home-editorial .editorial-copy #home-title .accent-development {
-  font: inherit !important;
-  color: inherit !important;
-}
+html body.home.home-editorial .editorial-copy #home-title em { white-space: nowrap; }
 html body.home.home-editorial .editorial-copy > p:not(.editorial-label) {
   max-width: 63ch;
   font-size: 15px;
@@ -335,7 +332,24 @@ html body.home.home-editorial .site-footer { background: #0c1118 !important; bor
 }
 @media(max-width:800px) {
   html body.home.home-editorial main > section { width: calc(100% - 20px) !important; margin-inline: 10px !important; padding: 64px 22px; }
-  html body.home.home-editorial main .editorial-hero { min-height: 100svh; padding: max(140px,20svh) 24px 76px; }
+  html body.home.home-editorial main .editorial-hero {
+    min-height: 100svh;
+    padding: calc(84px + 56.25vw) 24px max(56px,env(safe-area-inset-bottom));
+    background: #10151d !important;
+    align-content: start;
+  }
+  html body.home.home-editorial .editorial-media {
+    inset: 84px 0 auto;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+  .home-editorial .editorial-media::after {
+    background: linear-gradient(0deg,#10151d,transparent 32%);
+  }
+  html body.home.home-editorial .editorial-copy { position: relative; margin-top: -8px; }
+  html body.home.home-editorial .editorial-copy #home-title .accent-development { display: block; }
+  html body.home.home-editorial .editorial-copy #home-title > br { display: none; }
+  html body.home.home-editorial .editorial-label { width: fit-content; max-width: 100%; white-space: normal; text-wrap: balance; line-height: 1.5; }
   html body.home.home-editorial main .home-introduction { grid-template-columns: 1fr; gap: 36px; }
   .home-editorial .intro-film { max-width: 520px; }
   .home-chapters { display: flex; overflow-x: auto; margin-inline: 10px; scrollbar-width: thin; }
@@ -354,7 +368,7 @@ html body.home.home-editorial .site-footer { background: #0c1118 !important; bor
   html body.home.home-editorial main #faq { grid-template-columns: 1fr; gap: 36px; }
 }
 @media(max-width:600px) {
-  html body.home.home-editorial .editorial-copy #home-title { font-size: clamp(37px,9vw,48px); line-height: 1.03; }
+  html body.home.home-editorial .editorial-copy #home-title { font-size: clamp(36px,9.3vw,48px); line-height: 1.08; }
   html body.home.home-editorial .editorial-copy > p:not(.editorial-label) { font-size: 15px; }
   html body.home.home-editorial .editorial-actions > a { padding: 10px; font-size: 13px; gap: 8px; }
   .home-editorial .intro-statement .section-kicker { max-width: 30ch; }
@@ -384,6 +398,20 @@ html body.home.home-editorial .site-footer { background: #0c1118 !important; bor
   html body.home.home-editorial main .editorial-hero { padding-inline: 18px; }
   .method-editorial-steps { grid-template-columns: 1fr; }
   .method-editorial-image { aspect-ratio: 1.4; }
+}
+
+@media(max-width:1023px) and (max-height:500px) and (orientation:landscape) {
+  html body.home.home-editorial main .editorial-hero { min-height: 100svh; padding: 110px 32px 48px; }
+  html body.home.home-editorial .editorial-media { inset: 0; height: 100%; aspect-ratio: auto; }
+  .home-editorial .editorial-media::after { background: linear-gradient(90deg,#08101be6,#08101b99 65%,#08101b55); }
+  html body.home.home-editorial .editorial-copy { max-width: 620px; margin: 0; }
+  html body.home.home-editorial .editorial-copy #home-title { font-size: 40px; }
+  html body.home.home-editorial .editorial-copy #home-title .accent-development { display: inline; }
+  html body.home.home-editorial .editorial-copy #home-title > br { display: initial; }
+  html body.home.home-editorial .motion-master { top: 92px; right: 12px; bottom: auto !important; left: auto !important; width: 44px; height: 44px; padding: 0 !important; font-size: 0 !important; }
+  html body.home.home-editorial .motion-master span { display: none; }
+  html body.home.home-editorial .motion-master::after { content: 'Ⅱ'; font-size: 18px; }
+  html body.home.home-editorial .motion-master[aria-pressed="true"]::after { content: '▷'; }
 }
 
 /* La méthode se lit une étape à la fois ; la suite reste dans le flux. */

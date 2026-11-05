@@ -1,3 +1,37 @@
+// Load only the appropriate hero rendition, and only while motion is allowed.
+(() => {
+  const video = document.querySelector('[data-responsive-hero]');
+  if (!video) return;
+  const mobile = matchMedia('(max-width: 800px), (max-width: 1023px) and (max-height: 500px)');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const connection = navigator.connection;
+  let visible = false;
+  let source = '';
+  const sync = () => {
+    const compact = mobile.matches;
+    const poster = compact ? video.dataset.mobilePoster : video.dataset.desktopPoster;
+    if (video.getAttribute('poster') !== poster) video.poster = poster;
+    const paused = !visible || document.hidden || reduced.matches || connection?.saveData || document.body.classList.contains('effects-paused') || document.body.classList.contains('universe-menu-open');
+    if (paused) { video.pause(); return; }
+    const next = compact ? video.dataset.mobileSrc : video.dataset.desktopSrc;
+    if (source !== next) {
+      source = next;
+      video.src = next;
+      video.load();
+    }
+    video.muted = true;
+    video.play().catch(() => {});
+  };
+  new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; sync(); }, { threshold: .05 }).observe(video);
+  mobile.addEventListener('change', sync);
+  reduced.addEventListener('change', sync);
+  connection?.addEventListener('change', sync);
+  document.addEventListener('visibilitychange', sync);
+  document.addEventListener('site-effects-change', sync);
+  new MutationObserver(sync).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  sync();
+})();
+
 (() => {
   if (!('IntersectionObserver' in window)) return;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');

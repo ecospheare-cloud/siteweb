@@ -158,7 +158,7 @@
 })();
 
 (() => {
- document.querySelectorAll('.cta-brand-video, .editorial-media video, .founder-paris-video').forEach(video => {
+ document.querySelectorAll('.cta-brand-video, .editorial-media video:not([data-responsive-hero]), .founder-paris-video').forEach(video => {
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let visible=false;
  const sync=()=>{if(!visible||document.hidden||reduced.matches||document.body.classList.contains('effects-paused'))video.pause();else video.play().catch(()=>{});};
  new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();}).observe(video);

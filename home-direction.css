@@ -334,19 +334,19 @@ html body.home.home-editorial .site-footer { background: #0c1118 !important; bor
   html body.home.home-editorial main > section { width: calc(100% - 20px) !important; margin-inline: 10px !important; padding: 64px 22px; }
   html body.home.home-editorial main .editorial-hero {
     min-height: 100svh;
-    padding: calc(84px + 56.25vw) 24px max(56px,env(safe-area-inset-bottom));
+    padding: max(140px,20svh) 24px max(76px,env(safe-area-inset-bottom));
     background: #10151d !important;
-    align-content: start;
+    align-content: end;
   }
   html body.home.home-editorial .editorial-media {
-    inset: 84px 0 auto;
-    aspect-ratio: 16 / 9;
-    height: auto;
+    inset: 0;
+    aspect-ratio: auto;
+    height: 100%;
   }
   .home-editorial .editorial-media::after {
-    background: linear-gradient(0deg,#10151d,transparent 32%);
+    background: linear-gradient(0deg,#08101be6,#08101b80 55%,#08101b26);
   }
-  html body.home.home-editorial .editorial-copy { position: relative; margin-top: -8px; }
+  html body.home.home-editorial .editorial-copy { position: relative; margin-top: 0; }
   html body.home.home-editorial .editorial-copy #home-title .accent-development { display: block; }
   html body.home.home-editorial .editorial-copy #home-title > br { display: none; }
   html body.home.home-editorial .editorial-label { width: fit-content; max-width: 100%; white-space: normal; text-wrap: balance; line-height: 1.5; }

@@ -19,9 +19,8 @@ html body.inner.consultant-guide main .guide-lead { font-size: clamp(17px,1.5vw,
 html body.inner.consultant-guide main .guide-byline { font-size: 12px; margin: 24px 0; }
 .guide-byline span { margin: 0 7px; }
 .guide-portrait { margin: 0; border: 1px solid #91afd038; border-radius: 14px; overflow: hidden; background: #122238; }
-.guide-portrait-field { position: relative; padding-top: 58px; background: radial-gradient(ellipse at 60% 45%,#6683a0 0,#263b56 62%,#18283f 100%); }
-.guide-portrait-note { position: absolute; top: 24px; left: 24px; color: #dce8f7; font: 10px/1.6 var(--brand-mono); letter-spacing: .15em; }
-.guide-portrait img { display: block; width: 100%; height: auto; max-height: 400px; object-fit: contain; object-position: center bottom; }
+.guide-portrait-field { position: relative; background: #122238; }
+.guide-portrait img { display: block; width: 100%; height: 440px; object-fit: cover; object-position: center 30%; }
 .guide-portrait figcaption { padding: 20px 24px; display: grid; gap: 6px; background: #122238; }
 .guide-portrait figcaption strong { font-size: 19px; color: #f2f0e8; }
 .guide-portrait figcaption span { font-size: 12px; color: #c0ccdc; }
@@ -97,8 +96,7 @@ html body.inner.consultant-guide main .guide-update { font-size: 12px; margin-to
   html body.inner.consultant-guide main h1 { font-size: clamp(39px,8.8vw,58px); }
   html body.inner.consultant-guide main h2 { font-size: clamp(32px,7.6vw,45px); }
   .guide-portrait { width: 100%; max-width: 350px; justify-self: center; }
-  .guide-portrait img { max-height: 300px; }
-  .guide-portrait-field { padding-top: 65px; }
+  .guide-portrait img { height: 360px; }
   .guide-breadcrumb { margin-bottom: 26px; }
   .guide-toc { grid-template-columns: repeat(2,minmax(0,1fr)); margin-bottom: 12px; }
   .guide-toc a { padding: 18px; }

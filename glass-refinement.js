@@ -1,6 +1,5 @@
 (() => {
  const header=document.querySelector('.site-header');
- const home=document.body.classList.contains('home');
  const expertise=document.body.classList.contains('expertise-page');
  const wordmark=header?.querySelector('.wordmark');
  const createBrandName=()=>{const name=document.createElement('span');name.className='brand-name-lockup';const image=document.createElement('img');image.src='/assets/ecospheare-wordmark-white.png';image.alt='';image.width=850;image.height=130;image.className='brand-name-image';const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(image,agency);return name};
@@ -46,7 +45,8 @@
    mobileMenu.append(createLocaleTools(true));
   }
   const contact=document.createElement('a');contact.className='nav-contact-cta';contact.href='/contact/';contact.textContent='Contact';header.append(contact);
-  if (home) {
+  // Identical compact navigation and scroll expansion on every page.
+  {
    const desktop = matchMedia('(min-width: 1100px)');
    const nav = header.querySelector('.desktop-nav');
    const locale = header.querySelector(':scope > .nav-locale');
@@ -79,22 +79,6 @@
    new MutationObserver(syncHeroNav).observe(document.body, {attributes: true, attributeFilter: ['class']});
   }
  }
- const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- if(!home){
-  const control=document.createElement('button');
-  control.className='atmosphere-toggle';control.type='button';control.textContent='Effets Ⅱ';
-  control.setAttribute('aria-pressed','false');
-  control.setAttribute('aria-label','Mettre les effets du site en pause');
-  control.addEventListener('click',()=>{
-   const paused=document.body.classList.toggle('effects-paused');
-   control.textContent=paused?'Effets ▷':'Effets Ⅱ';
-   control.setAttribute('aria-pressed',String(paused));
-   control.setAttribute('aria-label',paused?'Activer les effets du site':'Mettre les effets du site en pause');
-   document.dispatchEvent(new Event('site-effects-change'));
-  });
-  document.body.append(control);
- }
-
  const footerIdentity=document.querySelector('.footer-new .footer-identity');
  if(footerIdentity&&!document.querySelector('.footer-audience')){const audience=document.createElement('p');audience.className='footer-audience';audience.textContent='Partenaire digital des agences de communication et des petites entreprises.';footerIdentity.after(audience)}
 

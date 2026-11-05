@@ -7,7 +7,8 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--source', type=Path, default=ROOT / 'assets/hero-ecospheare.mp4')
+parser.add_argument('--source', type=Path, required=True, help='Source originale de 17,43 s, avant ajout du second film')
+parser.add_argument('--output', type=Path, required=True, help='Fichier du premier segment vertical à assembler ensuite')
 args = parser.parse_args()
 info = json.loads(subprocess.check_output([
     'ffprobe', '-v', 'error', '-select_streams', 'v:0',
@@ -37,7 +38,7 @@ for start, end, initial, final in reversed(SHOTS):
     offset = f'max(0,min(iw-ow,{center}-{crop_width/2}))'
     expression = f'if(lt(n,{end}),{offset},{expression})'
 
-output = ROOT / 'assets/hero-ecospheare-portrait.mp4'
+output = args.output
 subprocess.run([
     'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(args.source),
     '-vf', f"crop={crop_width}:1080:x='{expression}':y=0,scale=720:1280,setsar=1",
@@ -48,6 +49,6 @@ subprocess.run([
 subprocess.run([
     'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-ss', '0.55', '-i', str(output),
     '-vf', 'scale=450:800', '-frames:v', '1', '-q:v', '4',
-    str(ROOT / 'assets/hero-ecospheare-portrait.jpg'),
+    str(output.with_suffix('.jpg')),
 ], check=True)
 print(f'Vidéo verticale : {output.stat().st_size / 1_000_000:.2f} Mo')

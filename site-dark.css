@@ -48,14 +48,5 @@ html body.inner.site-dark { --ux-paper: #151a21; --ux-ink: #dce6f4; --ux-navy: #
 html body.inner.site-dark main :is(.culture-layout,.case-gallery,.seo-calculator,.calc-results>div,.ocinema-profile blockquote) { background: #182537 !important; color: #dce6f4 !important; border-color: #8eaed238 !important; }
 html body.inner.site-dark main .culture-layout :is(h2,h3,p,li,figcaption) { color: #dce6f4 !important; }
 html body.inner.site-dark main :is(.culture-links a,.local-city-links a,.local-actions a:not(.button)) { color: #accaff !important; }
-html body.inner.site-dark main #simulateur { background: #151d29 !important; --sim-blue: #accaff; --sim-muted: #b7c5d8; --sim-accent: #c2dcff; --sim-soft: #1c2e44; }
-html body.inner.site-dark main #simulateur > .local-label { background: #22374f !important; border-color: #8eaed244; color: #c5dcfb !important; }
-html body.inner.site-dark main #simulateur :is(legend,.calc-hint,.calc-option span,.local-note) { color: #c5dcfb !important; }
-html body.inner.site-dark main #simulateur .calc-option { background: #1d3049 !important; border-color: #89a5ca55 !important; }
-html body.inner.site-dark main #simulateur .calc-option:has(input:checked) { background: #accaff !important; border-color: #accaff !important; }
-html body.inner.site-dark main #simulateur .calc-option:has(input:checked) :is(span,svg) { color: #142843 !important; }
-html body.inner.site-dark main #simulateur :is(#calc-next,.calc-stages li[aria-current] .stage-icon) { background: #accaff; color: #142843 !important; }
-html body.inner.site-dark main #simulateur :is(.scenario-card,.scenario-summary>span) { background: #1d3049 !important; color: #dce6f4; border-color: #89a5ca55; }
-html body.inner.site-dark main #simulateur .scenario-featured { background: #294465 !important; }
 html body.inner.site-dark main .ocinema-reading blockquote { background: #20324a !important; color: #dce6f4 !important; }
 html body.inner.site-dark main .local-hero nav a { color: #accaff !important; }

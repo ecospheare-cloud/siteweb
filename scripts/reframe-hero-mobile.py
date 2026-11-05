@@ -20,16 +20,16 @@ if (info['width'], info['height'], info['nb_frames'], info['r_frame_rate']) != (
 # Début/fin exclusifs en images ; abscisse du sujet (0 = gauche, 1 = droite).
 # Les raccords suivent les coupes originales, sans panoramique entre deux plans.
 SHOTS = [
-    (0, 48, .46, .46),      # Eye-D : veste et chaussures
-    (48, 101, .33, .33),    # Eye-D : texte principal de l'écran du portable, à gauche
-    (101, 137, .30, .28),   # Camion : suivre le marquage sur le flanc
-    (137, 169, .40, .44),   # Équipe à côté du camion
-    (169, 213, .52, .52),   # Équipe face à la maison
-    (213, 285, .48, .49),   # Site de rénovation sur le PC
-    (285, 362, .52, .54),   # Salle du Clos
-    (362, 431, .51, .51),   # Site du Clos sur le PC
-    (431, 469, .48, .48),   # Portrait
-    (469, 523, .50, .50),   # Animation du logo sur le PC
+    (0, 47, .46, .46),      # Eye-D : veste et chaussures
+    (47, 100, .33, .33),    # Eye-D : texte principal de l'écran du portable, à gauche
+    (100, 136, .30, .28),   # Camion : suivre le marquage sur le flanc
+    (136, 168, .40, .44),   # Équipe à côté du camion
+    (168, 212, .52, .52),   # Équipe face à la maison
+    (212, 284, .47, .49),   # Site de rénovation sur le PC
+    (284, 361, .52, .54),   # Salle du Clos
+    (361, 430, .51, .51),   # Site du Clos sur le PC
+    (430, 468, .47, .47),   # Portrait
+    (468, 523, .50, .50),   # Animation du logo sur le PC
 ]
 crop_width = 608
 expression = '0'

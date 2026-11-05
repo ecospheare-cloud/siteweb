@@ -81,7 +81,7 @@ html body.home.home-editorial :is(a,button):hover { transform: none; }
 html body.home.home-editorial main .editorial-hero {
   width: 100% !important;
   margin: 0 !important;
-  min-height: 94svh;
+  min-height: 100svh;
   padding: max(150px, 22svh) 4vw 84px;
   border-radius: 0 !important;
   isolation: isolate;
@@ -90,6 +90,16 @@ html body.home.home-editorial main .editorial-hero {
   background: linear-gradient(90deg, #08101bd9, #08101b4d 64%, #08101b26),
     linear-gradient(0deg, #111315bf, transparent 60%);
 }
+.home-editorial .editorial-media video { transition: transform .4s ease; }
+.home-editorial .hero-brand-ending .editorial-media { background: #07142d !important; }
+.home-editorial .hero-brand-ending .editorial-media video {
+  transform: translateY(var(--brand-ending-offset, -20vh)) scale(1.06);
+  opacity: 1;
+}
+.home-editorial .hero-brand-ending .editorial-media::after {
+  background: linear-gradient(to bottom,#07142d 0,#07142d calc(var(--brand-clear-from) - 36px),transparent var(--brand-clear-from),transparent var(--brand-clear-to),#08101b var(--brand-fade-end));
+}
+@media(prefers-reduced-motion:reduce) { .home-editorial .editorial-media video { transition: none; } }
 html body.home.home-editorial .editorial-copy { max-width: 900px; }
 html body.home.home-editorial .editorial-copy #home-title {
   font-size: clamp(42px, 5vw, 76px);

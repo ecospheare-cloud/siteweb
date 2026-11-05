@@ -8,6 +8,32 @@
   const connection = navigator.connection;
   let visible = false;
   let source = '';
+  const hero = video.closest('.editorial-hero');
+  const copy = hero.querySelector('.editorial-copy');
+  // The final address belongs above the headline, in the hero's free space.
+  const positionBrandEnding = () => {
+    const ending = Number.isFinite(video.duration) && video.currentTime >= video.duration - 3.7;
+    hero.classList.toggle('hero-brand-ending', ending);
+    if (!ending || !video.videoWidth) return;
+    const box = hero.getBoundingClientRect();
+    const copyTop = copy.getBoundingClientRect().top - box.top;
+    const header = document.querySelector('.site-header').getBoundingClientRect();
+    const safeTop = header.height + 36;
+    const target = safeTop + Math.max(0, copyTop - 36 - safeTop) / 2;
+    const scale = Math.max(box.width / video.videoWidth, box.height / video.videoHeight) * 1.06;
+    const renderedHeight = video.videoHeight * scale;
+    // Portrait rendition contains the complete landscape frame at y=250..656.
+    const center = video.videoHeight > video.videoWidth ? 453 / 1280 : .5;
+    const currentCenter = (box.height - renderedHeight) / 2 + renderedHeight * center;
+    hero.style.setProperty('--brand-ending-offset', `${Math.min(0, target - currentCenter)}px`);
+    const addressHalfHeight = (video.videoHeight > video.videoWidth ? 406 * scale : renderedHeight) * .1;
+    hero.style.setProperty('--brand-clear-from', `${target - addressHalfHeight - 18}px`);
+    hero.style.setProperty('--brand-clear-to', `${target + addressHalfHeight + 18}px`);
+    hero.style.setProperty('--brand-fade-end', `${copyTop - 16}px`);
+  };
+  ['timeupdate', 'loadedmetadata', 'seeked', 'emptied'].forEach(event => video.addEventListener(event, positionBrandEnding));
+  new ResizeObserver(positionBrandEnding).observe(copy);
+  addEventListener('resize', positionBrandEnding);
   const sync = () => {
     const compact = mobile.matches;
     const poster = portrait.matches ? video.dataset.portraitPoster : compact ? video.dataset.mobilePoster : video.dataset.desktopPoster;

@@ -6,7 +6,7 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 LINKS = (
-    '<a href="/agence/">L’agence</a>'
+    '<a href="/agence/">L’équipe</a>'
     '<a href="/projets/">Nos projets</a>'
     '<a href="/blog.html">Blog</a>'
     '<a href="/expertises/">Expertises</a>'

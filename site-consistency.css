@@ -101,6 +101,9 @@ html body.inner.site-dark.balanced-page main .surface-light #brief-form button[t
   html body.home .contact-float__close { width: 36px; height: 36px; }
 }
 /* The language picker is available in the full-screen menu at every width. */
+html body.home.home-editorial .editorial-copy #home-title:not(:lang(fr)) em {
+ white-space: normal;
+}
 html body:is(.home,.inner) header.site-header[data-site-nav] .mobile-menu .nav-locale--mobile {
  display: flex !important; align-items: center; justify-content: space-between;
  width: 100%; margin-top: 22px; padding-top: 18px; border-top: 1px solid #ffffff24;

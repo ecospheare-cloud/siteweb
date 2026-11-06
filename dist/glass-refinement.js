@@ -8,6 +8,13 @@
 
  if(header){
   header.classList.add('glass-docked');
+  const homeTitle=document.querySelector('#home-title');
+  const homeTitles=homeTitle?{
+   fr:homeTitle.innerHTML,
+   en:'An agency for <em class="accent-development">web development</em><br>and <em>customer acquisition.</em>',
+   pl:'Agencja <em class="accent-development">tworzenia stron internetowych</em><br>i <em>pozyskiwania klientów.</em>',
+  }:null;
+  if(homeTitle){homeTitle.classList.add('notranslate');homeTitle.translate=false;}
   const createLocaleTools=mobile=>{
    const tools=document.createElement('div');tools.className=`nav-locale${mobile?' nav-locale--mobile':''}`;
    const clock=document.createElement('time');clock.className='nav-local-time';
@@ -23,6 +30,7 @@
    select.value=saved;
    const applyLanguage=language=>{
     window.ecospheareTranslateLanguage=language;
+    if(homeTitle){homeTitle.innerHTML=homeTitles[language];homeTitle.lang=language;}
     document.querySelectorAll('.nav-language select').forEach(item=>item.value=language);
     try{localStorage.setItem('ecospheare-language',language)}catch{}
     const combo=document.querySelector('.goog-te-combo');

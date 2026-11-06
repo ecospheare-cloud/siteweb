@@ -145,7 +145,10 @@
         "heading": "Le résultat et la suite",
         "text": "Le projet présente une reprise du travail de référencement. Aucun classement précis ni évolution chiffrée n’est annoncé ici : le résultat mis en avant est l’intervention sur la visibilité, avec un périmètre SEO et GEO identifié."
       }
-    ]
+    ],
+    "website": "https://www.lesjardinsdelarcadie.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
   },
   {
     "slug": "lyon-diagnostic",
@@ -322,7 +325,10 @@
         "heading": "Le résultat et la suite",
         "text": "L’accompagnement a permis à Lille Immo d’atteindre la première page de Google. Ce résultat décrit le projet réalisé ; il ne signifie pas que toutes les recherches affichent le site au même rang, ni qu’une position reste définitivement acquise."
       }
-    ]
+    ],
+    "website": "https://www.lille-immo.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
   },
   {
     "slug": "centrale-renovation",
@@ -433,7 +439,10 @@
         "heading": "Le résultat et la suite",
         "text": "Cette présentation décrit le périmètre de l’intervention. La présence en première page mentionnée pour Lille Immo ne constitue pas un résultat annoncé pour Nicolas Immobilier. Chaque projet possède ses propres données et son propre contexte."
       }
-    ]
+    ],
+    "website": "https://www.agence-nicolas.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
   },
   {
     "slug": "baron-is-free",
@@ -470,7 +479,10 @@
         "heading": "Le résultat et la suite",
         "text": "Ce dossier présente une intervention de référencement. Il distingue le travail réalisé des performances qui nécessiteraient des données de suivi pour être décrites précisément."
       }
-    ]
+    ],
+    "website": "https://baron-is-free.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
   },
   {
     "slug": "just-a-ride",
@@ -507,6 +519,49 @@
         "heading": "Le résultat et la suite",
         "text": "Le projet aboutit à un site créé pour le client et à un travail de référencement associé. Aucun classement, gain de trafic ou résultat commercial chiffré n’est présenté sans données complémentaires."
       }
-    ]
+    ],
+    "website": "https://www.just-a-ride.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
+  },
+  {
+    "slug": "nettoyage-plus",
+    "sections": [
+      {
+        "heading": "Le client",
+        "text": "Nettoyage Plus est une entreprise de nettoyage implantée en région lyonnaise. Elle présente des prestations de propreté, d’hygiène et d’entretien de locaux professionnels en Auvergne-Rhône-Alpes. Son site permet aux entreprises de découvrir ces services et de prendre contact."
+      },
+      {
+        "heading": "Notre intervention : le SEO",
+        "text": "Sacha Zacharewicz, pour Ecospheare, a accompagné Nettoyage Plus sur le référencement naturel de son site. Cette collaboration porte sur le SEO : travailler la visibilité de l’entreprise auprès des personnes qui recherchent ses prestations en ligne."
+      },
+      {
+        "heading": "L’enjeu de visibilité",
+        "text": "Pour une entreprise de nettoyage, les recherches associent souvent un besoin précis à un lieu d’intervention : entretenir des bureaux, nettoyer des vitres ou remettre des locaux en état. Le référencement relie cette recherche à une offre de services et à un territoire. Cette référence illustre notre accompagnement SEO auprès des entreprises de services."
+      }
+    ],
+    "website": "https://nettoyageplus.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
+  },
+  {
+    "slug": "clair-et-net-06",
+    "sections": [
+      {
+        "heading": "Le client",
+        "text": "Clair & Net 06 est une entreprise de nettoyage située à Nice. Elle propose notamment l’entretien de copropriétés, de bureaux et de commerces, ainsi que le nettoyage de fin de chantier dans les Alpes-Maritimes. Son site présente ses prestations et ses zones d’intervention."
+      },
+      {
+        "heading": "Notre intervention : le SEO",
+        "text": "Sacha Zacharewicz, pour Ecospheare, a travaillé sur le référencement naturel du site de Clair & Net 06. La prestation présentée ici est un accompagnement SEO, destiné à soutenir la visibilité de l’entreprise dans les recherches liées à son activité."
+      },
+      {
+        "heading": "L’enjeu de proximité",
+        "text": "Les personnes qui recherchent une entreprise de nettoyage ont un besoin concret et une localisation. Une copropriété à Nice et des bureaux dans une autre commune du département ne correspondent pas exactement à la même recherche. Le référencement local permet de rapprocher les prestations proposées des besoins exprimés. Cette collaboration rejoint nos références SEO dans les services de proximité."
+      }
+    ],
+    "website": "https://clairetnet06.fr/",
+    "robots": "noindex,follow",
+    "externalLinkRel": "nofollow noopener noreferrer"
   }
 ]

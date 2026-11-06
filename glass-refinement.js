@@ -2,7 +2,7 @@
  const header=document.querySelector('.site-header');
  const expertise=document.body.classList.contains('expertise-page');
  const wordmark=header?.querySelector('.wordmark');
- const createBrandName=()=>{const name=document.createElement('span');name.className='brand-name-lockup';const image=document.createElement('img');image.src='/assets/ecospheare-wordmark-white.png';image.alt='';image.width=850;image.height=130;image.className='brand-name-image';const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(image,agency);return name};
+ const createBrandName=()=>{const name=document.createElement('span');name.className='brand-name-lockup notranslate';name.translate=false;const image=document.createElement('img');image.src='/assets/ecospheare-wordmark-white.png';image.alt='';image.width=850;image.height=130;image.className='brand-name-image';const agency=document.createElement('span');agency.className='brand-agency';agency.textContent='agency';name.append(image,agency);return name};
  if(wordmark){wordmark.replaceChildren();const logo=document.createElement('img');logo.src='/assets/ecospheare-logo-white.svg';logo.alt='';logo.width=28;logo.height=34;logo.className='nav-brand-symbol';wordmark.append(logo,createBrandName());wordmark.setAttribute('aria-label','Ecospheare Agency, accueil');}
  document.querySelectorAll('.footer-identity').forEach(identity=>{const name=identity.querySelector(':scope>span');if(name)name.replaceWith(createBrandName());identity.setAttribute('aria-label','Ecospheare Agency, accueil')});
 
@@ -13,24 +13,40 @@
    const clock=document.createElement('time');clock.className='nav-local-time';
    const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'Europe/Paris';
    const city=(zone.includes('/')?zone.split('/').at(-1):zone).replaceAll('_',' ');
-   const updateClock=()=>{const now=new Date();clock.dateTime=now.toISOString();clock.textContent=`${city} · ${new Intl.DateTimeFormat(document.documentElement.lang==='en'?'en-GB':'fr-FR',{hour:'2-digit',minute:'2-digit',hour12:false}).format(now)}`;clock.setAttribute('aria-label',`${city}, heure locale ${clock.textContent.split(' · ')[1]}`)};
+   const updateClock=()=>{const now=new Date();clock.dateTime=now.toISOString();clock.textContent=`${city} · ${new Intl.DateTimeFormat({fr:'fr-FR',en:'en-GB',pl:'pl-PL'}[document.documentElement.lang]||'fr-FR',{hour:'2-digit',minute:'2-digit',hour12:false}).format(now)}`;clock.setAttribute('aria-label',`${city}, heure locale ${clock.textContent.split(' · ')[1]}`)};
    updateClock();setInterval(updateClock,30000);
-   const label=document.createElement('label');label.className='nav-language';label.innerHTML='<span class="sr-only">Langue du site</span><select aria-label="Langue du site"><option value="fr">FR</option><option value="en">EN</option></select>';
+   const label=document.createElement('label');label.className='nav-language notranslate';label.translate=false;label.innerHTML='<span class="sr-only">Langue du site / Website language / Język strony</span><select aria-label="Langue du site / Website language / Język strony"><option value="fr" lang="fr" title="Français">FR</option><option value="en" lang="en" title="English">EN</option><option value="pl" lang="pl" title="Polski">PL</option></select>';
    const select=label.querySelector('select');
+   if(mobile)for(const option of select.options)option.textContent=option.title;
    let saved='fr';try{saved=localStorage.getItem('ecospheare-language')||'fr'}catch{}
+   if(!['fr','en','pl'].includes(saved))saved='fr';
    select.value=saved;
    const applyLanguage=language=>{
-    document.documentElement.lang=language;
+    window.ecospheareTranslateLanguage=language;
     document.querySelectorAll('.nav-language select').forEach(item=>item.value=language);
     try{localStorage.setItem('ecospheare-language',language)}catch{}
     const combo=document.querySelector('.goog-te-combo');
-    if(combo){combo.value=language;combo.dispatchEvent(new Event('change'));return}
-    window.ecospheareTranslateLanguage=language;
+    // The widget creates its select before populating its options. Wait for the
+    // requested option so restoring a saved language cannot dispatch an empty value.
+    if(combo&&[...combo.options].some(option=>option.value===language)){combo.value=language;combo.dispatchEvent(new Event('change'));document.documentElement.lang=language;return}
+    if(language==='fr'&&!document.querySelector('script[data-ecospheare-translate]')){document.documentElement.lang='fr';return}
     if(!document.querySelector('#ecospheare-google-translate')){const mount=document.createElement('div');mount.id='ecospheare-google-translate';mount.hidden=true;document.body.append(mount)}
-    if(!document.querySelector('script[data-ecospheare-translate]')){window.ecospheareTranslateInit=()=>{new google.translate.TranslateElement({pageLanguage:'fr',includedLanguages:'fr,en',autoDisplay:false},'ecospheare-google-translate');const wait=setInterval(()=>{const input=document.querySelector('.goog-te-combo');if(!input)return;clearInterval(wait);input.value=window.ecospheareTranslateLanguage||'fr';input.dispatchEvent(new Event('change'))},80)};const script=document.createElement('script');script.src='https://translate.google.com/translate_a/element.js?cb=ecospheareTranslateInit';script.async=true;script.dataset.ecospheareTranslate='true';document.head.append(script)}
+    if(!document.querySelector('script[data-ecospheare-translate]')){
+     window.ecospheareTranslateInit=()=>{
+      new google.translate.TranslateElement({pageLanguage:'fr',includedLanguages:'fr,en,pl',autoDisplay:false},'ecospheare-google-translate');
+      let attempts=0;
+      const wait=setInterval(()=>{
+       const input=document.querySelector('.goog-te-combo');
+       const target=window.ecospheareTranslateLanguage||'fr';
+       if(!input||![...input.options].some(option=>option.value===target)){if(++attempts>=200)clearInterval(wait);return}
+       clearInterval(wait);input.value=target;input.dispatchEvent(new Event('change'));document.documentElement.lang=target;
+      },80);
+     };
+     const script=document.createElement('script');script.src='https://translate.google.com/translate_a/element.js?cb=ecospheareTranslateInit';script.async=true;script.dataset.ecospheareTranslate='true';document.head.append(script);
+    }
    };
    select.addEventListener('change',()=>applyLanguage(select.value));
-   if(saved==='en')setTimeout(()=>applyLanguage(saved));
+   if(saved!=='fr')setTimeout(()=>applyLanguage(saved));
    tools.append(clock,label);return tools;
   };
   header.append(createLocaleTools(false));

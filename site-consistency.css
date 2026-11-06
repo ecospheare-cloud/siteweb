@@ -116,3 +116,6 @@ html body:is(.home,.inner) header.site-header[data-site-nav] .mobile-menu .nav-l
 html body:is(.home,.inner) header.site-header[data-site-nav] .nav-language select:focus-visible {
  outline: 2px solid #adc8ef !important; outline-offset: 3px;
 }
+/* Social links keep their labels and use compact, scalable brand marks. */
+body .site-footer .footer-explore .footer-social-link { gap: 8px; }
+body .site-footer .footer-social-icon { display: block; width: 20px; height: 20px; flex: 0 0 20px; }

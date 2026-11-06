@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recadrage mobile du film 202611031817 (4), sans modifier ses coupes ni sa durée."""
+"""Recadrage mobile du film 202611031817 (4), en retirant le plan portrait."""
 import argparse
 import json
 from pathlib import Path
@@ -28,7 +28,7 @@ SHOTS = [
     (212, 284, .47, .49),   # Site de rénovation sur le PC
     (284, 361, .52, .54),   # Salle du Clos
     (361, 430, .51, .51),   # Site du Clos sur le PC
-    (430, 468, .47, .47),   # Portrait
+    (430, 468, .47, .47),   # Portrait supprimé après le recadrage
     (468, 523, .50, .50),   # Animation du logo sur le PC
 ]
 crop_width = 608
@@ -41,7 +41,8 @@ for start, end, initial, final in reversed(SHOTS):
 output = args.output
 subprocess.run([
     'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(args.source),
-    '-vf', f"crop={crop_width}:1080:x='{expression}':y=0,scale=720:1280,setsar=1",
+    # Retirer les images 430 à 467 après le suivi, qui utilise les indices source.
+    '-vf', f"crop={crop_width}:1080:x='{expression}':y=0,select='not(between(n,430,467))',setpts=N/(30*TB),scale=720:1280,setsar=1",
     '-c:v', 'libx264', '-preset', 'slow', '-crf', '25', '-maxrate', '1400k',
     '-bufsize', '2800k', '-pix_fmt', 'yuv420p', '-g', '60', '-an',
     '-movflags', '+faststart', str(output),

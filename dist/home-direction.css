@@ -330,6 +330,10 @@ html body.home.home-editorial .site-footer { background: #0c1118 !important; bor
   .home-editorial .founder-anchor-copy { justify-content: center; padding: 24px; }
   .method-editorial-steps { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px 24px; }
 }
+/* Keep the portrait ending below the navbar on wider portrait screens. */
+@media(max-width:800px) and (orientation:portrait) and (min-aspect-ratio:9/16) {
+  .home-editorial .editorial-hero .editorial-media video { object-position: center top; }
+}
 @media(max-width:800px) {
   html body.home.home-editorial main > section { width: calc(100% - 20px) !important; margin-inline: 10px !important; padding: 64px 22px; }
   html body.home.home-editorial main .editorial-hero {

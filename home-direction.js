@@ -3,7 +3,7 @@
   const video = document.querySelector('[data-responsive-hero]');
   if (!video) return;
   const mobile = matchMedia('(max-width: 800px), (max-width: 1023px) and (max-height: 500px)');
-  const portrait = matchMedia('(max-width: 600px) and (orientation: portrait)');
+  const portrait = matchMedia('(max-width: 800px) and (orientation: portrait)');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const connection = navigator.connection;
   let visible = false;

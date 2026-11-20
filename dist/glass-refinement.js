@@ -152,7 +152,7 @@
   toggle.addEventListener('click',()=>{contactChoiceByUser=true;setCollapsed(!link.classList.contains('is-collapsed'))});
   close.addEventListener('click',()=>{contactChoiceByUser=true;setCollapsed(true)});
  }
- const opening = home ? document.querySelector('.editorial-hero') : null;
+ const opening = document.querySelector('.editorial-hero, .agency-city-hero');
  const update=()=>{
  const end=document.querySelector('#votre-projet');
  const nearEnd=end&&end.getBoundingClientRect().top<innerHeight;

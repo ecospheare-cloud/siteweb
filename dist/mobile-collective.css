@@ -47,28 +47,6 @@
     margin-inline: auto;
   }
 
-  html body:is(.home, .agency-page) .world-map-connection .map-endpoints--three {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: start !important;
-    gap: 10px !important;
-  }
-
-  html body:is(.home, .agency-page) .map-endpoints--three > i {
-    display: none;
-  }
-
-  html body:is(.home, .agency-page) .map-endpoints--three > span {
-    font-size: 9px;
-    letter-spacing: .06em;
-  }
-
-  html body:is(.home, .agency-page) .map-endpoints--three .location-flag {
-    display: block;
-    width: 24px !important;
-    height: 16px !important;
-    margin: 0 auto 7px;
-  }
-
   html body:is(.home, .agency-page) .world-map-connection .route-caption {
     text-align: center;
   }

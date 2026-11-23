@@ -130,11 +130,11 @@
  if(home){
   link.classList.add('contact-float--dual');
   link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp');
-  link.innerHTML=`<button class="contact-float__toggle" type="button" aria-expanded="true" aria-label="Replier les options de contact"><img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="Portrait de Sacha Zacharewicz" width="46" height="46"></button><span class="contact-float__choices"><a href="${projectHref}" target="_blank" rel="noopener noreferrer"><small>Un projet en tête ?</small><strong>Parlons-en →</strong></a><a href="${recruitmentHref}" target="_blank" rel="noopener noreferrer"><small>Nous recrutons</small><strong>Devenir commercial →</strong></a></span><button class="contact-float__close" type="button" aria-label="Replier les options de contact">×</button>`;
+  link.innerHTML=`<button class="contact-float__toggle" type="button" aria-expanded="true" aria-label="Replier les options de contact"><img src="/assets/equipe/sacha-zacharewicz-20261123-160.webp" alt="Portrait de Sacha Zacharewicz" width="46" height="46"></button><span class="contact-float__choices"><a href="${projectHref}" target="_blank" rel="noopener noreferrer"><small>Un projet en tête ?</small><strong>Parlons-en →</strong></a><a href="${recruitmentHref}" target="_blank" rel="noopener noreferrer"><small>Nous recrutons</small><strong>Devenir commercial →</strong></a></span><button class="contact-float__close" type="button" aria-label="Replier les options de contact">×</button>`;
  }else{
   link.href=projectHref;link.target='_blank';link.rel='noopener noreferrer';
   link.setAttribute('aria-label','Contacter Sacha Zacharewicz sur WhatsApp au +33 6 07 16 62 40');
-  link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-cutout.png" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter →</strong></span>';
+  link.innerHTML='<img src="/assets/equipe/sacha-zacharewicz-20261123-160.webp" alt="" width="46" height="46"><span><small>Un projet en tête ?</small><strong>Me contacter →</strong></span>';
  }
  document.body.append(link);
  if(home){

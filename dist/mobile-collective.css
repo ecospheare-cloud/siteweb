@@ -1,0 +1,135 @@
+/* Shared mobile composition for the agency map and collective identities. */
+@media (max-width: 767px) {
+  /* Cancel the legacy 150% / -25% crop and keep both map layers aligned. */
+  html body:is(.home, .agency-page) .world-map-connection {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: auto !important;
+    padding-inline: 12px;
+  }
+
+  html body:is(.home, .agency-page) .world-map-connection .world-map-surface {
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    aspect-ratio: 1000 / 440;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  html body:is(.home, .agency-page) .world-map-surface > :is(.collective-map, .map-route) {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center;
+  }
+
+  html body:is(.home, .agency-page) .world-map-connection .map-endpoints {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  html body:is(.home, .agency-page) .world-map-connection .map-endpoints > span {
+    min-width: 0;
+    width: 100% !important;
+    max-width: none !important;
+    text-align: center !important;
+  }
+
+  html body:is(.home, .agency-page) .map-endpoints strong {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  html body:is(.home, .agency-page) .world-map-connection .map-endpoints--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start !important;
+    gap: 10px !important;
+  }
+
+  html body:is(.home, .agency-page) .map-endpoints--three > i {
+    display: none;
+  }
+
+  html body:is(.home, .agency-page) .map-endpoints--three > span {
+    font-size: 9px;
+    letter-spacing: .06em;
+  }
+
+  html body:is(.home, .agency-page) .map-endpoints--three .location-flag {
+    display: block;
+    width: 24px !important;
+    height: 16px !important;
+    margin: 0 auto 7px;
+  }
+
+  html body:is(.home, .agency-page) .world-map-connection .route-caption {
+    text-align: center;
+  }
+
+  /* One stable row: each logo sits above its name, with centered separators. */
+  html body.home.home-editorial #fondateur .collective-partners.partner-logos,
+  html body.agency-page .global-collective .collective-partners.partner-logos {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) 10px minmax(0, .8fr) 10px minmax(0, 1fr);
+    align-items: start;
+    justify-items: center;
+    gap: 6px;
+    width: 100%;
+    max-width: 430px;
+    margin-inline: auto !important;
+    padding: 24px 0;
+    text-align: center;
+  }
+
+  html body:is(.home, .agency-page) .collective-partners .partner-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    min-width: 0;
+    width: 100%;
+    min-height: 90px;
+    text-align: center;
+  }
+
+  html body:is(.home, .agency-page) .collective-partners .partner-brand img {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  html body:is(.home, .agency-page) .collective-partners .partner-brand > span {
+    width: 100%;
+    font-size: clamp(13px, 3.5vw, 16px);
+    line-height: 1.2;
+    letter-spacing: -.045em;
+    overflow-wrap: normal;
+  }
+
+  html body:is(.home, .agency-page) .collective-partners .partner-brand small {
+    font-size: 11px;
+    line-height: 1.2;
+    margin-top: 4px;
+  }
+
+  html body:is(.home, .agency-page) .collective-partners.partner-logos > i {
+    display: grid;
+    place-items: center;
+    width: 10px;
+    height: 40px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+}

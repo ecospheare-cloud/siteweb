@@ -1,0 +1,60 @@
+/* No page content is hidden: this optional signature paints above the ready site. */
+:root { --site-intro-ready: 1; }
+.site-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  background: radial-gradient(ellipse at 50% 45%, #234f83 0, #102841 40%, #081321 78%);
+  animation: site-intro-reveal 1050ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.site-intro__identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(22px, 4vmin, 36px);
+  padding: 24px;
+}
+.site-intro .site-intro__symbol {
+  display: block;
+  width: clamp(156px, 28vmin, 260px);
+  max-width: 52vw;
+  height: auto;
+  max-height: 46svh;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 35px #78b3ff35);
+  transform-origin: 50% 50%;
+  animation: site-intro-float 950ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.site-intro .site-intro__name {
+  display: block;
+  width: clamp(190px, 32vw, 310px);
+  max-width: 70vw;
+  height: auto;
+  object-fit: contain;
+  animation: site-intro-wordmark 750ms cubic-bezier(.22, 1, .36, 1) both;
+}
+@keyframes site-intro-float {
+  0% { opacity: 0; transform: perspective(850px) translateY(16px) rotateY(-25deg) rotateZ(-8deg) scale(.9); }
+  22% { opacity: 1; }
+  58% { opacity: 1; transform: perspective(850px) translateY(-10px) rotateY(19deg) rotateZ(5deg) scale(1.03); }
+  100% { opacity: 1; transform: perspective(850px) translateY(-3px) rotateY(0deg) rotateZ(0deg) scale(1); }
+}
+@keyframes site-intro-wordmark {
+  0%, 12% { opacity: 0; transform: translateY(8px); }
+  60%, 100% { opacity: 1; transform: translateY(0); }
+}
+/* CSS alone releases the screen, even if later JavaScript fails. */
+@keyframes site-intro-reveal {
+  0%, 58% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-intro { display: none !important; animation: none !important; }
+  .site-intro * { animation: none !important; }
+}
+@media print { .site-intro { display: none !important; } }
